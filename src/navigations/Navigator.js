@@ -1,4 +1,6 @@
 import {createAppContainer, createSwitchNavigator} from 'react-navigation'
+import {createBottomTabNavigator} from 'react-navigation-tabs'
+
 import screen_13 from "../screens/screen_13";
 import screen_15 from '../screens/screen_15';
 import OrderScreen from '../screens/OrderScreen';
@@ -6,6 +8,13 @@ import {createStackNavigator} from 'react-navigation-stack'
 import PayScreen from '../screens/PayScreen';
 import LoginScreen from '../screens/LoginScreen';
 import JoinScreen from '../screens/JoinScreen';
+import AgreementScreen from '../screens/AgreementScreen';
+
+import HomeScreen from '../screens/HomeScreen'
+import Icon from 'react-native-vector-icons/Ionicons'
+import React from 'react'
+import FeatherIcon from '../components/FeatherIcon'
+import MapScreen from '../screens/MapScreen';
 
 const navigator1 = createStackNavigator(
     {
@@ -46,7 +55,7 @@ const loginStack = createStackNavigator(
         login:{
             screen:LoginScreen,
             navigationOptions: {
-                header: null,
+                headerShown: false,
             }
         },
         join: {
@@ -60,12 +69,104 @@ const loginStack = createStackNavigator(
                 }
             }
         },
+        agree: {
+            screen: AgreementScreen,
+            navigationOptions: {
+                title: "이용약관",
+                headerTitleAlign: 'center',
+                headerTitleStyle: {
+                    fontSize: 17,
+                    color: '#828282'
+                }
+            }
+        }
     },
     {
         initialRouteName: 'login'
     }
 )
 
+const HomeStack = createStackNavigator(
+    {
+        Home: {
+            screen: HomeScreen,
+            navigationOptions: {
+                headerShown: false
+            }
+        },
+        Map: {
+            screen: MapScreen,
+            navigationOptions: {
+                
+            }
+        }
+    },
+    {
+        initialRouteName: 'Home'
+    }
+)
+
+HomeStack.navigationOptions = ({navigation}) => {
+    let tabBarVisible;
+    if(navigation.state.routes.length > 1) {
+        navigation.state.routes.map(route => {
+            tabBarVisible = false;
+        })
+    }
+    return {
+        tabBarVisible
+    }
+}
+const MainNavigator = createBottomTabNavigator(
+    {
+        Home: {
+            screen: HomeStack,
+            navigationOptions:{
+                tabBarLabel: "",
+                tabBarIcon:({focused}) => (
+                    <FeatherIcon name={"home"} focused={focused}/>
+                ),
+                
+            }
+        },
+        Order: {
+            screen: HomeScreen,
+            navigationOptions:{
+                tabBarLabel: "",
+                tabBarIcon:({focused}) => (
+                    <FeatherIcon name={"silverware-fork-knife"} focused={focused}/>
+                ),
+                
+            }
+    
+        },
+        Heart: {
+            screen: HomeScreen,
+            navigationOptions:{
+                tabBarLabel: "",
+                tabBarIcon:({focused}) => (
+                    <FeatherIcon name={"heart"} focused={focused}/>
+                ),
+                
+            }
+  
+        },
+        Setting: {
+            screen: HomeScreen,
+            navigationOptions:{
+                tabBarLabel: "",
+                tabBarIcon:({focused}) => (
+                    <FeatherIcon name={"settings"} focused={focused}/>
+                ),
+                
+            }
+ 
+         },
+    },
+    {
+        tabBarOptions: {showLabel: false}
+    }
+)
 const RootSwitch = createSwitchNavigator(
     {
         init:{
@@ -73,7 +174,10 @@ const RootSwitch = createSwitchNavigator(
         },
         navigator1:{
             screen: navigator1
-        }
+        },
+        Main: {
+            screen: MainNavigator
+        },
     }
 )
 

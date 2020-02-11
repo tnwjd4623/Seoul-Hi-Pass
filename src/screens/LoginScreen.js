@@ -18,6 +18,10 @@ export default class LoginScreen extends Component {
         console.log("open");
         this.setState({isModalVisible: true});
     }
+    login = () => {
+        this.closeModal();
+        this.props.navigation.navigate('Home');
+    }
     render() {
         return(
             <View style={styles.container}>
@@ -58,7 +62,7 @@ export default class LoginScreen extends Component {
                             <TextInput style={styles.input} placeholder={"비밀번호"} placeholderTextColor={'#999999'} secureTextEntry={true}/>
                         </View>
 
-                        <TouchableOpacity style={styles.login_btn} onPress={this.openModal}>
+                        <TouchableOpacity style={styles.login_btn} onPress={this.login}>
                             <Text style={styles.email_text}>로그인하기</Text>
                         </TouchableOpacity>
 
