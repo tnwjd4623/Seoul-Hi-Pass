@@ -56,7 +56,7 @@ export default class MyPageScreen extends Component {
                 <View style={styles.list}>
                     <Text style={styles.list_title}>설정</Text>
 
-                    <TouchableOpacity style={styles.list_item}>
+                    <TouchableOpacity style={styles.list_item} onPress={()=>this.props.navigation.navigate('Notice')}>
                         <Text style={{color:'#828282'}}>알림/공지사항</Text>
                     </TouchableOpacity >
 

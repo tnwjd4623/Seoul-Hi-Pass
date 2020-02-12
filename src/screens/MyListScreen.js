@@ -15,7 +15,7 @@ export default class MyListScreen extends Component {
                     <Text style={{fontSize: 17, color:'#828282'}}>나의 맛집</Text>
                 </View>
                 <ScrollView>
-                    <StoreItemList/>
+                    <StoreItemList navigation={this.props.navigation}/>
                 </ScrollView>
             </>
         )

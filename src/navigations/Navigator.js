@@ -22,6 +22,8 @@ import MyPageScreen from '../screens/MyPageScreen';
 import MyInfoScreen from '../screens/MyInfoScreen';
 import MyReviewScreen from '../screens/MyReviewScreen';
 import MyPayScreen from '../screens/MyPayScreen';
+import PreorderScreen from '../screens/PreorderScreen';
+import NoticeScreen from '../screens/NoticeScreen';
 /*
 가게 상세정보 -> 메뉴 -> 주문 -> 완료 네비게이터
 */
@@ -202,6 +204,13 @@ const MyPageStack = createStackNavigator(
                 title: '지난 주문/결제 내역',
                 headerTitleAlign: 'center'
             }
+        },
+        Notice: {
+            screen: NoticeScreen,
+            navigationOptions: {
+                title: '공지사항',
+                headerTitleAlign: 'center'
+            }
         }
     },
     {
@@ -209,6 +218,38 @@ const MyPageStack = createStackNavigator(
     }
 )
 MyPageStack.navigationOptions = ({navigation}) => {
+    let tabBarVisible;
+    if(navigation.state.routes.length > 1) {
+        navigation.state.routes.map(route => {
+            tabBarVisible = false;
+        })
+    }
+    return {
+        tabBarVisible
+    }
+}
+/*
+*/
+const MyListStack = createStackNavigator(
+    {
+        MyList: {
+            screen: MyListScreen,
+            navigationOptions: {
+                headerShown: false,
+            }
+        },
+        Detail: {
+            screen: DetailStack,
+            navigationOptions: {
+                headerShown: false,
+            }
+        }
+    },
+    {
+        initialRouteName: 'MyList'
+    }
+)
+MyListStack.navigationOptions = ({navigation}) => {
     let tabBarVisible;
     if(navigation.state.routes.length > 1) {
         navigation.state.routes.map(route => {
@@ -235,7 +276,7 @@ const MainNavigator = createBottomTabNavigator(
             }
         },
         Order: {
-            screen: HomeScreen,
+            screen: PreorderScreen,
             navigationOptions:{
                 tabBarLabel: "",
                 tabBarIcon:({focused}) => (
@@ -246,7 +287,7 @@ const MainNavigator = createBottomTabNavigator(
     
         },
         Heart: {
-            screen: MyListScreen,
+            screen: MyListStack,
             navigationOptions:{
                 tabBarLabel: "",
                 tabBarIcon:({focused}) => (
