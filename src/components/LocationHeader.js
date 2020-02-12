@@ -6,7 +6,7 @@ export default class LocationHeader extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            Location: '대전 유성구 덕명동'
+            Location: this.props.location,
         }
     }
     render() {

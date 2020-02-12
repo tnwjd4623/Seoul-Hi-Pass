@@ -97,7 +97,7 @@ const HomeStack = createStackNavigator(
         Map: {
             screen: MapScreen,
             navigationOptions: {
-                
+                headerTitleAlign: 'center'
             }
         }
     },

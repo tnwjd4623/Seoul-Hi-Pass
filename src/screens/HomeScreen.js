@@ -8,7 +8,7 @@ export default class HomeScreen extends Component {
     constructor(props){
         super(props);
         this.state = {
-
+            location: "대전 유성구 덕명동"
           };
     }
 
@@ -17,8 +17,8 @@ export default class HomeScreen extends Component {
             <>
             <ScrollView>
                 <View style={{flexDirection: 'row', alignItems: 'center', width: '100%', justifyContent: 'center'}}>
-                    <TouchableHighlight style={{width: '85%', marginLeft: 20}} onPress={()=>this.props.navigation.navigate('Map')}>
-                        <LocationHeader/>
+                    <TouchableHighlight style={{width: '85%', marginLeft: 20}} onPress={()=>this.props.navigation.navigate('Map', {location:this.state.location} )}>
+                        <LocationHeader location={this.state.location} />
                     </TouchableHighlight>
 
                     <TouchableHighlight onPress={()=>this.props.navigation.navigate('Map')}>
