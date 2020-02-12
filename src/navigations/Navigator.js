@@ -1,7 +1,7 @@
 import {createAppContainer, createSwitchNavigator} from 'react-navigation'
 import {createBottomTabNavigator} from 'react-navigation-tabs'
 
-import screen_13 from "../screens/screen_13";
+import StoreDetailScreen from "../screens/StoreDetailScreen";
 import screen_15 from '../screens/screen_15';
 import OrderScreen from '../screens/OrderScreen';
 import {createStackNavigator} from 'react-navigation-stack'
@@ -11,17 +11,26 @@ import JoinScreen from '../screens/JoinScreen';
 import AgreementScreen from '../screens/AgreementScreen';
 
 import HomeScreen from '../screens/HomeScreen'
-import Icon from 'react-native-vector-icons/Ionicons'
 import React from 'react'
 import FeatherIcon from '../components/FeatherIcon'
 import MapScreen from '../screens/MapScreen';
-
-const navigator1 = createStackNavigator(
+import LocationSearchScreen from '../screens/LocationSearchScreen';
+import ReviewScreen from '../screens/ReviewScreen';
+import ReviewWriteScreen from '../screens/ReviewWriteScreen';
+import MyListScreen from '../screens/MyListScreen';
+import MyPageScreen from '../screens/MyPageScreen';
+import MyInfoScreen from '../screens/MyInfoScreen';
+import MyReviewScreen from '../screens/MyReviewScreen';
+import MyPayScreen from '../screens/MyPayScreen';
+/*
+가게 상세정보 -> 메뉴 -> 주문 -> 완료 네비게이터
+*/
+const DetailStack = createStackNavigator(
     {
-        screen13: {
-            screen: screen_13,
+        StoreDetail: {
+            screen: StoreDetailScreen,
             navigationOptions: {
-                header: null,
+                headerShown: false
             }
         },
         screen15: {
@@ -43,13 +52,43 @@ const navigator1 = createStackNavigator(
                 title: "결제하기",
                 headerTitleAlign: 'center'
             }
+        },
+
+        Review: {
+            screen: ReviewScreen,
+            navigationOptions: {
+                title: "리뷰 전체",
+                headerTitleAlign: 'center'
+            }
+        },
+        ReviewWrite: {
+            screen: ReviewWriteScreen,
+            navigationOptions: {
+                title: '리뷰 작성하기',
+                headerTitleAlign: 'center'
+            }
         }
     },
     {
-        initialRouteName: 'screen13',
+        initialRouteName: 'StoreDetail',
     }
 )
-
+DetailStack.navigationOptions = ({navigation}) => {
+    let header;
+    if(navigation.state.routes.length > 1) {
+        navigation.state.routes.map(route => {
+            if(route.routeName != "StoreDetail") {
+                header = null;
+            }
+        });
+    }
+    return {
+        header
+    }
+}
+/*
+로그인에 필요한 네비게이터
+*/
 const loginStack = createStackNavigator(
     {
         login:{
@@ -86,6 +125,9 @@ const loginStack = createStackNavigator(
     }
 )
 
+/*
+홈 화면 중 메인화면에서 사용하는 네비게이터
+*/
 const HomeStack = createStackNavigator(
     {
         Home: {
@@ -99,7 +141,19 @@ const HomeStack = createStackNavigator(
             navigationOptions: {
                 headerTitleAlign: 'center'
             }
-        }
+        },
+        Search: {
+            screen: LocationSearchScreen,
+            navigationOptions: {
+                headerTitleAlign: 'center'
+            }
+        },
+        Detail:{
+            screen: DetailStack,
+            navigationOptions: {
+                headerShown: false
+            }
+        },
     },
     {
         initialRouteName: 'Home'
@@ -117,6 +171,57 @@ HomeStack.navigationOptions = ({navigation}) => {
         tabBarVisible
     }
 }
+/*
+마이페이지 네비게이터
+*/
+const MyPageStack = createStackNavigator(
+    {
+        Mypage: {
+            screen: MyPageScreen,
+            navigationOptions: {
+                headerShown: false,
+            }
+        },
+        MyInfo:{
+            screen: MyInfoScreen,
+            navigationOptions: {
+                title: '내 정보 수정',
+                headerTitleAlign: 'center'
+            }
+        },
+        MyReview: {
+            screen: MyReviewScreen,
+            navigationOptions: {
+                title: '나의 리뷰',
+                headerTitleAlign: 'center'
+            }
+        },
+        MyPay: {
+            screen: MyPayScreen,
+            navigationOptions: {
+                title: '지난 주문/결제 내역',
+                headerTitleAlign: 'center'
+            }
+        }
+    },
+    {
+        initialRouteName: 'Mypage'
+    }
+)
+MyPageStack.navigationOptions = ({navigation}) => {
+    let tabBarVisible;
+    if(navigation.state.routes.length > 1) {
+        navigation.state.routes.map(route => {
+            tabBarVisible = false;
+        })
+    }
+    return {
+        tabBarVisible
+    }
+}
+/*
+메인 바텀 네비게이터
+*/
 const MainNavigator = createBottomTabNavigator(
     {
         Home: {
@@ -141,7 +246,7 @@ const MainNavigator = createBottomTabNavigator(
     
         },
         Heart: {
-            screen: HomeScreen,
+            screen: MyListScreen,
             navigationOptions:{
                 tabBarLabel: "",
                 tabBarIcon:({focused}) => (
@@ -152,7 +257,7 @@ const MainNavigator = createBottomTabNavigator(
   
         },
         Setting: {
-            screen: HomeScreen,
+            screen: MyPageStack,
             navigationOptions:{
                 tabBarLabel: "",
                 tabBarIcon:({focused}) => (
@@ -167,13 +272,14 @@ const MainNavigator = createBottomTabNavigator(
         tabBarOptions: {showLabel: false}
     }
 )
+
+/*
+시작 화면
+*/
 const RootSwitch = createSwitchNavigator(
     {
         init:{
             screen: loginStack
-        },
-        navigator1:{
-            screen: navigator1
         },
         Main: {
             screen: MainNavigator

@@ -1,16 +1,25 @@
 import React, { Component } from 'react'
-import {View, Text, StyleSheet, ScrollView, CheckBox} from 'react-native'
-//import Icon from 'react-native-vector-icons/MaterialIcons'
+import {View, Text, StyleSheet, ScrollView, CheckBox, TouchableOpacity} from 'react-native'
 import Icon from 'react-native-vector-icons/Feather' 
-import { TouchableOpacity } from 'react-native-gesture-handler'
 
-export default class screen_13 extends Component {
+
+export default class StoreDetailScreen extends Component {
     constructor(props) {
         super(props);
         this.state= {
             name:"MACISSO PASTA"
         }
     }
+    static navigationOptions = ({navigation}) =>({
+        title: "testgggg",
+        headerTitleStyle: {textAlign: 'center', alignSelf: 'center'},
+    });
+
+    componentDidMount() {
+        this.props.navigation;
+    }
+
+
     render() {
         return (
             <>
@@ -59,7 +68,9 @@ export default class screen_13 extends Component {
                     <View style={styles.review_container}>
                         <View style={{flexDirection:'row', width: '100%', flex:1}}>
                             <Text style={styles.default_Text}>이용 후기</Text>
-                            <Text style={{flex:1, textAlign: 'right', marginRight: 35}}>리뷰 더보기</Text>
+                            <TouchableOpacity style={{flex:1}} onPress={()=>this.props.navigation.navigate("Review")}>
+                                <Text style={{flex:1, textAlign: 'right', marginRight: 35}}>리뷰 더보기</Text>
+                            </TouchableOpacity>
                         </View>
 
                         <View style={{flexDirection:'row', marginTop: 10}}>

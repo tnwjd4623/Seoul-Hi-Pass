@@ -15,13 +15,13 @@ export default class HomeScreen extends Component {
     render() {
         return(
             <>
-            <ScrollView>
+            <ScrollView style={{backgroundColor: '#fff'}}>
                 <View style={{flexDirection: 'row', alignItems: 'center', width: '100%', justifyContent: 'center'}}>
                     <TouchableHighlight style={{width: '85%', marginLeft: 20}} onPress={()=>this.props.navigation.navigate('Map', {location:this.state.location} )}>
                         <LocationHeader location={this.state.location} />
                     </TouchableHighlight>
 
-                    <TouchableHighlight onPress={()=>this.props.navigation.navigate('Map')}>
+                    <TouchableHighlight onPress={()=>this.props.navigation.navigate('Search', {location:this.state.location})}>
                         <MaterialIcons name="search" size={28} color={"#828282"}/>
                     </TouchableHighlight>
                 </View>
