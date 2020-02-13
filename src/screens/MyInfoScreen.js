@@ -45,6 +45,10 @@ export default class MyInfoScreen extends Component {
                         <TextInput style={styles.input} placeholder={"나머지 주소 입력"} placeholderTextColor={'#999999'}/>
                     </View>
 
+                    <View style={styles.input_container}>
+                        <Text style={styles.default_Text}>결제정보</Text>
+                    </View>
+
                 </View>             
             </View>
             </ScrollView>   
