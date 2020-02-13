@@ -27,6 +27,7 @@ import NoticeScreen from '../screens/NoticeScreen';
 import QuestionScreen from '../screens/QuestionScreen';
 import WriteQuestionScreen from '../screens/WriteQuestionScreen';
 import FAQScreen from '../screens/FAQScreen';
+import PreorderListscreen from '../screens/PreorderListScreen';
 /*
 가게 상세정보 -> 메뉴 -> 주문 -> 완료 네비게이터
 */
@@ -253,6 +254,47 @@ MyPageStack.navigationOptions = ({navigation}) => {
     }
 }
 /*
+미리 주문하기
+*/
+const PreOrderStack = createStackNavigator(
+    {
+        Preorder: {
+            screen: PreorderScreen,
+            navigationOptions:{
+                headerShown: false,
+            }
+        },
+        PreOrderList: {
+            screen: PreorderListscreen,
+            navigationOptions: {
+                title: '미리 주문하기',
+                headerTitleAlign: 'center'
+            }
+        },
+        Detail: {
+            screen: DetailStack,
+            navigationOptions: {
+                headerShown: false,
+            }
+        }
+    },
+    {
+        initialRouteName: 'Preorder'
+    }
+)
+PreOrderStack.navigationOptions = ({navigation}) => {
+    let tabBarVisible;
+    if(navigation.state.routes.length > 1) {
+        navigation.state.routes.map(route => {
+            tabBarVisible = false;
+        })
+    }
+    return {
+        tabBarVisible
+    }
+}
+/*
+나의 가게
 */
 const MyListStack = createStackNavigator(
     {
@@ -299,8 +341,8 @@ const MainNavigator = createBottomTabNavigator(
                 
             }
         },
-        Order: {
-            screen: PreorderScreen,
+        PreOrder: {
+            screen: PreOrderStack,
             navigationOptions:{
                 tabBarLabel: "",
                 tabBarIcon:({focused}) => (

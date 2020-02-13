@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import {Text, StyleSheet, View, TouchableOpacity, TextInput} from 'react-native'
-import { ScrollView } from 'react-native-gesture-handler'
+import {Text, StyleSheet, View, TouchableOpacity, TextInput, ScrollView} from 'react-native'
+
 
 export default class MyInfoScreen extends Component {
     constructor(props) {
@@ -12,7 +12,7 @@ export default class MyInfoScreen extends Component {
             
             <ScrollView>
             <View style={styles.container}>
-                <View style={styles.login_form}>
+                <View style={styles.form}>
                     <View style={styles.input_container}>
                         <Text style={styles.default_Text}>이메일</Text>
                         <TextInput style={styles.input} placeholderTextColor={'#999999'}/>
@@ -44,10 +44,13 @@ export default class MyInfoScreen extends Component {
                         <TextInput style={styles.input} placeholder={"우편번호 검색"} placeholderTextColor={'#999999'}/>
                         <TextInput style={styles.input} placeholder={"나머지 주소 입력"} placeholderTextColor={'#999999'}/>
                     </View>
-                </View>
 
+                </View>             
             </View>
-            </ScrollView>
+            </ScrollView>   
+            <TouchableOpacity style={styles.btn}>
+                <Text>수정하기</Text>
+            </TouchableOpacity>  
             </>
         )
     }
@@ -62,7 +65,7 @@ const styles = StyleSheet.create({
         height: '100%',
         padding: 20,
     },
-    login_form:{
+    form:{
         width: '70%'
     },
     input : {
@@ -89,5 +92,14 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         marginLeft: 5
     },
+    btn: {
+        position:'absolute',
+        bottom:0,
+        width: '100%',
+        height: 80,
+        backgroundColor: '#d9d9d9',
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
    
 })

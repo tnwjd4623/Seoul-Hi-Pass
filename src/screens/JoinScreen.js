@@ -60,21 +60,21 @@ export default class JoinScreen extends Component{
                             <CheckBox value={this.state.CheckBox} onValueChange={this.check} />
                         </View>
                         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                            <TouchableOpacity style={{width: '90%'}}>
+                            <TouchableOpacity style={{width: '90%'}} onPress={()=>this.props.navigation.navigate('agree')}>
                                 <Text style={{width: '90%', color: '#404040'}}>개인정보 수집이용 동의(필수)</Text>
                             </TouchableOpacity>
                             <CheckBox value={this.state.CheckBox} onValueChange={this.check} />
                         </View>
                         
                         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                            <TouchableOpacity style={{width: '90%'}}>
+                            <TouchableOpacity style={{width: '90%'}} onPress={()=>this.props.navigation.navigate('agree')}>
                                 <Text style={{width: '90%', color: '#404040'}}>마케팅 수신 동의(선택)</Text>
                             </TouchableOpacity>
                             <CheckBox value={this.state.CheckBox} onValueChange={this.check} />
                         </View>
                     </View>
 
-                    <TouchableOpacity style={styles.join_btn}>
+                    <TouchableOpacity style={styles.join_btn} onPress={()=>this.props.navigation.pop()}>
                         <Text>회원가입하기</Text>
                     </TouchableOpacity>
                 </View>

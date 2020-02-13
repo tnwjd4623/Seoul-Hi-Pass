@@ -28,7 +28,7 @@ export default class HomeScreen extends Component {
 
                 <UserProfile/>
 
-                <TouchableOpacity style={styles.pre_order}>
+                <TouchableOpacity style={styles.pre_order} onPress={()=>this.props.navigation.navigate('PreOrder')}>
                     <View style={{width: '100%'}}>
                         <Text style={styles.pre_text}>미리 주문하기</Text>
                         <Text style={{color: '#666666'}}>시간이 밥이다</Text>
