@@ -24,6 +24,9 @@ import MyReviewScreen from '../screens/MyReviewScreen';
 import MyPayScreen from '../screens/MyPayScreen';
 import PreorderScreen from '../screens/PreorderScreen';
 import NoticeScreen from '../screens/NoticeScreen';
+import QuestionScreen from '../screens/QuestionScreen';
+import WriteQuestionScreen from '../screens/WriteQuestionScreen';
+import FAQScreen from '../screens/FAQScreen';
 /*
 가게 상세정보 -> 메뉴 -> 주문 -> 완료 네비게이터
 */
@@ -209,6 +212,27 @@ const MyPageStack = createStackNavigator(
             screen: NoticeScreen,
             navigationOptions: {
                 title: '공지사항',
+                headerTitleAlign: 'center'
+            }
+        },
+        Question: {
+            screen: QuestionScreen,
+            navigationOptions: {
+                title: '1:1문의',
+                headerTitleAlign: 'center'
+            }
+        },
+        WriteQuestion: {
+            screen:WriteQuestionScreen,
+            navigationOptions: {
+                title: '1:1문의',
+                headerTitleAlign: 'center'
+            }
+        },
+        FAQ: {
+            screen: FAQScreen,
+            navigationOptions: {
+                title: 'FAQ',
                 headerTitleAlign: 'center'
             }
         }

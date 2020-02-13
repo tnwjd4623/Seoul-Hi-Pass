@@ -1,39 +1,36 @@
 import React, { Component } from 'react'
-import {Text, StyleSheet, TextInput, Modal, View, TouchableOpacity} from 'react-native'
-import ModalDropdown from 'react-native-modal-dropdown';
+import {View, Text, StyleSheet, TextInput, TouchableOpacity} from 'react-native'
+import ModalDropdown from 'react-native-modal-dropdown'
 
-export default class ReviewWriteScreen extends Component {
+export default class WriteQuestionScreen extends Component {
     constructor(props) {
         super(props)
     }
+
     render() {
         return(
             <>
-            <View style={{flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <TextInput style={styles.title}
-                    placeholder={"제목"} placeholderTextColor={'#000'}/>
+                <View style={{flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                    <TextInput style={styles.title}
+                        placeholder={"제목"} placeholderTextColor={'#000'}/>
 
-                <ModalDropdown  style={styles.dropdown} dropdownTextStyle={styles.dropdown_text}
-                    dropdownStyle={styles.dropdownStyle} textStyle={styles.dropdown_text}
-                    options={['카테고리1']} defaultValue={'게시판'}/>
+                    <ModalDropdown  style={styles.dropdown} dropdownTextStyle={styles.dropdown_text}
+                        dropdownStyle={styles.dropdownStyle} textStyle={styles.dropdown_text}
+                        options={['카테고리1']} defaultValue={'게시판'}/>
 
-                <TextInput style={styles.content} placeholder={"내용"} placeholderTextColor={'#000'}/>
+                    <TextInput style={styles.content} placeholder={"내용"} placeholderTextColor={'#000'}/>
 
-                <View style={styles.line}></View>
-                <Text style={styles.text}>평점</Text>
+                    <View style={styles.line}></View>
+                    <Text style={styles.text}>사진 첨부</Text>
+                </View>
 
-                <View style={styles.line}></View>
-                <Text style={styles.text}>사진 첨부</Text>
-            </View>
-
-            <TouchableOpacity style={styles.btn}>
-                <Text>문의하기</Text>
-            </TouchableOpacity>
+                <TouchableOpacity style={styles.btn} onPress={()=>this.props.navigation.navigate('WriteQuestion')}>
+                    <Text>문의하기</Text>
+                </TouchableOpacity>
             </>
         )
     }
 }
-
 const styles = StyleSheet.create({
     title:{
         width: '90%',

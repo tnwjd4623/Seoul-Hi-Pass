@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="246c1caa-184d-4d20-a2b6-556c56d8c241" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/navigations/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigations/Navigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/HomeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/LocationSearchScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/LocationSearchScreen.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +14,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1883" />
+    <option name="x" value="1719" />
     <option name="y" value="39" />
     <option name="width" value="1641" />
     <option name="height" value="859" />
@@ -27,8 +24,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -73,7 +70,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1883" y="39" width="1641" height="859" extended-state="0" />
+    <frame x="1719" y="39" width="1641" height="859" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32962963" />

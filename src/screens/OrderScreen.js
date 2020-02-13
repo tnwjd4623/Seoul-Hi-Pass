@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {View, StyleSheet, Text, TouchableOpacity, ScrollView} from 'react-native'
+import {View, StyleSheet, Text, TouchableOpacity, ScrollView, TextInput} from 'react-native'
 import Modal from 'react-native-modal'
 
 export default class screen_16 extends Component{
@@ -147,9 +147,7 @@ export default class screen_16 extends Component{
                 <View style={{width: '90%',alignSelf:'center', height: 2, backgroundColor: '#d9d9d9',marginTop:20 }}></View>
                 <View style={styles.list}>
                     <Text style={styles.default_Text}>요청 메세지</Text>
-                    <View style={styles.request}>
-                        <Text style={styles.default_Text}>매장에서 식사</Text>
-                    </View>
+                    <TextInput style={styles.request} placeholder={"요청 메세지"}/>
                 </View>
 
                 <TouchableOpacity onPress={()=>this.setState({isModalVisible: true})} style={styles.order_btn}>
