@@ -2,6 +2,9 @@ import React,{Component} from 'react'
 import {Text, View, StyleSheet, Button, TouchableOpacity, TouchableHighlight, TextInput} from 'react-native'
 import Modal from 'react-native-modal'
 import Icon from 'react-native-vector-icons/MaterialIcons'
+import NaverLoginComponent from '../components/NaverLoginComponent'
+import KakaoLoginComponent from '../components/KakaoLoginComponent'
+import GoogleLoginComponent from '../components/GoogleLoginComponent'
 
 export default class LoginScreen extends Component {
     constructor(props) {
@@ -22,21 +25,19 @@ export default class LoginScreen extends Component {
         this.closeModal();
         this.props.navigation.navigate('Home');
     }
+    findPW = () => {
+        this.closeModal();
+        this.props.navigation.navigate('findPW');
+    }
     render() {
         return(
             <View style={styles.container}>
 
-                <TouchableOpacity style={styles.naver_btn}>
-                    <Text style={styles.naver_text}>네이버 로그인</Text>
-                </TouchableOpacity>
+                <NaverLoginComponent/>
 
-                <TouchableOpacity style={styles.kakao_btn}>
-                    <Text style={styles.kakao_text}>카카오 로그인</Text>
-                </TouchableOpacity>
+               <KakaoLoginComponent/>
 
-                <TouchableOpacity style={styles.kakao_btn}>
-                    <Text style={styles.kakao_text}>구글 로그인</Text>
-                </TouchableOpacity>
+                <GoogleLoginComponent/>
 
                 <TouchableOpacity style={styles.email_btn} onPress={this.openModal}>
                     <Text style={styles.email_text}>이메일로 로그인</Text>
@@ -66,7 +67,7 @@ export default class LoginScreen extends Component {
                             <Text style={styles.email_text}>로그인하기</Text>
                         </TouchableOpacity>
 
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={this.findPW}>
                             <Text style={styles.find_pw}>비밀번호찾기</Text>
                         </TouchableOpacity>
 
@@ -86,32 +87,6 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent:'center',
         
-    },
-    naver_btn: {
-        width: 220,
-        height: 40,
-        backgroundColor: '#3cb538',
-        borderRadius: 20,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginBottom: 5
-    },
-    naver_text: {
-        color: '#ffffff',
-        fontWeight: 'bold',
-    },
-    kakao_btn: {
-        width: 220,
-        height: 40,
-        backgroundColor: '#fff708',
-        borderRadius: 20,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginBottom: 5
-    },
-    kakao_text: {
-        color: '#4a3628',
-        fontWeight: 'bold'
     },
     email_btn: {
         width: 220,

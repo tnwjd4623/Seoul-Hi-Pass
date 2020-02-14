@@ -118,80 +118,80 @@
 58
 59    <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
 60    <supports-screens
-60-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:13:5-19:24
+60-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:13:5-19:24
 61        android:anyDensity="true"
-61-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:14:9-34
+61-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:14:9-34
 62        android:largeScreens="true"
-62-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:15:9-36
+62-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:15:9-36
 63        android:normalScreens="true"
-63-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:16:9-37
+63-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:16:9-37
 64        android:smallScreens="true"
-64-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:17:9-36
+64-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:17:9-36
 65        android:xlargeScreens="true" >
-65-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:18:9-37
+65-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:18:9-37
 66    </supports-screens>
 67
 68    <uses-permission android:name="host.exp.exponent.permission.C2D_MESSAGE" /> <!-- Used by react-native-netinfo module -->
-68-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:26:5-80
-68-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:26:22-77
+68-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:26:5-80
+68-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:26:22-77
 69    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-69-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:34:5-76
-69-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:34:22-73
+69-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:34:5-76
+69-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:34:22-73
 70
 71    <uses-feature
-71-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:47:5-49:36
+71-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:47:5-49:36
 72        android:name="android.hardware.camera"
-72-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:48:9-47
+72-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:48:9-47
 73        android:required="false" />
-73-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:49:9-33
+73-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:49:9-33
 74    <uses-feature
-74-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:50:5-52:36
+74-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:50:5-52:36
 75        android:name="android.hardware.camera.autofocus"
-75-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:51:9-57
+75-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:51:9-57
 76        android:required="false" />
-76-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:52:9-33
+76-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:52:9-33
 77    <uses-feature
-77-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:53:5-55:36
+77-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:53:5-55:36
 78        android:name="android.hardware.location"
-78-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:54:9-49
+78-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:54:9-49
 79        android:required="false" />
-79-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:55:9-33
+79-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:55:9-33
 80    <uses-feature
-80-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:56:5-58:36
+80-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:56:5-58:36
 81        android:name="android.hardware.location.gps"
-81-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:57:9-53
+81-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:57:9-53
 82        android:required="false" />
-82-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:58:9-33
+82-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:58:9-33
 83    <uses-feature
-83-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:59:5-61:36
+83-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:59:5-61:36
 84        android:name="android.hardware.location.network"
-84-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:60:9-57
+84-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:60:9-57
 85        android:required="false" />
-85-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:61:9-33
+85-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:61:9-33
 86    <uses-feature
-86-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:62:5-64:36
+86-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:62:5-64:36
 87        android:name="android.hardware.wifi"
-87-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:63:9-45
+87-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:63:9-45
 88        android:required="false" />
-88-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:64:9-33
+88-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:64:9-33
 89    <uses-feature
-89-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:65:5-67:36
+89-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:65:5-67:36
 90        android:name="android.hardware.microphone"
-90-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:66:9-51
+90-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:66:9-51
 91        android:required="false" />
-91-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:67:9-33
+91-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:67:9-33
 92    <uses-feature
-92-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:68:5-70:36
+92-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:68:5-70:36
 93        android:name="android.hardware.telephony"
-93-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:69:9-50
+93-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:69:9-50
 94        android:required="false" />
-94-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:70:9-33
+94-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:70:9-33
 95    <uses-feature
-95-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:71:5-73:36
+95-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:71:5-73:36
 96        android:name="android.hardware.bluetooth"
-96-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:72:9-50
+96-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:72:9-50
 97        android:required="false" />
-97-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:73:9-33
+97-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:73:9-33
 98
 99    <uses-permission android:name="android.permission.STORAGE" />
 99-->[:expo-file-system] /Users/babylabco/Desktop/Beacon/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-66
@@ -205,44 +205,44 @@
 104    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
 105    <!-- for Samsung -->
 106    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
-106-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:19:5-86
-106-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:19:22-83
+106-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/14cfaeb1cbd4720acaafa0a43106c611/ShortcutBadger-1.1.4/AndroidManifest.xml:19:5-86
+106-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/14cfaeb1cbd4720acaafa0a43106c611/ShortcutBadger-1.1.4/AndroidManifest.xml:19:22-83
 107    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
-107-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:20:5-87
-107-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:20:22-84
+107-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/14cfaeb1cbd4720acaafa0a43106c611/ShortcutBadger-1.1.4/AndroidManifest.xml:20:5-87
+107-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/14cfaeb1cbd4720acaafa0a43106c611/ShortcutBadger-1.1.4/AndroidManifest.xml:20:22-84
 108    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
-108-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:23:5-81
-108-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:23:22-78
+108-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/14cfaeb1cbd4720acaafa0a43106c611/ShortcutBadger-1.1.4/AndroidManifest.xml:23:5-81
+108-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/14cfaeb1cbd4720acaafa0a43106c611/ShortcutBadger-1.1.4/AndroidManifest.xml:23:22-78
 109    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
-109-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:24:5-83
-109-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:24:22-80
+109-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/14cfaeb1cbd4720acaafa0a43106c611/ShortcutBadger-1.1.4/AndroidManifest.xml:24:5-83
+109-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/14cfaeb1cbd4720acaafa0a43106c611/ShortcutBadger-1.1.4/AndroidManifest.xml:24:22-80
 110    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" /> <!-- for apex -->
-110-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:27:5-88
-110-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:27:22-85
+110-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/14cfaeb1cbd4720acaafa0a43106c611/ShortcutBadger-1.1.4/AndroidManifest.xml:27:5-88
+110-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/14cfaeb1cbd4720acaafa0a43106c611/ShortcutBadger-1.1.4/AndroidManifest.xml:27:22-85
 111    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
-111-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:30:5-84
-111-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:30:22-81
+111-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/14cfaeb1cbd4720acaafa0a43106c611/ShortcutBadger-1.1.4/AndroidManifest.xml:30:5-84
+111-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/14cfaeb1cbd4720acaafa0a43106c611/ShortcutBadger-1.1.4/AndroidManifest.xml:30:22-81
 112    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
-112-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:33:5-83
-112-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:33:22-80
+112-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/14cfaeb1cbd4720acaafa0a43106c611/ShortcutBadger-1.1.4/AndroidManifest.xml:33:5-83
+112-->[me.leolin:ShortcutBadger:1.1.4] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/14cfaeb1cbd4720acaafa0a43106c611/ShortcutBadger-1.1.4/AndroidManifest.xml:33:22-80
 113    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-113-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6a1fd8908f55e6565b837e4d7881ac80/jetified-library-3.2.11/AndroidManifest.xml:15:5-98
-113-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6a1fd8908f55e6565b837e4d7881ac80/jetified-library-3.2.11/AndroidManifest.xml:15:22-95
+113-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/80d45c417de81c87578a52acd4f367bd/jetified-library-3.2.11/AndroidManifest.xml:15:5-98
+113-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/80d45c417de81c87578a52acd4f367bd/jetified-library-3.2.11/AndroidManifest.xml:15:22-95
 114    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
-114-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6a1fd8908f55e6565b837e4d7881ac80/jetified-library-3.2.11/AndroidManifest.xml:16:5-94
-114-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6a1fd8908f55e6565b837e4d7881ac80/jetified-library-3.2.11/AndroidManifest.xml:16:22-91
+114-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/80d45c417de81c87578a52acd4f367bd/jetified-library-3.2.11/AndroidManifest.xml:16:5-94
+114-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/80d45c417de81c87578a52acd4f367bd/jetified-library-3.2.11/AndroidManifest.xml:16:22-91
 115    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-115-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:26:5-110
-115-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:26:22-107
+115-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:26:5-110
+115-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:26:22-107
 116
 117    <application
-117-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:48:3-360:17
+117-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:48:3-365:17
 118        android:name="host.exp.exponent.MainApplication"
 118-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:49:5-36
 119        android:allowBackup="true"
 119-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:50:5-31
 120        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-120-->[androidx.core:core:1.1.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/37791d22cdf73b5c35c92eb9addd3f27/core-1.1.0/AndroidManifest.xml:24:18-86
+120-->[androidx.core:core:1.1.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/864d0fe8891329a9533be4963b75012e/core-1.1.0/AndroidManifest.xml:24:18-86
 121        android:debuggable="true"
 122        android:icon="@mipmap/ic_launcher"
 122-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:51:5-39
@@ -251,958 +251,1029 @@
 124        android:largeHeap="true"
 124-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:53:5-29
 125        android:supportsRtl="true"
-125-->[com.facebook.android:facebook-android-sdk:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/36d8e97a0dea5ca0c54825784f11758c/facebook-android-sdk-5.0.1/AndroidManifest.xml:28:18-44
+125-->[:react-native-seoul-kakao-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-35
 126        android:testOnly="true"
 127        android:usesCleartextTraffic="true" >
 127-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:54:5-40
 128        <activity
-128-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:56:5-61:16
-129            android:name="host.exp.exponent.LauncherActivity"
-129-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:57:7-39
-130            android:exported="true"
-130-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:58:7-30
-131            android:launchMode="singleTask"
-131-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:59:7-38
-132            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-132-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:60:7-66
-133        </activity>
-134        <activity
-134-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:63:5-68:16
-135            android:name="host.exp.exponent.experience.ExperienceActivity"
-135-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:64:7-52
-136            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-136-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:65:7-77
-137            android:theme="@style/Theme.Exponent.Light"
-137-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:66:7-50
-138            android:windowSoftInputMode="adjustResize" >
-138-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:67:7-49
-139        </activity>
-140        <activity
-140-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:70:5-90:16
-141            android:name="host.exp.exponent.MainActivity"
-141-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:71:7-35
-142            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-142-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:73:7-77
-143            android:launchMode="singleTask"
-143-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:72:7-38
-144            android:theme="@style/Theme.Exponent.Splash"
-144-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:74:7-51
-145            android:windowSoftInputMode="adjustResize" >
-145-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:75:7-49
-146            <intent-filter>
-146-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:76:7-83:23
-147                <data android:scheme="exp66e538e5f59d4952a056728aa7b04be8" />
-147-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:9-69
-147-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:15-67
-148
-149                <action android:name="android.intent.action.VIEW" />
-149-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:9-60
-149-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:17-58
-150
-151                <category android:name="android.intent.category.DEFAULT" />
-151-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:9-67
-151-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:19-65
-152                <category android:name="android.intent.category.BROWSABLE" />
+128-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:56:7-59:50
+129            android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+129-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:57:11-86
+130            android:configChanges="orientation|screenSize"
+130-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb3660c7fbfdb3ae8db9ec8c625597e1/jetified-naveridlogin-android-sdk-4.2.5/AndroidManifest.xml:22:13-59
+131            android:label="OAuth2.0 In-app"
+131-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:58:11-42
+132            android:screenOrientation="portrait" />
+132-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:59:11-47
+133        <activity
+133-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:61:5-66:16
+134            android:name="host.exp.exponent.LauncherActivity"
+134-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:62:7-39
+135            android:exported="true"
+135-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:63:7-30
+136            android:launchMode="singleTask"
+136-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:64:7-38
+137            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+137-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:65:7-66
+138        </activity>
+139        <activity
+139-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:68:5-73:16
+140            android:name="host.exp.exponent.experience.ExperienceActivity"
+140-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:69:7-52
+141            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+141-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:70:7-77
+142            android:theme="@style/Theme.Exponent.Light"
+142-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:71:7-50
+143            android:windowSoftInputMode="adjustResize" >
+143-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:72:7-49
+144        </activity>
+145        <activity
+145-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:75:5-95:16
+146            android:name="host.exp.exponent.MainActivity"
+146-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:76:7-35
+147            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+147-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:78:7-77
+148            android:launchMode="singleTask"
+148-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:7-38
+149            android:theme="@style/Theme.Exponent.Splash"
+149-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:7-51
+150            android:windowSoftInputMode="adjustResize" >
+150-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:80:7-49
+151            <intent-filter>
+151-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:7-88:23
+152                <data android:scheme="exp66e538e5f59d4952a056728aa7b04be8" />
 152-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:9-69
-152-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:19-67
-153            </intent-filter>
-154            <intent-filter>
-154-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:7-88:23
-155                <action android:name="android.intent.action.MAIN" />
-155-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:85:9-60
-155-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:85:17-58
-156
-157                <category android:name="android.intent.category.LAUNCHER" />
-157-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:9-68
-157-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:19-66
+152-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:15-67
+153
+154                <action android:name="android.intent.action.VIEW" />
+154-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:9-60
+154-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:17-58
+155
+156                <category android:name="android.intent.category.DEFAULT" />
+156-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:9-67
+156-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:19-65
+157                <category android:name="android.intent.category.BROWSABLE" />
+157-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:9-69
+157-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:19-67
 158            </intent-filter>
-159            <!-- ADD DETACH APP SPECIFIC INTENT FILTERS -->
-160        </activity>
-161        <activity
-161-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:92:5-98:16
-162            android:name="host.exp.exponent.experience.HomeActivity"
-162-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:93:7-46
-163            android:label="@string/app_name"
-163-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:94:7-39
-164            android:launchMode="singleTask"
-164-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:95:7-38
-165            android:screenOrientation="portrait"
-165-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:96:7-43
-166            android:theme="@style/Theme.Exponent.Light" >
-166-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:97:7-50
-167        </activity>
-168        <activity
-168-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:100:5-109:15
-169            android:name="host.exp.exponent.experience.TvActivity"
-169-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:101:7-44
-170            android:label="@string/app_name"
-170-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:102:7-39
-171            android:screenOrientation="landscape"
-171-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:104:7-44
-172            android:theme="@style/Theme.Exponent.Light" >
-172-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:103:7-50
-173            <intent-filter>
-173-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:105:6-108:22
-174                <action android:name="android.intent.action.MAIN" />
-174-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:85:9-60
-174-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:85:17-58
-175
-176                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-176-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:107:8-77
-176-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:107:18-74
-177            </intent-filter>
-178        </activity>
-179        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-179-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:113:5-81
-179-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:113:15-79
-180        <!-- WHEN_PREPARING_SHELL_REMOVE_FROM_HERE -->
-181        <!-- ADD DEV SETTINGS HERE -->
-182        <!-- BEGIN_SDK_36 -->
-183        <activity android:name="abi36_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
-183-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:117:5-91
-183-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:117:15-89
-184        <!-- END_SDK_36 -->
-185        <!-- BEGIN_SDK_35 -->
-186        <activity android:name="abi35_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
-186-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:120:5-91
-186-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:120:15-89
-187        <!-- END_SDK_35 -->
-188        <!-- BEGIN_SDK_34 -->
-189        <activity android:name="abi34_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
-189-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:123:5-91
-189-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:123:15-89
-190        <!-- END_SDK_34 -->
-191        <!-- BEGIN_SDK_33 -->
-192        <activity android:name="abi33_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
-192-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:126:5-91
-192-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:126:15-89
-193        <!-- END_SDK_33 -->
-194        <!-- WHEN_PREPARING_SHELL_REMOVE_TO_HERE -->
-195
-196        <activity android:name="net.openid.appauth.RedirectUriReceiverActivity" >
-196-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:130:5-139:16
-196-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:131:9-70
-197            <intent-filter>
-197-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:133:7-138:23
-198                <action android:name="android.intent.action.VIEW" />
-198-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:9-60
-198-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:17-58
-199
-200                <category android:name="android.intent.category.DEFAULT" />
-200-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:9-67
-200-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:19-65
-201                <category android:name="android.intent.category.BROWSABLE" />
-201-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:9-69
-201-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:19-67
-202
-203                <data
-203-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:9-69
-204                    android:path="oauthredirect"
-204-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:137:57-85
-205                    android:scheme="kr.babylab.BeaconPayment" />
-205-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:15-67
-206            </intent-filter>
-207        </activity>
-208
-209        <!-- START OF STRIPE SCHEMES -->
-210        <activity
-210-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:142:5-153:16
-211            android:name="expo.modules.payments.stripe.RedirectUriReceiver"
-211-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:145:9-72
-212            android:exported="true"
-212-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:143:9-32
-213            android:launchMode="singleTask"
-213-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:144:9-40
-214            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
-214-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:146:9-79
-215            <intent-filter>
-215-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:147:9-152:25
-216                <action android:name="android.intent.action.VIEW" />
-216-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:9-60
-216-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:17-58
-217
-218                <category android:name="android.intent.category.DEFAULT" />
-218-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:9-67
-218-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:19-65
-219                <category android:name="android.intent.category.BROWSABLE" />
-219-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:9-69
-219-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:19-67
-220
-221                <data android:scheme="expo.modules.payments.stripe.d198f1f3-05b8-4316-8b68-b7107c1314d6" />
-221-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:9-69
-221-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:15-67
-222            </intent-filter>
-223        </activity>
-224        <!-- Versioned Activity for Stripe -->
-225        <!-- BEGIN_SDK_36 -->
-226        <activity
-226-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:156:5-167:16
-227            android:name="abi36_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
-227-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:159:7-80
-228            android:exported="true"
-228-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:157:7-30
-229            android:launchMode="singleTask"
-229-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:158:7-38
-230            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
-230-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:160:7-77
-231            <intent-filter>
-231-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:161:7-166:23
-232                <action android:name="android.intent.action.VIEW" />
-232-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:9-60
-232-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:17-58
-233
-234                <category android:name="android.intent.category.DEFAULT" />
-234-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:9-67
-234-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:19-65
-235                <category android:name="android.intent.category.BROWSABLE" />
-235-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:9-69
-235-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:19-67
-236
-237                <data android:scheme="abi36_0_0.expo.modules.payments.stripe" />
-237-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:9-69
-237-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:15-67
-238            </intent-filter>
-239        </activity>
-240        <!-- END_SDK_36 -->
-241        <!-- BEGIN_SDK_35 -->
-242        <activity
-242-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:170:3-181:14
-243            android:name="abi35_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
-243-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:173:4-77
-244            android:exported="true"
-244-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:171:4-27
-245            android:launchMode="singleTask"
-245-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:172:4-35
-246            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
-246-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:174:4-74
-247            <intent-filter>
-247-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:175:4-180:20
-248                <action android:name="android.intent.action.VIEW" />
-248-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:9-60
-248-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:17-58
-249
-250                <category android:name="android.intent.category.DEFAULT" />
-250-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:9-67
-250-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:19-65
-251                <category android:name="android.intent.category.BROWSABLE" />
-251-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:9-69
-251-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:19-67
-252
-253                <data android:scheme="abi35_0_0.expo.modules.payments.stripe" />
-253-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:9-69
-253-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:15-67
-254            </intent-filter>
-255        </activity>
-256        <!-- END_SDK_35 -->
-257        <!-- BEGIN_SDK_34 -->
-258        <activity
-258-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:184:5-195:16
-259            android:name="abi34_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
-259-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:187:7-80
-260            android:exported="true"
-260-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:185:7-30
-261            android:launchMode="singleTask"
-261-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:186:7-38
-262            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
-262-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:188:7-77
-263            <intent-filter>
-263-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:189:7-194:23
-264                <action android:name="android.intent.action.VIEW" />
-264-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:9-60
-264-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:17-58
-265
-266                <category android:name="android.intent.category.DEFAULT" />
-266-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:9-67
-266-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:19-65
-267                <category android:name="android.intent.category.BROWSABLE" />
-267-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:9-69
-267-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:19-67
-268
-269                <data android:scheme="abi34_0_0.expo.modules.payments.stripe" />
-269-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:9-69
-269-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:15-67
-270            </intent-filter>
-271        </activity>
-272        <!-- END_SDK_34 -->
-273        <!-- BEGIN_SDK_33 -->
-274        <activity
-274-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:198:5-209:16
-275            android:name="abi33_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
-275-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:201:7-80
-276            android:exported="true"
-276-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:199:7-30
-277            android:launchMode="singleTask"
-277-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:200:7-38
-278            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
-278-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:202:7-77
-279            <intent-filter>
-279-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:203:7-208:23
-280                <action android:name="android.intent.action.VIEW" />
-280-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:9-60
-280-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:79:17-58
-281
-282                <category android:name="android.intent.category.DEFAULT" />
-282-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:9-67
-282-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:81:19-65
-283                <category android:name="android.intent.category.BROWSABLE" />
-283-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:9-69
-283-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:19-67
-284
-285                <data android:scheme="abi33_0_0.expo.modules.payments.stripe" />
-285-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:9-69
-285-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:77:15-67
-286            </intent-filter>
-287        </activity>
-288        <!-- END_SDK_33 -->
-289        <!-- END OF STRIPE SCHEMES -->
-290
-291        <activity
-291-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:213:5-217:16
-292            android:name="host.exp.exponent.experience.ErrorActivity"
-292-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:214:7-47
-293            android:screenOrientation="portrait"
-293-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:216:7-43
-294            android:theme="@style/Theme.Exponent.Dark" >
-294-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:215:7-49
-295        </activity>
+159            <intent-filter>
+159-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:89:7-93:23
+160                <action android:name="android.intent.action.MAIN" />
+160-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:90:9-60
+160-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:90:17-58
+161
+162                <category android:name="android.intent.category.LAUNCHER" />
+162-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:92:9-68
+162-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:92:19-66
+163            </intent-filter>
+164            <!-- ADD DETACH APP SPECIFIC INTENT FILTERS -->
+165        </activity>
+166        <activity
+166-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:97:5-103:16
+167            android:name="host.exp.exponent.experience.HomeActivity"
+167-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:98:7-46
+168            android:label="@string/app_name"
+168-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:99:7-39
+169            android:launchMode="singleTask"
+169-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:100:7-38
+170            android:screenOrientation="portrait"
+170-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:101:7-43
+171            android:theme="@style/Theme.Exponent.Light" >
+171-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:102:7-50
+172        </activity>
+173        <activity
+173-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:105:5-114:15
+174            android:name="host.exp.exponent.experience.TvActivity"
+174-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:106:7-44
+175            android:label="@string/app_name"
+175-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:107:7-39
+176            android:screenOrientation="landscape"
+176-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:109:7-44
+177            android:theme="@style/Theme.Exponent.Light" >
+177-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:108:7-50
+178            <intent-filter>
+178-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:110:6-113:22
+179                <action android:name="android.intent.action.MAIN" />
+179-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:90:9-60
+179-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:90:17-58
+180
+181                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+181-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:112:8-77
+181-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:112:18-74
+182            </intent-filter>
+183        </activity>
+184        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+184-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:118:5-81
+184-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:118:15-79
+185        <!-- WHEN_PREPARING_SHELL_REMOVE_FROM_HERE -->
+186        <!-- ADD DEV SETTINGS HERE -->
+187        <!-- BEGIN_SDK_36 -->
+188        <activity android:name="abi36_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+188-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:122:5-91
+188-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:122:15-89
+189        <!-- END_SDK_36 -->
+190        <!-- BEGIN_SDK_35 -->
+191        <activity android:name="abi35_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+191-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:125:5-91
+191-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:125:15-89
+192        <!-- END_SDK_35 -->
+193        <!-- BEGIN_SDK_34 -->
+194        <activity android:name="abi34_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+194-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:128:5-91
+194-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:128:15-89
+195        <!-- END_SDK_34 -->
+196        <!-- BEGIN_SDK_33 -->
+197        <activity android:name="abi33_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+197-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:131:5-91
+197-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:131:15-89
+198        <!-- END_SDK_33 -->
+199        <!-- WHEN_PREPARING_SHELL_REMOVE_TO_HERE -->
+200
+201        <activity android:name="net.openid.appauth.RedirectUriReceiverActivity" >
+201-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:135:5-144:16
+201-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:136:9-70
+202            <intent-filter>
+202-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:138:7-143:23
+203                <action android:name="android.intent.action.VIEW" />
+203-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:9-60
+203-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:17-58
+204
+205                <category android:name="android.intent.category.DEFAULT" />
+205-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:9-67
+205-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:19-65
+206                <category android:name="android.intent.category.BROWSABLE" />
+206-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:9-69
+206-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:19-67
+207
+208                <data
+208-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:9-69
+209                    android:path="oauthredirect"
+209-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:142:57-85
+210                    android:scheme="kr.babylab.BeaconPayment" />
+210-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:15-67
+211            </intent-filter>
+212        </activity>
+213
+214        <!-- START OF STRIPE SCHEMES -->
+215        <activity
+215-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:147:5-158:16
+216            android:name="expo.modules.payments.stripe.RedirectUriReceiver"
+216-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:150:9-72
+217            android:exported="true"
+217-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:148:9-32
+218            android:launchMode="singleTask"
+218-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:149:9-40
+219            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+219-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:151:9-79
+220            <intent-filter>
+220-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:152:9-157:25
+221                <action android:name="android.intent.action.VIEW" />
+221-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:9-60
+221-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:17-58
+222
+223                <category android:name="android.intent.category.DEFAULT" />
+223-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:9-67
+223-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:19-65
+224                <category android:name="android.intent.category.BROWSABLE" />
+224-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:9-69
+224-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:19-67
+225
+226                <data android:scheme="expo.modules.payments.stripe.d198f1f3-05b8-4316-8b68-b7107c1314d6" />
+226-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:9-69
+226-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:15-67
+227            </intent-filter>
+228        </activity>
+229        <!-- Versioned Activity for Stripe -->
+230        <!-- BEGIN_SDK_36 -->
+231        <activity
+231-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:161:5-172:16
+232            android:name="abi36_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+232-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:164:7-80
+233            android:exported="true"
+233-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:162:7-30
+234            android:launchMode="singleTask"
+234-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:163:7-38
+235            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+235-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:165:7-77
+236            <intent-filter>
+236-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:166:7-171:23
+237                <action android:name="android.intent.action.VIEW" />
+237-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:9-60
+237-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:17-58
+238
+239                <category android:name="android.intent.category.DEFAULT" />
+239-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:9-67
+239-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:19-65
+240                <category android:name="android.intent.category.BROWSABLE" />
+240-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:9-69
+240-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:19-67
+241
+242                <data android:scheme="abi36_0_0.expo.modules.payments.stripe" />
+242-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:9-69
+242-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:15-67
+243            </intent-filter>
+244        </activity>
+245        <!-- END_SDK_36 -->
+246        <!-- BEGIN_SDK_35 -->
+247        <activity
+247-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:175:3-186:14
+248            android:name="abi35_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+248-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:178:4-77
+249            android:exported="true"
+249-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:176:4-27
+250            android:launchMode="singleTask"
+250-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:177:4-35
+251            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+251-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:179:4-74
+252            <intent-filter>
+252-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:180:4-185:20
+253                <action android:name="android.intent.action.VIEW" />
+253-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:9-60
+253-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:17-58
+254
+255                <category android:name="android.intent.category.DEFAULT" />
+255-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:9-67
+255-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:19-65
+256                <category android:name="android.intent.category.BROWSABLE" />
+256-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:9-69
+256-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:19-67
+257
+258                <data android:scheme="abi35_0_0.expo.modules.payments.stripe" />
+258-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:9-69
+258-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:15-67
+259            </intent-filter>
+260        </activity>
+261        <!-- END_SDK_35 -->
+262        <!-- BEGIN_SDK_34 -->
+263        <activity
+263-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:189:5-200:16
+264            android:name="abi34_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+264-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:192:7-80
+265            android:exported="true"
+265-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:190:7-30
+266            android:launchMode="singleTask"
+266-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:191:7-38
+267            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+267-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:193:7-77
+268            <intent-filter>
+268-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:194:7-199:23
+269                <action android:name="android.intent.action.VIEW" />
+269-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:9-60
+269-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:17-58
+270
+271                <category android:name="android.intent.category.DEFAULT" />
+271-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:9-67
+271-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:19-65
+272                <category android:name="android.intent.category.BROWSABLE" />
+272-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:9-69
+272-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:19-67
+273
+274                <data android:scheme="abi34_0_0.expo.modules.payments.stripe" />
+274-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:9-69
+274-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:15-67
+275            </intent-filter>
+276        </activity>
+277        <!-- END_SDK_34 -->
+278        <!-- BEGIN_SDK_33 -->
+279        <activity
+279-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:203:5-214:16
+280            android:name="abi33_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+280-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:206:7-80
+281            android:exported="true"
+281-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:204:7-30
+282            android:launchMode="singleTask"
+282-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:205:7-38
+283            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+283-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:207:7-77
+284            <intent-filter>
+284-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:208:7-213:23
+285                <action android:name="android.intent.action.VIEW" />
+285-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:9-60
+285-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:17-58
+286
+287                <category android:name="android.intent.category.DEFAULT" />
+287-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:9-67
+287-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:19-65
+288                <category android:name="android.intent.category.BROWSABLE" />
+288-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:9-69
+288-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:19-67
+289
+290                <data android:scheme="abi33_0_0.expo.modules.payments.stripe" />
+290-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:9-69
+290-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:15-67
+291            </intent-filter>
+292        </activity>
+293        <!-- END_SDK_33 -->
+294        <!-- END OF STRIPE SCHEMES -->
+295
 296        <activity
-296-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:219:5-223:16
-297            android:name="host.exp.exponent.experience.InfoActivity"
-297-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:220:7-46
+296-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:218:5-222:16
+297            android:name="host.exp.exponent.experience.ErrorActivity"
+297-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:219:7-47
 298            android:screenOrientation="portrait"
 298-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:221:7-43
-299            android:theme="@style/Theme.Exponent.Light" >
-299-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:222:7-50
+299            android:theme="@style/Theme.Exponent.Dark" >
+299-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:220:7-49
 300        </activity>
 301        <activity
-301-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:225:5-230:39
-302            android:name="com.facebook.FacebookActivity"
-302-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:226:7-51
-303            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-303-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:227:7-90
-304            android:label="@string/app_name"
-304-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:228:7-39
-305            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-305-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:229:7-66
+301-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:224:5-228:16
+302            android:name="host.exp.exponent.experience.InfoActivity"
+302-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:225:7-46
+303            android:screenOrientation="portrait"
+303-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:226:7-43
+304            android:theme="@style/Theme.Exponent.Light" >
+304-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:227:7-50
+305        </activity>
 306        <activity
-306-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:232:5-236:69
-307            android:name="com.facebook.ads.InterstitialAdActivity"
-307-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:233:7-61
+306-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:230:5-235:39
+307            android:name="com.facebook.FacebookActivity"
+307-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:231:7-51
 308            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-308-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:234:7-90
+308-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:232:7-90
 309            android:label="@string/app_name"
-309-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:235:7-39
+309-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:233:7-39
 310            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-310-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:236:7-66
-311
-312        <service
-312-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:238:5-240:34
-313            android:name="host.exp.exponent.ExponentIntentService"
-313-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:239:7-44
-314            android:exported="false" />
-314-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:240:7-31
-315
-316        <!-- Analytics -->
-317        <receiver
-317-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:243:5-249:16
-318            android:name="host.exp.exponent.referrer.InstallReferrerReceiver"
-318-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:244:7-72
-319            android:exported="true" >
-319-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:245:7-30
-320            <intent-filter>
-320-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:246:7-248:23
-321                <action android:name="com.android.vending.INSTALL_REFERRER" />
-321-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:247:9-71
-321-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:247:17-68
-322            </intent-filter>
-323        </receiver>
-324
-325        <!--
-326    This crashes: https://code.google.com/p/analytics-issues/issues/detail?id=667
-327    TODO: turn it back on when it's fixed
-328    <service
-329      android:name="com.google.android.gms.analytics.CampaignTrackingService"
-330      android:enabled="true"
-331      android:exported="false" />
-332        -->
-333
-334        <receiver
-334-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:259:5-264:16
-335            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
-335-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:259:15-80
-336            android:enabled="true"
-336-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:260:15-37
-337            android:exported="false" >
-337-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bba9687b4aed80692a22224403956328/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:33:13-37
-338            <intent-filter>
-338-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:261:7-263:23
-339                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
-339-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:262:9-86
-339-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:262:17-83
-340            </intent-filter>
-341        </receiver>
-342
-343        <service
-343-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:266:5-268:40
-344            android:name="com.google.android.gms.analytics.AnalyticsService"
-344-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:266:14-78
-345            android:enabled="true"
-345-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:267:14-36
-346            android:exported="false" />
-346-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:268:14-38
+310-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:234:7-66
+311        <activity
+311-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:237:5-241:69
+312            android:name="com.facebook.ads.InterstitialAdActivity"
+312-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:238:7-61
+313            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+313-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:239:7-90
+314            android:label="@string/app_name"
+314-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:240:7-39
+315            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+315-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:241:7-66
+316
+317        <service
+317-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:243:5-245:34
+318            android:name="host.exp.exponent.ExponentIntentService"
+318-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:244:7-44
+319            android:exported="false" />
+319-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:245:7-31
+320
+321        <!-- Analytics -->
+322        <receiver
+322-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:248:5-254:16
+323            android:name="host.exp.exponent.referrer.InstallReferrerReceiver"
+323-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:249:7-72
+324            android:exported="true" >
+324-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:250:7-30
+325            <intent-filter>
+325-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:251:7-253:23
+326                <action android:name="com.android.vending.INSTALL_REFERRER" />
+326-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:252:9-71
+326-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:252:17-68
+327            </intent-filter>
+328        </receiver>
+329
+330        <!--
+331    This crashes: https://code.google.com/p/analytics-issues/issues/detail?id=667
+332    TODO: turn it back on when it's fixed
+333    <service
+334      android:name="com.google.android.gms.analytics.CampaignTrackingService"
+335      android:enabled="true"
+336      android:exported="false" />
+337        -->
+338
+339        <receiver
+339-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:264:5-269:16
+340            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+340-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:264:15-80
+341            android:enabled="true"
+341-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:265:15-37
+342            android:exported="false" >
+342-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eee163a42fabbbbe3b3a04752c819fbe/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:33:13-37
+343            <intent-filter>
+343-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:266:7-268:23
+344                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+344-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:267:9-86
+344-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:267:17-83
+345            </intent-filter>
+346        </receiver>
 347
-348        <!-- GCM -->
-349        <receiver
-349-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:271:5-281:16
-350            android:name="com.google.android.gms.gcm.GcmReceiver"
-350-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:272:7-60
-351            android:exported="true"
-351-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:273:7-30
-352            android:permission="com.google.android.c2dm.permission.SEND" >
-352-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:274:7-67
-353            <intent-filter>
-353-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:275:7-280:23
-354                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-354-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:276:9-72
-354-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:276:17-70
-355                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-355-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:277:9-77
-355-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:277:17-75
-356
-357                <category android:name="kr.babylab.BeaconPayment" />
-357-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:279:9-60
-357-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:279:19-58
-358            </intent-filter>
-359        </receiver>
-360
-361        <service
-361-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:283:5-289:15
-362            android:name="host.exp.exponent.gcm.ExponentGcmListenerService"
-362-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:284:7-53
-363            android:exported="false" >
-363-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:285:7-31
-364            <intent-filter>
-364-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:286:7-288:23
-365                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-365-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:276:9-72
-365-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:276:17-70
-366            </intent-filter>
-367        </service>
-368        <service
-368-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:290:5-296:15
-369            android:name="host.exp.exponent.gcm.ExponentInstanceIDListenerService"
-369-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:291:7-60
-370            android:exported="false" >
-370-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:292:7-31
-371            <intent-filter>
-371-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:293:7-295:23
-372                <action android:name="com.google.android.gms.iid.InstanceID" />
-372-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:294:9-71
-372-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:294:17-69
-373            </intent-filter>
-374        </service>
-375        <service
-375-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:297:5-300:15
-376            android:name="host.exp.exponent.gcm.GcmRegistrationIntentService"
-376-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:298:7-55
-377            android:exported="false" >
-377-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:299:7-31
-378        </service>
-379
-380        <!-- FCM -->
-381        <service android:name="host.exp.exponent.fcm.ExpoFcmMessagingService" >
-381-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:303:5-308:15
-381-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:304:7-50
-382            <intent-filter>
-382-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:305:7-307:23
-383                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-383-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:306:9-69
-383-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:306:17-67
-384            </intent-filter>
-385        </service>
-386
-387        <meta-data
-387-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:309:5-311:62
-388            android:name="com.google.firebase.messaging.default_notification_icon"
-388-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:310:7-77
-389            android:resource="@drawable/shell_notification_icon" />
-389-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:311:7-59
-390        <meta-data
-390-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:312:5-314:47
-391            android:name="com.google.firebase.messaging.default_notification_color"
-391-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:313:7-78
-392            android:resource="@color/colorAccent" />
-392-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:314:7-44
-393
-394        <service
-394-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:315:5-318:15
-395            android:name="host.exp.exponent.fcm.FcmRegistrationIntentService"
-395-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:316:7-55
-396            android:exported="false" >
-396-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:317:7-31
-397        </service>
+348        <service
+348-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:271:5-273:40
+349            android:name="com.google.android.gms.analytics.AnalyticsService"
+349-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:271:14-78
+350            android:enabled="true"
+350-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:272:14-36
+351            android:exported="false" />
+351-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:273:14-38
+352
+353        <!-- GCM -->
+354        <receiver
+354-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:276:5-286:16
+355            android:name="com.google.android.gms.gcm.GcmReceiver"
+355-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:277:7-60
+356            android:exported="true"
+356-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:278:7-30
+357            android:permission="com.google.android.c2dm.permission.SEND" >
+357-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:279:7-67
+358            <intent-filter>
+358-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:280:7-285:23
+359                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+359-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:281:9-72
+359-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:281:17-70
+360                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+360-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:282:9-77
+360-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:282:17-75
+361
+362                <category android:name="kr.babylab.BeaconPayment" />
+362-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:284:9-60
+362-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:284:19-58
+363            </intent-filter>
+364        </receiver>
+365
+366        <service
+366-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:288:5-294:15
+367            android:name="host.exp.exponent.gcm.ExponentGcmListenerService"
+367-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:289:7-53
+368            android:exported="false" >
+368-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:290:7-31
+369            <intent-filter>
+369-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:291:7-293:23
+370                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+370-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:281:9-72
+370-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:281:17-70
+371            </intent-filter>
+372        </service>
+373        <service
+373-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:295:5-301:15
+374            android:name="host.exp.exponent.gcm.ExponentInstanceIDListenerService"
+374-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:296:7-60
+375            android:exported="false" >
+375-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:297:7-31
+376            <intent-filter>
+376-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:298:7-300:23
+377                <action android:name="com.google.android.gms.iid.InstanceID" />
+377-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:299:9-71
+377-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:299:17-69
+378            </intent-filter>
+379        </service>
+380        <service
+380-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:302:5-305:15
+381            android:name="host.exp.exponent.gcm.GcmRegistrationIntentService"
+381-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:303:7-55
+382            android:exported="false" >
+382-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:304:7-31
+383        </service>
+384
+385        <!-- FCM -->
+386        <service android:name="host.exp.exponent.fcm.ExpoFcmMessagingService" >
+386-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:308:5-313:15
+386-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:309:7-50
+387            <intent-filter>
+387-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:310:7-312:23
+388                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+388-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:311:9-69
+388-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:311:17-67
+389            </intent-filter>
+390        </service>
+391
+392        <meta-data
+392-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:314:5-316:62
+393            android:name="com.google.firebase.messaging.default_notification_icon"
+393-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:315:7-77
+394            android:resource="@drawable/shell_notification_icon" />
+394-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:316:7-59
+395        <meta-data
+395-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:317:5-319:47
+396            android:name="com.google.firebase.messaging.default_notification_color"
+396-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:318:7-78
+397            android:resource="@color/colorAccent" />
+397-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:319:7-44
 398
-399        <!-- ImagePicker native module -->
-400        <activity
-400-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:321:5-324:16
-401            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-401-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:322:7-70
-402            android:theme="@style/Base.Theme.AppCompat" >
-402-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:323:7-50
-403        </activity>
-404
-405        <!-- ADD FABRIC CONFIG HERE -->
-406        <!-- BEGIN FABRIC CONFIG -->
-407        <meta-data
-407-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:329:5-331:65
-408            android:name="io.fabric.ApiKey"
-408-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:330:7-38
-409            android:value="a25fafe9f9edee11a9882b32e0cd7a26df6e2c42" />
-409-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:331:7-63
-410        <!-- END FABRIC CONFIG -->
-411
-412
-413        <!-- ADD GOOGLE MAPS CONFIG HERE -->
-414        <!-- BEGIN GOOGLE MAPS CONFIG -->
-415        <meta-data
-415-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:336:5-338:64
-416            android:name="com.google.android.geo.API_KEY"
-416-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:337:7-52
-417            android:value="AIzaSyDh7eDB9snEFSYtf-k0gfxA45HFoR0L--I" />
-417-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:338:7-62
-418        <!-- END GOOGLE MAPS CONFIG -->
-419
-420
-421        <!-- ADD GOOGLE MOBILE ADS CONFIG HERE -->
-422        <!-- BEGIN GOOGLE MOBILE ADS CONFIG -->
-423        <meta-data
-423-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:343:5-345:63
-424            android:name="com.google.android.gms.ads.APPLICATION_ID"
-424-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:344:7-63
-425            android:value="ca-app-pub-3940256099942544~3347511713" />
-425-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:345:7-61
-426        <meta-data
-426-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:346:5-107
-427            android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT"
-427-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:346:16-84
-428            android:value="true" />
-428-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:346:85-105
-429        <!-- END GOOGLE MOBILE ADS CONFIG -->
-430
-431
-432        <!-- ADD BRANCH CONFIG HERE -->
-433
-434
-435        <!-- ADD FACEBOOK APP ID CONFIG HERE -->
-436        <!-- ADD FACEBOOK APP DISPLAY NAME CONFIG HERE -->
-437        <!-- Tags below need to be in one line with no whitespace after android:value -->
-438        <!-- in order for XDL to be able to replace values in them -->
-439        <meta-data
-439-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:355:5-95
-440            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
-440-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:355:16-71
-441            android:value="false" />
-441-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:355:72-93
-442        <meta-data
-442-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:356:5-87
-443            android:name="com.facebook.sdk.AutoInitEnabled"
-443-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:356:16-63
-444            android:value="false" />
-444-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:356:64-85
-445        <meta-data
-445-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:357:5-101
-446            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
-446-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:357:16-77
-447            android:value="false" />
-447-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:357:78-99
-448        <meta-data
-448-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:359:5-109
-449            android:name="standaloneStripeScheme"
-449-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:359:16-53
-450            android:value="d198f1f3-05b8-4316-8b68-b7107c1314d6" />
-450-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:359:54-106
-451        <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
-452        <!-- Scheduled notifications -->
-453        <receiver
-453-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:79:9-81:40
-454            android:name="host.exp.exponent.notifications.ScheduledNotificationReceiver"
-454-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:80:13-89
-455            android:exported="false" />
-455-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:81:13-37
-456        <receiver
-456-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:82:9-92:20
-457            android:name="host.exp.exponent.notifications.receivers.SchedulingTriggerReceiver"
-457-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:83:13-95
-458            android:exported="true" >
-458-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:84:13-36
-459            <intent-filter>
-459-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:85:13-91:29
-460                <action android:name="android.intent.action.REBOOT" />
-460-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:86:17-71
-460-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:86:25-68
-461                <action android:name="android.intent.action.BOOT_COMPLETED" />
-461-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:87:17-79
-461-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:87:25-76
-462                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-462-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:88:17-81
-462-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:88:25-78
-463                <action android:name="android.intent.action.TIME_CHANGED" />
-463-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:89:17-77
-463-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:89:25-74
-464                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-464-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:90:17-82
-464-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:90:25-79
-465            </intent-filter>
-466        </receiver> <!-- WHEN_VERSIONING_REMOVE_TO_HERE -->
-467        <provider
-467-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:96:9-104:20
-468            android:name="androidx.core.content.FileProvider"
-468-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:97:13-62
-469            android:authorities="kr.babylab.BeaconPayment.provider"
-469-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:98:13-60
-470            android:exported="false"
-470-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:99:13-37
-471            android:grantUriPermissions="true" >
-471-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:100:13-47
-472            <meta-data
-472-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:101:13-103:58
-473                android:name="android.support.FILE_PROVIDER_PATHS"
-473-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:102:17-67
-474                android:resource="@xml/provider_paths" />
-474-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:103:17-55
-475        </provider>
-476        <provider
-476-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:105:9-113:20
-477            android:name="versioned.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider"
-477-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:106:13-109
-478            android:authorities="kr.babylab.BeaconPayment.fileprovider"
-478-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:107:13-64
-479            android:exported="false"
-479-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:108:13-37
-480            android:grantUriPermissions="true" >
-480-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:109:13-47
-481            <meta-data
-481-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:101:13-103:58
-482                android:name="android.support.FILE_PROVIDER_PATHS"
-482-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:102:17-67
-483                android:resource="@xml/provider_paths" />
-483-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:103:17-55
-484        </provider>
-485        <provider
-485-->[:expo-file-system] /Users/babylabco/Desktop/Beacon/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-27:20
-486            android:name="expo.modules.filesystem.FileSystemFileProvider"
-486-->[:expo-file-system] /Users/babylabco/Desktop/Beacon/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-74
-487            android:authorities="kr.babylab.BeaconPayment.FileSystemFileProvider"
-487-->[:expo-file-system] /Users/babylabco/Desktop/Beacon/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-74
-488            android:exported="false"
-488-->[:expo-file-system] /Users/babylabco/Desktop/Beacon/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-37
-489            android:grantUriPermissions="true" >
-489-->[:expo-file-system] /Users/babylabco/Desktop/Beacon/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-47
-490            <meta-data
-490-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:101:13-103:58
-491                android:name="android.support.FILE_PROVIDER_PATHS"
-491-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:102:17-67
-492                android:resource="@xml/file_system_provider_paths" />
-492-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fcbc246a29c77a89d7e23de7fa64893/expoview-36.0.0/AndroidManifest.xml:103:17-55
-493        </provider>
-494
-495        <service
-495-->[:expo-location] /Users/babylabco/Desktop/Beacon/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
-496            android:name="expo.modules.location.services.LocationTaskService"
-496-->[:expo-location] /Users/babylabco/Desktop/Beacon/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-78
-497            android:exported="false" />
-497-->[:expo-location] /Users/babylabco/Desktop/Beacon/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
-498
-499        <activity android:name="com.facebook.CustomTabMainActivity" />
-499-->[com.facebook.android:facebook-common:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d35ecb77627f0523f92c3021158bdcc3/jetified-facebook-common-5.0.1/AndroidManifest.xml:33:9-71
-499-->[com.facebook.android:facebook-common:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d35ecb77627f0523f92c3021158bdcc3/jetified-facebook-common-5.0.1/AndroidManifest.xml:33:19-68
-500        <activity android:name="com.facebook.CustomTabActivity" />
-500-->[com.facebook.android:facebook-common:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d35ecb77627f0523f92c3021158bdcc3/jetified-facebook-common-5.0.1/AndroidManifest.xml:34:9-67
-500-->[com.facebook.android:facebook-common:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d35ecb77627f0523f92c3021158bdcc3/jetified-facebook-common-5.0.1/AndroidManifest.xml:34:19-64
-501        <activity
-501-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:15:9-18:40
-502            android:name="com.facebook.ads.AudienceNetworkActivity"
-502-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:16:13-68
-503            android:configChanges="keyboardHidden|orientation|screenSize"
-503-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:17:13-74
-504            android:exported="false" />
-504-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:18:13-37
-505        <activity
-505-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:19:9-23:39
-506            android:name="com.facebook.ads.internal.ipc.RemoteANActivity"
-506-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:20:13-74
-507            android:configChanges="keyboardHidden|orientation|screenSize"
-507-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:21:13-74
-508            android:exported="false"
-508-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:22:13-37
-509            android:process=":adnw" />
-509-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:23:13-36
-510
-511        <service
-511-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:25:9-27:40
-512            android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService"
-512-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:26:13-83
-513            android:exported="false" />
-513-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:27:13-37
-514        <service
-514-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:28:9-31:39
-515            android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
-515-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:29:13-77
-516            android:exported="false"
-516-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:30:13-37
-517            android:process=":adnw" />
-517-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/81f19f87f10d0e170d68235918020c93/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:31:13-36
-518        <service
-518-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bba9687b4aed80692a22224403956328/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:40:9-44:72
-519            android:name="com.google.android.gms.analytics.AnalyticsJobService"
-519-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bba9687b4aed80692a22224403956328/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:41:13-80
-520            android:enabled="true"
-520-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bba9687b4aed80692a22224403956328/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:42:13-35
-521            android:exported="false"
-521-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bba9687b4aed80692a22224403956328/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:43:13-37
-522            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
-522-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bba9687b4aed80692a22224403956328/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:44:13-69
-523        <uses-library
-523-->[com.google.android.gms:play-services-maps:16.1.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/aacc89679a3aa8ddce7ebc1b432ae29a/jetified-play-services-maps-16.1.0/AndroidManifest.xml:33:9-35:40
-524            android:name="org.apache.http.legacy"
-524-->[com.google.android.gms:play-services-maps:16.1.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/aacc89679a3aa8ddce7ebc1b432ae29a/jetified-play-services-maps-16.1.0/AndroidManifest.xml:34:13-50
-525            android:required="false" />
-525-->[com.google.android.gms:play-services-maps:16.1.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/aacc89679a3aa8ddce7ebc1b432ae29a/jetified-play-services-maps-16.1.0/AndroidManifest.xml:35:13-37
-526
-527        <activity
-527-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/4522f7d097b196fa35e75446c60ff6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
-528            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-528-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/4522f7d097b196fa35e75446c60ff6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
-529            android:excludeFromRecents="true"
-529-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/4522f7d097b196fa35e75446c60ff6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
-530            android:exported="false"
-530-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/4522f7d097b196fa35e75446c60ff6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
-531            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-531-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/4522f7d097b196fa35e75446c60ff6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
-532        <!--
-533            Service handling Google Sign-In user revocation. For apps that do not integrate with
-534            Google Sign-In, this service will never be started.
-535        -->
-536        <service
-536-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/4522f7d097b196fa35e75446c60ff6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
-537            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-537-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/4522f7d097b196fa35e75446c60ff6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
-538            android:exported="true"
-538-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/4522f7d097b196fa35e75446c60ff6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
-539            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-539-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/4522f7d097b196fa35e75446c60ff6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
-540
-541        <activity
-541-->[net.openid:appauth:0.7.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/60cf87b5ed294808f9bc8e0a03a82104/jetified-appauth-0.7.1/AndroidManifest.xml:27:9-31:75
-542            android:name="net.openid.appauth.AuthorizationManagementActivity"
-542-->[net.openid:appauth:0.7.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/60cf87b5ed294808f9bc8e0a03a82104/jetified-appauth-0.7.1/AndroidManifest.xml:28:13-78
-543            android:exported="false"
-543-->[net.openid:appauth:0.7.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/60cf87b5ed294808f9bc8e0a03a82104/jetified-appauth-0.7.1/AndroidManifest.xml:29:13-37
-544            android:launchMode="singleTask"
-544-->[net.openid:appauth:0.7.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/60cf87b5ed294808f9bc8e0a03a82104/jetified-appauth-0.7.1/AndroidManifest.xml:30:13-44
-545            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-545-->[net.openid:appauth:0.7.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/60cf87b5ed294808f9bc8e0a03a82104/jetified-appauth-0.7.1/AndroidManifest.xml:31:13-72
-546
-547        <service
-547-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6a1fd8908f55e6565b837e4d7881ac80/jetified-library-3.2.11/AndroidManifest.xml:19:9-21:40
-548            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
-548-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6a1fd8908f55e6565b837e4d7881ac80/jetified-library-3.2.11/AndroidManifest.xml:20:13-132
-549            android:exported="false" />
-549-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6a1fd8908f55e6565b837e4d7881ac80/jetified-library-3.2.11/AndroidManifest.xml:21:13-37
-550        <service
-550-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6a1fd8908f55e6565b837e4d7881ac80/jetified-library-3.2.11/AndroidManifest.xml:22:9-24:40
-551            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
-551-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6a1fd8908f55e6565b837e4d7881ac80/jetified-library-3.2.11/AndroidManifest.xml:23:13-127
-552            android:exported="false" />
-552-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6a1fd8908f55e6565b837e4d7881ac80/jetified-library-3.2.11/AndroidManifest.xml:24:13-37
-553        <service
-553-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6a1fd8908f55e6565b837e4d7881ac80/jetified-library-3.2.11/AndroidManifest.xml:25:9-27:40
-554            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
-554-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6a1fd8908f55e6565b837e4d7881ac80/jetified-library-3.2.11/AndroidManifest.xml:26:13-120
-555            android:exported="false" />
-555-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6a1fd8908f55e6565b837e4d7881ac80/jetified-library-3.2.11/AndroidManifest.xml:27:13-37
-556        <!--
-557             FirebaseMessagingService performs security checks at runtime,
-558             but set to not exported to explicitly avoid allowing another app to call it.
-559        -->
-560        <service
-560-->[com.google.firebase:firebase-messaging:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/2826beeb43a567f73bb268ee94545948/jetified-firebase-messaging-18.0.0/AndroidManifest.xml:28:9-34:19
-561            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-561-->[com.google.firebase:firebase-messaging:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/2826beeb43a567f73bb268ee94545948/jetified-firebase-messaging-18.0.0/AndroidManifest.xml:29:13-82
-562            android:exported="false" >
-562-->[com.google.firebase:firebase-messaging:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/2826beeb43a567f73bb268ee94545948/jetified-firebase-messaging-18.0.0/AndroidManifest.xml:30:13-37
-563            <intent-filter android:priority="-500" >
-563-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:305:7-307:23
-564                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-564-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:306:9-69
-564-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:306:17-67
-565            </intent-filter>
-566        </service>
-567        <service
-567-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/9c30be51add3f1a4ab9f9adc5d632ac2/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:27:9-33:19
-568            android:name="com.google.firebase.components.ComponentDiscoveryService"
-568-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/9c30be51add3f1a4ab9f9adc5d632ac2/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:28:13-84
-569            android:exported="false" >
-569-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/9c30be51add3f1a4ab9f9adc5d632ac2/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:29:13-37
-570            <meta-data
-570-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/9c30be51add3f1a4ab9f9adc5d632ac2/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:30:13-32:85
-571                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-571-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/9c30be51add3f1a4ab9f9adc5d632ac2/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:31:17-139
-572                android:value="com.google.firebase.components.ComponentRegistrar" />
-572-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/9c30be51add3f1a4ab9f9adc5d632ac2/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:32:17-82
-573            <meta-data
-573-->[com.google.firebase:firebase-iid:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d465329763472352a56d54ce335b8e07/jetified-firebase-iid-18.0.0/AndroidManifest.xml:32:13-34:85
-574                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-574-->[com.google.firebase:firebase-iid:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d465329763472352a56d54ce335b8e07/jetified-firebase-iid-18.0.0/AndroidManifest.xml:33:17-96
-575                android:value="com.google.firebase.components.ComponentRegistrar" />
-575-->[com.google.firebase:firebase-iid:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d465329763472352a56d54ce335b8e07/jetified-firebase-iid-18.0.0/AndroidManifest.xml:34:17-82
-576        </service>
-577
-578        <receiver
-578-->[com.google.firebase:firebase-iid:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d465329763472352a56d54ce335b8e07/jetified-firebase-iid-18.0.0/AndroidManifest.xml:37:9-44:20
-579            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-579-->[com.google.firebase:firebase-iid:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d465329763472352a56d54ce335b8e07/jetified-firebase-iid-18.0.0/AndroidManifest.xml:38:13-78
-580            android:exported="true"
-580-->[com.google.firebase:firebase-iid:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d465329763472352a56d54ce335b8e07/jetified-firebase-iid-18.0.0/AndroidManifest.xml:39:13-36
-581            android:permission="com.google.android.c2dm.permission.SEND" >
-581-->[com.google.firebase:firebase-iid:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d465329763472352a56d54ce335b8e07/jetified-firebase-iid-18.0.0/AndroidManifest.xml:40:13-73
-582            <intent-filter>
-582-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:286:7-288:23
-583                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-583-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:276:9-72
-583-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:276:17-70
-584            </intent-filter>
-585        </receiver>
-586
-587        <activity
-587-->[com.google.android.gms:play-services-base:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/124805732f0382810b280dd16c56160b/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
-588            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-588-->[com.google.android.gms:play-services-base:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/124805732f0382810b280dd16c56160b/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
-589            android:exported="false"
-589-->[com.google.android.gms:play-services-base:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/124805732f0382810b280dd16c56160b/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
-590            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-590-->[com.google.android.gms:play-services-base:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/124805732f0382810b280dd16c56160b/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
-591
-592        <provider
-592-->[com.google.firebase:firebase-common:17.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d4262729495235d44dc786b1c62768a4/jetified-firebase-common-17.0.0/AndroidManifest.xml:12:9-16:39
-593            android:name="com.google.firebase.provider.FirebaseInitProvider"
-593-->[com.google.firebase:firebase-common:17.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d4262729495235d44dc786b1c62768a4/jetified-firebase-common-17.0.0/AndroidManifest.xml:13:13-77
-594            android:authorities="kr.babylab.BeaconPayment.firebaseinitprovider"
-594-->[com.google.firebase:firebase-common:17.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d4262729495235d44dc786b1c62768a4/jetified-firebase-common-17.0.0/AndroidManifest.xml:14:13-72
-595            android:exported="false"
-595-->[com.google.firebase:firebase-common:17.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d4262729495235d44dc786b1c62768a4/jetified-firebase-common-17.0.0/AndroidManifest.xml:15:13-37
-596            android:initOrder="100" />
-596-->[com.google.firebase:firebase-common:17.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d4262729495235d44dc786b1c62768a4/jetified-firebase-common-17.0.0/AndroidManifest.xml:16:13-36
-597
-598        <receiver
-598-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:29:9-33:20
-599            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-599-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:30:13-85
-600            android:enabled="true"
-600-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:31:13-35
-601            android:exported="false" >
-601-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:32:13-37
-602        </receiver>
-603        <receiver
-603-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:34:9-42:20
-604            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-604-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:35:13-100
-605            android:enabled="true"
-605-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:36:13-35
-606            android:exported="true"
-606-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:37:13-36
-607            android:permission="android.permission.INSTALL_PACKAGES" >
-607-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:38:13-69
-608            <intent-filter>
-608-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:246:7-248:23
-609                <action android:name="com.android.vending.INSTALL_REFERRER" />
-609-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:247:9-71
-609-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:247:17-68
-610            </intent-filter>
-611        </receiver>
-612
-613        <service
-613-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:44:9-47:40
-614            android:name="com.google.android.gms.measurement.AppMeasurementService"
-614-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:45:13-84
-615            android:enabled="true"
-615-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:46:13-35
-616            android:exported="false" />
-616-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:47:13-37
-617        <service
-617-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:48:9-52:72
-618            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-618-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:49:13-87
-619            android:enabled="true"
-619-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:50:13-35
-620            android:exported="false"
-620-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:51:13-37
-621            android:permission="android.permission.BIND_JOB_SERVICE" />
-621-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/cba2a22075c968f0fe127ae0dccf28e3/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:52:13-69
-622
-623        <meta-data
-623-->[com.google.android.gms:play-services-basement:16.2.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/90c2462566cd17dcc134cff3cb998bd5/jetified-play-services-basement-16.2.0/AndroidManifest.xml:23:9-25:69
-624            android:name="com.google.android.gms.version"
-624-->[com.google.android.gms:play-services-basement:16.2.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/90c2462566cd17dcc134cff3cb998bd5/jetified-play-services-basement-16.2.0/AndroidManifest.xml:24:13-58
-625            android:value="@integer/google_play_services_version" />
-625-->[com.google.android.gms:play-services-basement:16.2.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/90c2462566cd17dcc134cff3cb998bd5/jetified-play-services-basement-16.2.0/AndroidManifest.xml:25:13-66
-626        <!--
-627         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
-628         with the application context. This config is merged in with the host app's manifest,
-629         but there can only be one provider with the same authority activated at any given
-630         point; so if the end user has two or more different apps that use Facebook SDK, only the
-631         first one will be able to use the provider. To work around this problem, we use the
-632         following placeholder in the authority to identify each host application as if it was
-633         a completely different provider.
-634        -->
-635        <provider
-635-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/329b7f6ab884fb8983e6d7d78a53aa3d/jetified-facebook-core-5.0.1/AndroidManifest.xml:39:9-42:40
-636            android:name="com.facebook.internal.FacebookInitProvider"
-636-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/329b7f6ab884fb8983e6d7d78a53aa3d/jetified-facebook-core-5.0.1/AndroidManifest.xml:40:13-70
-637            android:authorities="kr.babylab.BeaconPayment.FacebookInitProvider"
-637-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/329b7f6ab884fb8983e6d7d78a53aa3d/jetified-facebook-core-5.0.1/AndroidManifest.xml:41:13-72
-638            android:exported="false" />
-638-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/329b7f6ab884fb8983e6d7d78a53aa3d/jetified-facebook-core-5.0.1/AndroidManifest.xml:42:13-37
-639
-640        <receiver
-640-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/329b7f6ab884fb8983e6d7d78a53aa3d/jetified-facebook-core-5.0.1/AndroidManifest.xml:44:9-50:20
-641            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-641-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/329b7f6ab884fb8983e6d7d78a53aa3d/jetified-facebook-core-5.0.1/AndroidManifest.xml:45:13-86
-642            android:exported="false" >
-642-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/329b7f6ab884fb8983e6d7d78a53aa3d/jetified-facebook-core-5.0.1/AndroidManifest.xml:46:13-37
-643            <intent-filter>
-643-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/329b7f6ab884fb8983e6d7d78a53aa3d/jetified-facebook-core-5.0.1/AndroidManifest.xml:47:13-49:29
-644                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-644-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/329b7f6ab884fb8983e6d7d78a53aa3d/jetified-facebook-core-5.0.1/AndroidManifest.xml:48:17-95
-644-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/329b7f6ab884fb8983e6d7d78a53aa3d/jetified-facebook-core-5.0.1/AndroidManifest.xml:48:25-92
-645            </intent-filter>
-646        </receiver>
-647        <receiver
-647-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/329b7f6ab884fb8983e6d7d78a53aa3d/jetified-facebook-core-5.0.1/AndroidManifest.xml:51:9-58:20
-648            android:name="com.facebook.CampaignTrackingReceiver"
-648-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/329b7f6ab884fb8983e6d7d78a53aa3d/jetified-facebook-core-5.0.1/AndroidManifest.xml:52:13-65
-649            android:exported="true"
-649-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/329b7f6ab884fb8983e6d7d78a53aa3d/jetified-facebook-core-5.0.1/AndroidManifest.xml:53:13-36
-650            android:permission="android.permission.INSTALL_PACKAGES" >
-650-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/329b7f6ab884fb8983e6d7d78a53aa3d/jetified-facebook-core-5.0.1/AndroidManifest.xml:54:13-69
-651            <intent-filter>
-651-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:246:7-248:23
-652                <action android:name="com.android.vending.INSTALL_REFERRER" />
-652-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:247:9-71
-652-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:247:17-68
-653            </intent-filter>
-654        </receiver>
-655
-656        <provider
-656-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/7138aad9c235f5447ce3d4d465e606d6/jetified-crashlytics-2.10.1/AndroidManifest.xml:19:9-23:38
-657            android:name="com.crashlytics.android.CrashlyticsInitProvider"
-657-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/7138aad9c235f5447ce3d4d465e606d6/jetified-crashlytics-2.10.1/AndroidManifest.xml:20:13-75
-658            android:authorities="kr.babylab.BeaconPayment.crashlyticsinitprovider"
-658-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/7138aad9c235f5447ce3d4d465e606d6/jetified-crashlytics-2.10.1/AndroidManifest.xml:21:13-75
-659            android:exported="false"
-659-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/7138aad9c235f5447ce3d4d465e606d6/jetified-crashlytics-2.10.1/AndroidManifest.xml:22:13-37
-660            android:initOrder="90" />
-660-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/7138aad9c235f5447ce3d4d465e606d6/jetified-crashlytics-2.10.1/AndroidManifest.xml:23:13-35
-661    </application>
-662
-663</manifest>
+399        <service
+399-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:320:5-323:15
+400            android:name="host.exp.exponent.fcm.FcmRegistrationIntentService"
+400-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:321:7-55
+401            android:exported="false" >
+401-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:322:7-31
+402        </service>
+403
+404        <!-- ImagePicker native module -->
+405        <activity
+405-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:326:5-329:16
+406            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+406-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:327:7-70
+407            android:theme="@style/Base.Theme.AppCompat" >
+407-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:328:7-50
+408        </activity>
+409
+410        <!-- ADD FABRIC CONFIG HERE -->
+411        <!-- BEGIN FABRIC CONFIG -->
+412        <meta-data
+412-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:334:5-336:65
+413            android:name="io.fabric.ApiKey"
+413-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:335:7-38
+414            android:value="a25fafe9f9edee11a9882b32e0cd7a26df6e2c42" />
+414-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:336:7-63
+415        <!-- END FABRIC CONFIG -->
+416
+417
+418        <!-- ADD GOOGLE MAPS CONFIG HERE -->
+419        <!-- BEGIN GOOGLE MAPS CONFIG -->
+420        <meta-data
+420-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:341:5-343:64
+421            android:name="com.google.android.geo.API_KEY"
+421-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:342:7-52
+422            android:value="AIzaSyDh7eDB9snEFSYtf-k0gfxA45HFoR0L--I" />
+422-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:343:7-62
+423        <!-- END GOOGLE MAPS CONFIG -->
+424
+425
+426        <!-- ADD GOOGLE MOBILE ADS CONFIG HERE -->
+427        <!-- BEGIN GOOGLE MOBILE ADS CONFIG -->
+428        <meta-data
+428-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:348:5-350:63
+429            android:name="com.google.android.gms.ads.APPLICATION_ID"
+429-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:349:7-63
+430            android:value="ca-app-pub-3940256099942544~3347511713" />
+430-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:350:7-61
+431        <meta-data
+431-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:351:5-107
+432            android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT"
+432-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:351:16-84
+433            android:value="true" />
+433-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:351:85-105
+434        <!-- END GOOGLE MOBILE ADS CONFIG -->
+435
+436
+437        <!-- ADD BRANCH CONFIG HERE -->
+438
+439
+440        <!-- ADD FACEBOOK APP ID CONFIG HERE -->
+441        <!-- ADD FACEBOOK APP DISPLAY NAME CONFIG HERE -->
+442        <!-- Tags below need to be in one line with no whitespace after android:value -->
+443        <!-- in order for XDL to be able to replace values in them -->
+444        <meta-data
+444-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:360:5-95
+445            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+445-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:360:16-71
+446            android:value="false" />
+446-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:360:72-93
+447        <meta-data
+447-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:361:5-87
+448            android:name="com.facebook.sdk.AutoInitEnabled"
+448-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:361:16-63
+449            android:value="false" />
+449-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:361:64-85
+450        <meta-data
+450-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:362:5-101
+451            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+451-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:362:16-77
+452            android:value="false" />
+452-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:362:78-99
+453        <meta-data
+453-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:364:5-109
+454            android:name="standaloneStripeScheme"
+454-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:364:16-53
+455            android:value="d198f1f3-05b8-4316-8b68-b7107c1314d6" />
+455-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:364:54-106
+456        <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
+457        <!-- Scheduled notifications -->
+458        <receiver
+458-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:79:9-81:40
+459            android:name="host.exp.exponent.notifications.ScheduledNotificationReceiver"
+459-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:80:13-89
+460            android:exported="false" />
+460-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:81:13-37
+461        <receiver
+461-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:82:9-92:20
+462            android:name="host.exp.exponent.notifications.receivers.SchedulingTriggerReceiver"
+462-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:83:13-95
+463            android:exported="true" >
+463-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:84:13-36
+464            <intent-filter>
+464-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:85:13-91:29
+465                <action android:name="android.intent.action.REBOOT" />
+465-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:86:17-71
+465-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:86:25-68
+466                <action android:name="android.intent.action.BOOT_COMPLETED" />
+466-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:87:17-79
+466-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:87:25-76
+467                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+467-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:88:17-81
+467-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:88:25-78
+468                <action android:name="android.intent.action.TIME_CHANGED" />
+468-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:89:17-77
+468-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:89:25-74
+469                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+469-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:90:17-82
+469-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:90:25-79
+470            </intent-filter>
+471        </receiver> <!-- WHEN_VERSIONING_REMOVE_TO_HERE -->
+472        <provider
+472-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:96:9-104:20
+473            android:name="androidx.core.content.FileProvider"
+473-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:97:13-62
+474            android:authorities="kr.babylab.BeaconPayment.provider"
+474-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:98:13-60
+475            android:exported="false"
+475-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:99:13-37
+476            android:grantUriPermissions="true" >
+476-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:100:13-47
+477            <meta-data
+477-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:101:13-103:58
+478                android:name="android.support.FILE_PROVIDER_PATHS"
+478-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:102:17-67
+479                android:resource="@xml/provider_paths" />
+479-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:103:17-55
+480        </provider>
+481        <provider
+481-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:105:9-113:20
+482            android:name="versioned.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider"
+482-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:106:13-109
+483            android:authorities="kr.babylab.BeaconPayment.fileprovider"
+483-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:107:13-64
+484            android:exported="false"
+484-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:108:13-37
+485            android:grantUriPermissions="true" >
+485-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:109:13-47
+486            <meta-data
+486-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:101:13-103:58
+487                android:name="android.support.FILE_PROVIDER_PATHS"
+487-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:102:17-67
+488                android:resource="@xml/provider_paths" />
+488-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:103:17-55
+489        </provider> <!-- 2 -->
+490        <!-- 3 -->
+491        <meta-data
+491-->[:react-native-seoul-kakao-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-21:53
+492            android:name="com.kakao.sdk.AppKey"
+492-->[:react-native-seoul-kakao-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-48
+493            android:value="@string/kakao_app_key" /> <!-- 4 -->
+493-->[:react-native-seoul-kakao-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-50
+494        <activity
+494-->[:react-native-seoul-kakao-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-28:20
+495            android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
+495-->[:react-native-seoul-kakao-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-86
+496            android:configChanges="orientation|screenSize"
+496-->[com.kakao.sdk:auth:1.26.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d9139b27daa6ed7c1810dd4a025744ab/auth-1.26.0/AndroidManifest.xml:14:13-59
+497            android:exported="false"
+497-->[:react-native-seoul-kakao-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-37
+498            android:label="@string/com_kakao_login_button"
+498-->[com.kakao.sdk:auth:1.26.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/d9139b27daa6ed7c1810dd4a025744ab/auth-1.26.0/AndroidManifest.xml:16:13-59
+499            android:launchMode="singleTop"
+499-->[:react-native-seoul-kakao-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-43
+500            android:windowSoftInputMode="adjustResize" >
+500-->[:react-native-seoul-kakao-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-55
+501        </activity>
+502
+503        <provider
+503-->[:expo-file-system] /Users/babylabco/Desktop/Beacon/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-27:20
+504            android:name="expo.modules.filesystem.FileSystemFileProvider"
+504-->[:expo-file-system] /Users/babylabco/Desktop/Beacon/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-74
+505            android:authorities="kr.babylab.BeaconPayment.FileSystemFileProvider"
+505-->[:expo-file-system] /Users/babylabco/Desktop/Beacon/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-74
+506            android:exported="false"
+506-->[:expo-file-system] /Users/babylabco/Desktop/Beacon/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-37
+507            android:grantUriPermissions="true" >
+507-->[:expo-file-system] /Users/babylabco/Desktop/Beacon/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-47
+508            <meta-data
+508-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:101:13-103:58
+509                android:name="android.support.FILE_PROVIDER_PATHS"
+509-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:102:17-67
+510                android:resource="@xml/file_system_provider_paths" />
+510-->[host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:103:17-55
+511        </provider>
+512
+513        <service
+513-->[:expo-location] /Users/babylabco/Desktop/Beacon/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+514            android:name="expo.modules.location.services.LocationTaskService"
+514-->[:expo-location] /Users/babylabco/Desktop/Beacon/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-78
+515            android:exported="false" />
+515-->[:expo-location] /Users/babylabco/Desktop/Beacon/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+516
+517        <activity
+517-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb3660c7fbfdb3ae8db9ec8c625597e1/jetified-naveridlogin-android-sdk-4.2.5/AndroidManifest.xml:17:9-19:67
+518            android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
+518-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb3660c7fbfdb3ae8db9ec8c625597e1/jetified-naveridlogin-android-sdk-4.2.5/AndroidManifest.xml:18:13-76
+519            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+519-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb3660c7fbfdb3ae8db9ec8c625597e1/jetified-naveridlogin-android-sdk-4.2.5/AndroidManifest.xml:19:13-64
+520        <activity
+520-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb3660c7fbfdb3ae8db9ec8c625597e1/jetified-naveridlogin-android-sdk-4.2.5/AndroidManifest.xml:24:9-40:20
+521            android:name="com.nhn.android.naverlogin.ui.OAuthCustomTabActivity"
+521-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb3660c7fbfdb3ae8db9ec8c625597e1/jetified-naveridlogin-android-sdk-4.2.5/AndroidManifest.xml:25:13-80
+522            android:configChanges="orientation|screenSize"
+522-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb3660c7fbfdb3ae8db9ec8c625597e1/jetified-naveridlogin-android-sdk-4.2.5/AndroidManifest.xml:26:13-59
+523            android:launchMode="singleTask"
+523-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb3660c7fbfdb3ae8db9ec8c625597e1/jetified-naveridlogin-android-sdk-4.2.5/AndroidManifest.xml:27:13-44
+524            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+524-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb3660c7fbfdb3ae8db9ec8c625597e1/jetified-naveridlogin-android-sdk-4.2.5/AndroidManifest.xml:28:13-72
+525            <intent-filter>
+525-->[com.naver.nid:naveridlogin-android-sdk:4.2.5] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb3660c7fbfdb3ae8db9ec8c625597e1/jetified-naveridlogin-android-sdk-4.2.5/AndroidManifest.xml:29:13-39:29
+526                <action android:name="android.intent.action.VIEW" />
+526-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:9-60
+526-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:84:17-58
+527
+528                <category android:name="android.intent.category.DEFAULT" />
+528-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:9-67
+528-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:86:19-65
+529                <category android:name="android.intent.category.BROWSABLE" />
+529-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:9-69
+529-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:87:19-67
+530                <!-- Intent URL 에서 로그인 액티비티를 실행하기 위해 설정 -->
+531                <data
+531-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:9-69
+532                    android:host="authorize"
+533                    android:path="/"
+533-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:142:57-85
+534                    android:scheme="naver3rdpartylogin" />
+534-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:82:15-67
+535            </intent-filter>
+536        </activity>
+537        <activity android:name="com.facebook.CustomTabMainActivity" />
+537-->[com.facebook.android:facebook-common:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/29f1bc2a3068f009175b3a4ca73860b0/jetified-facebook-common-5.0.1/AndroidManifest.xml:33:9-71
+537-->[com.facebook.android:facebook-common:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/29f1bc2a3068f009175b3a4ca73860b0/jetified-facebook-common-5.0.1/AndroidManifest.xml:33:19-68
+538        <activity android:name="com.facebook.CustomTabActivity" />
+538-->[com.facebook.android:facebook-common:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/29f1bc2a3068f009175b3a4ca73860b0/jetified-facebook-common-5.0.1/AndroidManifest.xml:34:9-67
+538-->[com.facebook.android:facebook-common:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/29f1bc2a3068f009175b3a4ca73860b0/jetified-facebook-common-5.0.1/AndroidManifest.xml:34:19-64
+539        <activity
+539-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:15:9-18:40
+540            android:name="com.facebook.ads.AudienceNetworkActivity"
+540-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:16:13-68
+541            android:configChanges="keyboardHidden|orientation|screenSize"
+541-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:17:13-74
+542            android:exported="false" />
+542-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:18:13-37
+543        <activity
+543-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:19:9-23:39
+544            android:name="com.facebook.ads.internal.ipc.RemoteANActivity"
+544-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:20:13-74
+545            android:configChanges="keyboardHidden|orientation|screenSize"
+545-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:21:13-74
+546            android:exported="false"
+546-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:22:13-37
+547            android:process=":adnw" />
+547-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:23:13-36
+548
+549        <service
+549-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:25:9-27:40
+550            android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService"
+550-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:26:13-83
+551            android:exported="false" />
+551-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:27:13-37
+552        <service
+552-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:28:9-31:39
+553            android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
+553-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:29:13-77
+554            android:exported="false"
+554-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:30:13-37
+555            android:process=":adnw" />
+555-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/c923978f6f9fc08b43615e7176ad6edd/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:31:13-36
+556        <service
+556-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eee163a42fabbbbe3b3a04752c819fbe/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:40:9-44:72
+557            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+557-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eee163a42fabbbbe3b3a04752c819fbe/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:41:13-80
+558            android:enabled="true"
+558-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eee163a42fabbbbe3b3a04752c819fbe/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:42:13-35
+559            android:exported="false"
+559-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eee163a42fabbbbe3b3a04752c819fbe/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:43:13-37
+560            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
+560-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eee163a42fabbbbe3b3a04752c819fbe/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:44:13-69
+561        <uses-library
+561-->[com.google.android.gms:play-services-maps:16.1.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/974ca9751884205c606595eb6425444a/jetified-play-services-maps-16.1.0/AndroidManifest.xml:33:9-35:40
+562            android:name="org.apache.http.legacy"
+562-->[com.google.android.gms:play-services-maps:16.1.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/974ca9751884205c606595eb6425444a/jetified-play-services-maps-16.1.0/AndroidManifest.xml:34:13-50
+563            android:required="false" />
+563-->[com.google.android.gms:play-services-maps:16.1.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/974ca9751884205c606595eb6425444a/jetified-play-services-maps-16.1.0/AndroidManifest.xml:35:13-37
+564
+565        <activity
+565-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/e89ffe16c6dcd87f42f5050f3a7ed6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+566            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+566-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/e89ffe16c6dcd87f42f5050f3a7ed6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+567            android:excludeFromRecents="true"
+567-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/e89ffe16c6dcd87f42f5050f3a7ed6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+568            android:exported="false"
+568-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/e89ffe16c6dcd87f42f5050f3a7ed6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+569            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+569-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/e89ffe16c6dcd87f42f5050f3a7ed6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+570        <!--
+571            Service handling Google Sign-In user revocation. For apps that do not integrate with
+572            Google Sign-In, this service will never be started.
+573        -->
+574        <service
+574-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/e89ffe16c6dcd87f42f5050f3a7ed6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+575            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+575-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/e89ffe16c6dcd87f42f5050f3a7ed6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+576            android:exported="true"
+576-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/e89ffe16c6dcd87f42f5050f3a7ed6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+577            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+577-->[com.google.android.gms:play-services-auth:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/e89ffe16c6dcd87f42f5050f3a7ed6d5/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+578
+579        <activity
+579-->[net.openid:appauth:0.7.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fd145670cb17c87c09f5f9210ffafcc/jetified-appauth-0.7.1/AndroidManifest.xml:27:9-31:75
+580            android:name="net.openid.appauth.AuthorizationManagementActivity"
+580-->[net.openid:appauth:0.7.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fd145670cb17c87c09f5f9210ffafcc/jetified-appauth-0.7.1/AndroidManifest.xml:28:13-78
+581            android:exported="false"
+581-->[net.openid:appauth:0.7.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fd145670cb17c87c09f5f9210ffafcc/jetified-appauth-0.7.1/AndroidManifest.xml:29:13-37
+582            android:launchMode="singleTask"
+582-->[net.openid:appauth:0.7.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fd145670cb17c87c09f5f9210ffafcc/jetified-appauth-0.7.1/AndroidManifest.xml:30:13-44
+583            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+583-->[net.openid:appauth:0.7.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/6fd145670cb17c87c09f5f9210ffafcc/jetified-appauth-0.7.1/AndroidManifest.xml:31:13-72
+584
+585        <service
+585-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/80d45c417de81c87578a52acd4f367bd/jetified-library-3.2.11/AndroidManifest.xml:19:9-21:40
+586            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+586-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/80d45c417de81c87578a52acd4f367bd/jetified-library-3.2.11/AndroidManifest.xml:20:13-132
+587            android:exported="false" />
+587-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/80d45c417de81c87578a52acd4f367bd/jetified-library-3.2.11/AndroidManifest.xml:21:13-37
+588        <service
+588-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/80d45c417de81c87578a52acd4f367bd/jetified-library-3.2.11/AndroidManifest.xml:22:9-24:40
+589            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+589-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/80d45c417de81c87578a52acd4f367bd/jetified-library-3.2.11/AndroidManifest.xml:23:13-127
+590            android:exported="false" />
+590-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/80d45c417de81c87578a52acd4f367bd/jetified-library-3.2.11/AndroidManifest.xml:24:13-37
+591        <service
+591-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/80d45c417de81c87578a52acd4f367bd/jetified-library-3.2.11/AndroidManifest.xml:25:9-27:40
+592            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+592-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/80d45c417de81c87578a52acd4f367bd/jetified-library-3.2.11/AndroidManifest.xml:26:13-120
+593            android:exported="false" />
+593-->[io.nlopez.smartlocation:library:3.2.11] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/80d45c417de81c87578a52acd4f367bd/jetified-library-3.2.11/AndroidManifest.xml:27:13-37
+594        <!--
+595             FirebaseMessagingService performs security checks at runtime,
+596             but set to not exported to explicitly avoid allowing another app to call it.
+597        -->
+598        <service
+598-->[com.google.firebase:firebase-messaging:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/2cce7a68dd689e74e0944835a7cd6cd9/jetified-firebase-messaging-18.0.0/AndroidManifest.xml:28:9-34:19
+599            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+599-->[com.google.firebase:firebase-messaging:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/2cce7a68dd689e74e0944835a7cd6cd9/jetified-firebase-messaging-18.0.0/AndroidManifest.xml:29:13-82
+600            android:exported="false" >
+600-->[com.google.firebase:firebase-messaging:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/2cce7a68dd689e74e0944835a7cd6cd9/jetified-firebase-messaging-18.0.0/AndroidManifest.xml:30:13-37
+601            <intent-filter android:priority="-500" >
+601-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:310:7-312:23
+602                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+602-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:311:9-69
+602-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:311:17-67
+603            </intent-filter>
+604        </service>
+605        <service
+605-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eff483a6fc6ab5f1889a95cd91c2889e/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:27:9-33:19
+606            android:name="com.google.firebase.components.ComponentDiscoveryService"
+606-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eff483a6fc6ab5f1889a95cd91c2889e/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:28:13-84
+607            android:exported="false" >
+607-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eff483a6fc6ab5f1889a95cd91c2889e/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:29:13-37
+608            <meta-data
+608-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eff483a6fc6ab5f1889a95cd91c2889e/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:30:13-32:85
+609                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+609-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eff483a6fc6ab5f1889a95cd91c2889e/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:31:17-139
+610                android:value="com.google.firebase.components.ComponentRegistrar" />
+610-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eff483a6fc6ab5f1889a95cd91c2889e/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:32:17-82
+611            <meta-data
+611-->[com.google.firebase:firebase-iid:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/ffe63b34cfbe8fc265bba23c7db35936/jetified-firebase-iid-18.0.0/AndroidManifest.xml:32:13-34:85
+612                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+612-->[com.google.firebase:firebase-iid:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/ffe63b34cfbe8fc265bba23c7db35936/jetified-firebase-iid-18.0.0/AndroidManifest.xml:33:17-96
+613                android:value="com.google.firebase.components.ComponentRegistrar" />
+613-->[com.google.firebase:firebase-iid:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/ffe63b34cfbe8fc265bba23c7db35936/jetified-firebase-iid-18.0.0/AndroidManifest.xml:34:17-82
+614        </service>
+615
+616        <receiver
+616-->[com.google.firebase:firebase-iid:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/ffe63b34cfbe8fc265bba23c7db35936/jetified-firebase-iid-18.0.0/AndroidManifest.xml:37:9-44:20
+617            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+617-->[com.google.firebase:firebase-iid:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/ffe63b34cfbe8fc265bba23c7db35936/jetified-firebase-iid-18.0.0/AndroidManifest.xml:38:13-78
+618            android:exported="true"
+618-->[com.google.firebase:firebase-iid:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/ffe63b34cfbe8fc265bba23c7db35936/jetified-firebase-iid-18.0.0/AndroidManifest.xml:39:13-36
+619            android:permission="com.google.android.c2dm.permission.SEND" >
+619-->[com.google.firebase:firebase-iid:18.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/ffe63b34cfbe8fc265bba23c7db35936/jetified-firebase-iid-18.0.0/AndroidManifest.xml:40:13-73
+620            <intent-filter>
+620-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:291:7-293:23
+621                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+621-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:281:9-72
+621-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:281:17-70
+622            </intent-filter>
+623        </receiver>
+624
+625        <activity
+625-->[com.google.android.gms:play-services-base:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/7089bf34ad4be0aa25c550e3de69c960/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+626            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+626-->[com.google.android.gms:play-services-base:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/7089bf34ad4be0aa25c550e3de69c960/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+627            android:exported="false"
+627-->[com.google.android.gms:play-services-base:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/7089bf34ad4be0aa25c550e3de69c960/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+628            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+628-->[com.google.android.gms:play-services-base:16.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/7089bf34ad4be0aa25c550e3de69c960/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+629
+630        <provider
+630-->[com.google.firebase:firebase-common:17.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/9b054c9e9f58d05a29c524a2d8654165/jetified-firebase-common-17.0.0/AndroidManifest.xml:12:9-16:39
+631            android:name="com.google.firebase.provider.FirebaseInitProvider"
+631-->[com.google.firebase:firebase-common:17.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/9b054c9e9f58d05a29c524a2d8654165/jetified-firebase-common-17.0.0/AndroidManifest.xml:13:13-77
+632            android:authorities="kr.babylab.BeaconPayment.firebaseinitprovider"
+632-->[com.google.firebase:firebase-common:17.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/9b054c9e9f58d05a29c524a2d8654165/jetified-firebase-common-17.0.0/AndroidManifest.xml:14:13-72
+633            android:exported="false"
+633-->[com.google.firebase:firebase-common:17.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/9b054c9e9f58d05a29c524a2d8654165/jetified-firebase-common-17.0.0/AndroidManifest.xml:15:13-37
+634            android:initOrder="100" />
+634-->[com.google.firebase:firebase-common:17.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/9b054c9e9f58d05a29c524a2d8654165/jetified-firebase-common-17.0.0/AndroidManifest.xml:16:13-36
+635
+636        <receiver
+636-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:29:9-33:20
+637            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+637-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:30:13-85
+638            android:enabled="true"
+638-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:31:13-35
+639            android:exported="false" >
+639-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:32:13-37
+640        </receiver>
+641        <receiver
+641-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:34:9-42:20
+642            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+642-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:35:13-100
+643            android:enabled="true"
+643-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:36:13-35
+644            android:exported="true"
+644-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:37:13-36
+645            android:permission="android.permission.INSTALL_PACKAGES" >
+645-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:38:13-69
+646            <intent-filter>
+646-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:251:7-253:23
+647                <action android:name="com.android.vending.INSTALL_REFERRER" />
+647-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:252:9-71
+647-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:252:17-68
+648            </intent-filter>
+649        </receiver>
+650
+651        <service
+651-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:44:9-47:40
+652            android:name="com.google.android.gms.measurement.AppMeasurementService"
+652-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:45:13-84
+653            android:enabled="true"
+653-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:46:13-35
+654            android:exported="false" />
+654-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:47:13-37
+655        <service
+655-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:48:9-52:72
+656            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+656-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:49:13-87
+657            android:enabled="true"
+657-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:50:13-35
+658            android:exported="false"
+658-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:51:13-37
+659            android:permission="android.permission.BIND_JOB_SERVICE" />
+659-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/325727826bec914befda28e47bed40cb/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:52:13-69
+660
+661        <meta-data
+661-->[com.google.android.gms:play-services-basement:16.2.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/a7971eae17040749a7d440ef94e32375/jetified-play-services-basement-16.2.0/AndroidManifest.xml:23:9-25:69
+662            android:name="com.google.android.gms.version"
+662-->[com.google.android.gms:play-services-basement:16.2.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/a7971eae17040749a7d440ef94e32375/jetified-play-services-basement-16.2.0/AndroidManifest.xml:24:13-58
+663            android:value="@integer/google_play_services_version" />
+663-->[com.google.android.gms:play-services-basement:16.2.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/a7971eae17040749a7d440ef94e32375/jetified-play-services-basement-16.2.0/AndroidManifest.xml:25:13-66
+664        <!--
+665         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+666         with the application context. This config is merged in with the host app's manifest,
+667         but there can only be one provider with the same authority activated at any given
+668         point; so if the end user has two or more different apps that use Facebook SDK, only the
+669         first one will be able to use the provider. To work around this problem, we use the
+670         following placeholder in the authority to identify each host application as if it was
+671         a completely different provider.
+672        -->
+673        <provider
+673-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/309d7edaeb4272857d35156fe0863065/jetified-facebook-core-5.0.1/AndroidManifest.xml:39:9-42:40
+674            android:name="com.facebook.internal.FacebookInitProvider"
+674-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/309d7edaeb4272857d35156fe0863065/jetified-facebook-core-5.0.1/AndroidManifest.xml:40:13-70
+675            android:authorities="kr.babylab.BeaconPayment.FacebookInitProvider"
+675-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/309d7edaeb4272857d35156fe0863065/jetified-facebook-core-5.0.1/AndroidManifest.xml:41:13-72
+676            android:exported="false" />
+676-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/309d7edaeb4272857d35156fe0863065/jetified-facebook-core-5.0.1/AndroidManifest.xml:42:13-37
+677
+678        <receiver
+678-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/309d7edaeb4272857d35156fe0863065/jetified-facebook-core-5.0.1/AndroidManifest.xml:44:9-50:20
+679            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+679-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/309d7edaeb4272857d35156fe0863065/jetified-facebook-core-5.0.1/AndroidManifest.xml:45:13-86
+680            android:exported="false" >
+680-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/309d7edaeb4272857d35156fe0863065/jetified-facebook-core-5.0.1/AndroidManifest.xml:46:13-37
+681            <intent-filter>
+681-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/309d7edaeb4272857d35156fe0863065/jetified-facebook-core-5.0.1/AndroidManifest.xml:47:13-49:29
+682                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+682-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/309d7edaeb4272857d35156fe0863065/jetified-facebook-core-5.0.1/AndroidManifest.xml:48:17-95
+682-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/309d7edaeb4272857d35156fe0863065/jetified-facebook-core-5.0.1/AndroidManifest.xml:48:25-92
+683            </intent-filter>
+684        </receiver>
+685        <receiver
+685-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/309d7edaeb4272857d35156fe0863065/jetified-facebook-core-5.0.1/AndroidManifest.xml:51:9-58:20
+686            android:name="com.facebook.CampaignTrackingReceiver"
+686-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/309d7edaeb4272857d35156fe0863065/jetified-facebook-core-5.0.1/AndroidManifest.xml:52:13-65
+687            android:exported="true"
+687-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/309d7edaeb4272857d35156fe0863065/jetified-facebook-core-5.0.1/AndroidManifest.xml:53:13-36
+688            android:permission="android.permission.INSTALL_PACKAGES" >
+688-->[com.facebook.android:facebook-core:5.0.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/309d7edaeb4272857d35156fe0863065/jetified-facebook-core-5.0.1/AndroidManifest.xml:54:13-69
+689            <intent-filter>
+689-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:251:7-253:23
+690                <action android:name="com.android.vending.INSTALL_REFERRER" />
+690-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:252:9-71
+690-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:252:17-68
+691            </intent-filter>
+692        </receiver>
+693
+694        <provider
+694-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/a3220a160957a82f3b6e43627d506eb4/jetified-crashlytics-2.10.1/AndroidManifest.xml:19:9-23:38
+695            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+695-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/a3220a160957a82f3b6e43627d506eb4/jetified-crashlytics-2.10.1/AndroidManifest.xml:20:13-75
+696            android:authorities="kr.babylab.BeaconPayment.crashlyticsinitprovider"
+696-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/a3220a160957a82f3b6e43627d506eb4/jetified-crashlytics-2.10.1/AndroidManifest.xml:21:13-75
+697            android:exported="false"
+697-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/a3220a160957a82f3b6e43627d506eb4/jetified-crashlytics-2.10.1/AndroidManifest.xml:22:13-37
+698            android:initOrder="90" />
+698-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/a3220a160957a82f3b6e43627d506eb4/jetified-crashlytics-2.10.1/AndroidManifest.xml:23:13-35
+699    </application>
+700
+701</manifest>

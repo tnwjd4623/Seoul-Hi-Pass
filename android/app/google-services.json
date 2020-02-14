@@ -1,50 +1,48 @@
 {
   "project_info": {
-    "project_id": "exponent-5dd6d",
-    "project_number": "367315174693",
-    "name": "Expo Client"
+    "project_number": "420490957468",
+    "firebase_url": "https://beaconpayment-1c9e3.firebaseio.com",
+    "project_id": "beaconpayment-1c9e3",
+    "storage_bucket": "beaconpayment-1c9e3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:367315174693:android:f968efbb41d1fa7a",
-        "client_id": "android:host.exp.exponent",
-        "client_type": 1,
+        "mobilesdk_app_id": "1:420490957468:android:636e18f4770730fcdf5359",
         "android_client_info": {
-          "package_name": "kr.babylab.BeaconPayment",
-          "certificate_hash": ""
+          "package_name": "kr.babylab.BeaconPayment"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "420490957468-q51o04lvmvlv8uc77m684euc44kpu5gv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.babylab.BeaconPayment",
+            "certificate_hash": "72574584585c120b4dac53557d68dd146a5cfe89"
+          }
+        },
+        {
+          "client_id": "420490957468-fg53nft8vmu1egq8d37ralre73liiarb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": ""
+          "current_key": "AIzaSyC2R4H6HRb_WThOZ_qaoLPKk7YbsI4eB-c"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 2,
-          "analytics_property": {
-            "tracking_id": "UA-76673608-1"
-          }
-        },
-        "cloud_messaging_service": {
-          "status": 2,
-          "apns_config": []
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "google_signin_service": {
-          "status": 1
-        },
-        "ads_service": {
-          "status": 1
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420490957468-fg53nft8vmu1egq8d37ralre73liiarb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
   ],
-  "client_info": [],
-  "ARTIFACT_VERSION": "1"
+  "configuration_version": "1"
 }

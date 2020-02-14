@@ -10,4 +10,6 @@
   <string name="default_notification_channel_group">Default</string>
   <string name="persistent_notification_channel_name">Experience notifications</string>
   <string name="persistent_notification_channel_desc">Persistent notifications that provide debug info about open experiences</string>
+
+  <string name="kakao_app_key">d488e5421ddc2962f735ebb0e29d30f0</string>
 </resources>

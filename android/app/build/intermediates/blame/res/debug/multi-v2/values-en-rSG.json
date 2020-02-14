@@ -4,7 +4,7 @@
             "outputFile": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rSG/values-en-rSG.xml",
             "map": [
                 {
-                    "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/3d06a992ac7393068e6c443a0d7d333d/jetified-play-services-wallet-16.0.1/res/values-en-rSG/values.xml",
+                    "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5913e616391e224a8075ba42ad671e06/jetified-play-services-wallet-16.0.1/res/values-en-rSG/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

@@ -14,7 +14,10 @@ import okhttp3.OkHttpClient;
 // Needed for `react-native link`
 // import com.facebook.react.ReactApplication;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
+import com.dooboolab.naverlogin.RNNaverLoginPackage;
+import com.dooboolab.kakaologins.RNKakaoLoginsPackage;
 
+import co.apptailor.googlesignin.RNGoogleSigninPackage;
 public class MainApplication extends ExpoApplication implements AppLoaderPackagesProviderInterface<ReactPackage> {
 
   @Override
@@ -24,13 +27,18 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
 
   // Needed for `react-native link`
   public List<ReactPackage> getPackages() {
+
+
     return Arrays.<ReactPackage>asList(
         // Add your own packages here!
         // TODO: add native modules!
 
         // Needed for `react-native link`
         // new MainReactPackage(),
-            new SplashScreenReactPackage()
+            new SplashScreenReactPackage(),
+            new RNNaverLoginPackage(),
+            new RNKakaoLoginsPackage(),
+            new RNGoogleSigninPackage()
     );
   }
 

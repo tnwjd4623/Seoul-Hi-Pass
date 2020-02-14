@@ -28,6 +28,7 @@ import QuestionScreen from '../screens/QuestionScreen';
 import WriteQuestionScreen from '../screens/WriteQuestionScreen';
 import FAQScreen from '../screens/FAQScreen';
 import PreorderListscreen from '../screens/PreorderListScreen';
+import FindPasswordScreen from '../screens/FindPasswordScreen';
 /*
 가게 상세정보 -> 메뉴 -> 주문 -> 완료 네비게이터
 */
@@ -123,6 +124,12 @@ const loginStack = createStackNavigator(
                     fontSize: 17,
                     color: '#828282'
                 }
+            }
+        },
+        findPW: {
+            screen: FindPasswordScreen,
+            navigationOptions: {
+                headerShown:false,
             }
         }
     },

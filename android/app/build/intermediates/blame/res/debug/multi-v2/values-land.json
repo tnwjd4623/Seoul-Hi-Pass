@@ -4,7 +4,17 @@
             "outputFile": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/71f878751c312e5a1ce316523e39be12/material-1.0.0/res/values-land/values-land.xml",
+                    "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5d2190db361710f913c492a47f7066af/material-1.0.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "8",
                         "endColumns": "10",
                         "endOffsets": "431"
-                    }
-                },
-                {
-                    "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/08d5dcb2ad36c8c391956f8e4b207bda/appcompat-1.1.0/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
                     }
                 }
             ]

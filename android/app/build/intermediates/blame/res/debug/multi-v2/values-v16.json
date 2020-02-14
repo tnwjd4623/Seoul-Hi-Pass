@@ -4,7 +4,7 @@
             "outputFile": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/37791d22cdf73b5c35c92eb9addd3f27/core-1.1.0/res/values-v16/values-v16.xml",
+                    "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/864d0fe8891329a9533be4963b75012e/core-1.1.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/08d5dcb2ad36c8c391956f8e4b207bda/appcompat-1.1.0/res/values-v16/values-v16.xml",
+                    "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

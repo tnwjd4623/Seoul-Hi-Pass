@@ -50,6 +50,7 @@ android {
     debug {
       storeFile file('../debug.keystore')
     }
+
     release {
       storeFile file(System.getenv("ANDROID_KEYSTORE_PATH") ?: "release-key.jks")
       storePassword System.getenv("ANDROID_KEYSTORE_PASSWORD")
@@ -62,7 +63,9 @@ android {
       debuggable true
       ext.enableCrashlytics = false
     }
-    release {
+
+
+   release {
       minifyEnabled true
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
       consumerProguardFiles 'proguard-rules.pro'
@@ -108,8 +111,13 @@ dependencies {
   implementation 'androidx.multidex:multidex:2.0.0'
 
   implementation project(':react-native-splash-screen')
+  //Naver Login
+  implementation project(':react-native-seoul-naver-login')
 
+  //KAKAO Login
+  implementation project(':react-native-seoul-kakao-login')
 
+  implementation project(':react-native-google-signin')
   // Our dependencies
   implementation 'androidx.appcompat:appcompat:1.1.0'
 

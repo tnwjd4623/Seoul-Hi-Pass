@@ -4,7 +4,7 @@
             "outputFile": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rGT/values-es-rGT.xml",
             "map": [
                 {
-                    "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/cb477fae60a07711ab1c867bba6e72cc/jetified-android-image-cropper-2.7.0/res/values-es-rGT/values-es-rGT.xml",
+                    "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/dc4830d89e172b2a9b4e36d4b0b68ddc/jetified-android-image-cropper-2.7.0/res/values-es-rGT/values-es-rGT.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
