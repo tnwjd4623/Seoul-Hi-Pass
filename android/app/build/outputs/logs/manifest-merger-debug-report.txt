@@ -10,7 +10,7 @@ MERGED from [:unimodules-react-native-adapter] /Users/babylabco/Desktop/Beacon/n
 MERGED from [:react-native-splash-screen] /Users/babylabco/Desktop/Beacon/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:react-native-seoul-naver-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/naver-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-21:12
 MERGED from [:react-native-seoul-kakao-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-31:12
-MERGED from [:react-native-google-signin] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-google-signin] /Users/babylabco/Desktop/Beacon/node_modules/react-native-google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb2b9e47a73f62d7b00183e6f63e14ea/jetified-react-native-36.0.0/AndroidManifest.xml:2:1-13:12
 MERGED from [:expo-app-loader-provider] /Users/babylabco/Desktop/Beacon/node_modules/expo-app-loader-provider/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:expo-constants] /Users/babylabco/Desktop/Beacon/node_modules/expo-constants/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -995,8 +995,8 @@ MERGED from [:react-native-seoul-naver-login] /Users/babylabco/Desktop/Beacon/no
 MERGED from [:react-native-seoul-naver-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/naver-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-seoul-kakao-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-seoul-kakao-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-google-signin] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-google-signin] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-google-signin] /Users/babylabco/Desktop/Beacon/node_modules/react-native-google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-google-signin] /Users/babylabco/Desktop/Beacon/node_modules/react-native-google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb2b9e47a73f62d7b00183e6f63e14ea/jetified-react-native-36.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb2b9e47a73f62d7b00183e6f63e14ea/jetified-react-native-36.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [:expo-app-loader-provider] /Users/babylabco/Desktop/Beacon/node_modules/expo-app-loader-provider/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41

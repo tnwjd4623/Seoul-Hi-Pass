@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/android.iml" filepath="$PROJECT_DIR$/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-google-signin/android/android-react-native-google-signin.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-google-signin/android/android-react-native-google-signin.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/expo-app-loader-provider/android/expo-app-loader-provider.iml" filepath="$PROJECT_DIR$/../node_modules/expo-app-loader-provider/android/expo-app-loader-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/expo-constants/android/expo-constants.iml" filepath="$PROJECT_DIR$/../node_modules/expo-constants/android/expo-constants.iml" />
@@ -15,7 +16,6 @@
       <module fileurl="file://$PROJECT_DIR$/../node_modules/expo-permissions/android/expo-permissions.iml" filepath="$PROJECT_DIR$/../node_modules/expo-permissions/android/expo-permissions.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/expo-sqlite/android/expo-sqlite.iml" filepath="$PROJECT_DIR$/../node_modules/expo-sqlite/android/expo-sqlite.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/expo-web-browser/android/expo-web-browser.iml" filepath="$PROJECT_DIR$/../node_modules/expo-web-browser/android/expo-web-browser.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/@react-native-community/google-signin/android/react-native-google-signin.iml" filepath="$PROJECT_DIR$/../node_modules/@react-native-community/google-signin/android/react-native-google-signin.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/@react-native-seoul/kakao-login/android/react-native-seoul-kakao-login.iml" filepath="$PROJECT_DIR$/../node_modules/@react-native-seoul/kakao-login/android/react-native-seoul-kakao-login.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/@react-native-seoul/naver-login/android/react-native-seoul-naver-login.iml" filepath="$PROJECT_DIR$/../node_modules/@react-native-seoul/naver-login/android/react-native-seoul-naver-login.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-splash-screen/android/react-native-splash-screen.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-splash-screen/android/react-native-splash-screen.iml" />

@@ -11,14 +11,20 @@ const androidKeys = {
 
 const initials = androidKeys;
 
-const NaverLoginComponent = () =>{
-    const [naverToken, setNaverToken] = React.useState(null);
-
-    const naverLogin = props => {
+class NaverLoginComponent extends Component{
+    constructor(props) {
+        super(props)
+        this.state = {
+            loggedIn: false,
+            token: null,
+            userInfo: {email: '', name: '', type: 'naver'}
+        }
+    }
+    naverLogin = (props )=> {
         return new Promise((resolve, reject) => {
             NaverLogin.login(props, (err, token) => {
                 console.log(`\n\n Token is fetched :: ${token} \n\n`);
-                setNaverToken(token);
+                this.setState({loggedIn: true, token: token})
                 if(err) {
                     reject(err);
                     return;
@@ -28,35 +34,38 @@ const NaverLoginComponent = () =>{
         })
     }
 
-    const naverLogout = () => {
+    naverLogout = () => {
         NaverLogin.logout();
-        setNaverToken("");
+        this.setState({loggedIn: false})
     }
 
-    const getUserProfile = async () => {
-        const profileResult = await getProfile(naverToken.accessToken);
+    getUserProfile = async () => {
+        const profileResult = await getProfile(this.state.token.accessToken);
         if(profileResult.resultcode == "024") {
             Alert.alert("로그인 실패", profileResult.message);
             return;
         }
-        console.log("profileResult", profileResult);
+        this.setState({userInfo: {email: profileResult.response.email, name: profileResult.response.name}})
     }
-  
-    return(
-        <>
-        {!naverToken && <TouchableOpacity style={styles.naver_btn} onPress={()=>naverLogin(initials)}>
-                                <Text style={styles.naver_text}>네이버 로그인</Text>
-                        </TouchableOpacity>}
-
-        {!!naverToken && <TouchableOpacity style={styles.naver_btn} onPress={naverLogout}>
-                            <Text style={styles.naver_text}>네이버 로그아웃</Text>
-                        </TouchableOpacity>}
-
-        {!!naverToken && <TouchableOpacity style={styles.naver_btn} onPress={getUserProfile}>
-                            <Text style={styles.naver_text}>회원정보 가져오기</Text>
-                        </TouchableOpacity>}
-        </>
-    )
+    render() {
+        const loggedIn = this.state.loggedIn;
+        return(
+            <>
+            {!loggedIn && <TouchableOpacity style={styles.naver_btn} onPress={()=>this.naverLogin(initials)}>
+                                    <Text style={styles.naver_text}>네이버 로그인</Text>
+                            </TouchableOpacity>}
+    
+            {!!loggedIn && <TouchableOpacity style={styles.naver_btn} onPress={this.naverLogout}>
+                                <Text style={styles.naver_text}>네이버 로그아웃</Text>
+                            </TouchableOpacity>}
+    
+            {!!loggedIn && <TouchableOpacity style={styles.naver_btn} onPress={this.getUserProfile}>
+                                <Text style={styles.naver_text}>회원정보 가져오기</Text>
+                            </TouchableOpacity>}
+            </>
+        )
+    }
+    
 }
 
 const styles = StyleSheet.create({

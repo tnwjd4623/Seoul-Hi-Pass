@@ -24,18 +24,6 @@ public final class R {
         public static final int abc_slide_out_top = 0x7f010009;
         public static final int abc_tooltip_enter = 0x7f01000a;
         public static final int abc_tooltip_exit = 0x7f01000b;
-        public static final int btn_checkbox_to_checked_box_inner_merged_animation = 0x7f01000c;
-        public static final int btn_checkbox_to_checked_box_outer_merged_animation = 0x7f01000d;
-        public static final int btn_checkbox_to_checked_icon_null_animation = 0x7f01000e;
-        public static final int btn_checkbox_to_unchecked_box_inner_merged_animation = 0x7f01000f;
-        public static final int btn_checkbox_to_unchecked_check_path_merged_animation = 0x7f010010;
-        public static final int btn_checkbox_to_unchecked_icon_null_animation = 0x7f010011;
-        public static final int btn_radio_to_off_mtrl_dot_group_animation = 0x7f010012;
-        public static final int btn_radio_to_off_mtrl_ring_outer_animation = 0x7f010013;
-        public static final int btn_radio_to_off_mtrl_ring_outer_path_animation = 0x7f010014;
-        public static final int btn_radio_to_on_mtrl_dot_group_animation = 0x7f010015;
-        public static final int btn_radio_to_on_mtrl_ring_outer_animation = 0x7f010016;
-        public static final int btn_radio_to_on_mtrl_ring_outer_path_animation = 0x7f010017;
         public static final int reactandroid_catalyst_fade_in = 0x7f01001c;
         public static final int reactandroid_catalyst_fade_out = 0x7f01001d;
         public static final int reactandroid_catalyst_push_up_in = 0x7f01001e;
@@ -111,7 +99,6 @@ public final class R {
         public static final int buttonBarNeutralButtonStyle = 0x7f040054;
         public static final int buttonBarPositiveButtonStyle = 0x7f040055;
         public static final int buttonBarStyle = 0x7f040056;
-        public static final int buttonCompat = 0x7f040057;
         public static final int buttonGravity = 0x7f040058;
         public static final int buttonIconDimen = 0x7f040059;
         public static final int buttonPanelSideLayout = 0x7f04005a;
@@ -159,15 +146,7 @@ public final class R {
         public static final int dividerHorizontal = 0x7f0400ed;
         public static final int dividerPadding = 0x7f0400ee;
         public static final int dividerVertical = 0x7f0400ef;
-        public static final int drawableBottomCompat = 0x7f0400f0;
-        public static final int drawableEndCompat = 0x7f0400f1;
-        public static final int drawableLeftCompat = 0x7f0400f2;
-        public static final int drawableRightCompat = 0x7f0400f3;
         public static final int drawableSize = 0x7f0400f4;
-        public static final int drawableStartCompat = 0x7f0400f5;
-        public static final int drawableTint = 0x7f0400f6;
-        public static final int drawableTintMode = 0x7f0400f7;
-        public static final int drawableTopCompat = 0x7f0400f8;
         public static final int drawerArrowStyle = 0x7f0400f9;
         public static final int dropDownListViewStyle = 0x7f0400fa;
         public static final int dropdownListPreferredItemHeight = 0x7f0400fb;
@@ -219,8 +198,6 @@ public final class R {
         public static final int layout_keyline = 0x7f040168;
         public static final int lineHeight = 0x7f04016c;
         public static final int listChoiceBackgroundIndicator = 0x7f04016e;
-        public static final int listChoiceIndicatorMultipleAnimated = 0x7f04016f;
-        public static final int listChoiceIndicatorSingleAnimated = 0x7f040170;
         public static final int listDividerAlertDialog = 0x7f040171;
         public static final int listItemLayout = 0x7f040172;
         public static final int listLayout = 0x7f040173;
@@ -229,15 +206,12 @@ public final class R {
         public static final int listPreferredItemHeight = 0x7f040176;
         public static final int listPreferredItemHeightLarge = 0x7f040177;
         public static final int listPreferredItemHeightSmall = 0x7f040178;
-        public static final int listPreferredItemPaddingEnd = 0x7f040179;
         public static final int listPreferredItemPaddingLeft = 0x7f04017a;
         public static final int listPreferredItemPaddingRight = 0x7f04017b;
-        public static final int listPreferredItemPaddingStart = 0x7f04017c;
         public static final int logo = 0x7f04017e;
         public static final int logoDescription = 0x7f04017f;
         public static final int maxButtonHeight = 0x7f040197;
         public static final int measureWithLargestChild = 0x7f040199;
-        public static final int menu = 0x7f04019a;
         public static final int multiChoiceItemLayout = 0x7f04019b;
         public static final int navigationContentDescription = 0x7f04019c;
         public static final int navigationIcon = 0x7f04019d;
@@ -327,7 +301,6 @@ public final class R {
         public static final int textAppearanceSmallPopupMenu = 0x7f040230;
         public static final int textColorAlertDialogListItem = 0x7f040233;
         public static final int textColorSearchUrl = 0x7f040234;
-        public static final int textLocale = 0x7f040237;
         public static final int theme = 0x7f040239;
         public static final int thickness = 0x7f04023a;
         public static final int thumbTextPadding = 0x7f04023b;
@@ -530,9 +503,6 @@ public final class R {
         public static final int abc_edit_text_inset_horizontal_material = 0x7f07002d;
         public static final int abc_edit_text_inset_top_material = 0x7f07002e;
         public static final int abc_floating_window_z = 0x7f07002f;
-        public static final int abc_list_item_height_large_material = 0x7f070030;
-        public static final int abc_list_item_height_material = 0x7f070031;
-        public static final int abc_list_item_height_small_material = 0x7f070032;
         public static final int abc_list_item_padding_horizontal_material = 0x7f070033;
         public static final int abc_panel_menu_list_width = 0x7f070034;
         public static final int abc_progress_bar_height_material = 0x7f070035;
@@ -611,13 +581,11 @@ public final class R {
         public static final int abc_action_bar_item_background_material = 0x7f080007;
         public static final int abc_btn_borderless_material = 0x7f080008;
         public static final int abc_btn_check_material = 0x7f080009;
-        public static final int abc_btn_check_material_anim = 0x7f08000a;
         public static final int abc_btn_check_to_on_mtrl_000 = 0x7f08000b;
         public static final int abc_btn_check_to_on_mtrl_015 = 0x7f08000c;
         public static final int abc_btn_colored_material = 0x7f08000d;
         public static final int abc_btn_default_mtrl_shape = 0x7f08000e;
         public static final int abc_btn_radio_material = 0x7f08000f;
-        public static final int abc_btn_radio_material_anim = 0x7f080010;
         public static final int abc_btn_radio_to_on_mtrl_000 = 0x7f080011;
         public static final int abc_btn_radio_to_on_mtrl_015 = 0x7f080012;
         public static final int abc_btn_switch_to_on_mtrl_00001 = 0x7f080013;
@@ -693,14 +661,6 @@ public final class R {
         public static final int abc_textfield_search_default_mtrl_alpha = 0x7f080059;
         public static final int abc_textfield_search_material = 0x7f08005a;
         public static final int abc_vector_test = 0x7f08005b;
-        public static final int btn_checkbox_checked_mtrl = 0x7f080066;
-        public static final int btn_checkbox_checked_to_unchecked_mtrl_animation = 0x7f080067;
-        public static final int btn_checkbox_unchecked_mtrl = 0x7f080068;
-        public static final int btn_checkbox_unchecked_to_checked_mtrl_animation = 0x7f080069;
-        public static final int btn_radio_off_mtrl = 0x7f080070;
-        public static final int btn_radio_off_to_on_mtrl_animation = 0x7f080071;
-        public static final int btn_radio_on_mtrl = 0x7f080072;
-        public static final int btn_radio_on_to_off_mtrl_animation = 0x7f080073;
         public static final int common_full_open_on_phone = 0x7f080094;
         public static final int common_google_signin_btn_icon_dark = 0x7f080095;
         public static final int common_google_signin_btn_icon_dark_focused = 0x7f080096;
@@ -741,39 +701,6 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int accessibility_action_clickable_span = 0x7f090009;
-        public static final int accessibility_custom_action_0 = 0x7f09000a;
-        public static final int accessibility_custom_action_1 = 0x7f09000b;
-        public static final int accessibility_custom_action_10 = 0x7f09000c;
-        public static final int accessibility_custom_action_11 = 0x7f09000d;
-        public static final int accessibility_custom_action_12 = 0x7f09000e;
-        public static final int accessibility_custom_action_13 = 0x7f09000f;
-        public static final int accessibility_custom_action_14 = 0x7f090010;
-        public static final int accessibility_custom_action_15 = 0x7f090011;
-        public static final int accessibility_custom_action_16 = 0x7f090012;
-        public static final int accessibility_custom_action_17 = 0x7f090013;
-        public static final int accessibility_custom_action_18 = 0x7f090014;
-        public static final int accessibility_custom_action_19 = 0x7f090015;
-        public static final int accessibility_custom_action_2 = 0x7f090016;
-        public static final int accessibility_custom_action_20 = 0x7f090017;
-        public static final int accessibility_custom_action_21 = 0x7f090018;
-        public static final int accessibility_custom_action_22 = 0x7f090019;
-        public static final int accessibility_custom_action_23 = 0x7f09001a;
-        public static final int accessibility_custom_action_24 = 0x7f09001b;
-        public static final int accessibility_custom_action_25 = 0x7f09001c;
-        public static final int accessibility_custom_action_26 = 0x7f09001d;
-        public static final int accessibility_custom_action_27 = 0x7f09001e;
-        public static final int accessibility_custom_action_28 = 0x7f09001f;
-        public static final int accessibility_custom_action_29 = 0x7f090020;
-        public static final int accessibility_custom_action_3 = 0x7f090021;
-        public static final int accessibility_custom_action_30 = 0x7f090022;
-        public static final int accessibility_custom_action_31 = 0x7f090023;
-        public static final int accessibility_custom_action_4 = 0x7f090024;
-        public static final int accessibility_custom_action_5 = 0x7f090025;
-        public static final int accessibility_custom_action_6 = 0x7f090026;
-        public static final int accessibility_custom_action_7 = 0x7f090027;
-        public static final int accessibility_custom_action_8 = 0x7f090028;
-        public static final int accessibility_custom_action_9 = 0x7f090029;
         public static final int action0 = 0x7f09002a;
         public static final int action_bar = 0x7f09002b;
         public static final int action_bar_activity_content = 0x7f09002c;
@@ -809,7 +736,6 @@ public final class R {
         public static final int centerCrop = 0x7f090064;
         public static final int centerInside = 0x7f090065;
         public static final int checkbox = 0x7f090068;
-        public static final int checked = 0x7f090069;
         public static final int chronometer = 0x7f09006a;
         public static final int content = 0x7f09007f;
         public static final int contentPanel = 0x7f090080;
@@ -818,7 +744,6 @@ public final class R {
         public static final int dark = 0x7f09008b;
         public static final int decor_content_parent = 0x7f09008c;
         public static final int default_activity_button = 0x7f09008d;
-        public static final int dialog_button = 0x7f090093;
         public static final int edit_query = 0x7f090099;
         public static final int end = 0x7f09009a;
         public static final int end_padder = 0x7f09009b;
@@ -854,8 +779,6 @@ public final class R {
         public static final int notification_background = 0x7f0900f5;
         public static final int notification_main_column = 0x7f0900f6;
         public static final int notification_main_column_container = 0x7f0900f7;
-        public static final int off = 0x7f0900f8;
-        public static final int on = 0x7f0900f9;
         public static final int parentPanel = 0x7f090103;
         public static final int progress_circular = 0x7f09010a;
         public static final int progress_horizontal = 0x7f09010b;
@@ -908,11 +831,6 @@ public final class R {
         public static final int submenuarrow = 0x7f09015a;
         public static final int submit_area = 0x7f09015b;
         public static final int tabMode = 0x7f09015c;
-        public static final int tag_accessibility_actions = 0x7f09015d;
-        public static final int tag_accessibility_clickable_spans = 0x7f09015e;
-        public static final int tag_accessibility_heading = 0x7f09015f;
-        public static final int tag_accessibility_pane_title = 0x7f090160;
-        public static final int tag_screen_reader_focusable = 0x7f090161;
         public static final int tag_transition_group = 0x7f090162;
         public static final int tag_unhandled_key_event_manager = 0x7f090163;
         public static final int tag_unhandled_key_listeners = 0x7f090164;
@@ -926,7 +844,6 @@ public final class R {
         public static final int title_template = 0x7f090173;
         public static final int top = 0x7f090176;
         public static final int topPanel = 0x7f090177;
-        public static final int unchecked = 0x7f09017e;
         public static final int uniform = 0x7f09017f;
         public static final int up = 0x7f090182;
         public static final int wide = 0x7f09018d;
@@ -943,17 +860,6 @@ public final class R {
         public static final int react_native_dev_server_port = 0x7f0a0010;
         public static final int react_native_inspector_proxy_port = 0x7f0a0011;
         public static final int status_bar_notification_info_maxnum = 0x7f0a0013;
-    }
-    public static final class interpolator {
-        private interpolator() {}
-
-        public static final int btn_checkbox_checked_mtrl_animation_interpolator_0 = 0x7f0b0000;
-        public static final int btn_checkbox_checked_mtrl_animation_interpolator_1 = 0x7f0b0001;
-        public static final int btn_checkbox_unchecked_mtrl_animation_interpolator_0 = 0x7f0b0002;
-        public static final int btn_checkbox_unchecked_mtrl_animation_interpolator_1 = 0x7f0b0003;
-        public static final int btn_radio_to_off_mtrl_animation_interpolator_0 = 0x7f0b0004;
-        public static final int btn_radio_to_on_mtrl_animation_interpolator_0 = 0x7f0b0005;
-        public static final int fast_out_slow_in = 0x7f0b0006;
     }
     public static final class layout {
         private layout() {}
@@ -986,7 +892,6 @@ public final class R {
         public static final int abc_search_view = 0x7f0c0019;
         public static final int abc_select_dialog_material = 0x7f0c001a;
         public static final int abc_tooltip = 0x7f0c001b;
-        public static final int custom_dialog = 0x7f0c0029;
         public static final int notification_action = 0x7f0c004d;
         public static final int notification_action_tombstone = 0x7f0c004e;
         public static final int notification_media_action = 0x7f0c004f;
@@ -1276,7 +1181,6 @@ public final class R {
         public static final int Base_Widget_AppCompat_SeekBar_Discrete = 0x7f1100b9;
         public static final int Base_Widget_AppCompat_Spinner = 0x7f1100ba;
         public static final int Base_Widget_AppCompat_Spinner_Underlined = 0x7f1100bb;
-        public static final int Base_Widget_AppCompat_TextView = 0x7f1100bc;
         public static final int Base_Widget_AppCompat_TextView_SpinnerItem = 0x7f1100bd;
         public static final int Base_Widget_AppCompat_Toolbar = 0x7f1100be;
         public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation = 0x7f1100bf;
@@ -1392,8 +1296,6 @@ public final class R {
         public static final int ThemeOverlay_AppCompat_ActionBar = 0x7f1101a7;
         public static final int ThemeOverlay_AppCompat_Dark = 0x7f1101a8;
         public static final int ThemeOverlay_AppCompat_Dark_ActionBar = 0x7f1101a9;
-        public static final int ThemeOverlay_AppCompat_DayNight = 0x7f1101aa;
-        public static final int ThemeOverlay_AppCompat_DayNight_ActionBar = 0x7f1101ab;
         public static final int ThemeOverlay_AppCompat_Dialog = 0x7f1101ac;
         public static final int ThemeOverlay_AppCompat_Dialog_Alert = 0x7f1101ad;
         public static final int ThemeOverlay_AppCompat_Light = 0x7f1101ae;
@@ -1487,7 +1389,6 @@ public final class R {
         public static final int Widget_AppCompat_Spinner_DropDown = 0x7f110201;
         public static final int Widget_AppCompat_Spinner_DropDown_ActionBar = 0x7f110202;
         public static final int Widget_AppCompat_Spinner_Underlined = 0x7f110203;
-        public static final int Widget_AppCompat_TextView = 0x7f110204;
         public static final int Widget_AppCompat_TextView_SpinnerItem = 0x7f110205;
         public static final int Widget_AppCompat_Toolbar = 0x7f110206;
         public static final int Widget_AppCompat_Toolbar_Button_Navigation = 0x7f110207;

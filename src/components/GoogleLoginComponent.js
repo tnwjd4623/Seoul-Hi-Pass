@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Text, StyleSheet, TouchableOpacity} from 'react-native'
+import {Text, StyleSheet, TouchableOpacity, Button} from 'react-native'
 import {GoogleSignin, GoogleSigninButton, statusCodes} from '@react-native-community/google-signin';
 
 
@@ -9,7 +9,7 @@ export default class GoogleLoginComponent extends Component {
         this.state = {
             pushData: [],
             loggedIn: false,
-            userInfo: null,
+            userInfo: {email: '', name: '', type:''}
         }
     }
     componentDidMount() {
@@ -27,7 +27,10 @@ export default class GoogleLoginComponent extends Component {
         try {
             await GoogleSignin.hasPlayServices();
             const userInfo = await GoogleSignin.signIn();
-            this.setState({userInfo: userInfo, loggedIn: true})
+            this.setState({userInfo: {email: userInfo.user.email, name: userInfo.user.name, type:'google'}, loggedIn: true}, function() {
+                console.log(this.state.userInfo);
+            })
+            
         } catch(error) {
             if(error.code === statusCodes.SIGN_IN_CANCELLED) {
                 console.log("login Cancelled");
@@ -59,23 +62,18 @@ export default class GoogleLoginComponent extends Component {
                     size={GoogleSigninButton.Size.Wide}
                     color={GoogleSigninButton.Color.Dark}
                     onPress={this._signIn}
-                    disabled={this.state.isSignInProgress}/>
+                    disabled={this.state.loggedIn}/>
         )
     }
-    renderUserInfo(userInfo) {
-        return (
-            <View>
-                <Text>{userInfo.user.name}</Text>
-            </View>
-        )
-    }
+    
     render() {
-        const {userInfo} = this.state;
-        const body = userInfo ? this.renderUserInfo(userInfo) : this.renderSignInButton();
-
         return(
             <>
-                {body}
+                {!this.state.loggedIn && <GoogleSigninButton style={{width: 220, height: 48}}
+                    size={GoogleSigninButton.Size.Wide}
+                    color={GoogleSigninButton.Color.Dark}
+                    onPress={this._signIn}
+                    disabled={this.state.loggedIn}/>}
             </>
         )
     }
