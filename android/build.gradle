@@ -80,6 +80,7 @@ allprojects {
 
     maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }
 
+    maven{ url 'https://navercorp.bintray.com/maps' }
     // Want this last so that we never end up with a stale cache
     mavenLocal()
   }

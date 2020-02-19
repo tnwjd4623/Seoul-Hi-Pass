@@ -52,7 +52,7 @@ class NaverLoginComponent extends Component{
         return(
             <>
             {!loggedIn && <TouchableOpacity style={styles.naver_btn} onPress={()=>this.naverLogin(initials)}>
-                                    <Text style={styles.naver_text}>네이버 로그인</Text>
+                                    
                             </TouchableOpacity>}
     
             {!!loggedIn && <TouchableOpacity style={styles.naver_btn} onPress={this.naverLogout}>
@@ -70,13 +70,23 @@ class NaverLoginComponent extends Component{
 
 const styles = StyleSheet.create({
     naver_btn: {
-        width: 220,
-        height: 40,
+        width: 50,
+        height: 50,
         backgroundColor: '#3cb538',
-        borderRadius: 20,
+        borderRadius: 100/2,
         alignItems: 'center',
         justifyContent: 'center',
-        marginBottom: 5
+        marginBottom: 5,
+
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+
+        elevation: 5,
     },
     naver_text: {
         color: '#ffffff',

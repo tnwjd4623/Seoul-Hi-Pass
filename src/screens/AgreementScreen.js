@@ -5,37 +5,31 @@ import { ScrollView } from 'react-native-gesture-handler'
 export default class AgreementScreen extends Component {
     render() {
         return(
-            <>
+            <View style={{backgroundColor:'#fff', height:'100%'}}>
                 <Text style={styles.text}>이용약관</Text>
                 <View style={styles.container}>
                     <ScrollView>
-                        <Text style={{color: '#808080'}}>이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관</Text>
+                        <Text style={{color: '#000'}}>이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관</Text>
                     </ScrollView>
                 </View>
 
                 <Text style={styles.text}>이용약관</Text>
                 <View style={styles.container}>
                     <ScrollView>
-                        <Text style={{color: '#808080'}}>이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관</Text>
+                        <Text style={{color: '#000'}}>이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관</Text>
                     </ScrollView>
                 </View>
 
-                <Text style={styles.text}>이용약관</Text>
-                <View style={styles.container}>
-                <ScrollView>
-                        <Text style={{color: '#808080'}}>이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관이용약관</Text>
-                    </ScrollView>
-                </View>
-            </>
+            </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
     container:{
-        height: '28%',
+        height: '45%',
         width: '90%',
-        backgroundColor: '#d6d6d6',
+        backgroundColor: '#f5f5f5',
         alignSelf: 'center',
         borderRadius: 10
     },

@@ -1,121 +1,91 @@
 import React, { Component } from 'react'
-import {Text, View, StyleSheet, TouchableOpacity, ScrollView, TouchableHighlight} from 'react-native'
-import LocationHeader from '../components/LocationHeader'
-import UserProfile from '../components/UserProfile'
+import {Text, View, StyleSheet, Platform, StatusBar, TouchableHighlight} from 'react-native'
+import Header from '../components/Header'
+import CardComponent from '../components/CardComponent';
+import TmoneyComponent from '../components/TmoneyComponent';
 import {MaterialIcons} from '@expo/vector-icons'
+import { TextInput } from 'react-native-gesture-handler';
+import Map from '../components/Map'
 
 export default class HomeScreen extends Component {
     constructor(props){
         super(props);
         this.state = {
-            location: "대전 유성구 덕명동"
+            pay:'tmoney',
           };
+    }
+    _depart = text => {
+        this.setState({depart: text})
+    }
+    _arrive = text => {
+        this.setState({arrive: text})
+    }
+    _swap = () => {
+        const depart = this.state.depart;
+        const arrive = this.state.arrive;
+
+        this.setState({depart: arrive, arrive: depart})
     }
 
     render() {
         return(
-            <>
-            <ScrollView style={{backgroundColor: '#fff'}}>
-                <View style={{flexDirection: 'row', alignItems: 'center', width: '100%', justifyContent: 'center'}}>
-                    <TouchableHighlight style={{width: '85%', marginLeft: 20}} onPress={()=>this.props.navigation.navigate('Map', {location:this.state.location} )}>
-                        <LocationHeader location={this.state.location} />
-                    </TouchableHighlight>
+            <View style={{paddingTop: StatusBar.currentHeight, backgroundColor: '#fff', height:'100%'}}>
+                <Header navigation={this.props.navigation}/>
+                {this.state.pay == 'credit' ? <CardComponent navigation={this.props.navigation}/> : <></>}
+                {this.state.pay == 'tmoney'? <TmoneyComponent navigation={this.props.navigation} setting={true}/> : <></>}
 
-                    <TouchableHighlight onPress={()=>this.props.navigation.navigate('Search', {location:this.state.location})}>
-                        <MaterialIcons name="search" size={28} color={"#828282"}/>
+                <View style={styles.search}>
+                    <TouchableHighlight style={styles.swap} onPress={this._swap}>
+                        <MaterialIcons name="swap-vert" size={30} color="#465cdb"/>
+                    </TouchableHighlight>
+                    <View style={{width: '70%', marginRight: 10}}>
+                        <TextInput style={styles.input} placeholder="출발역을 입력해주세요" placeholderTextColor="#000"
+                            onChangeText={this._depart}/>
+                        <View style={styles.line}/>
+                        <TextInput style={styles.input} placeholder="도착역을 입력해주세요" placeholderTextColor="#000"
+                            onChangeText={this._arrive}/>
+                    </View>
+                    <TouchableHighlight style={styles.swap} onPress={()=>this.props.navigation.navigate('search', 
+                        {depart:'xx역', arrive: 'yy역'})}>
+                        <MaterialIcons name="search" size={30} color="#465cdb"/>
                     </TouchableHighlight>
                 </View>
 
-                <UserProfile/>
-
-                <TouchableOpacity style={styles.pre_order} onPress={()=>this.props.navigation.navigate('PreOrder')}>
-                    <View style={{width: '100%'}}>
-                        <Text style={styles.pre_text}>미리 주문하기</Text>
-                        <Text style={{color: '#666666'}}>시간이 밥이다</Text>
-                    </View>
-                </TouchableOpacity>
-
-                <View style={styles.around_container}>
-                    <View style={{flexDirection: 'row', marginTop: 15, marginLeft: 10}}>
-                        <Text>내 주변 인기 맛집</Text>
-                    </View>
-
-                    <View style={styles.line}></View>
-                    <View style={{flexDirection: 'row', marginTop: 15, marginLeft: 10, alignItems: 'center'}}>
-                        <View style={styles.shop_photo}></View>
-                        <View style={{width: '60%'}}>
-                            <Text>상호명</Text>
-                            <Text>주소</Text>
-                        </View>
-                        <View>
-                            <Text>카테고리</Text>
-                        </View>
-                    </View>
-
-                    <View style={styles.line}></View>
-                    <View style={{flexDirection: 'row', marginTop: 15, marginLeft: 10, alignItems: 'center'}}>
-                        <View style={styles.shop_photo}></View>
-                        <View style={{width: '60%'}}>
-                            <Text>상호명</Text>
-                            <Text>주소</Text>
-                        </View>
-                        <View>
-                            <Text>카테고리</Text>
-                        </View>
-                    </View>
-
-                    <View style={styles.line}></View>
-                    <View style={{flexDirection: 'row', marginTop: 15, marginLeft: 10, alignItems: 'center'}}>
-                        <View style={styles.shop_photo}></View>
-                        <View style={{width: '60%'}}>
-                            <Text>상호명</Text>
-                            <Text>주소</Text>
-                        </View>
-                        <View>
-                            <Text>카테고리</Text>
-                        </View>
-                    </View>
-                </View>
-
-                </ScrollView>
-            </>
+                <Map/>
+            </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
-    pre_order: {
-        width: '90%',
+   search: {
+        backgroundColor: '#fff',
+        width: '80%',
+        height:80,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 1,
+        },
+        shadowOpacity: 0.20,
+        shadowRadius: 1.41,
+        elevation: 2, 
+        marginTop:20,
         alignSelf: 'center',
-        backgroundColor: '#e0e0e0',
-        borderRadius: 20,
-        height: 80,
-        marginTop: 20,
-        paddingLeft: 20,
         alignItems: 'center',
-        justifyContent: 'center'
+        flexDirection: 'row',
+        paddingLeft: 20
     },
-    pre_text: {
-        fontSize: 17,
-        fontWeight: 'bold',
-        color: '#666666'
-    },
-    around_container: {
-        width: '90%',
-        alignSelf: 'center'
+    swap: {
+        width:'10%'
     },
     line: {
-        height: 1,
-        width: '95%',
-        backgroundColor: 'gray',
-        alignSelf: 'center',
-        marginTop: 20,
-    },
-    shop_photo: {
-        height: 60,
-        width: 60,
-        borderRadius: 15,
         backgroundColor: '#e0e0e0',
-        marginRight: 20
+        height: 1,
+        width:'100%'
+    },
+    input: {
+        width: '100%',
+        marginLeft: 20
     }
 })

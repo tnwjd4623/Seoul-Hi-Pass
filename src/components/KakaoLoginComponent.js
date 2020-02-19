@@ -47,7 +47,6 @@ export default class KakaoLoginComponent extends Component {
         return (
             <>
             {!loggedIn && <TouchableOpacity style={styles.kakao_btn} onPress={this.kakaoLogin}>
-                            <Text style={styles.kakao_text}>카카오 로그인</Text>
                         </TouchableOpacity>}
     
             {!!loggedIn && <TouchableOpacity style={styles.kakao_btn} onPress={this.kakaoLogout}>
@@ -60,13 +59,23 @@ export default class KakaoLoginComponent extends Component {
 }
 const styles = StyleSheet.create({
     kakao_btn: {
-        width: 220,
-        height: 40,
+        width: 50,
+        height: 50,
         backgroundColor: '#fff708',
-        borderRadius: 20,
+        borderRadius: 100/2,
         alignItems: 'center',
         justifyContent: 'center',
-        marginBottom: 5
+        marginBottom: 5,
+
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+
+        elevation: 5,
     },
     kakao_text: {
         color: '#4a3628',

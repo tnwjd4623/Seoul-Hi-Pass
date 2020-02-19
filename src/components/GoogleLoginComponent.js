@@ -56,25 +56,32 @@ export default class GoogleLoginComponent extends Component {
             console.log(error);
         }
     }
-    renderSignInButton() {
-        return (
-            <GoogleSigninButton style={{width: 220, height: 48}}
-                    size={GoogleSigninButton.Size.Wide}
-                    color={GoogleSigninButton.Color.Dark}
-                    onPress={this._signIn}
-                    disabled={this.state.loggedIn}/>
-        )
-    }
-    
+
     render() {
         return(
             <>
-                {!this.state.loggedIn && <GoogleSigninButton style={{width: 220, height: 48}}
-                    size={GoogleSigninButton.Size.Wide}
-                    color={GoogleSigninButton.Color.Dark}
-                    onPress={this._signIn}
-                    disabled={this.state.loggedIn}/>}
+                {!this.state.loggedIn && <TouchableOpacity style={styles.btn}
+                    onPress={this._signIn}/>}
             </>
         )
     }
 }
+
+const styles = StyleSheet.create({
+    btn: {
+        width: 50,
+        height: 50,
+        borderRadius: 100/2,
+        backgroundColor: '#fff',
+
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+
+        elevation: 5,
+    }
+})
