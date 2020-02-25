@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import {View, StyleSheet, Text, TouchableOpacity, Alert} from 'react-native'
+import {View, StyleSheet, Text, TouchableOpacity, Alert, TouchableHighlight, Image} from 'react-native'
 import {NaverLogin, getProfile} from '@react-native-seoul/naver-login'
-
 
 const androidKeys = {
     kConsumerKey:'J54f6Ml6Fa4o3mBwRbo0',
@@ -51,9 +50,10 @@ class NaverLoginComponent extends Component{
         const loggedIn = this.state.loggedIn;
         return(
             <>
-            {!loggedIn && <TouchableOpacity style={styles.naver_btn} onPress={()=>this.naverLogin(initials)}>
-                                    
-                            </TouchableOpacity>}
+            {!loggedIn && <TouchableHighlight style={styles.naver_btn} onPress={()=>this.naverLogin(initials)}>
+                                    <Image style={{height:50, width:50}}
+                                    source={require('../../assets/naver.png')}/>
+                            </TouchableHighlight>}
     
             {!!loggedIn && <TouchableOpacity style={styles.naver_btn} onPress={this.naverLogout}>
                                 <Text style={styles.naver_text}>네이버 로그아웃</Text>
@@ -72,10 +72,6 @@ const styles = StyleSheet.create({
     naver_btn: {
         width: 50,
         height: 50,
-        backgroundColor: '#3cb538',
-        borderRadius: 100/2,
-        alignItems: 'center',
-        justifyContent: 'center',
         marginBottom: 5,
 
         shadowColor: "#000",

@@ -14,26 +14,31 @@ export default class EmailLoginScreen extends Component {
     }
     render() {
         return(
-            <View style={{backgroundColor: '#fff', width: '100%', height: '100%'}}>
-                <View style={{width: '100%', height: '70%', alignItems: 'center', justifyContent: 'center'}}>
+            <View style={{backgroundColor: '#384ec9', width: '100%', height: '100%'}}>
+                <View style={{width: '100%', height: '80%', 
+                alignItems: 'center', justifyContent: 'center', justifyContent: 'flex-end'}}>
                     <View style={styles.login_form}>
                         <View>
-                            <Text style={{marginLeft: 15,paddingLeft: 10}}>이메일</Text>
-                            <TextInput style={styles.input} placeholder={"이메일 입력"} placeholderTextColor={'#999999'}/>
+                            <Text style={{marginLeft: 15,paddingLeft: 10, color:'#fff'}}>이메일</Text>
+                            <TextInput style={styles.input} 
+                            placeholder={"이메일 입력"} placeholderTextColor={'#fff'}
+                            />
                         </View>
 
                         <View>
-                            <Text style={{marginLeft: 15,paddingLeft: 10}}>비밀번호</Text>
-                            <TextInput style={styles.input} placeholder={"비밀번호"} placeholderTextColor={'#999999'} secureTextEntry={true}/>
+                            <Text style={{marginLeft: 15,paddingLeft: 10, color: '#fff'}}>비밀번호</Text>
+                            <TextInput style={styles.input} 
+                            placeholder={"8자리 이상"} placeholderTextColor={'#fff'} 
+                            secureTextEntry={true}/>
                         </View>
                     </View>
 
                     <TouchableOpacity style={styles.login_btn} onPress={this.login}>
-                        <Text style={styles.email_text}>로그인</Text>
+                        <Text style={styles.login_text}>로그인</Text>
                     </TouchableOpacity>
 
                     <View style={{flexDirection: 'row'}}>
-                        <Text style={{marginTop:10, marginRight: 10}}>비밀번호를 잊어버리셨나요 ? </Text>
+                        <Text style={{marginTop:10, marginRight: 10, color: '#fff'}}>비밀번호를 잊어버리셨나요 ? </Text>
                         <TouchableOpacity onPress={this.findPW}>
                             <Text style={styles.find_pw}>비밀번호찾기</Text>
                         </TouchableOpacity>
@@ -51,19 +56,38 @@ const styles = StyleSheet.create({
     input : {
         marginLeft: 15,
         marginBottom:20,
-        borderColor : '#828282',
-        borderBottomWidth: 1,
+        borderColor : '#fff',
+        borderBottomWidth: 0.5,
         paddingLeft: 10,
+        marginTop: 10
         
     },
     login_btn: {
-        width: '70%',
-        height: 40,
-        backgroundColor: '#465cdb',
-        borderRadius: 20,
-        alignItems: 'center',
-        justifyContent: 'center',
+        width: '90%',
+        alignSelf: 'flex-start'
+
+        
+    },
+    find_pw: {
+        borderBottomWidth: 1,
+        marginTop: 10,
+        color: '#fff',
+        borderColor: '#fff'
+    },
+    login_text:{
+        color: '#384ec9',
+        fontWeight: 'bold',
+
+        width: '100%',
+        height:0,
+        alignSelf: 'flex-start',
         marginBottom: 5,
+
+        borderTopWidth: 45,
+        borderTopColor: '#fff',
+        borderRightWidth: 10,
+        borderRightColor: 'transparent',
+
         shadowColor: '#cccccc',
         shadowOffset: {
             width:0,
@@ -72,15 +96,8 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
         elevation: 5,
-    },
-    find_pw: {
-        borderBottomWidth: 1,
-        marginTop: 10,
-        color: '#828282',
-        borderColor: '#818181'
-    },
-    email_text:{
-        color: '#fff',
-        fontWeight: 'bold'
+
+        textAlignVertical: 'center',
+        textAlign: 'center'
     },
 })

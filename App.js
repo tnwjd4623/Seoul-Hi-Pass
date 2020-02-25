@@ -1,6 +1,9 @@
+import 'react-native-gesture-handler'
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Platform, NativeModules } from 'react-native';
 import AppContainer from './src/AppContainer';
+
+
 
 export default class App extends Component{
   render() {

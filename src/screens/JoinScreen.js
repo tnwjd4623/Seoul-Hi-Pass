@@ -66,37 +66,32 @@ export default class JoinScreen extends Component{
                 </View>
 
                 <View style={styles.agree_container}>
-                    <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                    <View style={{flexDirection: 'row', alignItems: 'center', marginLeft: 20}}>
                         <CheckBox value={this.state.CheckBox} onValueChange={this.check} />
                         <Text>약관 전체동의(필수)</Text>
                     </View> 
 
                     <View style={styles.agree_list}>
                         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                            <TouchableOpacity style={{width: '90%'}} onPress={()=>this.props.navigation.navigate('agree')}>
-                                <Text style={{color: '#404040'}}>이용약관 동의(필수)</Text>
-                            </TouchableOpacity>
                             <CheckBox value={this.state.CheckBox} onValueChange={this.check} />
+                            <TouchableOpacity style={{width: '90%'}} onPress={()=>this.props.navigation.navigate('agree')}>
+                                <Text style={{color: '#404040'}}>서울하이패스 이용약관 동의(필수)</Text>
+                            </TouchableOpacity>
+        
                         </View>
                         <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                            <CheckBox value={this.state.CheckBox} onValueChange={this.check} />
                             <TouchableOpacity style={{width: '90%'}} onPress={()=>this.props.navigation.navigate('agree')}>
                                 <Text style={{width: '90%', color: '#404040'}}>개인정보 수집이용 동의(필수)</Text>
                             </TouchableOpacity>
-                            <CheckBox value={this.state.CheckBox} onValueChange={this.check} />
                         </View>
                         
-                        <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                            <TouchableOpacity style={{width: '90%'}} onPress={()=>this.props.navigation.navigate('agree')}>
-                                <Text style={{width: '90%', color: '#404040'}}>마케팅 수신 동의(선택)</Text>
-                            </TouchableOpacity>
-                            <CheckBox value={this.state.CheckBox} onValueChange={this.check} />
-                        </View>
                     </View>
-
-                    <TouchableOpacity style={styles.join_btn} onPress={()=>this.props.navigation.pop()}>
-                        <Text style={{color:'#fff'}}>회원가입하기</Text>
-                    </TouchableOpacity>
                 </View>
+
+                <TouchableOpacity style={styles.join_btn} onPress={()=>this.props.navigation.pop()}>
+                    <Text style={styles.joinText}>회원가입</Text>
+                </TouchableOpacity>
                 </ScrollView>
             </View>
         )
@@ -110,11 +105,11 @@ const styles = StyleSheet.create({
     container: {
         width: '100%',
         height: '100%',
-        padding: 20,
         backgroundColor: '#fff'
     },
     login_form:{
-        width: '70%'
+        width: '70%',
+        marginLeft: 20
     },
     input : {
         borderBottomWidth: 1,
@@ -147,16 +142,34 @@ const styles = StyleSheet.create({
         backgroundColor: '#f5f5f5',
         padding: 10,
         borderRadius: 5,
-        paddingLeft: 20
+        paddingLeft: 20,
+
+        marginHorizontal: 20
     },
     join_btn: {
-        backgroundColor: '#495cdb',
         alignItems: 'center',
-        width: '70%',
-        height: 40,
-        borderRadius: 30,
+        width: '90%',
         marginTop: 20,
-        alignSelf: 'center',
-        justifyContent: 'center'
+        alignSelf: 'flex-start',
+        
+    },
+    joinText: {
+        color: '#fff',
+        fontWeight: 'bold',
+
+        width: '100%',
+        height:0,
+        alignSelf: 'flex-start',
+        marginBottom: 5,
+
+        borderTopWidth: 45,
+        borderTopColor: '#384ec9',
+        borderRightWidth: 10,
+        borderRightColor: 'transparent',
+
+        
+
+        textAlignVertical: 'center',
+        textAlign: 'center'
     }
 })

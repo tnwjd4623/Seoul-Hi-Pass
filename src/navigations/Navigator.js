@@ -44,8 +44,13 @@ const loginStack = createStackNavigator(
                 headerTitleAlign: 'center',
                 headerTitleStyle: {
                     fontSize: 17,
-                    color: '#828282'
-                }
+                    color: '#000'
+                },
+                headerStyle: {
+                    elevation: 0,
+                    shadowOpacity: 0,
+                    
+                },
             }
         },
         agree: {
@@ -55,8 +60,12 @@ const loginStack = createStackNavigator(
                 headerTitleAlign: 'center',
                 headerTitleStyle: {
                     fontSize: 17,
-                    color: '#828282'
-                }
+                    color: '#000'
+                },
+                headerStyle: {
+                    elevation: 0,
+                    shadowOpacity: 0,
+                },
             }
         },
         findPW: {
@@ -66,8 +75,13 @@ const loginStack = createStackNavigator(
                 headerTitleAlign: 'center',
                 headerTitleStyle: {
                     fontSize: 17,
-                    color: '#828282'
-                }
+                    color: '#000'
+                },
+                headerStyle: {
+                    elevation: 0,
+                    shadowOpacity: 0,
+                    
+                },
             }
         },
         changePW: {
@@ -77,19 +91,27 @@ const loginStack = createStackNavigator(
                 headerTitleAlign: 'center',
                 headerTitleStyle: {
                     fontSize: 17,
-                    color: '#828282'
-                }
+                    color: '#000'
+                },
+                headerStyle: {
+                    elevation: 0,
+                    shadowOpacity: 0,
+                    backgroundColor: '#fff',
+                    
+                },
             }
         },
         emailLogin: {
             screen: EmailLoginScreen,
             navigationOptions: {
-                title: "로그인",
-                headerTitleAlign: 'center',
-                headerTitleStyle: {
-                    fontSize: 17,
-                    color: '#828282'
-                }
+                title: "",
+                headerStyle: {
+                    elevation: 0,
+                    shadowOpacity: 0,
+                    backgroundColor: '#384ec9',
+                    
+                },
+                headerTintColor: '#fff'
             }
         }
 
@@ -150,8 +172,14 @@ const HomeStack = createStackNavigator(
                 headerTitleAlign: 'center',
                 headerTitleStyle: {
                     fontSize: 17,
-                    color: '#828282'
-                }
+                    color: '#000'
+                },
+                headerStyle: {
+                    elevation: 0,
+                    shadowOpacity: 0,
+                    backgroundColor: '#fff',
+                    
+                },
             }
         },
         search: {

@@ -18,6 +18,7 @@ import com.dooboolab.naverlogin.RNNaverLoginPackage;
 import com.dooboolab.kakaologins.RNKakaoLoginsPackage;
 
 import co.apptailor.googlesignin.RNGoogleSigninPackage;
+
 public class MainApplication extends ExpoApplication implements AppLoaderPackagesProviderInterface<ReactPackage> {
 
   @Override
@@ -39,6 +40,7 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
             new RNNaverLoginPackage(),
             new RNKakaoLoginsPackage(),
             new RNGoogleSigninPackage()
+          //  new SvgPackage()
     );
   }
 

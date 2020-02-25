@@ -1,7 +1,5 @@
 import React,{Component} from 'react'
-import {Text, View, StyleSheet, Button, TouchableOpacity, TouchableHighlight, TextInput} from 'react-native'
-import Modal from 'react-native-modal'
-import Icon from 'react-native-vector-icons/MaterialIcons'
+import {Text, View, StyleSheet, Button, TouchableOpacity, ImageBackground} from 'react-native'
 import NaverLoginComponent from '../components/NaverLoginComponent'
 import KakaoLoginComponent from '../components/KakaoLoginComponent'
 import GoogleLoginComponent from '../components/GoogleLoginComponent'
@@ -17,6 +15,8 @@ export default class LoginScreen extends Component {
     render() {
         return(
             <View style={styles.container}>
+               
+                
                 <View style={{flexDirection: 'row'}}>
                     <NaverLoginComponent/>
                     <View style={{marginHorizontal:20}}><KakaoLoginComponent/></View>
@@ -28,7 +28,7 @@ export default class LoginScreen extends Component {
                 </TouchableOpacity>
 
                 <View style={{flexDirection:'row'}}>
-                    <Text style={{marginTop:15, color:'#828282'}}>회원이 아니신가요?   </Text>
+                    <Text style={{marginTop:15, color:'#fff', width:'50%'}}>회원이 아니신가요?   </Text>
                     <TouchableOpacity style={styles.join} onPress={()=>this.props.navigation.navigate('join')}>
                         <Text style={styles.join_text}>회원가입 하기</Text>
                     </TouchableOpacity>
@@ -45,30 +45,42 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         alignItems: 'center',
-        flex: 1,
-        justifyContent:'center',
-        backgroundColor:'#fff'
+        backgroundColor:'#384ec9',
+  
     },
     email_btn: {
-        width: 260,
-        height: 40,
-        backgroundColor: '#465cdb',
-        borderRadius: 20,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginBottom: 5,
-        marginTop: 20
+        width: '90%',
+        alignSelf: 'flex-end',
+        marginTop: 10
     },
     email_text:{
-        color: '#fff',
-        fontWeight: 'bold'
+        color: '#384ec9',
+        fontWeight: 'bold',
+
+        width: '100%',
+        height:0,
+        alignSelf: 'flex-start',
+        marginBottom: 5,
+
+        borderBottomColor: '#fff',
+        borderBottomWidth:45,
+        
+        borderLeftWidth: 10,
+        borderLeftColor: 'transparent',
+        borderStyle: 'solid',
+        alignSelf:'flex-end',
+        right: 0,
+
+        textAlign: 'center',
+        textAlignVertical: 'center',
+
     },
     join: {
         marginTop: 15,
         borderBottomWidth: 1,
-        borderColor: 'gray'
+        borderColor: '#fff'
     },
     join_text: {
-        color: '#595959'
+        color: '#fff'
     },
 })

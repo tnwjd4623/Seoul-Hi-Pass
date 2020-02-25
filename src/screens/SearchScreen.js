@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Text, View, StyleSheet, TextInput, TouchableHighlight, StatusBar} from 'react-native'
-import {MaterialIcons} from '@expo/vector-icons'
+import {MaterialIcons, AntDesign} from '@expo/vector-icons'
+import SubwayBarImage from '../components/SubwayBarImage'
 
 export default class SearchScreen extends Component {
     constructor(props) {
@@ -57,6 +58,8 @@ export default class SearchScreen extends Component {
                     </View>
                     
                 </View>
+
+                
             </View>
         )
     }
@@ -65,14 +68,14 @@ const styles = StyleSheet.create({
     search: {
         backgroundColor: '#fff',
         width: '100%',
-        height:80,
+        height:100,
         marginTop:20,
         alignSelf: 'center',
         alignItems: 'center',
         flexDirection: 'row',
         paddingLeft: 20,
-        borderBottomWidth: 0.5,
-        borderColor: '#828282'
+        borderBottomWidth: 5,
+        borderColor: '#e3e3e3'
     },
     swap: {
         width:'10%'
@@ -90,5 +93,6 @@ const styles = StyleSheet.create({
     icon: {
         width: '10%',
         marginLeft: 10
-    }
+    },
+    
 })

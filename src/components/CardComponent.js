@@ -32,7 +32,9 @@ export default class CardComponent extends Component {
             <View style={styles.container}>
                 <View style={{flexDirection: 'row', height: 40}}>
                     <Text style={styles.bank_title}>카카오뱅크</Text>
-                    <FontAwesome name="cc-visa" size={40} color="#45a2ff" />
+                    <TouchableHighlight onPress={this.openModal}>
+                        <Feather name="more-vertical" size={30} color="#465cdb"/>
+                    </TouchableHighlight>
                 </View>
                 <View style={{flexDirection: 'row', width: '100%', justifyContent: 'center', marginTop: 10, height:20}}>
                     <View style={{flexDirection:'row', width:'25%', justifyContent: 'center', marginTop:5}}>
@@ -75,9 +77,6 @@ export default class CardComponent extends Component {
                 <View style={{flexDirection: 'row', width: '55%', alignSelf:'flex-end', marginTop: 20, alignItems:'center'}}>
                     <Text style={{color: '#465cdb', marginRight:10}}>사용 금액</Text>
                     <Text style={{color:'#465cdb', fontSize:20, fontWeight:'bold'}}>{this.state.total} 원</Text>
-                    <TouchableHighlight onPress={this.openModal}>
-                        <Feather name="more-vertical" size={30} color="#465cdb"/>
-                    </TouchableHighlight>
                 </View>
             </View>
             <Modal visible={this.state.modal} animationType="slide" transparent={true} >
@@ -125,7 +124,7 @@ const styles = StyleSheet.create({
         elevation: 6,
     },
     bank_title: {
-        width: '85%',
+        width: '90%',
         color: "#465cdb",
         fontSize: 15,
         fontWeight: 'bold',

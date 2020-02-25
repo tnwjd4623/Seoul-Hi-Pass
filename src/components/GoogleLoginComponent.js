@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Text, StyleSheet, TouchableOpacity, Button} from 'react-native'
+import {Text, StyleSheet, TouchableOpacity, Button, TouchableHighlight, Image} from 'react-native'
 import {GoogleSignin, GoogleSigninButton, statusCodes} from '@react-native-community/google-signin';
 
 
@@ -60,8 +60,10 @@ export default class GoogleLoginComponent extends Component {
     render() {
         return(
             <>
-                {!this.state.loggedIn && <TouchableOpacity style={styles.btn}
-                    onPress={this._signIn}/>}
+                {!this.state.loggedIn && <TouchableHighlight style={styles.btn}
+                    onPress={this._signIn}>
+                        <Image style={{height:50, width:50}} source={require('../../assets/google.jpg')}/>
+                        </TouchableHighlight>}
             </>
         )
     }
@@ -71,9 +73,7 @@ const styles = StyleSheet.create({
     btn: {
         width: 50,
         height: 50,
-        borderRadius: 100/2,
-        backgroundColor: '#fff',
-
+        
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -83,5 +83,6 @@ const styles = StyleSheet.create({
         shadowRadius: 3.84,
 
         elevation: 5,
+        
     }
 })

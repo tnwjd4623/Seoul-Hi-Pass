@@ -24,13 +24,13 @@ export default class ChangepasswordScreen extends Component {
         return(
             <View style={{height: '100%', backgroundColor: '#fff', alignItems: 'center', paddingTop: 30}}>
                 
-                <Text style={{width:'90%'}}>임시비밀번호</Text>
+                <Text style={{width:'80%'}}>임시비밀번호</Text>
                 <TextInput style={styles.input} placeholder="임시 비밀번호" secureTextEntry={true}/>
 
-                <Text style={{width:'90%'}}>새 비밀번호 (8자리 이상)</Text>
+                <Text style={{width:'80%'}}>새 비밀번호 (8자리 이상)</Text>
                 <TextInput style={styles.input}  secureTextEntry={true}/>
 
-                <Text style={{width:'90%'}}>비밀번호 확인</Text>
+                <Text style={{width:'80%'}}>비밀번호 확인</Text>
                 <TextInput style={styles.input}  secureTextEntry={true}/>
 
                 <TouchableOpacity style={{alignSelf: 'flex-end', marginRight: 30}} onPress={this.changePW}>
@@ -42,7 +42,7 @@ export default class ChangepasswordScreen extends Component {
 }
 const styles = StyleSheet.create({
     input: {
-        width: '90%',
+        width: '80%',
         borderBottomWidth: 1,
         borderColor: '#828282',
         marginBottom: 50

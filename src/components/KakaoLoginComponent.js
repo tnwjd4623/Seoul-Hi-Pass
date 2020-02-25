@@ -1,4 +1,4 @@
-import {Text, TouchableOpacity, StyleSheet} from 'react-native'
+import {Text, TouchableOpacity, StyleSheet, Image, TouchableHighlight} from 'react-native'
 import React, {Component} from 'react'
 import KakaoLogins from '@react-native-seoul/kakao-login';
 
@@ -46,8 +46,10 @@ export default class KakaoLoginComponent extends Component {
         const loggedIn = this.state.loggedIn;
         return (
             <>
-            {!loggedIn && <TouchableOpacity style={styles.kakao_btn} onPress={this.kakaoLogin}>
-                        </TouchableOpacity>}
+            {!loggedIn && <TouchableHighlight style={styles.kakao_btn} onPress={this.kakaoLogin}>
+                                <Image style={{height: 50, width: 50}} 
+                                source={require('../../assets/kakao.png')}/>
+                        </TouchableHighlight>}
     
             {!!loggedIn && <TouchableOpacity style={styles.kakao_btn} onPress={this.kakaoLogout}>
                             <Text style={styles.kakao_text}>카카오 로그아웃</Text>
@@ -61,10 +63,6 @@ const styles = StyleSheet.create({
     kakao_btn: {
         width: 50,
         height: 50,
-        backgroundColor: '#fff708',
-        borderRadius: 100/2,
-        alignItems: 'center',
-        justifyContent: 'center',
         marginBottom: 5,
 
         shadowColor: "#000",

@@ -120,6 +120,8 @@ dependencies {
   //Google
   implementation project(':react-native-google-signin')
   googleServices.disableVersionCheck = true
+
+
   // Our dependencies
   implementation 'androidx.appcompat:appcompat:1.1.0'
 
