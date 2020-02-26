@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Text, StyleSheet, View, TouchableOpacity, TouchableHighlight, Alert, StatusBar} from 'react-native'
+import {Text, StyleSheet, View, TouchableHighlight, Alert, StatusBar, TouchableOpacity, Image} from 'react-native'
 import Modal from 'react-native-modal'
 import {AntDesign} from '@expo/vector-icons'
 import CardComponent from '../components/CardComponent'
@@ -40,16 +40,33 @@ export default class MyPageScreen extends Component {
         return(
             <View style={{paddingTop: StatusBar.currentHeight, height:'100%', backgroundColor: '#fff'}}>
                 <View style={styles.header}>
-                    <Text style={{fontSize: 25, color:'#465cdb', fontWeight: 'bold', width: '90%'}}>MY PAGE</Text>
+                    <View style={{width: '90%', height: '100%'}}>
+                        <Image resizeMode="contain" source={require('../../assets/Mypage_1.png')} 
+                            style={{width: '55%', height:'100%', marginLeft: -10}}/>
+                    </View>
+
                     <TouchableHighlight onPress={()=>this.props.navigation.popToTop()}>
-                        <AntDesign name="close" size={25} color='#465cdb'/>
+                        <AntDesign name="close" size={35} color='#5e5e5e'/>
                     </TouchableHighlight>
                 </View>
 
                 <CardComponent navigation={this.props.navigation}/>
 
                 <View style={styles.container}>
-                    <Text style={styles.title}>이용 내역</Text>
+                    <View style={{flexDirection: 'row'}}>
+                        <Text style={styles.title}>이용 내역</Text>
+
+                        <TouchableOpacity style={styles.btn}>
+                            <Text style={{color: '#fff'}}>1개월</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.btn2}>
+                            <Text >2개월</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.btn2}>
+                            <Text >3개월</Text>
+                        </TouchableOpacity>
+                    </View>
+
                     <ScrollView>
                         <View style={styles.list}>
                             <View style={{flexDirection:'row', marginTop: 20}}>
@@ -89,8 +106,6 @@ const styles = StyleSheet.create({
     header:{
         width: '100%',
         height: 40,
-        alignItems: 'center',
-        paddingHorizontal: 10,
         flexDirection: 'row'
     },
     container: {
@@ -100,7 +115,8 @@ const styles = StyleSheet.create({
         marginLeft: 20,
         color: '#465cdb',
         fontSize: 15,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        width: '40%'
     },
     list: {
         width: '100%',
@@ -116,6 +132,26 @@ const styles = StyleSheet.create({
     },
     price: {
         fontWeight: 'bold'
+    },
+    btn: {
+        borderRadius: 30,
+        width: 70, 
+        height: 30,
+        backgroundColor: '#465cdb',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginRight: 5
+    },
+    btn2: {
+        borderRadius: 30,
+        width: 70, 
+        height: 30,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderColor: '#465cdb',
+        borderWidth: 1,
+        marginRight: 5
     }
 
     

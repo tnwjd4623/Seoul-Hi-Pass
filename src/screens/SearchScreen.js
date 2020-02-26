@@ -1,14 +1,36 @@
 import React, { Component } from 'react'
-import {Text, View, StyleSheet, TextInput, TouchableHighlight, StatusBar} from 'react-native'
-import {MaterialIcons, AntDesign} from '@expo/vector-icons'
+import {Text, View, StyleSheet, TextInput, TouchableHighlight, StatusBar, Image} from 'react-native'
+import {MaterialIcons} from '@expo/vector-icons'
 import SubwayBarImage from '../components/SubwayBarImage'
+import RouteContainer from '../containers/RouteContainer'
+import { ScrollView } from 'react-native-gesture-handler'
 
 export default class SearchScreen extends Component {
     constructor(props) {
         super(props)
         this.state = {
             depart: '',
-            arrive: ''
+            arrive: '',
+            item: [
+                {
+                    line: 2,
+                    minute: 10
+                },
+                {
+                    line: 1,
+                    minute: 5
+                },
+                {
+                    line:2,
+                    minute:5
+                }
+            ],
+            item2: [
+                {
+                    line: 2,
+                    minute: 20
+                }
+            ]
         }
     }
     componentDidMount () {
@@ -37,7 +59,8 @@ export default class SearchScreen extends Component {
             <View style={{paddingTop:StatusBar.currentHeight, width: '100%', height: '100%', backgroundColor: '#fff'}}>
                 <View style={styles.search}>
                     <TouchableHighlight style={styles.swap} onPress={this._swap}>
-                        <MaterialIcons name="swap-vert" size={30} color="#465cdb"/>
+                        <Image resizeMode="contain" source={require('../../assets/Change.png')} 
+                            style={{width: '100%', height:'70%'}}/>
                     </TouchableHighlight>
                     <View style={{width: '70%', marginRight: 10}}>
                         <TextInput style={styles.input} placeholder="출발역을 입력해주세요" placeholderTextColor="#000"
@@ -49,16 +72,22 @@ export default class SearchScreen extends Component {
 
                     <View style={styles.icon}>
                         <TouchableHighlight onPress={this._init}>
-                            <MaterialIcons name="close" size={30} color="#465cdb"/>
+                            <MaterialIcons name="close" size={35} color="#5e5e5e"/>
                         </TouchableHighlight>
 
                         <TouchableHighlight>
-                            <MaterialIcons name="search" size={30} color="#465cdb"/>
+                        <Image resizeMode="contain" source={require('../../assets/Search.png')} 
+                            style={{width: '100%', height:'52%', marginTop: 5}}/>
                         </TouchableHighlight>
                     </View>
                     
                 </View>
 
+                <ScrollView>
+                    <RouteContainer navigation={this.props.navigation} 
+                        minute={20} item={this.state.item} arrive={"09:52"} transfer={1}/>
+                    <RouteContainer minute={20} item={this.state.item2} arrive={"09:52"} transfer={0}/>
+                </ScrollView>
                 
             </View>
         )

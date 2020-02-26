@@ -41,11 +41,11 @@ export default class ChargeScreen extends Component {
                     {this.state.val == 0 ? <View>
                             <TextInput style={styles.input} placeholder={'직접 입력'}/>
                         </View> : <></>}
-
-                    <TouchableOpacity style={{alignSelf: 'flex-end'}}>
-                        <Text style={{color: '#465cdb', fontWeight: 'bold'}}>결제하기</Text>
-                    </TouchableOpacity>
                 </View>
+                
+                <TouchableOpacity style={styles.btn}>
+                    <Text style={styles.text}>결제하기</Text>
+                </TouchableOpacity>
             </View>
             
         )
@@ -59,6 +59,33 @@ const styles = StyleSheet.create({
     input: {
         borderBottomWidth: 0.5,
         borderColor: '#828282',
-        width: 200
+        width: 200,
+        
+    },
+    btn: {
+        width: '90%',
+        marginTop: 20,
+        alignSelf: 'flex-start'
+    },
+    text: {
+        color: '#fff',
+        fontWeight: 'bold',
+
+        width: '100%',
+        height:0,
+        alignSelf: 'flex-start',
+        marginBottom: 5,
+
+        borderTopColor: '#384ec9',
+        borderTopWidth:45,
+        
+        borderRightWidth: 10,
+        borderRightColor: 'transparent',
+        borderStyle: 'solid',
+        alignSelf:'flex-end',
+        right: 0,
+
+        textAlign: 'center',
+        textAlignVertical: 'center',
     }
 })

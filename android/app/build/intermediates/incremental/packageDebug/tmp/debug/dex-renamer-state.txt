@@ -1,5 +1,6 @@
-#Tue Feb 25 10:17:07 KST 2020
+#Tue Feb 25 13:24:31 KST 2020
 base.10=/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_14.dex
+path.31=classes_27.dex
 path.30=classes_9.dex
 base.9=/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_13.dex
 base.8=/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_12.dex
@@ -31,6 +32,7 @@ path.3=classes3.dex
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex
+renamed.31=classes32.dex
 renamed.30=classes31.dex
 renamed.9=classes10.dex
 renamed.8=classes9.dex
@@ -72,6 +74,7 @@ renamed.13=classes14.dex
 renamed.12=classes13.dex
 renamed.11=classes12.dex
 renamed.10=classes11.dex
+base.31=/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_27.dex
 base.30=/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_9.dex
 base.29=/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_8.dex
 base.28=/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_7.dex

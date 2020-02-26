@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Text, View, StyleSheet, Platform, StatusBar, TouchableHighlight} from 'react-native'
+import {Text, View, StyleSheet, Platform, StatusBar, TouchableHighlight, Image} from 'react-native'
 import Header from '../components/Header'
 import CardComponent from '../components/CardComponent';
 import TmoneyComponent from '../components/TmoneyComponent';
@@ -11,7 +11,7 @@ export default class HomeScreen extends Component {
     constructor(props){
         super(props);
         this.state = {
-            pay:'credit',
+            pay:'tmoney',
           };
     }
     _depart = text => {
@@ -36,7 +36,8 @@ export default class HomeScreen extends Component {
 
                 <View style={styles.search}>
                     <TouchableHighlight style={styles.swap} onPress={this._swap}>
-                        <MaterialIcons name="swap-vert" size={30} color="#465cdb"/>
+                        <Image resizeMode="contain" source={require('../../assets/Change.png')} 
+                            style={{width: '100%', height:'70%'}}/>
                     </TouchableHighlight>
                     <View style={{width: '70%', marginRight: 10}}>
                         <TextInput style={styles.input} placeholder="출발역을 입력해주세요" placeholderTextColor="#000"
@@ -47,7 +48,8 @@ export default class HomeScreen extends Component {
                     </View>
                     <TouchableHighlight style={styles.swap} onPress={()=>this.props.navigation.navigate('search', 
                         {depart:'xx역', arrive: 'yy역'})}>
-                        <MaterialIcons name="search" size={30} color="#465cdb"/>
+                        <Image resizeMode="contain" source={require('../../assets/Search.png')} 
+                            style={{width: '100%', height:'70%'}}/>
                     </TouchableHighlight>
                 </View>
 

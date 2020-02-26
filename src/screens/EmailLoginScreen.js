@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Text, StyleSheet, TouchableOpacity, View, StatusBar, TextInput} from 'react-native'
+import {Text, StyleSheet, TouchableOpacity, View, StatusBar, TextInput, Image} from 'react-native'
 
 
 export default class EmailLoginScreen extends Component {
@@ -14,8 +14,14 @@ export default class EmailLoginScreen extends Component {
     }
     render() {
         return(
-            <View style={{backgroundColor: '#384ec9', width: '100%', height: '100%'}}>
-                <View style={{width: '100%', height: '80%', 
+            <View style={{backgroundColor: '#384ec9', width: '100%', height: '100%', alignItems: 'center'}}>
+
+                <View style={{height: '40%', width: '80%'}}>
+                    <Image resizeMode="contain" source={require('../../assets/LOGO_main.png')} 
+                            style={{width: '100%', height: '90%',marginLeft: '-20%'}}/>
+                </View>
+
+                <View style={{width: '100%', 
                 alignItems: 'center', justifyContent: 'center', justifyContent: 'flex-end'}}>
                     <View style={styles.login_form}>
                         <View>

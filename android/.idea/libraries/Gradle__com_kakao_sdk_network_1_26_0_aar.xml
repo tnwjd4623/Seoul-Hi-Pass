@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.kakao.sdk:network:1.26.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c0f0c29f295ea1be3dab49cac070ee6/network-1.26.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c0f0c29f295ea1be3dab49cac070ee6/network-1.26.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kakao.sdk/network/1.26.0/85c20953b3c406d9b11d0ad83b7491d62655afaf/network-1.26.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

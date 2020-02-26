@@ -12,6 +12,7 @@ import EmailLoginScreen from '../screens/EmailLoginScreen';
 import PayinfoScreen from '../screens/PayinfoScreen';
 import SearchScreen from '../screens/SearchScreen';
 import ChargeScreen from '../screens/ChargeScreen';
+import DetailScreen from '../screens/DetailScreen';
 
 
 
@@ -196,7 +197,25 @@ const HomeStack = createStackNavigator(
                 headerTitleStyle: {
                     fontSize: 17,
                     coloe: '#828282'
-                }
+                },
+                headerStyle: {
+                    elevation: 0,
+                    shadowOpacity: 0,
+                    backgroundColor: '#fff',
+                    
+                },
+            }
+        },
+        Detail: {
+            screen: DetailScreen,
+            navigationOptions: {
+                title: '',
+                headerStyle: {
+                    elevation: 0,
+                    shadowOpacity: 0,
+                    backgroundColor: '#fff',
+                    
+                },
             }
         }
 
