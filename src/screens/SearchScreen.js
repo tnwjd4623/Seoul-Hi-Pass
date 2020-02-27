@@ -8,7 +8,7 @@ import axios from 'axios'
 
 const gpsKey = '5743714d496c736a35387a7047544a';
 const pathKey = 'zJAqMbeplL5DHNnwY00zhzBEqz4NOelbiI5Oir5QmkLI%2BMNfEcQmSPyRtDZVzDjIRHeKSSG%2B%2BscjNosmgeHlEQ%3D%3D';
-
+var parseString = require('react-native-xml2js').parseString;
 
 export default class SearchScreen extends Component {
     constructor(props) {
@@ -26,26 +26,8 @@ export default class SearchScreen extends Component {
             EndX: '',
             EndY: '',
 
-            item: [
-                {
-                    line: 2,
-                    minute: 10
-                },
-                {
-                    line: 1,
-                    minute: 5
-                },
-                {
-                    line:2,
-                    minute:5
-                }
-            ],
-            item2: [
-                {
-                    line: 2,
-                    minute: 20
-                }
-            ]
+            path: [],
+            
         }
     }
     componentDidMount () {
@@ -54,16 +36,20 @@ export default class SearchScreen extends Component {
         const dep_code = this.props.navigation.getParam('dep_code');
         const dest_code = this.props.navigation.getParam('dest_code');
         
-        this.setState({depart: depart, arrive: arrive, dep_code: dep_code, dest_code: dest_code})
+        this.setState({depart: depart, arrive: arrive, dep_code: dep_code, dest_code: dest_code}, function() {
+            this._getPathInfo()
+        })
     }
    
     //최단 경로 찾기
     _getPathInfo = () => {
+        //출발점 좌표 조회
         axios.get('http://openapi.seoul.go.kr:8088/'+gpsKey+'/json/SearchLocationOfSTNByFRCodeService/1/1/'
             +this.state.dep_code+'/')
             .then(response => 
                 { this.setState({startY: response.data.SearchLocationOfSTNByFRCodeService.row[0].XPOINT_WGS, 
                     startX: response.data.SearchLocationOfSTNByFRCodeService.row[0].YPOINT_WGS}, function () {
+                        //도착점 좌표 조회
                         axios.get('http://openapi.seoul.go.kr:8088/'+gpsKey+'/json/SearchLocationOfSTNByFRCodeService/1/1/'+this.state.dest_code+'/')
                         .then( result =>
                             {       this.setState({EndY: result.data.SearchLocationOfSTNByFRCodeService.row[0].XPOINT_WGS, 
@@ -71,10 +57,15 @@ export default class SearchScreen extends Component {
                                         const startX = this.state.startX; const EndX = this.state.EndX
                                         const startY = this.state.startY; const EndY = this.state.EndY
 
-                                        //console.log(startX)
+                                        //경로 가져오기
                                         axios.get('http://ws.bus.go.kr/api/rest/pathinfo/getPathInfoBySubway?serviceKey='+pathKey+'&startX='+startX+'&startY='
                                         +startY+'&endX='+EndX+'&endY='+EndY).then(path => {
-                                            console.log(JSON.parse(JSON.stringify(path)))
+                                            let item = []
+                                            parseString(path.data, function(err, result) {
+                                               item = result.ServiceResult.msgBody[0].itemList
+                                            })
+                                            
+                                            this.setState({path: item})     
                                     })
                                 })
                             }) 
@@ -90,6 +81,13 @@ export default class SearchScreen extends Component {
     }
     _init = () => {
         this.setState({depart: "", arrive: ""})
+    }
+    _renderElement = (item) => {
+        return(
+            <ScrollView>
+                <RouteContainer navigation={this.props.navigation} item={item} />
+            </ScrollView>
+        )
     }
     render() {
         return(
@@ -121,9 +119,7 @@ export default class SearchScreen extends Component {
                 </View>
 
                 <ScrollView>
-                    <RouteContainer navigation={this.props.navigation} 
-                        minute={20} item={this.state.item} arrive={"09:52"} transfer={1}/>
-                    <RouteContainer minute={20} item={this.state.item2} arrive={"09:52"} transfer={0}/>
+                    <RouteContainer navigation={this.props.navigation} item={this.state.path} />
                 </ScrollView>
                 
             </View>
