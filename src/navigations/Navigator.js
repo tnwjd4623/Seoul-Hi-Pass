@@ -13,6 +13,7 @@ import PayinfoScreen from '../screens/PayinfoScreen';
 import SearchScreen from '../screens/SearchScreen';
 import ChargeScreen from '../screens/ChargeScreen';
 import DetailScreen from '../screens/DetailScreen';
+import StationSearchScreen from '../screens/StationSearchScreen';
 
 
 
@@ -208,6 +209,18 @@ const HomeStack = createStackNavigator(
         },
         Detail: {
             screen: DetailScreen,
+            navigationOptions: {
+                title: '',
+                headerStyle: {
+                    elevation: 0,
+                    shadowOpacity: 0,
+                    backgroundColor: '#fff',
+                    
+                },
+            }
+        },
+        StationSearch: {
+            screen: StationSearchScreen,
             navigationOptions: {
                 title: '',
                 headerStyle: {

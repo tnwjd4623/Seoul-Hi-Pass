@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Text, View, StyleSheet, StatusBar, TouchableHighlight, Image, TouchableOpacity} from 'react-native'
+import {Text, View, StyleSheet, StatusBar, TouchableHighlight, Image,  Modal, TouchableOpacity} from 'react-native'
 import Header from '../components/Header'
 import CardComponent from '../components/CardComponent';
 import TmoneyComponent from '../components/TmoneyComponent';
@@ -11,8 +11,14 @@ export default class HomeScreen extends Component {
         super(props);
         this.state = {
             pay:'tmoney',
-            departure: '',
-            destination: ''
+            departure: '출발역을 입력해주세요',
+            dep_code:'',
+
+            destination: '도착역을 입력해주세요',
+            dest_code: '',
+
+            dep_modal: false,
+            dest_modal:false,
           };
     }
     _swap = () => {
@@ -21,26 +27,13 @@ export default class HomeScreen extends Component {
 
         this.setState({depart: arrive, arrive: depart})
     }
-    _depart = text => {
-        this.setState({departure: text})
+    _depart = (data) => {
+        this.setState({departure: data.station, dep_code: data.code})
     }
-    _arrive = text => {
-        this.setState({destination: text})
-    }
- 
-    findStation(query) {
-        if(query === '') {
-            return[];
-        }
-        const data = ['강남', '홍대', '서울역', '서울울', '서울윅','삼성역']
-        const regex = new RegExp(`${query.trim()}`);
-        return data.filter(item => item.search(regex) >=0);
+    _dest = (data) =>{
+        this.setState({destination: data.station, dest_code: data.code})
     }
     render() {
-        const comp = (a, b) => a.toLowerCase().trim() === b.toLowerCase().trim();
-        const depart_station = this.findStation(this.state.departure)
-        const dest_station = this.findStation(this.state.destination)
-        
 
         return(
             <View style={{paddingTop: StatusBar.currentHeight, backgroundColor: '#fff', height:'100%'}}>
@@ -53,38 +46,19 @@ export default class HomeScreen extends Component {
                         <Image resizeMode="contain" source={require('../../assets/Change.png')} 
                             style={{width: '100%', height:'70%'}}/>
                     </TouchableHighlight>
-                    <View style={{width: '70%', marginRight: 10}}>
+                    <View style={{width: '70%', marginRight: 10, height:'100%'}}>
 
-                        <Autocomplete autoCapitalize="none" autoCorrect={false} inputContainerStyle={{borderWidth:0}}
-                            value={this.state.departure}
-                            containerStyle={styles.input} placeholder="출발역을 입력해주세요" placeholderTextColor="#000"
-                            onChangeText={this._depart} listStyle={styles.list}
-                            data={depart_station.length === 1 && comp(this.state.departure, depart_station[0]) ? [] : depart_station}
-                            onSubmitEditing={()=>{this.secondTextInput.focus();}} blurOnSubmit={false}
-                            renderItem={({ item, i }) => (
-                                <TouchableOpacity style={styles.listItem} onPress={()=>this.setState({departure: item})}>
-                                    <Text>{item}</Text>
-                                </TouchableOpacity>
-                            )}
-                            keyExtractor={(item, index) => index.toString()}/>
+                        <TouchableOpacity style={styles.input} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._depart})}>
+                            <Text>{this.state.departure}</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.input2} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._dest})}>
+                            <Text>{this.state.destination}</Text>
+                        </TouchableOpacity>
 
-                        <View style={styles.line}/>
-
-                        <Autocomplete ref={(input) => {this.secondTextInput = input;}} autoCapitalize="none" 
-                            autoCorrect={false} inputContainerStyle={{borderWidth:0}} value={this.state.destination}
-                            containerStyle={styles.input} placeholder="도착역을 입력해주세요" placeholderTextColor="#000"
-                            onChangeText={this._arrive} value={this.state.destination}  listStyle={styles.list}
-                            data={dest_station.length === 1 && comp(this.state.destination, dest_station[0]) ? [] : dest_station}
-                            renderItem={({ item, i }) => (
-                                <TouchableOpacity style={styles.listItem} onPress={()=>this.setState({destination: item})}>
-                                    <Text>{item}</Text>
-                                </TouchableOpacity>
-                        )}
-                        keyExtractor={(item, index) => index.toString()}/>
-                     
                     </View>
+
                     <TouchableHighlight style={styles.swap} onPress={()=>this.props.navigation.navigate('search', 
-                        {depart:'xx역', arrive: 'yy역'})}>
+                        {depart:this.state.departure, dep_code:this.state.dep_code, dest_code:this.state.dest_code, arrive: this.state.destination})}>
                         <Image resizeMode="contain" source={require('../../assets/Search.png')} 
                             style={{width: '100%', height:'70%'}}/>
                     </TouchableHighlight>
@@ -127,13 +101,21 @@ const styles = StyleSheet.create({
     input: {
         width: '90%',
         marginLeft: 20,
-        padding:0,
-        borderWidth: 0,
-       
+        height:'45%',
+        justifyContent: 'center',
+        borderBottomColor: '#828282',
+        borderBottomWidth:0.5
+
+    },
+    input2: {
+        width: '90%',
+        marginLeft: 20,
+        height:'45%',
+        justifyContent: 'center',       
     },
     list: {
         width:'90%',
-        height: 52,
+        height: 80,
         position: 'relative',
         zIndex:2000,
         margin:0
@@ -148,5 +130,27 @@ const styles = StyleSheet.create({
         fontSize: 17,
         color: '#828282',
         
+    },
+    modal_container: {
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        width: '100%',
+        height: '100%',
+        alignItems: 'center',
+        justifyContent:'center'
+    },
+    modal_content: {
+        height: '40%',
+        width: '70%',
+        backgroundColor: '#fff',
+        alignItems:'center',
+        borderRadius:10,
+       
+    },
+    modal_input: {
+        padding:0,
+        height:50,
+        justifyContent: 'center',
+        borderWidth:0,
+        borderBottomWidth:0.5
     }
 })
