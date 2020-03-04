@@ -24,6 +24,7 @@ class NaverLoginComponent extends Component{
             NaverLogin.login(props, (err, token) => {
                 console.log(`\n\n Token is fetched :: ${token} \n\n`);
                 this.setState({loggedIn: true, token: token})
+                this.getUserProfile();
                 if(err) {
                     reject(err);
                     return;
@@ -59,9 +60,6 @@ class NaverLoginComponent extends Component{
                                 <Text style={styles.naver_text}>네이버 로그아웃</Text>
                             </TouchableOpacity>}
     
-            {!!loggedIn && <TouchableOpacity style={styles.naver_btn} onPress={this.getUserProfile}>
-                                <Text style={styles.naver_text}>회원정보 가져오기</Text>
-                            </TouchableOpacity>}
             </>
         )
     }

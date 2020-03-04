@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import {Text, View, StyleSheet, TextInput, TouchableHighlight, StatusBar, Image} from 'react-native'
+import {Text, View, StyleSheet, TextInput, TouchableHighlight, StatusBar, Image, ScrollView, TouchableOpacity} from 'react-native'
 import {MaterialIcons} from '@expo/vector-icons'
 import RouteContainer from '../containers/RouteContainer'
-import { ScrollView } from 'react-native-gesture-handler'
 import axios from 'axios'
 
 
 const gpsKey = '5743714d496c736a35387a7047544a';
-const pathKey = 'zJAqMbeplL5DHNnwY00zhzBEqz4NOelbiI5Oir5QmkLI%2BMNfEcQmSPyRtDZVzDjIRHeKSSG%2B%2BscjNosmgeHlEQ%3D%3D';
+const pathKey = 'w9Mt460KZMdbmTUHJ4%2BY0R5VXWB0yTXhYNHuYATfJKf1EiQya0aYPHYTO%2FlJwWHOxkiVcx3tauCoajOgEEspuA%3D%3D';
 var parseString = require('react-native-xml2js').parseString;
 
 export default class SearchScreen extends Component {
@@ -27,7 +26,7 @@ export default class SearchScreen extends Component {
             EndY: '',
 
             path: [],
-            
+            current_time: "오늘 "+new Date().getHours()+":"+new Date().getMinutes()
         }
     }
     componentDidMount () {
@@ -76,14 +75,24 @@ export default class SearchScreen extends Component {
     _swap = () => {
         const depart = this.state.depart;
         const arrive = this.state.arrive;
+        const dep_code = this.state.dep_code;
+        const dest_code = this.state.dest_code;
 
-        this.setState({depart: arrive, arrive: depart})
+        this.setState({depart: arrive, arrive: depart, dep_code: dest_code, dest_code: dep_code})
     }
     _init = () => {
         this.setState({depart: "", arrive: ""})
     }
+    _depart = (data) => {
+        this.setState({depart: data.station, dep_code: data.code})
+    }
+    _dest = (data) =>{
+        this.setState({arrive: data.station, dest_code: data.code})
+    }
+
     _renderElement = (item) => {
         return(
+
             <ScrollView>
                 <RouteContainer navigation={this.props.navigation} item={item} />
             </ScrollView>
@@ -98,11 +107,13 @@ export default class SearchScreen extends Component {
                             style={{width: '100%', height:'70%'}}/>
                     </TouchableHighlight>
                     <View style={{width: '70%', marginRight: 10}}>
-                        <TextInput style={styles.input} placeholder="출발역을 입력해주세요" placeholderTextColor="#000"
-                            onChangeText={this._depart} defaultValue={this.state.depart}/>
-                        <View style={styles.line}/>
-                        <TextInput style={styles.input} placeholder="도착역을 입력해주세요" placeholderTextColor="#000"
-                            onChangeText={this._arrive} defaultValue={this.state.arrive}/>
+
+                        <TouchableOpacity style={styles.input} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._depart})}>
+                            <Text style={{fontSize: 15}}>{this.state.depart}</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.input2} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._dest})}>
+                            <Text style={{fontSize: 15}}>{this.state.arrive}</Text>
+                        </TouchableOpacity>
                     </View>
 
                     <View style={styles.icon}>
@@ -118,9 +129,11 @@ export default class SearchScreen extends Component {
                     
                 </View>
 
-                <ScrollView>
-                    <RouteContainer navigation={this.props.navigation} item={this.state.path} />
-                </ScrollView>
+                <View style={{width: '90%', alignSelf: 'center', height: 30, justifyContent: 'center'}}>
+                    <Text style={{fontSize: 15, color: '#465cdb', fontWeight: 'bold'}}>{this.state.current_time}  출발</Text>
+                </View>
+                {this._renderElement(this.state.path)}
+                
                 
             </View>
         )
@@ -148,9 +161,19 @@ const styles = StyleSheet.create({
         width:'100%'
     },
     input: {
-        width: '100%',
+        width: '90%',
         marginLeft: 20,
-        fontSize: 17
+        height:'45%',
+        justifyContent: 'center',
+        borderBottomColor: '#828282',
+        borderBottomWidth:0.5
+
+    },
+    input2: {
+        width: '90%',
+        marginLeft: 20,
+        height:'45%',
+        justifyContent: 'center',       
     },
     icon: {
         width: '10%',

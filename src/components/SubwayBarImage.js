@@ -12,6 +12,14 @@ export default class SubwayBarImage extends Component {
             color: this.props.color
         }
     }
+    componentWillReceiveProps(newProps) {
+        if(newProps.time != null) {
+            this.setState({time: newProps.time})
+        }
+        if(newProps.width != null) {
+            this.setState({width: newProps.width})
+        }
+    }
 
     render() {
         return(
@@ -26,7 +34,7 @@ export default class SubwayBarImage extends Component {
                         <Text style={{fontWeight: 'bold', color: '#fff'}}>{this.state.line}</Text>
                     </View>
                     <View style={{width: '100%', height: 20, marginLeft: -4, alignItems: 'center'}}>
-                        <Text style={{fontWeight: 'bold', color: '#fff', width: '100%', textAlign: 'center',
+                        <Text style={{color: '#fff', width: '100%', textAlign: 'center',
                         borderTopWidth: 20, borderTopColor: this.props.color, 
                         borderRightWidth: 10, borderRightColor: 'transparent'}}>{this.state.time}분</Text>
                     </View>

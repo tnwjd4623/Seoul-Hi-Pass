@@ -13,6 +13,7 @@ export default class MyPageScreen extends Component {
             Term: false,
             logout: false,
             quit: false,
+            target: 1,
         }
     }
     closeModal = () => {
@@ -36,6 +37,9 @@ export default class MyPageScreen extends Component {
             {cancelable: false}
         )
     }
+    _changeList(target) {
+        this.setState({target: target})
+    }
     render() {
         return(
             <View style={{paddingTop: StatusBar.currentHeight, height:'100%', backgroundColor: '#fff'}}>
@@ -56,15 +60,24 @@ export default class MyPageScreen extends Component {
                     <View style={{flexDirection: 'row'}}>
                         <Text style={styles.title}>이용 내역</Text>
 
-                        <TouchableOpacity style={styles.btn}>
+                        {this.state.target == 1 ? <TouchableOpacity style={styles.btn} onPress={()=>this._changeList(1)}> 
                             <Text style={{color: '#fff'}}>1개월</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity style={styles.btn2}>
-                            <Text >2개월</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity style={styles.btn2}>
-                            <Text >3개월</Text>
-                        </TouchableOpacity>
+                        </TouchableOpacity> : <TouchableOpacity style={styles.btn2} onPress={()=>this._changeList(1)}>
+                            <Text>1개월</Text>
+                        </TouchableOpacity> }
+                        
+                        {this.state.target == 2 ? <TouchableOpacity style={styles.btn} onPress={()=>this._changeList(2)}>
+                            <Text style={{color: '#fff'}}>2개월</Text>
+                        </TouchableOpacity> : <TouchableOpacity style={styles.btn2} onPress={()=>this._changeList(2)}>
+                            <Text>2개월</Text>
+                        </TouchableOpacity> }
+
+
+                        {this.state.target == 3 ? <TouchableOpacity style={styles.btn} onPress={()=>this._changeList(3)}>
+                            <Text style={{color: '#fff'}}>3개월</Text>
+                        </TouchableOpacity> : <TouchableOpacity style={styles.btn2} onPress={()=>this._changeList(3)}>
+                            <Text>3개월</Text>
+                        </TouchableOpacity> }
                     </View>
 
                     <ScrollView>
