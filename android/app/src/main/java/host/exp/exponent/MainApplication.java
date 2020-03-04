@@ -18,6 +18,7 @@ import com.dooboolab.naverlogin.RNNaverLoginPackage;
 import com.dooboolab.kakaologins.RNKakaoLoginsPackage;
 
 import co.apptailor.googlesignin.RNGoogleSigninPackage;
+import com.avishayil.rnrestart.ReactNativeRestartPackage;
 
 public class MainApplication extends ExpoApplication implements AppLoaderPackagesProviderInterface<ReactPackage> {
 
@@ -39,7 +40,8 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
             new SplashScreenReactPackage(),
             new RNNaverLoginPackage(),
             new RNKakaoLoginsPackage(),
-            new RNGoogleSigninPackage()
+            new RNGoogleSigninPackage(),
+            new ReactNativeRestartPackage()
           //  new SvgPackage()
     );
   }

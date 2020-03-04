@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import {Text, View, StyleSheet, StatusBar, TouchableHighlight, Image,  Modal, TouchableOpacity} from 'react-native'
-import Header from '../components/Header'
+import {Text, View, StyleSheet, StatusBar, TouchableHighlight, Image,  Modal, TouchableOpacity,  SafeAreaView, AsyncStorage} from 'react-native'
 import CardComponent from '../components/CardComponent';
 import TmoneyComponent from '../components/TmoneyComponent';
 import Map from '../components/Map'
-import Autocomplete from 'react-native-autocomplete-input'
+import {MaterialCommunityIcons, AntDesign} from '@expo/vector-icons'
+import RNRestart from 'react-native-restart'
 
 export default class HomeScreen extends Component {
     constructor(props){
@@ -19,6 +19,7 @@ export default class HomeScreen extends Component {
 
             dep_modal: false,
             dest_modal:false,
+            modal: false,
           };
     }
     _swap = () => {
@@ -33,11 +34,31 @@ export default class HomeScreen extends Component {
     _dest = (data) =>{
         this.setState({destination: data.station, dest_code: data.code})
     }
+
+    _navigateMy (option){
+        this.setState({modal: false})
+        this.props.navigation.navigate(option);
+    }
+    _logout = () => {
+        AsyncStorage.clear()
+        RNRestart.Restart();
+    }
     render() {
 
         return(
             <View style={{paddingTop: StatusBar.currentHeight, backgroundColor: '#fff', height:'100%'}}>
-                <Header navigation={this.props.navigation}/>
+                {/*Header*/}
+                <SafeAreaView style={styles.header}>
+                    <View style={{width:'90%'}}>
+                        <Image resizeMode="contain" source={require('../../assets/Logo_2.png')}
+                            style={{width: '100%', height: '60%', marginLeft: '-10%'}}/>
+                    </View>
+                    <TouchableHighlight onPress={()=>this.setState({modal: true})}>
+                        <MaterialCommunityIcons name={"account"} size={40} color="#465cdb"/>
+                    </TouchableHighlight>
+                </SafeAreaView>
+
+                {/*Card*/}
                 {this.state.pay == 'credit' ? <CardComponent navigation={this.props.navigation}/> : <></>}
                 {this.state.pay == 'tmoney'? <TmoneyComponent navigation={this.props.navigation} setting={true}/> : <></>}
 
@@ -65,12 +86,48 @@ export default class HomeScreen extends Component {
                 </View>
 
                 <Map/>
+
+                <Modal visible={this.state.modal} animationType="slide" transparent={true} >
+                <View style={styles.modal_container}>
+                    <TouchableOpacity style={{height:'60%', width: '100%'}} onPress={this.closeModal}>
+                    </TouchableOpacity>
+                    <View style={styles.modal_content}>
+                        <View style={styles.modal_title_content}>
+                            <Text style={styles.modal_title}>개인 설정</Text>
+                            <TouchableHighlight style={{position: 'absolute', right: 0}} onPress={this.closeModal}>
+                                <AntDesign name="close" size={25} color={"#465cdb"} />
+                            </TouchableHighlight>
+                        </View>
+                        <TouchableOpacity style={styles.modal_list} onPress={()=>this._navigateMy('MyModi')}>
+                            <Text style={{fontWeight: 'bold'}}>내 정보 변경</Text>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={styles.modal_list} onPress={()=>this._navigateMy('My')}>
+                            <Text style={{fontWeight: 'bold'}}>이용 내역</Text>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={styles.modal_list} onPress={this._logout}>
+                            <Text style={{fontWeight: 'bold'}}>로그아웃</Text>
+                        </TouchableOpacity>
+
+
+                    </View>
+                </View>
+                </Modal>
+
             </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
+    header: {
+        flexDirection: 'row',
+        width: '100%',
+        height: 50,
+        alignItems: 'center',
+        paddingRight: 10
+    },
    search: {
         backgroundColor: '#fff',
         width: '80%',
@@ -135,22 +192,31 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         width: '100%',
         height: '100%',
-        alignItems: 'center',
-        justifyContent:'center'
     },
     modal_content: {
-        height: '40%',
-        width: '70%',
+        height: '33%',
+        width: '100%',
         backgroundColor: '#fff',
-        alignItems:'center',
-        borderRadius:10,
-       
+        position: 'absolute',
+        bottom: 0
     },
-    modal_input: {
-        padding:0,
-        height:50,
+    modal_title: {
+        fontWeight: 'bold'
+    },
+    modal_title_content: {
+        flexDirection: 'row',
+        alignSelf: 'center',
+        width: '90%',
+        height: '25%',
+        borderBottomColor: '#828282',
+        borderBottomWidth: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    modal_list: {
+        height: '25%',
         justifyContent: 'center',
-        borderWidth:0,
-        borderBottomWidth:0.5
+        width: '80%',
+        alignSelf: 'center'
     }
 })

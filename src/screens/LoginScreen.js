@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import {Text, View, StyleSheet, Button, TouchableOpacity, Image, StatusBar} from 'react-native'
+import {Text, View, StyleSheet, Button, TouchableOpacity, Image, StatusBar, AsyncStorage} from 'react-native'
 import NaverLoginComponent from '../components/NaverLoginComponent'
 import KakaoLoginComponent from '../components/KakaoLoginComponent'
 import GoogleLoginComponent from '../components/GoogleLoginComponent'
@@ -10,6 +10,13 @@ export default class LoginScreen extends Component {
         this.state={
             
         }
+    }
+    componentDidMount() {
+        AsyncStorage.getItem("id").then(asyncStorageRes => {
+            if(asyncStorageRes != null) {
+                this.props.navigation.navigate('Home')
+            }
+        })
     }
     
     render() {

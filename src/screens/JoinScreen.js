@@ -1,17 +1,80 @@
 import React, { Component } from 'react'
 import {View, Text, StyleSheet, TextInput, TouchableOpacity, CheckBox} from 'react-native'
 import { TouchableHighlight, ScrollView } from 'react-native-gesture-handler'
-
+import axios from 'axios'
 
 export default class JoinScreen extends Component{
     constructor(props){
         super(props)
         this.state = {
-            CheckBox: false,
+            CheckBox: {},
+            email: '',
+            pw: '',
+            pw2:'',
+            name: '',
+            phone: '',
+            addr: '',
+            addr2: '',
         }
     }
-    check = () => {
-        console.log("hello");
+    check = (id) => {
+        const check = this.state.CheckBox
+        if(id == 'all') {
+            if(check[id]) {
+                check[id] = false;
+                check['first'] = false;
+                check['second'] = false;
+            }
+
+            else {
+                check[id] = true;
+                check['first'] = true;
+                check['second'] = true;
+            }
+            
+        }
+
+        else {
+            if(check[id]) check[id] = false;
+            else check[id] = true;
+        }
+        
+
+        this.setState({CheckBox: check});
+    }
+
+    _inputEmail = text => {
+        this.setState({email: text})
+    }
+    _inputPW = text => {
+        this.setState({pw: text})
+    }
+    _inputPW2 = text => {
+        this.setState({pw2: text})
+    }
+    _inputName = text => {
+        this.setState({name: text})
+    }
+    _inputPhone = text => {
+        this.setState({phone: text})
+    }
+    _inputAddr = text => {
+       this.setState({addr: text}) 
+    }
+    _inputAddr2 = text => {
+        this.setState({addr2: text})
+    }
+    _join = () => {
+        axios.get().then(response => {
+        if(response.data.rescode == "0000") {
+            console.log(response.data.muid)
+           
+        }
+        else {
+            console.log("Join Fail")
+        }
+        
+    })
     }
     render() {
         return(
@@ -47,40 +110,30 @@ export default class JoinScreen extends Component{
                             </TouchableOpacity>
                         </View>
                     </View>
-                    
-                    <View style={styles.input_container}>
-                        <Text style={styles.default_Text}>인증번호</Text>
-                        <TextInput style={styles.input} placeholderTextColor={'#999999'}/>
-                    </View>
 
                     <View style={styles.input_container}>
                         <Text style={styles.default_Text}>주소지입력</Text>
-                        <View style={{flexDirection: 'row'}}>
-                          <TextInput style={styles.phone_input} placeholderTextColor={'#999999'} placeholder="우편번호 검색"/>
-                          <TouchableOpacity style={styles.phone_btn}>
-                              <Text style={{color: '#000', fontWeight: 'bold'}}>우편번호 검색</Text>
-                            </TouchableOpacity>
-                        </View>
+                        <TextInput style={styles.input} placeholderTextColor={'#999999'} placeholder="주소 입력"/>
                         <TextInput style={styles.input} placeholderTextColor={'#999999'} placeholder="상세주소 입력"/>
                     </View>
                 </View>
 
                 <View style={styles.agree_container}>
                     <View style={{flexDirection: 'row', alignItems: 'center', marginLeft: 20}}>
-                        <CheckBox value={this.state.CheckBox} onValueChange={this.check} />
+                        <CheckBox value={this.state.CheckBox['all']} onValueChange={()=>this.check('all')} />
                         <Text>약관 전체동의(필수)</Text>
                     </View> 
 
                     <View style={styles.agree_list}>
                         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                            <CheckBox value={this.state.CheckBox} onValueChange={this.check} />
+                            <CheckBox  value={this.state.CheckBox['first']} onValueChange={()=>this.check('first')} />
                             <TouchableOpacity style={{width: '90%'}} onPress={()=>this.props.navigation.navigate('agree')}>
                                 <Text style={{color: '#404040'}}>서울하이패스 이용약관 동의(필수)</Text>
                             </TouchableOpacity>
         
                         </View>
                         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                            <CheckBox value={this.state.CheckBox} onValueChange={this.check} />
+                            <CheckBox  value={this.state.CheckBox['second']} onValueChange={()=>this.check('second')} />
                             <TouchableOpacity style={{width: '90%'}} onPress={()=>this.props.navigation.navigate('agree')}>
                                 <Text style={{width: '90%', color: '#404040'}}>개인정보 수집이용 동의(필수)</Text>
                             </TouchableOpacity>

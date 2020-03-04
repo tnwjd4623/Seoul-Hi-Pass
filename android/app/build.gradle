@@ -121,7 +121,8 @@ dependencies {
   implementation project(':react-native-google-signin')
   googleServices.disableVersionCheck = true
 
-
+  //Restart
+  implementation project(':react-native-restart')
   // Our dependencies
   implementation 'androidx.appcompat:appcompat:1.1.0'
 

@@ -1,13 +1,40 @@
 import React, { Component } from 'react'
-import {Text, StyleSheet, TouchableOpacity, View, StatusBar, TextInput, Image} from 'react-native'
+import {Text, StyleSheet, TouchableOpacity, View, TextInput, Image, AsyncStorage} from 'react-native'
+import axios from 'axios'
 
 
+const key = 'beacon091211fX2TAJS0VbillUWp1aVx002VggT'
 export default class EmailLoginScreen extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            email: '',
+            password:'',
+        }
     }
     login = () => {
-        this.props.navigation.navigate('Home');
+        axios.get('https://beacon.smst.kr/appAPI/v1/loginPhone.php?apiKey='
+            +key+'&modeType=loginPhone&email='+this.state.email+'&passwd='+this.state.password)
+        .then(response => {
+            if(response.data.rescode == "0000") {
+                console.log(response.data.muid)
+                AsyncStorage.setItem("email", this.state.email);
+                AsyncStorage.setItem("id", response.data.muid);
+
+                this.props.navigation.navigate('Home');
+            }
+            else {
+                console.log("Login Fail")
+            }
+            
+        })
+        
+    }
+    _inputEmail = text => {
+        this.setState({email: text})
+    }
+    _inputPW = text => {
+        this.setState({password: text})
     }
     findPW = () => {
         this.props.navigation.navigate('findPW');
@@ -26,14 +53,14 @@ export default class EmailLoginScreen extends Component {
                     <View style={styles.login_form}>
                         <View>
                             <Text style={{marginLeft: 15,paddingLeft: 10, color:'#fff'}}>이메일</Text>
-                            <TextInput style={styles.input} 
-                            placeholder={"이메일 입력"} placeholderTextColor={'#fff'}
-                            />
+                            <TextInput style={styles.input} onChangeText={this._inputEmail} 
+                            placeholder={"이메일 입력"} placeholderTextColor={'#fff'} onSubmitEditing ={()=>this.secondTextInput.focus()}
+                            blurOnSubmit={false} />
                         </View>
 
                         <View>
                             <Text style={{marginLeft: 15,paddingLeft: 10, color: '#fff'}}>비밀번호</Text>
-                            <TextInput style={styles.input} 
+                            <TextInput style={styles.input} onChangeText={this._inputPW} ref={(input)=>{this.secondTextInput = input}}
                             placeholder={"8자리 이상"} placeholderTextColor={'#fff'} 
                             secureTextEntry={true}/>
                         </View>
@@ -65,8 +92,8 @@ const styles = StyleSheet.create({
         borderColor : '#fff',
         borderBottomWidth: 0.5,
         paddingLeft: 10,
-        marginTop: 10
-        
+        marginTop: 10,
+        color: '#fff'
     },
     login_btn: {
         width: '90%',

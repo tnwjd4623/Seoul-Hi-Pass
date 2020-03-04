@@ -14,6 +14,7 @@ import SearchScreen from '../screens/SearchScreen';
 import ChargeScreen from '../screens/ChargeScreen';
 import DetailScreen from '../screens/DetailScreen';
 import StationSearchScreen from '../screens/StationSearchScreen';
+import InfoModifyScreen from '../screens/InfoModifyScreen';
 
 
 
@@ -149,7 +150,20 @@ MyPageStack.navigationOptions = ({navigation}) => {
         tabBarVisible
     }
 }
+const MyModiStack = createStackNavigator(
+    {
 
+        MyModi: {
+            screen:InfoModifyScreen,
+            navigationOptions:{
+                header: false
+            }
+        }
+    },
+    {
+        initialRouteName: 'MyModi'
+    }
+)
 /*
 홈 화면 중 메인화면에서 사용하는 네비게이터
 */
@@ -165,6 +179,12 @@ const HomeStack = createStackNavigator(
             screen: MyPageStack,
             navigationOptions: {
                 headerShown: false,
+            }
+        },
+        Modi: {
+            screen: MyModiStack,
+            navigationOptions: {
+                headerShown: false
             }
         },
         pay: {
