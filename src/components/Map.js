@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
-import {View, ScrollView, Image, Animated} from 'react-native'
+import {View, ScrollView, Image} from 'react-native'
+import PinchZoomView from 'react-native-pinch-zoom-view';
 
 export default class Map extends Component{
     render() {
         return(
-            <View style={{width: '100%', height: '50%', backgroundColor: '#e0e0e0', position:'absolute'
+            <View style={{width: '100%', height: '50%', backgroundColor: '#fff', position:'absolute' , overflow: 'hidden'
                 ,bottom:0}}>
-               <ScrollView contentContainerStyle={{alignItems: 'center'}}>
-                <ScrollView horizontal>
-                    <Animated.Image source={require('../../assets/img_subway.png')} resizeMode='cover'/>
-                </ScrollView>
-                </ScrollView>
+               
+                <PinchZoomView minScale={1} >
+                    <Image source={require('../../assets/img_subway.png')} resizeMode='cover' 
+                    style={{width: '100%', height: '100%'}}/>
+                </PinchZoomView>
 
 
             </View>
