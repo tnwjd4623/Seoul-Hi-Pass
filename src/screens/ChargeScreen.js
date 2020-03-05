@@ -3,6 +3,7 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native'
 import TmoneyComponent from '../components/TmoneyComponent'
 import {RadioButton} from 'react-native-paper'
 import { TextInput } from 'react-native-gesture-handler'
+import CardComponent from '../components/CardComponent'
 
 export default class ChargeScreen extends Component {
     constructor(props) {
@@ -17,7 +18,7 @@ export default class ChargeScreen extends Component {
     render() {
         return(
             <View style={{width: '100%', height: '100%', backgroundColor: '#fff'}}>
-                <TmoneyComponent setting={false}/>
+                <CardComponent setting={false}/>
 
                 <View style={styles.container}>
                     <View style={{flexDirection: 'row', height: 50, alignItems: 'center'}}>

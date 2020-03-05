@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {StyleSheet, Text, View, StatusBar, Image, 
-    TouchableHighlight, AsyncStorage, ScrollView, TextInput, TouchableOpacity, Alert, Modal} from 'react-native'
+    TouchableHighlight, AsyncStorage, ScrollView, TextInput, TouchableOpacity, Alert, Modal, KeyboardAvoidingView} from 'react-native'
 import {AntDesign} from '@expo/vector-icons'
 import axios from 'axios'
 import Postcode from 'react-native-daum-postcode';
@@ -95,10 +95,10 @@ export default class InfoModifyScreen extends Component {
         const addr = this.state.addr;
         const addr2 = this.state.addr2;
         const id = this.state.id;
+      
 
         axios.get("https://beacon.smst.kr/appAPI/v1/memberRegisterPhone.php?apiKey="+key+"&modeType=mody&muid="+
             id+"&pw="+pw+"&addr="+addr+"&addr2="+addr2+"&phone="+phone).then(response => {
-                    console.log(response);
                     if(response.data.rescode == "0000"){
                         Alert.alert(
                             "수정되었습니다.",
@@ -115,7 +115,7 @@ export default class InfoModifyScreen extends Component {
     }
     render() {
         return(
-            <>
+            <KeyboardAvoidingView behavior="height">
             <View style={{paddingTop: StatusBar.currentHeight, height:'100%', backgroundColor: '#fff'}}>
                 <View style={styles.header}>
                     <View style={{width: '90%', height: '100%'}}>
@@ -157,7 +157,7 @@ export default class InfoModifyScreen extends Component {
                         <View style={styles.input_container}>
                             <Text style={styles.default_Text}>전화번호</Text>
                             <TextInput style={styles.input} placeholderTextColor={'#999999'} placeholder="전화번호 입력"
-                            defaultValue={this.state.phone} keyboardType={'numeric'}/>
+                            defaultValue={this.state.phone} keyboardType={'numeric'} onChangeText={this._inputPhone} />
                         </View>
 
 
@@ -170,15 +170,14 @@ export default class InfoModifyScreen extends Component {
                             </TouchableOpacity>
                         </View>
                         <TextInput style={styles.input} placeholderTextColor={'#999999'} placeholder="상세주소 입력" 
-                        defaultValue={this.state.addr2}/>
+                        defaultValue={this.state.addr2} onChangeText={this._inputAddr2}/>
                     </View>
                     </View>
+                    <TouchableOpacity style={styles.join_btn} onPress={this._modify}>
+                        <Text style={styles.joinText}>정보수정</Text>
+                    </TouchableOpacity>
                 </ScrollView>
-
                 </View>
-                <TouchableOpacity style={styles.join_btn} onPress={this._modify}>
-                    <Text style={styles.joinText}>정보수정</Text>
-                </TouchableOpacity>
 
                 <Modal visible={this.state.modal}> 
                     
@@ -192,7 +191,7 @@ export default class InfoModifyScreen extends Component {
                 </Modal>
 
             </View>
-            </>
+            </KeyboardAvoidingView>
         )
     }
 }
@@ -215,7 +214,7 @@ const styles = StyleSheet.create({
     },
     container: {
         width: '100%',
-        height: '70%',
+        height: '90%',
         backgroundColor: '#fff',
         marginTop: 20
     },

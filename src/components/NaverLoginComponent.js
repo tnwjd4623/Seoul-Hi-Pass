@@ -42,8 +42,11 @@ class NaverLoginComponent extends Component{
     getUserProfile = async () => {
         const profileResult = await getProfile(this.state.token.accessToken);
         if(profileResult.resultcode == "024") {
-            Alert.alert("로그인 실패", profileResult.message);
+           console.log("fail")
             return;
+        }
+        else {
+            
         }
         this.setState({userInfo: {email: profileResult.response.email, name: profileResult.response.name}})
     }
@@ -51,14 +54,10 @@ class NaverLoginComponent extends Component{
         const loggedIn = this.state.loggedIn;
         return(
             <>
-            {!loggedIn && <TouchableHighlight style={styles.naver_btn} onPress={()=>this.naverLogin(initials)}>
-                                    <Image style={{height:50, width:50}}
-                                    source={require('../../assets/naver.png')}/>
-                            </TouchableHighlight>}
-    
-            {!!loggedIn && <TouchableOpacity style={styles.naver_btn} onPress={this.naverLogout}>
-                                <Text style={styles.naver_text}>네이버 로그아웃</Text>
-                            </TouchableOpacity>}
+            <TouchableHighlight style={styles.naver_btn} onPress={()=>this.naverLogin(initials)}>
+                    <Image style={{height:50, width:50}}
+                        source={require('../../assets/naver.png')}/>
+            </TouchableHighlight>
     
             </>
         )

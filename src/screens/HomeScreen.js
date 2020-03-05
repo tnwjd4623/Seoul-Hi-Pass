@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import {Text, View, StyleSheet, StatusBar, TouchableHighlight, Image,  Modal, TouchableOpacity,  SafeAreaView, AsyncStorage, Alert} from 'react-native'
+import {Text, View, StyleSheet, StatusBar, TouchableHighlight, Image,  Modal, 
+    TouchableOpacity,  SafeAreaView, AsyncStorage, Alert, Button} from 'react-native'
 import CardComponent from '../components/CardComponent';
-import TmoneyComponent from '../components/TmoneyComponent';
 import Map from '../components/Map'
-import {MaterialCommunityIcons, AntDesign} from '@expo/vector-icons'
 import RNRestart from 'react-native-restart'
+import KakaoLogins from '@react-native-seoul/kakao-login';
+
 
 export default class HomeScreen extends Component {
     constructor(props){
@@ -50,9 +51,25 @@ export default class HomeScreen extends Component {
             { cancelable: true}
         );
     }
+    kakaoLogout = () => {
+        KakaoLogins.logout().then(result => {
+            
+        }).catch(err => {
+            
+        })
+    }
+  
     _logoutProcess = () => {
+        this.kakaoLogout();
+
         AsyncStorage.clear()
         RNRestart.Restart();
+    }
+    closeModal = () => {
+        this.setState({modal: false})
+    }
+    openModal = () => {
+        this.setState({modal: true})
     }
     render() {
 
@@ -64,8 +81,9 @@ export default class HomeScreen extends Component {
                         <Image resizeMode="contain" source={require('../../assets/Logo_2.png')}
                             style={{width: '100%', height: '60%', marginLeft: '-10%'}}/>
                     </View>
-                    <TouchableHighlight onPress={()=>this.setState({modal: true})}>
-                        <MaterialCommunityIcons name={"account"} size={40} color="#465cdb"/>
+                    <TouchableHighlight style={{width:"10%"}} onPress={()=>this.setState({modal: true})}>
+                        <Image resizeMode="contain" 
+                            source={require('../../assets/My_page.png')} style={{width: '100%', height: '60%'}}/>
                     </TouchableHighlight>
                 </SafeAreaView>
 
@@ -82,10 +100,11 @@ export default class HomeScreen extends Component {
                         <TouchableOpacity style={styles.input} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._depart})}>
                             <Text>{this.state.departure}</Text>
                         </TouchableOpacity>
+                        
                         <TouchableOpacity style={styles.input2} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._dest})}>
-                            <Text>{this.state.destination}</Text>
+                            <Text>{this.state.destination}</Text>       
                         </TouchableOpacity>
-
+                        
                     </View>
 
                     <TouchableHighlight style={styles.swap} onPress={()=>this.props.navigation.navigate('search', 
@@ -105,7 +124,8 @@ export default class HomeScreen extends Component {
                         <View style={styles.modal_title_content}>
                             <Text style={styles.modal_title}>개인 설정</Text>
                             <TouchableHighlight style={{position: 'absolute', right: 0}} onPress={this.closeModal}>
-                                <AntDesign name="close" size={25} color={"#465cdb"} />
+                                <Image resizeMode="contain" source={require('../../assets/Cancel.png')} 
+                                style={{width: 30, height: 30}} />
                             </TouchableHighlight>
                         </View>
                         <TouchableOpacity style={styles.modal_list} onPress={()=>this._navigateMy('MyModi')}>
@@ -155,7 +175,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
         paddingLeft: 20,
-      
+
+  
     },
     swap: {
         width:'10%'
@@ -168,7 +189,7 @@ const styles = StyleSheet.create({
     input: {
         width: '90%',
         marginLeft: 20,
-        height:'45%',
+        height: '45%',
         justifyContent: 'center',
         borderBottomColor: '#828282',
         borderBottomWidth:0.5
@@ -179,25 +200,9 @@ const styles = StyleSheet.create({
         marginLeft: 20,
         height:'45%',
         justifyContent: 'center',       
-    },
-    list: {
-        width:'90%',
-        height: 80,
-        position: 'relative',
-        zIndex:2000,
-        margin:0
-    },
-    listItem: {
-        borderBottomWidth: 0.5,
-        height: 50,
-        justifyContent: 'center',
-        paddingLeft: 20
-    },
-    listText: {
-        fontSize: 17,
-        color: '#828282',
         
     },
+    
     modal_container: {
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         width: '100%',

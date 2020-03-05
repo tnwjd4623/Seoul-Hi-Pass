@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import {View, Text, StyleSheet, TextInput, TouchableOpacity, CheckBox, Alert, ScrollView, Modal, TouchableHighlight} from 'react-native'
+import {View, Text, StyleSheet, TextInput, TouchableOpacity, CheckBox, Alert, 
+    ScrollView, Modal, TouchableHighlight, KeyboardAvoidingView} from 'react-native'
 import axios from 'axios'
 import {WebView} from 'react-native-webview'
 import {AntDesign} from '@expo/vector-icons'
@@ -154,6 +155,7 @@ export default class JoinScreen extends Component{
     }
     render() {
         return(
+            <KeyboardAvoidingView behavior="padding">
             <View style={styles.container}>
                 <ScrollView>
                 <View style={styles.login_form}>
@@ -240,6 +242,7 @@ export default class JoinScreen extends Component{
                     
                 </Modal>
             </View>
+            </KeyboardAvoidingView>
         )
     }
 }

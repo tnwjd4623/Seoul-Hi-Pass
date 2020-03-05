@@ -22,9 +22,9 @@ export default class LoginScreen extends Component {
     render() {
         return(
             <View style={styles.container}>
-                <View style={{height: '30%', width: '80%',  marginTop:60}}>
-                    <Image resizeMode="contain" source={require('../../assets/LOGO_main.png')} 
-                            style={{width: '100%', height: '100%' ,marginLeft: '-20%',}}/>
+                <View style={{height: '30%', width: '100%',  marginTop:60}}>
+                    <Image resizeMode="contain" source={require('../../assets/LOGO.png')} 
+                            style={{width: '100%', height: '100%'}}/>
                 </View>
                    
                 <Image resizeMode="contain" source={require('../../assets/Subway.png')}

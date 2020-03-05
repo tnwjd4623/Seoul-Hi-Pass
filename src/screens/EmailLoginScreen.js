@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import {Text, StyleSheet, TouchableOpacity, View, TextInput, Image, AsyncStorage} from 'react-native'
+import {Text, StyleSheet, TouchableOpacity, View, TextInput, Image, AsyncStorage, KeyboardAvoidingView} from 'react-native'
 import axios from 'axios'
-
 
 const key = 'beacon091211fX2TAJS0VbillUWp1aVx002VggT'
 export default class EmailLoginScreen extends Component {
@@ -41,11 +40,11 @@ export default class EmailLoginScreen extends Component {
     }
     render() {
         return(
+            <KeyboardAvoidingView behavior="position">
             <View style={{backgroundColor: '#384ec9', width: '100%', height: '100%', alignItems: 'center'}}>
-
-                <View style={{height: '40%', width: '80%'}}>
-                    <Image resizeMode="contain" source={require('../../assets/LOGO_main.png')} 
-                            style={{width: '100%', height: '90%',marginLeft: '-20%'}}/>
+                <View style={{height: '40%', width: '100%'}}>
+                    <Image resizeMode="contain" source={require('../../assets/LOGO.png')} 
+                            style={{width: '100%', height: '90%'}}/>
                 </View>
 
                 <View style={{width: '100%', 
@@ -78,6 +77,7 @@ export default class EmailLoginScreen extends Component {
                     </View>
                 </View>
             </View>
+            </KeyboardAvoidingView>
         )
     }
 }

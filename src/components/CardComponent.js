@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {View, StyleSheet, Text,Modal, TouchableOpacity, TouchableHighlight} from 'react-native'
+import {View, StyleSheet, Text,Modal, TouchableOpacity, TouchableHighlight, Image} from 'react-native'
 import {FontAwesome, Feather, AntDesign} from '@expo/vector-icons'
 
 export default class CardComponent extends Component {
@@ -9,7 +9,8 @@ export default class CardComponent extends Component {
             name: "John Doe",
             expire: "05 / 2021",
             total: "20,000",
-            modal: false
+            modal: false,
+            setting: true,
         }
     }
     closeModal = () => {
@@ -87,7 +88,8 @@ export default class CardComponent extends Component {
                         <View style={styles.modal_title_content}>
                             <Text style={styles.modal_title}>결제 설정</Text>
                             <TouchableHighlight style={{position: 'absolute', right: 0}} onPress={this.closeModal}>
-                                <AntDesign name="close" size={25} color={"#465cdb"} />
+                                <Image resizeMode="contain" source={require('../../assets/Cancel.png')} 
+                                style={{width: 30, height: 30}} />
                             </TouchableHighlight>
                         </View>
                         <TouchableOpacity style={styles.modal_list} onPress={this._pay}>

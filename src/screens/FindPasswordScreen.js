@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Text, View, StyleSheet, StatusBar, TouchableOpacity, TextInput} from 'react-native'
+import {Text, View, StyleSheet, StatusBar, TouchableOpacity, TextInput, KeyboardAvoidingView} from 'react-native'
 
 export default class FindPasswordScreen extends Component {
     constructor(props) {
@@ -7,16 +7,16 @@ export default class FindPasswordScreen extends Component {
     }
     render() {
         return(
-            <>
-                <View style={{height: '100%', backgroundColor: '#fff', alignItems:'center', 
-                 justifyContent: 'center', flex:1}}>
+            <KeyboardAvoidingView behavior="padding">
+                <View style={{height: '100%', backgroundColor: '#fff', alignItems:'center', width: '100%',
+                 justifyContent: 'center'}}>
                     <Text style={{width:'70%'}}>이메일</Text>
                     <TextInput placeholder="이메일 입력" style={{borderBottomColor: "#828282", borderBottomWidth:1, width:'70%'}}/>
                     <TouchableOpacity style={styles.btn} onPress={()=>this.props.navigation.navigate('changePW')}>
                         <Text style={styles.text}>확인 메일 보내기</Text>
                     </TouchableOpacity>
                 </View>
-            </>
+            </KeyboardAvoidingView>
         )
     }
 }
