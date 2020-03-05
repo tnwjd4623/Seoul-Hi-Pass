@@ -12,7 +12,7 @@ export default class GoogleLoginComponent extends Component {
             userInfo: {email: '', name: '', type:''}
         }
     }
-    componentDidMount() {
+    UNSAFE_componentDidMount() {
        
     }
     _signIn = async() => {

@@ -150,7 +150,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         paddingLeft: 20,
         borderBottomWidth: 5,
-        borderColor: '#e3e3e3'
+        borderColor: '#e3e3e3',
+        borderBottomColor: 'transparent'
     },
     swap: {
         width:'10%'

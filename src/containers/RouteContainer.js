@@ -32,7 +32,7 @@ export default class RouteContainer extends Component {
     componentDidMount () {
        
     }
-    componentWillReceiveProps(newProps) {
+    UNSAFE_componentWillReceiveProps(newProps) {
         if(newProps.item != null) {
             
             this.setState({render: false, item: newProps.item}, function() {

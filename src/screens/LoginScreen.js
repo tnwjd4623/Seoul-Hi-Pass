@@ -11,7 +11,7 @@ export default class LoginScreen extends Component {
             
         }
     }
-    componentDidMount() {
+    UNSAFE_componentDidMount() {
         AsyncStorage.getItem("id").then(asyncStorageRes => {
             if(asyncStorageRes != null) {
                 this.props.navigation.navigate('Home')

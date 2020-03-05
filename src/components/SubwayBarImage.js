@@ -12,7 +12,7 @@ export default class SubwayBarImage extends Component {
             color: this.props.color
         }
     }
-    componentWillReceiveProps(newProps) {
+    UNSAFE_componentWillReceiveProps(newProps) {
         if(newProps.time != null) {
             this.setState({time: newProps.time})
         }

@@ -24,7 +24,7 @@ export default class InfoModifyScreen extends Component {
             sns: '',
         }
     }
-    componentDidMount() {
+    UNSAFE_componentDidMount() {
         AsyncStorage.getItem("id").then(asyncStorageRes => {
             this.setState({id: asyncStorageRes}, function() {
                 axios.get("https://beacon.smst.kr/appAPI/v1/memberRegisterPhone.php?apiKey="
