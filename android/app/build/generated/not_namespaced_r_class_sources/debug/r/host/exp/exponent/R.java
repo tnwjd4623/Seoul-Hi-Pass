@@ -22125,8 +22125,9 @@ public final class R {
     public static final int com_facebook_profile_picture_view_com_facebook_preset_size=1;
   }
   public static final class xml {
-    public static final int file_system_provider_paths=0x7f130000;
-    public static final int provider_paths=0x7f130001;
-    public static final int reactandroid_rn_dev_preferences=0x7f130002;
+    public static final int file_provider_paths=0x7f130000;
+    public static final int file_system_provider_paths=0x7f130001;
+    public static final int provider_paths=0x7f130002;
+    public static final int reactandroid_rn_dev_preferences=0x7f130003;
   }
 }

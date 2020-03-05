@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
-import {View, Text, StyleSheet, TextInput, TouchableOpacity, CheckBox, Alert} from 'react-native'
-import { TouchableHighlight, ScrollView } from 'react-native-gesture-handler'
+import {View, Text, StyleSheet, TextInput, TouchableOpacity, CheckBox, Alert, ScrollView, Modal, TouchableHighlight} from 'react-native'
 import axios from 'axios'
+import {WebView} from 'react-native-webview'
+import {AntDesign} from '@expo/vector-icons'
+import Postcode from 'react-native-daum-postcode';
+
 
 const key = "beacon091211fX2TAJS0VbillUWp1aVx002VggT"
 export default class JoinScreen extends Component{
@@ -16,6 +19,7 @@ export default class JoinScreen extends Component{
             phone: '',
             addr: '',
             addr2: '',
+            modal: false,
         }
     }
     check = (id) => {
@@ -70,17 +74,42 @@ export default class JoinScreen extends Component{
     _inputAddr2 = text => {
         this.setState({addr2: text})
     }
+  
     _join = () => {
+        
         const check = this.state.CheckBox;
 
         const email = this.state.email;
         const pw = this.state.pw;
+        const pw_check = this.state.pw2;
+
         const name = this.state.name;
         const phone = this.state.phone;
         const addr = this.state.addr;
         const addr2 = this.state.addr2;
 
-
+        if(pw.length < 8) {
+            Alert.alert(
+                "비밀번호는 8자 이상입니다",
+                "",
+                [
+                    {text: '확인'}
+                ],
+                { cancelable: false }
+            );
+            return;
+        }
+        if(pw != pw_check) {
+            Alert.alert(
+                "비밀번호를 확인해주세요",
+                "",
+                [
+                    {text: '확인'}
+                ],
+                { cancelable: false }
+            );
+            return;
+        }
         if(check['all'] ) {
             if(check['all'] == true) {
                 console.log("Start Join")
@@ -112,6 +141,17 @@ export default class JoinScreen extends Component{
         );
     }
 
+    setAddress(data) {
+       // console.log(data.address);
+        this.setState({addr: data.address})
+        this.closeModal();
+    }
+    closeModal = () => {
+        this.setState({modal: false})
+    }
+    openModal = () => {
+        this.setState({modal: true})
+    }
     render() {
         return(
             <View style={styles.container}>
@@ -142,20 +182,20 @@ export default class JoinScreen extends Component{
 
                     <View style={styles.input_container}>
                         <Text style={styles.default_Text}>전화번호</Text>
-                        <View style={{flexDirection: 'row'}}>
-                          <TextInput style={styles.phone_input} placeholderTextColor={'#999999'} onChangeText={this._inputPhone}/>
-                          <TouchableOpacity style={styles.phone_btn}>
-                              <Text style={{color: '#000', fontWeight: 'bold'}}>인증번호 전송</Text>
-                            </TouchableOpacity>
-                        </View>
+                        <TextInput style={styles.input} placeholderTextColor={'#999999'} onChangeText={this._inputPhone}/>
                     </View>
 
                     <View style={styles.input_container}>
                         <Text style={styles.default_Text}>주소지입력</Text>
-                        <TextInput style={styles.input} placeholderTextColor={'#999999'} placeholder="주소 입력" 
-                        onChangeText={this._inputAddr}/>
+                        <View style={{flexDirection: 'row'}}>
+                            <Text style={styles.phone_input}>{this.state.addr}</Text>
+                            <TouchableOpacity style={styles.phone_btn} onPress={this.openModal}>
+                                <Text style={{color: '#000', fontWeight: 'bold'}}>주소 검색</Text>
+                            </TouchableOpacity>
+                        </View>
                         <TextInput style={styles.input} placeholderTextColor={'#999999'} placeholder="상세주소 입력"
                         onChangeText={this._inputAddr2}/>
+                       
                     </View>
                 </View>
 
@@ -187,6 +227,18 @@ export default class JoinScreen extends Component{
                     <Text style={styles.joinText}>회원가입</Text>
                 </TouchableOpacity>
                 </ScrollView>
+
+                <Modal visible={this.state.modal}> 
+                    
+                        <TouchableHighlight onPress={this.closeModal} style={{alignSelf: 'flex-end'}}>
+                            <AntDesign name="close" size={25} color={"#465cdb"} />
+                        </TouchableHighlight>
+                        <View style={{width: '100%', height: '90%'}}>
+                           <Postcode style={{width: '100%', height: '100%'}} jsOptions={{animated: true}} 
+                           onSelected={(data) => this.setAddress(data)}/>
+                        </View>
+                    
+                </Modal>
             </View>
         )
     }

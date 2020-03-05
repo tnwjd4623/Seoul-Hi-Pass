@@ -93,6 +93,9 @@ export default class CardComponent extends Component {
                         <TouchableOpacity style={styles.modal_list} onPress={this._pay}>
                             <Text style={{fontWeight: 'bold'}}>결제 정보 변경</Text>
                         </TouchableOpacity>
+                        <TouchableOpacity style={styles.modal_list} onPress={this._charge}>
+                            <Text style={{fontWeight: 'bold'}}>충전하기</Text>
+                        </TouchableOpacity>
 
                     </View>
                 </View>

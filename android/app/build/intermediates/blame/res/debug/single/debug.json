@@ -800,6 +800,10 @@
         "source": "/Users/babylabco/Desktop/Beacon/android/app/src/main/res/drawable-mdpi/ic_refresh_white_36dp.png"
     },
     {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/xml_file_provider_paths.xml.flat",
+        "source": "/Users/babylabco/Desktop/Beacon/node_modules/react-native-webview/android/build/intermediates/packaged_res/debug/xml/file_provider_paths.xml"
+    },
+    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility.png.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5d2190db361710f913c492a47f7066af/material-1.0.0/res/drawable-xxhdpi-v4/design_ic_visibility.png"
     },

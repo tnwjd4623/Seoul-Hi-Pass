@@ -7,6 +7,7 @@ INJECTED from /Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManife
 MERGED from [host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:2:1-116:12
 MERGED from [org.webkit:android-jsc:r245459] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/522254372e72a65d61209c800efd0544/android-jsc-r245459/AndroidManifest.xml:2:1-11:12
 MERGED from [:unimodules-react-native-adapter] /Users/babylabco/Desktop/Beacon/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-webview] /Users/babylabco/Desktop/Beacon/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-splash-screen] /Users/babylabco/Desktop/Beacon/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:react-native-seoul-naver-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/naver-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-21:12
 MERGED from [:react-native-seoul-kakao-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-31:12
@@ -430,6 +431,8 @@ application
 ADDED from /Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:48:3-365:17
 MERGED from [host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:75:5-114:19
 MERGED from [host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:75:5-114:19
+MERGED from [:react-native-webview] /Users/babylabco/Desktop/Beacon/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-webview] /Users/babylabco/Desktop/Beacon/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-splash-screen] /Users/babylabco/Desktop/Beacon/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
 MERGED from [:react-native-splash-screen] /Users/babylabco/Desktop/Beacon/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
 MERGED from [:react-native-seoul-naver-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/naver-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-19:19
@@ -990,6 +993,8 @@ MERGED from [org.webkit:android-jsc:r245459] /Users/babylabco/.gradle/caches/tra
 MERGED from [org.webkit:android-jsc:r245459] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/522254372e72a65d61209c800efd0544/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
 MERGED from [:unimodules-react-native-adapter] /Users/babylabco/Desktop/Beacon/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:unimodules-react-native-adapter] /Users/babylabco/Desktop/Beacon/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] /Users/babylabco/Desktop/Beacon/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] /Users/babylabco/Desktop/Beacon/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-splash-screen] /Users/babylabco/Desktop/Beacon/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-splash-screen] /Users/babylabco/Desktop/Beacon/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-seoul-naver-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/naver-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
@@ -1432,6 +1437,16 @@ ADDED from [host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/t
 		ADDED from [host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:108:13-37
 	android:name
 		ADDED from [host.exp.exponent:expoview:36.0.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/eefc08ed24fffacbf219d7ba38ed1485/expoview-36.0.0/AndroidManifest.xml:106:13-109
+provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
+ADDED from [:react-native-webview] /Users/babylabco/Desktop/Beacon/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-webview] /Users/babylabco/Desktop/Beacon/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-webview] /Users/babylabco/Desktop/Beacon/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+	android:exported
+		ADDED from [:react-native-webview] /Users/babylabco/Desktop/Beacon/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-webview] /Users/babylabco/Desktop/Beacon/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
 meta-data#com.kakao.sdk.AppKey
 ADDED from [:react-native-seoul-kakao-login] /Users/babylabco/Desktop/Beacon/node_modules/@react-native-seoul/kakao-login/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-21:53
 	android:value

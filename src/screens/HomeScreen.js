@@ -10,7 +10,7 @@ export default class HomeScreen extends Component {
     constructor(props){
         super(props);
         this.state = {
-            pay:'tmoney',
+            pay:'credit',
             departure: '출발역을 입력해주세요',
             dep_code:'',
 
@@ -71,7 +71,6 @@ export default class HomeScreen extends Component {
 
                 {/*Card*/}
                 {this.state.pay == 'credit' ? <CardComponent navigation={this.props.navigation}/> : <></>}
-                {this.state.pay == 'tmoney'? <TmoneyComponent navigation={this.props.navigation} setting={true}/> : <></>}
 
                 <View style={styles.search}>
                     <TouchableHighlight style={styles.swap} onPress={this._swap}>

@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
-import {StyleSheet, Text, View, StatusBar, Image, TouchableHighlight, AsyncStorage, ScrollView, TextInput, TouchableOpacity} from 'react-native'
+import {StyleSheet, Text, View, StatusBar, Image, 
+    TouchableHighlight, AsyncStorage, ScrollView, TextInput, TouchableOpacity, Alert, Modal} from 'react-native'
 import {AntDesign} from '@expo/vector-icons'
+import axios from 'axios'
+import Postcode from 'react-native-daum-postcode';
+
+const key = "beacon091211fX2TAJS0VbillUWp1aVx002VggT"
 
 export default class InfoModifyScreen extends Component {
     constructor(props) {
@@ -8,16 +13,105 @@ export default class InfoModifyScreen extends Component {
         this.state = {
             email: '',
             id: '',
+            addr: '',
+            addr2: '',
+            name: '',
+            phone: '',
+            pw: '',
+            pw2: '',
+
+            modal: false,
+            sns: '',
         }
     }
     componentDidMount() {
         AsyncStorage.getItem("id").then(asyncStorageRes => {
-            this.setState({id: asyncStorageRes})
+            this.setState({id: asyncStorageRes}, function() {
+                axios.get("https://beacon.smst.kr/appAPI/v1/memberRegisterPhone.php?apiKey="
+                +key+"&modeType=userInfo&muid="+this.state.id).then(response => {
+                    console.log(response);
+                    this.setState({email: response.data.email, name: response.data.mname, addr: response.data.addr,
+                    addr2: response.data.addr2, phone: response.data.hphone, sns: response.data.sns })
+                })
+            })
         })
-        AsyncStorage.getItem("email").then(asyncStorageRes => {
-            this.setState({email: asyncStorageRes})
-        })
+    }
+
+    _inputPW = text => {
+        this.setState({pw:text})
+    }
+    _inputPW2 = text => {
+        this.setState({pw2: text})
+    }
+    _inputPhone = text => {
+        this.setState({phone: text})
+    }
+    _inputAddr2 = text => {
+        this.setState({addr2: text})
+    }
+    setAddress(data) {
+        // console.log(data.address);
+         this.setState({addr: data.address})
+         this.closeModal();
+     }
+
+
+
+    closeModal = () => {
+        this.setState({modal: false})
+    }
+    openModal = () => {
+        this.setState({modal: true})
+    }
+    _modify = () => {
+        if(this.state.sns == "local") {
+            if(this.state.pw.length < 8 || this.state.pw2.length < 8 ) {
+                Alert.alert(
+                    "비밀번호는 8자 이상입니다",
+                    "",
+                    [
+                        {text: '확인'}
+                    ],
+                    { cancelable: false }
+                );
+                return ;
+            }
+            if(this.state.pw != this.state.pw2 ) {
+                Alert.alert(
+                    "비밀번호를 확인해주세요",
+                    "",
+                    [
+                        {text: '확인'}
+                    ],
+                    { cancelable: false }
+                );
+                return ;
+            }
+        }
         
+
+        const pw = this.state.pw;
+        const phone = this.state.phone;
+        const addr = this.state.addr;
+        const addr2 = this.state.addr2;
+        const id = this.state.id;
+
+        axios.get("https://beacon.smst.kr/appAPI/v1/memberRegisterPhone.php?apiKey="+key+"&modeType=mody&muid="+
+            id+"&pw="+pw+"&addr="+addr+"&addr2="+addr2+"&phone="+phone).then(response => {
+                    console.log(response);
+                    if(response.data.rescode == "0000"){
+                        Alert.alert(
+                            "수정되었습니다.",
+                            "",
+                            [
+                                {text: '확인'}
+                            ],
+                            { cancelable: false }
+                        );
+                        this.props.navigation.pop();
+                    }
+                })
+
     }
     render() {
         return(
@@ -42,38 +136,61 @@ export default class InfoModifyScreen extends Component {
                             <Text style={styles.default_Text}>{this.state.email}</Text>
                         </View>
 
-                        <View style={styles.input_container}>
+                     { this.state.sns == "local" &&   <View style={styles.input_container}>
                             <Text style={styles.default_Text}>비밀번호 (8자리 이상)</Text>
-                            <TextInput style={styles.input} placeholderTextColor={'#999999'} secureTextEntry={true}/>
+                            <TextInput style={styles.input} placeholderTextColor={'#999999'} secureTextEntry={true}
+                            onChangeText={this._inputPW}/>
                         </View>
+                    }
 
-                        <View style={styles.input_container}>
+                    {this.state.sns == "local" && <View style={styles.input_container}>
                             <Text style={styles.default_Text}>비밀번호 확인</Text>
-                            <TextInput style={styles.input} placeholderTextColor={'#999999'} secureTextEntry={true}/>
+                            <TextInput style={styles.input} placeholderTextColor={'#999999'} secureTextEntry={true}
+                            onChangeText={this._inputPW2}/>
                         </View>
-
+                    }
                         <View style={styles.input_container}>
                             <Text style={styles.default_Text}>이름</Text>
-                            <TextInput style={styles.input} placeholderTextColor={'#999999'}/>
+                            <Text style={styles.input}>{this.state.name}</Text>
                         </View>
+
+                        <View style={styles.input_container}>
+                            <Text style={styles.default_Text}>전화번호</Text>
+                            <TextInput style={styles.input} placeholderTextColor={'#999999'} placeholder="전화번호 입력"
+                            defaultValue={this.state.phone} keyboardType={'numeric'}/>
+                        </View>
+
 
                         <View style={styles.input_container}>
                         <Text style={styles.default_Text}>주소지입력</Text>
                         <View style={{flexDirection: 'row'}}>
-                          <TextInput style={styles.phone_input} placeholderTextColor={'#999999'} placeholder="우편번호 검색"/>
-                          <TouchableOpacity style={styles.phone_btn}>
-                              <Text style={{color: '#000', fontWeight: 'bold'}}>우편번호 검색</Text>
+                          <Text style={styles.phone_input} >{this.state.addr}</Text>
+                          <TouchableOpacity style={styles.phone_btn} onPress={this.openModal}>
+                              <Text style={{color: '#000', fontWeight: 'bold'}}>주소 검색</Text>
                             </TouchableOpacity>
                         </View>
-                        <TextInput style={styles.input} placeholderTextColor={'#999999'} placeholder="상세주소 입력"/>
+                        <TextInput style={styles.input} placeholderTextColor={'#999999'} placeholder="상세주소 입력" 
+                        defaultValue={this.state.addr2}/>
                     </View>
                     </View>
                 </ScrollView>
 
                 </View>
-                <TouchableOpacity style={styles.join_btn} onPress={()=>this.props.navigation.pop()}>
+                <TouchableOpacity style={styles.join_btn} onPress={this._modify}>
                     <Text style={styles.joinText}>정보수정</Text>
                 </TouchableOpacity>
+
+                <Modal visible={this.state.modal}> 
+                    
+                        <TouchableHighlight onPress={this.closeModal} style={{alignSelf: 'flex-end'}}>
+                            <AntDesign name="close" size={25} color={"#465cdb"} />
+                        </TouchableHighlight>
+                        <View style={{width: '100%', height: '90%'}}>
+                           <Postcode style={{width: '100%', height: '100%'}} jsOptions={{animated: true}} 
+                           onSelected={(data) => this.setAddress(data)}/>
+                        </View>      
+                </Modal>
+
             </View>
             </>
         )

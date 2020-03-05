@@ -27,6 +27,7 @@
             <option value="$PROJECT_DIR$/../node_modules/react-native-google-signin/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-restart/android" />
             <option value="$PROJECT_DIR$/../node_modules/react-native-splash-screen/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-webview/android" />
             <option value="$PROJECT_DIR$/../node_modules/unimodules-barcode-scanner-interface/android" />
             <option value="$PROJECT_DIR$/../node_modules/unimodules-camera-interface/android" />
             <option value="$PROJECT_DIR$/../node_modules/unimodules-constants-interface/android" />

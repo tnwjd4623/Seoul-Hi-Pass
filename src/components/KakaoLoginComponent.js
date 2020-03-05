@@ -1,7 +1,8 @@
-import {Text, TouchableOpacity, StyleSheet, Image, TouchableHighlight} from 'react-native'
+import {Text, TouchableOpacity, StyleSheet, Image, TouchableHighlight, AsyncStorage} from 'react-native'
 import React, {Component} from 'react'
 import KakaoLogins from '@react-native-seoul/kakao-login';
-
+import axios from 'axios'
+const key = "beacon091211fX2TAJS0VbillUWp1aVx002VggT"
 
 export default class KakaoLoginComponent extends Component {
     constructor(props) {
@@ -9,6 +10,7 @@ export default class KakaoLoginComponent extends Component {
         this.state = {
             loggedIn: false,
             userInfo: {email:'', name:'', type:''}
+        
         }
     }
 
@@ -36,7 +38,20 @@ export default class KakaoLoginComponent extends Component {
 
     getProfile = () => {
         KakaoLogins.getProfile().then(result => {
-            this.setState({userInfo: {email: result.email, name: result.nickname, type:'kakao' }})
+            axios.get("https://beacon.smst.kr/appAPI/v1/loginSns.php?apiKey="
+            +key+"&modeType=loginSns&email="+result.email+"&snsSite=kakao&mname="+result.nickname).then(response => {
+
+                if(response.data.rescode == "0000") {
+                    AsyncStorage.setItem("id", response.data.muid);
+                    this.props.navigation.navigate('Home');
+                }
+               
+                else {
+                    console.log("Login Fail");
+                }
+
+            })
+            
         }).catch(err => {
         
         })
@@ -46,14 +61,11 @@ export default class KakaoLoginComponent extends Component {
         const loggedIn = this.state.loggedIn;
         return (
             <>
-            {!loggedIn && <TouchableHighlight style={styles.kakao_btn} onPress={this.kakaoLogin}>
-                                <Image style={{height: 50, width: 50}} 
-                                source={require('../../assets/kakao.png')}/>
-                        </TouchableHighlight>}
-    
-            {!!loggedIn && <TouchableOpacity style={styles.kakao_btn} onPress={this.kakaoLogout}>
-                            <Text style={styles.kakao_text}>카카오 로그아웃</Text>
-                        </TouchableOpacity>}
+            <TouchableHighlight style={styles.kakao_btn} onPress={this.kakaoLogin}>
+                <Image style={{height: 50, width: 50}} 
+                    source={require('../../assets/kakao.png')}/>
+            </TouchableHighlight>
+
             </>
         )
     }

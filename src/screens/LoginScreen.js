@@ -32,9 +32,9 @@ export default class LoginScreen extends Component {
 
                 <View style={{width: '100%', alignItems: 'center', marginTop: '40%'}}>
                     <View style={{flexDirection: 'row'}}>
-                        <NaverLoginComponent/>
-                        <View style={{marginHorizontal:20}}><KakaoLoginComponent/></View>
-                        <GoogleLoginComponent/>
+                        <NaverLoginComponent navigation={this.props.navigation}/>
+                        <View style={{marginHorizontal:20}}><KakaoLoginComponent navigation={this.props.navigation} /></View>
+                        <GoogleLoginComponent navigation={this.props.navigation}/>
                     </View>
 
                     <TouchableOpacity style={styles.email_btn} onPress={()=>this.props.navigation.navigate('emailLogin')}>
