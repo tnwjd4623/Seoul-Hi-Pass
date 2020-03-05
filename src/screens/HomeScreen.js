@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Text, View, StyleSheet, StatusBar, TouchableHighlight, Image,  Modal, TouchableOpacity,  SafeAreaView, AsyncStorage} from 'react-native'
+import {Text, View, StyleSheet, StatusBar, TouchableHighlight, Image,  Modal, TouchableOpacity,  SafeAreaView, AsyncStorage, Alert} from 'react-native'
 import CardComponent from '../components/CardComponent';
 import TmoneyComponent from '../components/TmoneyComponent';
 import Map from '../components/Map'
@@ -40,6 +40,17 @@ export default class HomeScreen extends Component {
         this.props.navigation.navigate(option);
     }
     _logout = () => {
+        Alert.alert(
+            "로그아웃 하시겠습니까?",
+            "",
+            [
+                {text: '로그아웃', onPress:()=>this._logoutProcess()},
+                {text: '취소'}
+            ],
+            { cancelable: true}
+        );
+    }
+    _logoutProcess = () => {
         AsyncStorage.clear()
         RNRestart.Restart();
     }

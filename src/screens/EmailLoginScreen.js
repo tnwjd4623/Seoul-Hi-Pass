@@ -24,7 +24,7 @@ export default class EmailLoginScreen extends Component {
                 this.props.navigation.navigate('Home');
             }
             else {
-                console.log("Login Fail")
+                console.log(response)
             }
             
         })
