@@ -16,7 +16,9 @@ import DetailScreen from '../screens/DetailScreen';
 import StationSearchScreen from '../screens/StationSearchScreen';
 import InfoModifyScreen from '../screens/InfoModifyScreen';
 
-
+import React,{Component} from 'react'
+import {Image} from 'react-native'
+import {SvgUri} from 'react-native-svg'
 
 
 const payStack = createStackNavigator(
@@ -44,14 +46,11 @@ const loginStack = createStackNavigator(
             screen: JoinScreen,
             navigationOptions: {
                 title: "이메일로 회원가입하기",
-                headerTitleAlign: 'center',
-                headerTitleStyle: {
-                    fontSize: 17,
-                    color: '#000'
-                },
+                headerTransparent:null,
                 headerStyle: {
                     elevation: 0,
                     shadowOpacity: 0,
+                    backgroundColor: '#faa',
                     
                 },
             }
@@ -75,57 +74,56 @@ const loginStack = createStackNavigator(
             screen: FindPasswordScreen,
             navigationOptions: {
                 title:"비밀번호 찾기",
-                headerTitleAlign: 'center',
-                headerTitleStyle: {
-                    fontSize: 17,
-                    color: '#000'
-                },
-                headerStyle: {
-                    elevation: 0,
-                    shadowOpacity: 0,
-                    
-                },
             }
         },
         changePW: {
             screen: ChangepasswordScreen,
             navigationOptions: {
                 title: "비밀번호 변경하기",
-                headerTitleAlign: 'center',
-                headerTitleStyle: {
-                    fontSize: 17,
-                    color: '#000'
-                },
-                headerStyle: {
-                    elevation: 0,
-                    shadowOpacity: 0,
-                    backgroundColor: '#fff',
-                    
-                },
             }
         },
         emailLogin: {
             screen: EmailLoginScreen,
             navigationOptions: {
                 title: "",
-                headerStyle: {
-                    elevation: 0,
-                    shadowOpacity: 0,
-                    backgroundColor: '#384ec9',
-                    
-                },
-                headerTintColor: '#fff'
             }
         }
 
     },
     {
-        initialRouteName: 'login'
+        initialRouteName: 'login',
+        defaultNavigationOptions: {
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+                fontSize: 16,
+                color: '#00000099'
+            },
+            headerStyle: {
+                elevation: 0,
+                shadowOpacity: 0,
+                backgroundColor: '#384ec9',
+                
+            },
+            headerTintColor: '#aaa',
+            headerTransparent: {
+                position: 'absolute',
+                backgroundColor: 'transparent',
+                zIndex: 100,
+                top: 0,
+                left: 0,
+                right: 0
+            },
+            headerBackImage: ()=>(
+                <SvgUri resizeMode="contain" uri={'http://localhost:19001/assets/btn/Back_W.svg'} 
+                style={{width: 50, height: 50}}/>
+            )
+        }
     }
 )
 /*
 마이페이지 네비게이터
 */
+
 const MyPageStack = createStackNavigator(
     {
         Mypage: {

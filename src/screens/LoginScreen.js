@@ -4,6 +4,10 @@ import NaverLoginComponent from '../components/NaverLoginComponent'
 import KakaoLoginComponent from '../components/KakaoLoginComponent'
 import GoogleLoginComponent from '../components/GoogleLoginComponent'
 
+import BlueButton from '../components/BlueButton'
+
+import {SvgUri} from 'react-native-svg';
+
 export default class LoginScreen extends Component {
     constructor(props) {
         super(props)
@@ -22,27 +26,26 @@ export default class LoginScreen extends Component {
     render() {
         return(
             <View style={styles.container}>
-                <View style={{height: '30%', width: '80%',  marginTop:60}}>
+                <View style={{height: '40%', width: '80%', marginTop:80}}>
                     <Image resizeMode="contain" source={require('../../assets/LOGO_main.png')} 
-                            style={{width: '100%', height: '100%' ,marginLeft: '-20%',}}/>
+                            style={{width: '100%', height: '90%',marginLeft: '-20%'}}/>
                 </View>
-                   
-                <Image resizeMode="contain" source={require('../../assets/Subway.png')}
-                    style={{width: '90%', height: '90%', right:0, position: 'absolute', bottom: 0, marginRight: '-20%'}}/>
 
-                <View style={{width: '100%', alignItems: 'center', marginTop: '40%'}}>
+                <Image resizeMode="contain" source={require('../../assets/Subway.png')}
+                    style={{width: '90%', height: '90%', right:0, position: 'absolute', bottom: 0, marginRight: '-25%'}}/>
+
+                <View style={{width: '100%', alignItems: 'center', marginBottom: '20%'}}>
                     <View style={{flexDirection: 'row'}}>
                         <NaverLoginComponent navigation={this.props.navigation}/>
                         <View style={{marginHorizontal:20}}><KakaoLoginComponent navigation={this.props.navigation} /></View>
                         <GoogleLoginComponent navigation={this.props.navigation}/>
                     </View>
+                    <View style={styles.email_container}>
+                        <BlueButton text="이메일로 로그인" white={true} right={true} onPress={()=>this.props.navigation.navigate('emailLogin')}/>
+                    </View>
 
-                    <TouchableOpacity style={styles.email_btn} onPress={()=>this.props.navigation.navigate('emailLogin')}>
-                        <Text style={styles.email_text}>이메일로 로그인</Text>
-                    </TouchableOpacity>
-
-                    <View style={{flexDirection:'row'}}>
-                        <Text style={{marginTop:15, color:'#fff', width:'50%'}}>회원이 아니신가요?   </Text>
+                    <View style={styles.join_container}>
+                        <Text style={{color:'#ffffffdd'}}>회원이 아니신가요?   </Text>
                         <TouchableOpacity style={styles.join} onPress={()=>this.props.navigation.navigate('join')}>
                             <Text style={styles.join_text}>회원가입 하기</Text>
                         </TouchableOpacity>
@@ -59,42 +62,30 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         alignItems: 'center',
-        backgroundColor:'#384ec9',
-        paddingTop: StatusBar.currentHeight
+        backgroundColor:'#4666e5',
+        paddingTop: StatusBar.currentHeight,
+
+        flexDirection:'column',
+        justifyContent:'space-between'
     },
-    email_btn: {
-        width: '90%',
-        alignSelf: 'flex-end',
-        marginTop: 10
+    email_container: {
+        marginTop: 24,
+        width:'100%'
     },
-    email_text:{
-        color: '#384ec9',
-        fontWeight: 'bold',
-
-        width: '100%',
-        height:0,
-        alignSelf: 'flex-start',
-        marginBottom: 5,
-
-        borderBottomColor: '#fff',
-        borderBottomWidth:45,
-        
-        borderLeftWidth: 10,
-        borderLeftColor: 'transparent',
-        borderStyle: 'solid',
-        alignSelf:'flex-end',
-        right: 0,
-
-        textAlign: 'center',
-        textAlignVertical: 'center',
+    join_container: {
+        flexDirection:'row',
+        marginTop:17,
+        width:'100%',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        paddingHorizontal: 80
 
     },
     join: {
-        marginTop: 15,
         borderBottomWidth: 1,
         borderColor: '#fff'
     },
     join_text: {
-        color: '#fff'
+        color: '#ffffffdd'
     },
 })

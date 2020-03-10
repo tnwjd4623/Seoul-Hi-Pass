@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import {Text, View, StyleSheet, StatusBar, TouchableOpacity, TextInput} from 'react-native'
 
+import BlueButton from '../components/BlueButton'
+
+import {DefaultInput} from '../components/InputBoxes'
+
 export default class FindPasswordScreen extends Component {
     constructor(props) {
         super(props)
@@ -8,23 +12,24 @@ export default class FindPasswordScreen extends Component {
     render() {
         return(
             <>
-                <View style={{height: '100%', backgroundColor: '#fff', alignItems:'center', 
+                <View style={{height: '100%', width:'100%', backgroundColor: '#fff', alignItems:'center', 
                  justifyContent: 'center', flex:1}}>
-                    <Text style={{width:'70%'}}>이메일</Text>
-                    <TextInput placeholder="이메일 입력" style={{borderBottomColor: "#828282", borderBottomWidth:1, width:'70%'}}/>
-                    <TouchableOpacity style={styles.btn} onPress={()=>this.props.navigation.navigate('changePW')}>
-                        <Text style={styles.text}>확인 메일 보내기</Text>
-                    </TouchableOpacity>
+                    <View style={{paddingHorizontal:40}}>
+                        <DefaultInput text='이메일' placeholder="Seoulpass.com" onChangeText={this._inputEmail} marginRight={62} />     
+                    </View>
+                    
+
+                    <View style={styles.btn_container}>
+                        <BlueButton text="확인 메일 보내기" onPress={()=>this.props.navigation.navigate('changePW')}/>
+                    </View>
                 </View>
             </>
         )
     }
 }
 const styles = StyleSheet.create({
-    btn: {
-        width: '90%',
-        marginTop: 20,
-        alignSelf: 'flex-start'
+    btn_container: {
+        width:'100%'
     },
     text: {
         color: '#fff',
