@@ -4,19 +4,21 @@
     "slug": "Beacon",
     "privacy": "public",
     "sdkVersion": "36.0.0",
+    "splash": {
+      "resizeMode": "cover",
+      "backgroundColor": "#465cdb",
+      "image": "./assets/splash.png"
+    },
     "platforms": [
       "ios",
       "android",
       "web"
     ],
+    "packagerOpts": { "config": "metro.config.js", "sourceExts": ["js", "jsx", "svg", "svgx"] },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "splash": {
-
-      "resizeMode": "cover",
-      "backgroundColor": "#465cdb"
-    },
+    
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -27,7 +29,11 @@
       "supportsTablet": true,
       "bundleIdentifier": "BeaconPayment",
       "publishBundlePath": "ios/beacon_application/Supporting/shell-app.bundle",
-      "publishManifestPath": "ios/beacon_application/Supporting/shell-app-manifest.json"
+      "publishManifestPath": "ios/beacon_application/Supporting/shell-app-manifest.json",
+      "splash": {
+        "image": "./assets/splash.png",
+        "resizeMode": "cover"
+      }
     },
     "isDetached": true,
     "detach": {
@@ -36,6 +42,15 @@
     },
     "scheme": "exp66e538e5f59d4952a056728aa7b04be8",
     "android": {
+      "splash": {
+        "resizeMode": "cover",
+        "backgroundColor": "#465cdb",
+        "mdpi": "./assets/splash.png",
+        "hdpi": "./assets/splash.png",
+        "xhdpi": "./assets/splash.png",
+        "xxhdpi": "./assets/splash.png",
+        "xxxhdpi": "./assets/splash.png"
+      },
       "package": "kr.babylab.BeaconPayment",
       "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
       "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"

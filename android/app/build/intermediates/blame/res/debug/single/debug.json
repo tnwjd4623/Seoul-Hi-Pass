@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/color_mtrl_tabs_colored_ripple_color.xml.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5d2190db361710f913c492a47f7066af/material-1.0.0/res/color/mtrl_tabs_colored_ripple_color.xml"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/color_mtrl_tabs_colored_ripple_color.xml.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5d2190db361710f913c492a47f7066af/material-1.0.0/res/color/mtrl_tabs_colored_ripple_color.xml"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-v21_design_password_eye.xml.flat",
@@ -20,24 +20,24 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/7089bf34ad4be0aa25c550e3de69c960/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/color-v23_abc_btn_colored_borderless_text_material.xml.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/color-v23/abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_button_icon_blue.png.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/29f1bc2a3068f009175b3a4ca73860b0/jetified-facebook-common-5.0.1/res/drawable-xxhdpi-v4/com_facebook_button_icon_blue.png"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/864d0fe8891329a9533be4963b75012e/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_button_icon_blue.png.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/29f1bc2a3068f009175b3a4ca73860b0/jetified-facebook-common-5.0.1/res/drawable-xxhdpi-v4/com_facebook_button_icon_blue.png"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -124,12 +124,12 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/56ade083dc81ff616df6d13d19c7f247/facebook-messenger-5.0.1/res/drawable-hdpi-v4/messenger_bubble_large_white.png"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_login_background.xml.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/893675c696da3357fd8ba420119c7959/jetified-facebook-login-5.0.1/res/drawable/com_facebook_button_login_background.xml"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/color_abc_tint_default.xml.flat",
@@ -212,12 +212,12 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/color/abc_search_url_text.xml"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/color/abc_search_url_text.xml"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
@@ -276,12 +276,12 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/color_mtrl_btn_text_btn_ripple_color.xml.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5d2190db361710f913c492a47f7066af/material-1.0.0/res/color/mtrl_btn_text_btn_ripple_color.xml"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/color_wallet_primary_text_holo_light.xml.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5913e616391e224a8075ba42ad671e06/jetified-play-services-wallet-16.0.1/res/color/wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/color_mtrl_btn_text_btn_ripple_color.xml.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5d2190db361710f913c492a47f7066af/material-1.0.0/res/color/mtrl_btn_text_btn_ripple_color.xml"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_login_btn_img.png.flat",
@@ -420,12 +420,12 @@
         "source": "/Users/babylabco/Desktop/Beacon/android/app/src/main/res/mipmap-xxhdpi/dev_icon.png"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_share_white_36dp.png.flat",
-        "source": "/Users/babylabco/Desktop/Beacon/android/app/src/main/res/drawable-xxhdpi/ic_share_white_36dp.png"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5d2190db361710f913c492a47f7066af/material-1.0.0/res/drawable-xhdpi-v4/design_ic_visibility_off.png"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_share_white_36dp.png.flat",
+        "source": "/Users/babylabco/Desktop/Beacon/android/app/src/main/res/drawable-xxhdpi/ic_share_white_36dp.png"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable_btn_radio_on_to_off_mtrl_animation.xml.flat",
@@ -440,12 +440,12 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/layout-sw600dp-v13_design_layout_snackbar.xml.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5d2190db361710f913c492a47f7066af/material-1.0.0/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -636,12 +636,12 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/227d479a0d408f4b60bba753a662c58a/util-1.26.0/res/drawable/kakao_login_button_background.9.png"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/color_mtrl_tabs_icon_color_selector.xml.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5d2190db361710f913c492a47f7066af/material-1.0.0/res/color/mtrl_tabs_icon_color_selector.xml"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -728,12 +728,12 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb2b9e47a73f62d7b00183e6f63e14ea/jetified-react-native-36.0.0/res/layout/reactandroid_redbox_view.xml"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_ic_star_black_48dp.png"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-hdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable_abc_ic_clear_material.xml.flat",
@@ -776,12 +776,12 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/29f1bc2a3068f009175b3a4ca73860b0/jetified-facebook-common-5.0.1/res/layout/com_facebook_login_fragment.xml"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_bubble_large_blue.png.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/56ade083dc81ff616df6d13d19c7f247/facebook-messenger-5.0.1/res/drawable-mdpi-v4/messenger_bubble_large_blue.png"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_bubble_large_blue.png.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/56ade083dc81ff616df6d13d19c7f247/facebook-messenger-5.0.1/res/drawable-mdpi-v4/messenger_bubble_large_blue.png"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -848,12 +848,12 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_thumb_material.xml.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable/abc_seekbar_thumb_material.xml"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_focused.xml.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/7089bf34ad4be0aa25c550e3de69c960/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_thumb_material.xml.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -876,12 +876,12 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/bb2b9e47a73f62d7b00183e6f63e14ea/jetified-react-native-36.0.0/res/layout/reactandroid_fps_view.xml"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/raw_amu_ballon_gx_prefix.kml.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/2e9bfbd04bcb4e63be071cacfb746690/jetified-android-maps-utils-0.5/res/raw/amu_ballon_gx_prefix.kml"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/raw_amu_ballon_gx_prefix.kml.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/2e9bfbd04bcb4e63be071cacfb746690/jetified-android-maps-utils-0.5/res/raw/amu_ballon_gx_prefix.kml"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/layout_design_bottom_sheet_dialog.xml.flat",
@@ -940,12 +940,12 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/864d0fe8891329a9533be4963b75012e/core-1.1.0/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_design_ic_visibility_off.png.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5d2190db361710f913c492a47f7066af/material-1.0.0/res/drawable-xxxhdpi-v4/design_ic_visibility_off.png"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_design_ic_visibility_off.png.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5d2190db361710f913c492a47f7066af/material-1.0.0/res/drawable-xxxhdpi-v4/design_ic_visibility_off.png"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/animator_design_fab_hide_motion_spec.xml.flat",
@@ -1168,12 +1168,12 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/color/abc_tint_spinner.xml"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/layout_custom_dialog.xml.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/864d0fe8891329a9533be4963b75012e/core-1.1.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -1232,12 +1232,12 @@
         "source": "/Users/babylabco/Desktop/Beacon/android/app/src/main/res/drawable-hdpi/ic_share_white_36dp.png"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/864d0fe8891329a9533be4963b75012e/core-1.1.0/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/anim_btn_radio_to_on_mtrl_ring_outer_animation.xml.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/anim/btn_radio_to_on_mtrl_ring_outer_animation.xml"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/864d0fe8891329a9533be4963b75012e/core-1.1.0/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable_account.png.flat",
@@ -1332,12 +1332,12 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/893675c696da3357fd8ba420119c7959/jetified-facebook-login-5.0.1/res/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_logo_white_32dp.png.flat",
-        "source": "/Users/babylabco/Desktop/Beacon/android/app/src/main/res/drawable-hdpi/ic_logo_white_32dp.png"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/color_mtrl_tabs_icon_color_selector_colored.xml.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5d2190db361710f913c492a47f7066af/material-1.0.0/res/color/mtrl_tabs_icon_color_selector_colored.xml"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_logo_white_32dp.png.flat",
+        "source": "/Users/babylabco/Desktop/Beacon/android/app/src/main/res/drawable-hdpi/ic_logo_white_32dp.png"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
@@ -1420,12 +1420,12 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-small-v4_kakaostory_icon.png.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/227d479a0d408f4b60bba753a662c58a/util-1.26.0/res/drawable-small-v4/kakaostory_icon.png"
-    },
-    {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-small-v4_kakaostory_icon.png.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/227d479a0d408f4b60bba753a662c58a/util-1.26.0/res/drawable-small-v4/kakaostory_icon.png"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/layout_design_menu_item_action_area.xml.flat",
@@ -1436,16 +1436,16 @@
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/5d2190db361710f913c492a47f7066af/material-1.0.0/res/animator/mtrl_btn_state_list_anim.xml"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/layout-v21_notification_action_tombstone.xml.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/864d0fe8891329a9533be4963b75012e/core-1.1.0/res/layout-v21/notification_action_tombstone.xml"
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/anim_abc_tooltip_exit.xml.flat",
         "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/anim/abc_tooltip_exit.xml"
     },
     {
-        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
-        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/a8e554f9d8544835d85bbaa85a9a96ed/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+        "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/layout-v21_notification_action_tombstone.xml.flat",
+        "source": "/Users/babylabco/.gradle/caches/transforms-2/files-2.1/864d0fe8891329a9533be4963b75012e/core-1.1.0/res/layout-v21/notification_action_tombstone.xml"
     },
     {
         "merged": "/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/res/merged/debug/drawable_design_fab_background.xml.flat",

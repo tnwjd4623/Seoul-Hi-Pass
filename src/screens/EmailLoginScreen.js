@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import {Text, StyleSheet, TouchableOpacity, View, TextInput, Image, AsyncStorage, KeyboardAvoidingView} from 'react-native'
 import axios from 'axios'
+//import BlueButton from '../components/BlueButton'
+import {DefaultInput} from '../components/InputBoxes'
+import SvgUri from 'react-native-svg-uri'
 
 const key = 'beacon091211fX2TAJS0VbillUWp1aVx002VggT'
 export default class EmailLoginScreen extends Component {
@@ -17,9 +20,9 @@ export default class EmailLoginScreen extends Component {
         .then(response => {
             if(response.data.rescode == "0000") {
                 console.log(response.data.muid)
-                AsyncStorage.setItem("email", this.state.email);
+              //  AsyncStorage.setItem("email", this.state.email);
                 AsyncStorage.setItem("id", response.data.muid);
-
+                AsyncStorage.setItem("type", "local");
                 this.props.navigation.navigate('Home');
             }
             else {
@@ -50,19 +53,27 @@ export default class EmailLoginScreen extends Component {
                 <View style={{width: '100%', 
                 alignItems: 'center', justifyContent: 'center', justifyContent: 'flex-end'}}>
                     <View style={styles.login_form}>
-                        <View>
+                        {/*<View>
                             <Text style={{marginLeft: 15,paddingLeft: 10, color:'#fff'}}>이메일</Text>
                             <TextInput style={styles.input} onChangeText={this._inputEmail} 
                             placeholder={"이메일 입력"} placeholderTextColor={'#fff'} onSubmitEditing ={()=>this.secondTextInput.focus()}
                             blurOnSubmit={false} />
                         </View>
-
+                        
                         <View>
                             <Text style={{marginLeft: 15,paddingLeft: 10, color: '#fff'}}>비밀번호</Text>
                             <TextInput style={styles.input} onChangeText={this._inputPW} ref={(input)=>{this.secondTextInput = input}}
                             placeholder={"8자리 이상"} placeholderTextColor={'#fff'} 
                             secureTextEntry={true}/>
                         </View>
+                        
+                        */}
+
+                        <DefaultInput text='이메일' placeholder="이메일 입력" white={true} onChangeText={this._inputEmail}
+                        onSubmitEditing ={()=>this.secondTextInput.focus()} blurOnSubmit={false} marginBottom={33}/>
+
+                        <DefaultInput text='비밀번호' placeholder="8자리 이상" white={true} onChangeText={this._inputPW}
+                        ref={(input)=>{this.secondTextInput = input}} secureTextEntry={true}/>
                     </View>
 
                     <TouchableOpacity style={styles.login_btn} onPress={this.login}>

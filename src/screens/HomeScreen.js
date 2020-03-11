@@ -5,6 +5,8 @@ import CardComponent from '../components/CardComponent';
 import Map from '../components/Map'
 import RNRestart from 'react-native-restart'
 import KakaoLogins from '@react-native-seoul/kakao-login';
+import {NaverLogin} from '@react-native-seoul/naver-login'
+import {GoogleSignin} from '@react-native-community/google-signin';
 
 
 export default class HomeScreen extends Component {
@@ -58,12 +60,32 @@ export default class HomeScreen extends Component {
             
         })
     }
-  
-    _logoutProcess = () => {
-        this.kakaoLogout();
+    naverLogout = () => {
+        NaverLogin.logout();
+       
+    }
+    signOut = async() => {
+        try {
+            await GoogleSignin.revokeAccess();
+            await GoogleSignin.signOut();
+        }catch (error) {
+            console.log(error);
+        }
+    }
 
-        AsyncStorage.clear()
-        RNRestart.Restart();
+    _logoutProcess = () => {
+        AsyncStorage.getItem("type").then(asyncStorageRes => {
+           if(asyncStorageRes == "kakao")
+                this.kakaoLogout();
+            else if(asyncStorageRes == "naver")
+                this.naverLogout();
+            else if(asyncStorageRes == "google")
+                this.signOut();
+
+            AsyncStorage.clear()
+            RNRestart.Restart();
+        })
+
     }
     closeModal = () => {
         this.setState({modal: false})
@@ -76,42 +98,43 @@ export default class HomeScreen extends Component {
         return(
             <View style={{paddingTop: StatusBar.currentHeight, backgroundColor: '#fff', height:'100%'}}>
                 {/*Header*/}
-                <SafeAreaView style={styles.header}>
-                    <View style={{width:'90%'}}>
-                        <Image resizeMode="contain" source={require('../../assets/Logo_2.png')}
-                            style={{width: '100%', height: '60%', marginLeft: '-10%'}}/>
-                    </View>
-                    <TouchableHighlight style={{width:"10%"}} onPress={()=>this.setState({modal: true})}>
-                        <Image resizeMode="contain" 
+                <View style={{marginHorizontal:24}}>
+                    <SafeAreaView style={styles.header}>
+                        <View style={{width:'90%'}}>
+                            <Image resizeMode="contain" source={require('../../assets/Logo_2.png')}
+                                style={{width: '100%', height: '60%', marginLeft: '-10%'}}/>
+                        </View>
+                        <TouchableHighlight style={{width:'20%'}} onPress={()=>this.setState({modal: true})}>
+                            <Image resizeMode="contain" 
                             source={require('../../assets/My_page.png')} style={{width: '100%', height: '60%'}}/>
-                    </TouchableHighlight>
-                </SafeAreaView>
+                        </TouchableHighlight>
+                    </SafeAreaView>
 
-                {/*Card*/}
-                {this.state.pay == 'credit' ? <CardComponent navigation={this.props.navigation}/> : <></>}
+                    {/*Card*/}
+                    {this.state.pay == 'credit' ? <CardComponent navigation={this.props.navigation}/> : <></>}
 
-                <View style={styles.search}>
-                    <TouchableHighlight style={styles.swap} onPress={this._swap}>
-                        <Image resizeMode="contain" source={require('../../assets/Change.png')} 
-                            style={{width: '100%', height:'70%'}}/>
-                    </TouchableHighlight>
-                    <View style={{width: '70%', marginRight: 10, height:'100%'}}>
+                    <View style={styles.search}>
+                        <TouchableHighlight style={styles.swap} onPress={this._swap}>
+                            <Image resizeMode="contain" source={require('../../assets/Change.png')} 
+                                style={{width: '100%', height:'70%'}}/>
+                        </TouchableHighlight>
+                        <View style={{height:'100%', flex:1, flexDirection:'column', alignItems:'center'}}>
 
-                        <TouchableOpacity style={styles.input} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._depart})}>
-                            <Text>{this.state.departure}</Text>
-                        </TouchableOpacity>
-                        
-                        <TouchableOpacity style={styles.input2} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._dest})}>
-                            <Text>{this.state.destination}</Text>       
-                        </TouchableOpacity>
-                        
+                            <TouchableOpacity style={styles.input} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._depart})}>
+                                <Text>{this.state.departure}</Text>
+                            </TouchableOpacity>
+                            <TouchableOpacity style={styles.input2} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._dest})}>
+                                <Text>{this.state.destination}</Text>
+                            </TouchableOpacity>
+
+                        </View>
+
+                        <TouchableHighlight style={styles.swap} onPress={()=>this.props.navigation.navigate('search', 
+                            {depart:this.state.departure, dep_code:this.state.dep_code, dest_code:this.state.dest_code, arrive: this.state.destination})}>
+                            <Image resizeMode="contain" source={require('../../assets/Search.png')} 
+                                style={{width: '100%', height:'70%'}}/>
+                        </TouchableHighlight>
                     </View>
-
-                    <TouchableHighlight style={styles.swap} onPress={()=>this.props.navigation.navigate('search', 
-                        {depart:this.state.departure, dep_code:this.state.dep_code, dest_code:this.state.dest_code, arrive: this.state.destination})}>
-                        <Image resizeMode="contain" source={require('../../assets/Search.png')} 
-                            style={{width: '100%', height:'70%'}}/>
-                    </TouchableHighlight>
                 </View>
 
                 <Map/>
@@ -156,12 +179,16 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 50,
         alignItems: 'center',
-        paddingRight: 10
+        paddingRight: 10,
+        marginBottom:15,
+        flexDirection:'row',
+        alignItems:'flex-start',
+        justifyContent:'space-between'
     },
    search: {
         backgroundColor: '#fff',
-        width: '80%',
-        height:90,
+        width: '100%',
+        height:80,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -170,16 +197,17 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.20,
         shadowRadius: 1.41,
         elevation: 2, 
-        marginTop:20,
+        marginTop:16,
         alignSelf: 'center',
         alignItems: 'center',
         flexDirection: 'row',
-        paddingLeft: 20,
+        justifyContent:'space-between'
 
   
     },
     swap: {
-        width:'10%'
+        width:'8%',
+        marginHorizontal:'4%'
     },
     line: {
         backgroundColor: '#e0e0e0',
@@ -187,20 +215,19 @@ const styles = StyleSheet.create({
         width:'100%'
     },
     input: {
-        width: '90%',
-        marginLeft: 20,
-        height: '45%',
+        width: '100%',
+        paddingLeft:12,
         justifyContent: 'center',
-        borderBottomColor: '#828282',
-        borderBottomWidth:0.5
+        borderBottomColor: '#00000099',
+        borderBottomWidth:0.5,
+        flex:1,
 
     },
     input2: {
-        width: '90%',
-        marginLeft: 20,
-        height:'45%',
-        justifyContent: 'center',       
-        
+        width: '100%',
+        paddingLeft:12,
+        justifyContent: 'center',  
+        flex:1,   
     },
     
     modal_container: {

@@ -1,4 +1,4 @@
-import {Text, TouchableOpacity, StyleSheet, Image, TouchableHighlight, AsyncStorage} from 'react-native'
+import { StyleSheet, Image, TouchableHighlight, AsyncStorage, Modal, View} from 'react-native'
 import React, {Component} from 'react'
 import KakaoLogins from '@react-native-seoul/kakao-login';
 import axios from 'axios'
@@ -9,13 +9,16 @@ export default class KakaoLoginComponent extends Component {
         super(props)
         this.state = {
             loggedIn: false,
-            userInfo: {email:'', name:'', type:''}
+            userInfo: {email:'', name:'', type:''},
+            loading: false,
         
         }
     }
 
     kakaoLogin = () => {
+        this.setState({loading: true})
         KakaoLogins.login().then(result => {
+            
             this.setState({loggedIn:true})
             this.getProfile()
         }).catch(err => {
@@ -42,7 +45,9 @@ export default class KakaoLoginComponent extends Component {
             +key+"&modeType=loginSns&email="+result.email+"&snsSite=kakao&mname="+result.nickname).then(response => {
 
                 if(response.data.rescode == "0000") {
+                    this.setState({loading: false})
                     AsyncStorage.setItem("id", response.data.muid);
+                    AsyncStorage.setItem("type", "kakao");
                     this.props.navigation.navigate('Home');
                 }
                
@@ -66,6 +71,11 @@ export default class KakaoLoginComponent extends Component {
                     source={require('../../assets/kakao.png')}/>
             </TouchableHighlight>
 
+            <Modal visible={this.state.loading}>
+                <View style={{backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                                width: '100%',
+                                height: '100%'}}/>
+            </Modal>
             </>
         )
     }

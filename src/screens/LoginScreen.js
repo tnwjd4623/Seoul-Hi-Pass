@@ -33,7 +33,9 @@ export default class LoginScreen extends Component {
                 <View style={{width: '100%', alignItems: 'center', marginTop: '40%'}}>
                     <View style={{flexDirection: 'row'}}>
                         <NaverLoginComponent navigation={this.props.navigation}/>
-                        <View style={{marginHorizontal:20}}><KakaoLoginComponent navigation={this.props.navigation} /></View>
+                        <View style={{marginHorizontal:20}}>
+                            <KakaoLoginComponent navigation={this.props.navigation} />
+                        </View>
                         <GoogleLoginComponent navigation={this.props.navigation}/>
                     </View>
 

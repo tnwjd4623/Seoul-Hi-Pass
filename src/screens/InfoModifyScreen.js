@@ -25,6 +25,9 @@ export default class InfoModifyScreen extends Component {
         }
     }
     componentDidMount() {
+        AsyncStorage.getItem("type").then(asyncStorageRes => {
+            this.setState({sns: asyncStorageRes})
+        })
         AsyncStorage.getItem("id").then(asyncStorageRes => {
             this.setState({id: asyncStorageRes}, function() {
                 axios.get("https://beacon.smst.kr/appAPI/v1/memberRegisterPhone.php?apiKey="
@@ -230,6 +233,7 @@ const styles = StyleSheet.create({
     },
     input_container: {
         marginBottom: 20,
+        marginTop: 10,
     },
     phone_input: {
         borderBottomWidth: 1,
@@ -249,7 +253,7 @@ const styles = StyleSheet.create({
     join_btn: {
         alignItems: 'center',
         width: '90%',
-        marginTop: 20,
+        marginTop: 60,
         alignSelf: 'flex-start',
         
     },

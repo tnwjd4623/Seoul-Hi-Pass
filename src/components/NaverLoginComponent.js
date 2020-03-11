@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import {View, StyleSheet, Text, TouchableOpacity, Alert, TouchableHighlight, Image} from 'react-native'
+import {View, StyleSheet,TouchableHighlight, Image, Modal, AsyncStorage} from 'react-native'
 import {NaverLogin, getProfile} from '@react-native-seoul/naver-login'
+import axios from 'axios'
+const key = "beacon091211fX2TAJS0VbillUWp1aVx002VggT"
 
 const androidKeys = {
     kConsumerKey:'J54f6Ml6Fa4o3mBwRbo0',
@@ -16,12 +18,13 @@ class NaverLoginComponent extends Component{
         this.state = {
             loggedIn: false,
             token: null,
-            userInfo: {email: '', name: '', type: 'naver'}
+            loading: false,
         }
     }
     naverLogin = (props )=> {
         return new Promise((resolve, reject) => {
             NaverLogin.login(props, (err, token) => {
+                this.setState({loading: true})
                 console.log(`\n\n Token is fetched :: ${token} \n\n`);
                 this.setState({loggedIn: true, token: token})
                 this.getUserProfile();
@@ -41,14 +44,31 @@ class NaverLoginComponent extends Component{
 
     getUserProfile = async () => {
         const profileResult = await getProfile(this.state.token.accessToken);
+        
         if(profileResult.resultcode == "024") {
            console.log("fail")
+           this.setState({loading: false})
             return;
         }
         else {
-            
+            axios.get("https://beacon.smst.kr/appAPI/v1/loginSns.php?apiKey="
+            +key+"&modeType=loginSns&email="+profileResult.response.email+"&snsSite=naver&mname="+profileResult.response.name).then(response => {
+
+                if(response.data.rescode == "0000") {
+                    this.setState({loading: false})
+                    AsyncStorage.setItem("id", response.data.muid);
+                    AsyncStorage.setItem("type", "naver");
+                    this.props.navigation.navigate('Home');
+                }
+               
+                else {
+                    console.log("Login Fail");
+                    this.setState({loading: false})
+                }
+            })
         }
-        this.setState({userInfo: {email: profileResult.response.email, name: profileResult.response.name}})
+        
+        //this.setState({userInfo: {email: profileResult.response.email, name: profileResult.response.name}})
     }
     render() {
         const loggedIn = this.state.loggedIn;
@@ -58,7 +78,11 @@ class NaverLoginComponent extends Component{
                     <Image style={{height:50, width:50}}
                         source={require('../../assets/naver.png')}/>
             </TouchableHighlight>
-    
+            <Modal visible={this.state.loading}>
+                <View style={{backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                                width: '100%',
+                                height: '100%'}}/>
+            </Modal>
             </>
         )
     }
