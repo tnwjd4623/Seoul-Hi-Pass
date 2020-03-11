@@ -1,5 +1,9 @@
 {
   "expo": {
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": ["js", "jsx", "ts", "tsx", "svg"]
+    },
     "name": "Beacon_Application",
     "slug": "Beacon",
     "privacy": "public",
@@ -14,7 +18,7 @@
       "android",
       "web"
     ],
-    "packagerOpts": { "config": "metro.config.js", "sourceExts": ["js", "jsx", "svg", "svgx"] },
+ 
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

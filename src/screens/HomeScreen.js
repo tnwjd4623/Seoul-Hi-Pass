@@ -111,7 +111,7 @@ export default class HomeScreen extends Component {
                     </SafeAreaView>
 
                     {/*Card*/}
-                    {this.state.pay == 'credit' ? <CardComponent navigation={this.props.navigation}/> : <></>}
+                    {this.state.pay == 'credit' ? <CardComponent navigation={this.props.navigation} setting={true}/> : <></>}
 
                     <View style={styles.search}>
                         <TouchableHighlight style={styles.swap} onPress={this._swap}>

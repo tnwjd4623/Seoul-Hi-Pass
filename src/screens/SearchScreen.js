@@ -81,7 +81,7 @@ export default class SearchScreen extends Component {
         this.setState({depart: arrive, arrive: depart, dep_code: dest_code, dest_code: dep_code})
     }
     _init = () => {
-        this.setState({depart: "", arrive: ""})
+        this.props.navigation.pop();
     }
     _depart = (data) => {
         this.setState({depart: data.station, dep_code: data.code})

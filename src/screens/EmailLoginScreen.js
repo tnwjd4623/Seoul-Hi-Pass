@@ -73,7 +73,7 @@ export default class EmailLoginScreen extends Component {
                         onSubmitEditing ={()=>this.secondTextInput.focus()} blurOnSubmit={false} marginBottom={33}/>
 
                         <DefaultInput text='비밀번호' placeholder="8자리 이상" white={true} onChangeText={this._inputPW}
-                        ref={(input)=>{this.secondTextInput = input}} secureTextEntry={true}/>
+                        ref={(input)=>{this.secondTextInput = input}} secureTextEntry={true} pw={true}/>
                     </View>
 
                     <TouchableOpacity style={styles.login_btn} onPress={this.login}>

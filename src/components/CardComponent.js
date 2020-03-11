@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
-import {View, StyleSheet, Text,Modal, TouchableOpacity, TouchableHighlight, Image} from 'react-native'
+import {View, StyleSheet, Text,Modal, TouchableOpacity, TouchableHighlight, Image, AsyncStorage} from 'react-native'
 import {FontAwesome, Feather, AntDesign} from '@expo/vector-icons'
+import axios from 'axios'
+
+const apiKey = "beacon091211fX2TAJS0VbillUWp1aVx002VggT";
 
 export default class CardComponent extends Component {
     constructor(props) {
@@ -8,10 +11,33 @@ export default class CardComponent extends Component {
         this.state = {
             name: "John Doe",
             expire: "05 / 2021",
-            total: "20,000",
+            balance: "",
             modal: false,
             setting: true,
+            id: "",
         }
+    }
+    componentDidMount() {
+        AsyncStorage.getItem("id").then(asyncStorageRes => {
+            this.setState({id: asyncStorageRes}, function() {
+                this._refreshBalance();
+            })
+        })
+    }
+    componentWillReceiveProps(newProps) {
+        if(newProps.refresh) {
+            this._refreshBalance();
+        }
+    }
+    _refreshBalance = () => {
+        axios.get("https://beacon.smst.kr/appAPI/v1/emoney/emoney_balance.php?apiKey="
+                +apiKey+"&modeType=balance&muid="+this.state.id).then(response => {
+                    if(response.data.rescode == "0000") {
+                        this.setState({balance: response.data.balance})
+                    }else {
+                        console.log("fail")
+                    }
+        })
     }
     closeModal = () => {
         this.setState({modal: false})
@@ -23,9 +49,13 @@ export default class CardComponent extends Component {
         this.closeModal();
         this.props.navigation.navigate('payinfo')
     }
+    _return = (value )=> {
+        this._refreshBalance();
+    }
+
     _charge = () => {
         this.closeModal();
-        this.props.navigation.navigate('charge')
+        this.props.navigation.navigate('charge',{ goBackData: this._return})
     }
     render() {
         return(
@@ -33,9 +63,9 @@ export default class CardComponent extends Component {
             <View style={styles.container}>
                 <View style={{flexDirection: 'row', height: 40}}>
                     <Text style={styles.bank_title}>카카오뱅크</Text>
-                    <TouchableHighlight onPress={this.openModal}>
+                    {this.props.setting && <TouchableHighlight onPress={this.openModal}>
                         <Feather name="more-vertical" size={30} color="#465cdb"/>
-                    </TouchableHighlight>
+                    </TouchableHighlight>}
                 </View>
                 <View style={{flexDirection: 'row', width: '100%', justifyContent: 'center', marginTop: 10, height:20}}>
                     <View style={{flexDirection:'row', width:'25%', justifyContent: 'center', marginTop:5}}>
@@ -76,8 +106,8 @@ export default class CardComponent extends Component {
                     </View>
                 </View>
                 <View style={{flexDirection: 'row', width: '55%', alignSelf:'flex-end', marginTop: 20, alignItems:'center'}}>
-                    <Text style={{color: '#465cdb', marginRight:10}}>사용 금액</Text>
-                    <Text style={{color:'#465cdb', fontSize:20, fontWeight:'bold'}}>{this.state.total} 원</Text>
+                    <Text style={{color: '#465cdb', marginRight:10}}>잔여 금액</Text>
+                    <Text style={{color:'#465cdb', fontSize:20, fontWeight:'bold'}}>{this.state.balance} 원</Text>
                 </View>
             </View>
             <Modal visible={this.state.modal} animationType="slide" transparent={true} >

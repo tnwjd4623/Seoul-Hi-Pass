@@ -13,7 +13,6 @@ import okhttp3.OkHttpClient;
 
 // Needed for `react-native link`
 // import com.facebook.react.ReactApplication;
-import com.horcrux.svg.SvgPackage;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.dooboolab.naverlogin.RNNaverLoginPackage;
@@ -21,6 +20,7 @@ import com.dooboolab.kakaologins.RNKakaoLoginsPackage;
 
 import co.apptailor.googlesignin.RNGoogleSigninPackage;
 import com.avishayil.rnrestart.ReactNativeRestartPackage;
+
 
 public class MainApplication extends ExpoApplication implements AppLoaderPackagesProviderInterface<ReactPackage> {
 
@@ -46,7 +46,6 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
             new RNKakaoLoginsPackage(),
             new RNGoogleSigninPackage(),
             new ReactNativeRestartPackage()
-          //  new SvgPackage()
     );
   }
 
