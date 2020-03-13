@@ -38,7 +38,6 @@ export default class ChargeScreen extends Component {
         }
 
         else {
-            console.log(this.state.charge)
             Alert.alert(
                 "결제 하시겠습니까?",
                 "",
@@ -53,8 +52,28 @@ export default class ChargeScreen extends Component {
     _chargeProcess = () => {
         const price = this.state.charge;
         const muid = this.state.id;
+        const item = "testaaaa";
+        const url = "https://beacon.smst.kr/appAPI/v1/kakaoPay/ready.php";
+        
+        const params = new URLSearchParams();
+        params.append('apiKey', apiKey);
+        params.append('modeType', "payReady");
+        params.append('muid', muid);
+        params.append('charge_amount', price);
+        params.append('charge_qnt', '1');
+        params.append('charge_item', item);
 
-        axios.get("https://beacon.smst.kr/appAPI/v1/pay/charge.php?apiKey="+
+        axios({
+            method: 'post',
+            url: url,
+            data: params
+        }).then(response => {
+            console.log(response);
+            this.props.navigation.navigate('kakaoPay', {uri: response.data.next_redirect_app_url, orderCode: response.data.ordercode})
+            
+        })
+
+    /*    axios.get("https://beacon.smst.kr/appAPI/v1/pay/charge.php?apiKey="+
         apiKey+"&modeType="+modeType+"&muid="+muid+"&charge_amount="+price+"&charge_item=테스트충전").then(response => {
             if(response.data.rescode == "0000") {
                 Alert.alert(
@@ -66,7 +85,7 @@ export default class ChargeScreen extends Component {
                     { cancelable: false }
                 );
             }
-        })
+        })*/
     }
     _return = () => {
         this.props.navigation.state.params.goBackData({refresh: true})

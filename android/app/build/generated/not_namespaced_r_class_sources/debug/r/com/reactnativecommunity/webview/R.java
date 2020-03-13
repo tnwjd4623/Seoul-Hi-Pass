@@ -1854,7 +1854,7 @@ public final class R {
     public static final class xml {
         private xml() {}
 
-        public static final int file_provider_paths = 0x7f130000;
-        public static final int reactandroid_rn_dev_preferences = 0x7f130004;
+        public static final int file_provider_paths = 0x7f130001;
+        public static final int reactandroid_rn_dev_preferences = 0x7f130005;
     }
 }

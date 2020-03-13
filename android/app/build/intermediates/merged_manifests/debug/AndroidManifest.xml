@@ -123,7 +123,6 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:usesCleartextTraffic="true" >
         <activity
             android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
@@ -522,6 +521,19 @@
         <service
             android:name="expo.modules.location.services.LocationTaskService"
             android:exported="false" />
+        <service
+            android:name="com.burnweb.rnsendintent.RNSendIntentModule"
+            android:exported="true" />
+
+        <provider
+            android:name="com.burnweb.rnsendintent.FileProvider"
+            android:authorities="kr.babylab.BeaconPayment.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
 
         <activity
             android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"

@@ -15,7 +15,7 @@ import ChargeScreen from '../screens/ChargeScreen';
 import DetailScreen from '../screens/DetailScreen';
 import StationSearchScreen from '../screens/StationSearchScreen';
 import InfoModifyScreen from '../screens/InfoModifyScreen';
-
+import KakaoPayScreen from '../screens/KakaoPayScreen'
 
 
 
@@ -217,7 +217,7 @@ const HomeStack = createStackNavigator(
                 headerTitleAlign: 'center',
                 headerTitleStyle: {
                     fontSize: 17,
-                    coloe: '#828282'
+                    color: '#828282'
                 },
                 headerStyle: {
                     elevation: 0,
@@ -225,6 +225,22 @@ const HomeStack = createStackNavigator(
                     backgroundColor: '#fff',
                     
                 },
+            }
+        },
+        kakaoPay: {
+            screen: KakaoPayScreen,
+            navigationOptions: {
+                title: '카카오페이 결제',
+                headerTitleAlign: 'center',
+                headerTitleStyle: {
+                    fontSize: 17, 
+                    color: '#828282'
+                },
+                headerStyle: {
+                    elevation: 0,
+                    shadowOpacity: 0,
+                    backgroundColor: '#fff',
+                }
             }
         },
         Detail: {

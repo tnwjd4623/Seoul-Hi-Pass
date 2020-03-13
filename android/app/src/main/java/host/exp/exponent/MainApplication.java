@@ -30,6 +30,7 @@ import com.dooboolab.kakaologins.RNKakaoLoginsPackage;
 import co.apptailor.googlesignin.RNGoogleSigninPackage;
 import com.avishayil.rnrestart.ReactNativeRestartPackage;
 
+import com.burnweb.rnsendintent.RNSendIntentPackage;
 
 public class MainApplication extends ExpoApplication implements AppLoaderPackagesProviderInterface<ReactPackage> {
 
@@ -53,7 +54,8 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
             new RNNaverLoginPackage(),
             new RNKakaoLoginsPackage(),
             new RNGoogleSigninPackage(),
-            new ReactNativeRestartPackage()
+            new ReactNativeRestartPackage(),
+            new RNSendIntentPackage()
     );
   }
 
