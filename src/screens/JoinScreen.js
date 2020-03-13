@@ -4,7 +4,7 @@ import axios from 'axios'
 import {WebView} from 'react-native-webview'
 import {AntDesign} from '@expo/vector-icons'
 import Postcode from 'react-native-daum-postcode';
-import {SvgUri} from 'react-native-svg';
+import SvgUri from 'react-native-svg-uri';
 
 import BlueButton from '../components/BlueButton'
 import {DefaultInput} from '../components/InputBoxes'
@@ -149,7 +149,7 @@ export default class JoinScreen extends Component{
 
     render() {
         return(
-            <View style={styles.container} style={{backgroundColor:'#fff'}}>
+            <View style={styles.container}>
                 <ScrollView>
                 <View style={[styles.login_form,styles.margin_horizontal]}>
                     <DefaultInput text='이메일' placeholder="interiorssa@smst.kr" onChangeText={this._inputEmail} marginRight={62} />
@@ -192,10 +192,18 @@ export default class JoinScreen extends Component{
                         <TextInput style={styles.input} placeholderTextColor={'#999999'}/>
                     </View>*/}
 
+                    <DefaultInput text='주소지 입력' placeholder="서울특별시 강남역 1번 출구" onChangeText={this._inputName}
+                    initText={this.state.addr} marginRight={62}  marginBottom={8}>
+                        <TouchableOpacity style={styles.detail_btn}>
+                            <Text style={styles.detail_text} onPress={this.openModal}>우편번호 검색</Text>
+                        </TouchableOpacity>
+                    </DefaultInput>
+                    <DefaultInput title={false} placeholder="(직접입력)" onChangeText={this._inputAddr2} marginRight={62}/>
+
                     <View style={styles.input_container}>
                         <Text style={styles.default_text}>주소지입력</Text>
                         <View style={{flexDirection: 'row'}}>
-                            <TextInput style={styles.detail_input} placeholderTextColor={'#00000059'} placeholder="우편번호 검색">{this.state.addr}</TextInput>
+                            <TextInput style={styles.detail_input} placeholderTextColor={'#00000059'} placeholder="우편번호 검색"></TextInput>
                             <TouchableOpacity style={styles.detail_btn}>
                                 <Text style={styles.detail_text} onPress={this.openModal}>우편번호 검색</Text>
                             </TouchableOpacity>
@@ -231,7 +239,7 @@ export default class JoinScreen extends Component{
                             </View>
                         </View>
                         <View style={{flex:1, flexDirection:'row', alignItems:'center', justifyContent:'flex-end'}}>
-                            <SvgUri uri={'http://localhost:19001/assets/btn/Right.svg'} style={{width:24,height:24,}}/>
+                            <SvgUri source={require('../../assets/btn/Right.svg')} width="24" height="24" fill={'#808080'}/>
                         </View>
 
                         
@@ -247,7 +255,7 @@ export default class JoinScreen extends Component{
                 </View>
                 <View style={styles.join_btn_container}>
                     
-                    <BlueButton text="회원가입" onPress={this.join}/>
+                    <BlueButton text="회원가입" white={false} onPress={this.join}/>
                     
                 </View>
                 </ScrollView>
@@ -292,6 +300,7 @@ const styles = StyleSheet.create({
     container: {
         width: '100%',
         height: '100%',
+        backgroundColor:'#fff'
     },
     login_form:{
         //width: '70%'

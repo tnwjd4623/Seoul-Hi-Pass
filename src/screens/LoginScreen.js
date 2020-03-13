@@ -6,7 +6,11 @@ import GoogleLoginComponent from '../components/GoogleLoginComponent'
 
 import BlueButton from '../components/BlueButton'
 
-import {SvgUri} from 'react-native-svg';
+import SvgUri from 'react-native-svg-uri'
+
+//import {SvgCssUri} from 'react-native-svg'
+
+import LOGO from '../../assets/0312_svg/0312_Search.svg'
 
 export default class LoginScreen extends Component {
     constructor(props) {
@@ -24,17 +28,18 @@ export default class LoginScreen extends Component {
     }
     
     render() {
+
         return(
             <View style={styles.container}>
-                <View style={{height: '40%', width: '80%', marginTop:80}}>
-                    <Image resizeMode="contain" source={require('../../assets/LOGO_main.png')} 
-                            style={{width: '100%', height: '90%',marginLeft: '-20%'}}/>
+                <View style={{height: '40%', width: '100%', marginTop:'15%'}}>
+                    <SvgUri  source={require('../../assets/logo/LOGO_main.svg')} 
+                             width="75%" height="100%" style={{marginLeft:'-5%', top:0}}/>
                 </View>
 
-                <Image resizeMode="contain" source={require('../../assets/Subway.png')}
+                <Image resizeMode="contain" uri={require('../../assets/Subway.png')}
                     style={{width: '90%', height: '90%', right:0, position: 'absolute', bottom: 0, marginRight: '-25%'}}/>
 
-                <View style={{width: '100%', alignItems: 'center', marginBottom: '20%'}}>
+                <View style={{width: '100%', alignItems: 'center', marginBottom: '17%'}}>
                     <View style={{flexDirection: 'row'}}>
                         <NaverLoginComponent navigation={this.props.navigation}/>
                         <View style={{marginHorizontal:20}}><KakaoLoginComponent navigation={this.props.navigation} /></View>

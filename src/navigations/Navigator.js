@@ -17,9 +17,8 @@ import StationSearchScreen from '../screens/StationSearchScreen';
 import InfoModifyScreen from '../screens/InfoModifyScreen';
 
 import React,{Component} from 'react'
-import {Image} from 'react-native'
-import {SvgUri} from 'react-native-svg'
-
+import {Text, Image, View, TouchableOpacity} from 'react-native'
+import SvgUri from 'react-native-svg-uri'
 
 const payStack = createStackNavigator(
     {
@@ -50,7 +49,7 @@ const loginStack = createStackNavigator(
                 headerStyle: {
                     elevation: 0,
                     shadowOpacity: 0,
-                    backgroundColor: '#faa',
+                    backgroundColor: '#fff',
                     
                 },
             }
@@ -104,7 +103,7 @@ const loginStack = createStackNavigator(
                 backgroundColor: '#384ec9',
                 
             },
-            headerTintColor: '#aaa',
+            headerTintColor: '#808080',
             headerTransparent: {
                 position: 'absolute',
                 backgroundColor: 'transparent',
@@ -114,8 +113,8 @@ const loginStack = createStackNavigator(
                 right: 0
             },
             headerBackImage: ()=>(
-                <SvgUri resizeMode="contain" uri={'http://localhost:19001/assets/btn/Back_W.svg'} 
-                style={{width: 50, height: 50}}/>
+                <SvgUri source={require('../../assets/btn/Back.svg')}
+                width= "24" height="24" style={{marginLeft:14}} fill={'#808080'}/>
             )
         }
     }
@@ -128,9 +127,30 @@ const MyPageStack = createStackNavigator(
     {
         Mypage: {
             screen: MyPageScreen,
-            navigationOptions: {
-                headerShown: false,
-            }
+            navigationOptions: ({navigation}) => ({
+                title: 'hey',
+                headerLeft: ()=>(navigation.getParam('mypageLeft', <Text>Error</Text>)),
+                headerTitle: ()=>(navigation.getParam('mypageTitle', <Text>Error</Text>)),
+                headerRight:()=>(navigation.getParam('mypageRight', <View></View>)),
+                headerTitleStyle: {
+                    fontSize: 16,
+                    color: '#00000099',
+                },
+                headerTitleContainerStyle:{
+                    flexDirection:'column',
+                    alignItems:'center',
+                    flex:1,
+                    marginHorizontal:0,
+                    position:'relative'
+                },
+                headerStyle:{
+                    backgroundColor:'#fff',
+                    elevation: 0,
+                    shadowOpacity: 0,
+                },
+                headerLeftContainerStyle:{marginLeft:24,position:'relative',},
+                headerRightContainerStyle:{marginRight:24,position:'relative',},
+            })
         },
     },
     {
@@ -148,6 +168,7 @@ MyPageStack.navigationOptions = ({navigation}) => {
         tabBarVisible
     }
 }
+
 const MyModiStack = createStackNavigator(
     {
 
@@ -159,7 +180,7 @@ const MyModiStack = createStackNavigator(
         }
     },
     {
-        initialRouteName: 'MyModi'
+        initialRouteName: 'MyModi',
     }
 )
 /*
@@ -169,20 +190,22 @@ const HomeStack = createStackNavigator(
     {
         Home: {
             screen: HomeScreen,
-            navigationOptions: {
-                headerShown: false
-            }
+            navigationOptions: ({navigation}) => ({
+                headerLeft: ()=>(navigation.getParam('homeLeft', <Text>Error</Text>)),
+                headerTitle: null,
+                headerRight:()=>(navigation.getParam('homeRight', <View></View>)),
+            })
         },
         My: {
             screen: MyPageStack,
             navigationOptions: {
-                headerShown: false,
+                headerShown: false
             }
         },
         Modi: {
             screen: MyModiStack,
             navigationOptions: {
-                headerShown: false
+                title: "정보수정",
             }
         },
         pay: {
@@ -204,25 +227,19 @@ const HomeStack = createStackNavigator(
         },
         search: {
             screen: SearchScreen,
-            navigationOptions: {
-                headerShown: false,
-            }
+            navigationOptions: ({navigation}) => ({
+                headerLeft: ()=>(navigation.getParam('searchChange', <Text>left</Text>)),
+                headerTitle: ()=>(navigation.getParam('pathSearchBar', <Text>Error</Text>)),
+                headerRight:()=>(navigation.getParam('searchRight', <View></View>)),
+                headerStyle: {
+                    height:104
+                }
+            })
         },
         charge: {
             screen: ChargeScreen,
             navigationOptions: {
                 title: '충전하기',
-                headerTitleAlign: 'center',
-                headerTitleStyle: {
-                    fontSize: 17,
-                    coloe: '#828282'
-                },
-                headerStyle: {
-                    elevation: 0,
-                    shadowOpacity: 0,
-                    backgroundColor: '#fff',
-                    
-                },
             }
         },
         Detail: {
@@ -239,20 +256,51 @@ const HomeStack = createStackNavigator(
         },
         StationSearch: {
             screen: StationSearchScreen,
-            navigationOptions: {
-                title: '',
-                headerStyle: {
-                    elevation: 0,
-                    shadowOpacity: 0,
-                    backgroundColor: '#fff',
-                    
-                },
-            }
+            navigationOptions: ({navigation}) => ({
+                title: 'hey',
+                headerTitle: ()=>(navigation.getParam('stationSearchBar', <Text>Error</Text>)),
+                headerRight:()=>(navigation.getParam('searchButton', <View></View>)),
+            })
         }
 
     },
     {
-        initialRouteName: 'Home'
+        initialRouteName: 'Home',
+        defaultNavigationOptions: ({navigation}) => ({
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+                fontSize: 16,
+                color: '#00000099',
+                textAlign:'center',
+            },
+            headerTitleContainerStyle:{
+                flexDirection:'column',
+                alignItems:'center',
+                flex:1,
+                marginHorizontal:0,
+                position:'relative'
+            },
+            headerStyle:{
+                backgroundColor:'#fff',
+                elevation: 0,
+                shadowOpacity: 0,
+            },
+            headerLeftContainerStyle:{marginLeft:24,position:'relative',},
+            headerRightContainerStyle:{marginRight:24,position:'relative',},
+            /*
+            headerBackImage: ()=>(
+                <SvgUri source={require('../../assets/btn/Back.svg')}
+                width= "24" height="24" fill={'#808080'}/>
+            ),*/
+            headerLeft: ()=>(
+                <TouchableOpacity onPress={()=>{navigation.goBack()}}>
+                    <SvgUri source={require('../../assets/btn/Back.svg')}
+                    width= "24" height="24" fill={'#808080'}/>
+                </TouchableOpacity>
+            ),
+            headerRight: <View style={{width:24}}></View>
+
+        })
     }
 )
 

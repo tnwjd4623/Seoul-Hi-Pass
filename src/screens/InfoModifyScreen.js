@@ -7,6 +7,9 @@ import Postcode from 'react-native-daum-postcode';
 
 const key = "beacon091211fX2TAJS0VbillUWp1aVx002VggT"
 
+import BlueButton from '../components/BlueButton'
+import {DefaultInput} from '../components/InputBoxes'
+
 export default class InfoModifyScreen extends Component {
     constructor(props) {
         super(props)
@@ -115,22 +118,31 @@ export default class InfoModifyScreen extends Component {
     }
     render() {
         return(
-            <>
-            <View style={{paddingTop: StatusBar.currentHeight, height:'100%', backgroundColor: '#fff'}}>
-                <View style={styles.header}>
-                    <View style={{width: '90%', height: '100%'}}>
-                        <Image resizeMode="contain" source={require('../../assets/Mypage_1.png')} 
-                            style={{width: '55%', height:'100%', marginLeft: -10}}/>
-                    </View>
-
-                    <TouchableHighlight onPress={()=>this.props.navigation.pop()}>
-                        <AntDesign name="close" size={35} color='#5e5e5e'/>
-                    </TouchableHighlight>
-                </View>
-
-                <View style={styles.container}>
+            <View style={styles.container}>
                 <ScrollView>
-                    <View style={styles.login_form}>
+                    <View style={[styles.login_form,styles.margin_horizontal]}>
+                    <DefaultInput text='이메일' initText={this.state.email} placeholder="interiorssa@smst.kr" onChangeText={this._inputEmail} marginRight={62} />
+
+                    <DefaultInput text='비밀번호 (8자리 이상)' placeholder="●●●●●●●●" onChangeText={this._inputPW} marginRight={62} secureTextEntry={true}/>
+
+                    <DefaultInput text='비밀번호 확인' placeholder="●●●●●●●●" onChangeText={this._inputPW2} marginRight={62} secureTextEntry={true}/>
+
+                    <DefaultInput text='이름' initText={this.state.name} placeholder="김비콘" onChangeText={this._inputName} marginRight={62}>
+                        <TouchableOpacity style={styles.detail_btn}>
+                            <Text style={styles.detail_text}>실명확인</Text>
+                        </TouchableOpacity>
+                    </DefaultInput>
+
+                    <DefaultInput text='주소지 입력' placeholder="서울특별시 강남역 1번 출구" initText={this.state.addr} onChangeText={this._inputName}
+                    initText={this.state.addr} marginRight={62}  marginBottom={8}>
+                        <TouchableOpacity style={styles.detail_btn}>
+                            <Text style={styles.detail_text} onPress={this.openModal}>우편번호 검색</Text>
+                        </TouchableOpacity>
+                    </DefaultInput>
+                    <DefaultInput title={false} placeholder="(직접입력)" initText={this.state.addr2}  onChangeText={this._inputAddr2} marginRight={62} />
+
+
+{/*
                         <View style={styles.input_container}>
                             <Text style={styles.default_Text}>이메일</Text>
                             <Text style={styles.default_Text}>{this.state.email}</Text>
@@ -172,14 +184,12 @@ export default class InfoModifyScreen extends Component {
                         <TextInput style={styles.input} placeholderTextColor={'#999999'} placeholder="상세주소 입력" 
                         defaultValue={this.state.addr2}/>
                     </View>
+                */}
+                    </View>
+                    <View style={styles.join_btn_container}>
+                        <BlueButton text={'정보수정'} onPress={this._modify}/>
                     </View>
                 </ScrollView>
-
-                </View>
-                <TouchableOpacity style={styles.join_btn} onPress={this._modify}>
-                    <Text style={styles.joinText}>정보수정</Text>
-                </TouchableOpacity>
-
                 <Modal visible={this.state.modal}> 
                     
                         <TouchableHighlight onPress={this.closeModal} style={{alignSelf: 'flex-end'}}>
@@ -190,38 +200,20 @@ export default class InfoModifyScreen extends Component {
                            onSelected={(data) => this.setAddress(data)}/>
                         </View>      
                 </Modal>
-
             </View>
-            </>
         )
     }
 }
 const styles = StyleSheet.create({
-    default_Text: {
-        color: '#000',
-        fontSize: 15
-    },
-    header:{
-        width: '100%',
-        height: 40,
-        flexDirection: 'row'
-    },
-    title: {
-        marginLeft: 20,
-        color: '#465cdb',
-        fontSize: 15,
-        fontWeight: 'bold',
-        width: '40%'
-    },
     container: {
         width: '100%',
-        height: '70%',
-        backgroundColor: '#fff',
-        marginTop: 20
+        height: '100%',
+        backgroundColor:'#fff'
     },
     login_form:{
-        width: '70%',
-        marginLeft: 20
+        marginTop:20,
+        marginHorizontal: 40,
+        marginBottom:'6%'
     },
     input : {
         borderBottomWidth: 1,
@@ -229,48 +221,27 @@ const styles = StyleSheet.create({
         paddingLeft: 10,
         
     },
-    input_container: {
-        marginBottom: 20,
+
+    join_btn_container: {
+        width: '100%',
+        marginTop: 20,
     },
-    phone_input: {
-        borderBottomWidth: 1,
-        borderColor : '#828282',
-        paddingLeft: 10,
-        width: '100%'
-    },
-    phone_btn: {
+    detail_btn: {
         backgroundColor: '#f5f5f5',
         borderRadius: 7,
-        height: 30,
-        width: 100,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginLeft: 5
+        marginLeft: 7,
+        paddingHorizontal:12,
+        paddingVertical:9,
+        borderRadius:20,
+        alignSelf:'baseline',
+        marginBottom:-8
     },
-    join_btn: {
-        alignItems: 'center',
-        width: '90%',
-        marginTop: 20,
-        alignSelf: 'flex-start',
-        
-    },
-    joinText: {
-        color: '#fff',
+    detail_text: {
+        color: '#000000dd',
         fontWeight: 'bold',
-
-        width: '100%',
-        height:0,
-        alignSelf: 'flex-start',
-        marginBottom: 5,
-
-        borderTopWidth: 45,
-        borderTopColor: '#384ec9',
-        borderRightWidth: 10,
-        borderRightColor: 'transparent',
-
-        
-
-        textAlignVertical: 'center',
-        textAlign: 'center'
+        fontSize:10
+    },
+    margin_horizontal: {
+        marginHorizontal:40
     }
 })

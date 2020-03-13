@@ -1,10 +1,15 @@
-import {SvgUri, SvgCssUri} from 'react-native-svg';
+import SvgUri from 'react-native-svg-uri';
 import {View, Text,StyleSheet,TouchableOpacity,Image} from 'react-native'
 import PropTypes from 'prop-types';
 import React from 'react'
 
 const BlueButton = ({text, onPress, white, shadow, right})=>{
-    const uri = 'http://localhost:19001/assets/btn/Button_'+((white)?'white':'blue')+'.svg';
+    //const uri = '../../assets/btn/Button_'+((white)?'white':'blue')+'.svg';
+    //const uri = 'http://localhost:19001/assets/btn/Button_'+((white)?'white':'blue')+'.svg';
+    //const uri = (white) ? require('../../assets/btn/Button_white.svg') : require('../../assets/btn/Button_blue.svg');
+    const uri = require('../../assets/btn/Button_white.svg');
+
+    const fillColor = (white) ? '#fff' : '#4666e5';
 
     let white_text;
     let rotateStyle = {btn_wrapper:{},svg:{}}
@@ -22,7 +27,7 @@ const BlueButton = ({text, onPress, white, shadow, right})=>{
     return (
     <View style={[btn_styles.btn_wrapper, rotateStyle.btn_wrapper]}>
         <TouchableOpacity style={[btn_styles.btn, ]} onPress={onPress} >
-            <SvgUri uri={uri} style={[rotateStyle.svg, svg_shadow]}/>
+            <SvgUri source={uri} style={[rotateStyle.svg, svg_shadow]} fill={fillColor}/>
 
         </TouchableOpacity>
         <View pointerEvents='none' style={btn_styles.btn_text_wrapper} disabled={true}>

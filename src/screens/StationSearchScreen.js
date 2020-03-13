@@ -1,7 +1,28 @@
 import React, {Component} from 'react'
-import {View, Text, StyleSheet, Image, TouchableOpacity, TouchableHighlight} from 'react-native'
+import {View, Text, StyleSheet, Image, TouchableOpacity,ScrollView, TouchableHighlight, TextInput} from 'react-native'
 import Autocomplete from 'react-native-autocomplete-input'
+import { FileSystem } from 'react-native-unimodules'
 
+import SvgUri from 'react-native-svg-uri'
+import { Divider } from 'react-native-paper'
+
+
+const HighlighText = (str, query)=>{
+    let hlTxt = new Array();
+    let qLength = query.length;
+    const makeArray = (index)=>{
+        let fIndex =str.indexOf(query, index);
+        if(fIndex<0) return;
+        if(index==fIndex) {hlTxt.push(<Text style={[styles.listText,styles.highlight]}>{query}</Text>); fIndex+=qLength;}
+        else  hlTxt.push(<Text style={[styles.listText,styles.highlight]}>{str.substring(index,fIndex)}</Text>);
+
+        makeArray(fIndex);
+    }
+
+    makeArray(0);
+
+    return hlTxt;
+}
 
 const stationData = require('../../assets/Seoul_SubwayList.json').DATA
 export default class StationSearchScreen extends Component {
@@ -27,68 +48,84 @@ export default class StationSearchScreen extends Component {
         this.props.navigation.pop()
         
     }
-    render() {
+
+    renderView = (items ,query) => {
+        return items.map( (item)=>
+            <TouchableOpacity style={styles.listItem} 
+            onPress={()=>this.setState({station: item.station_nm,code:item.fr_code}, this.check)}>
+                <Text style={styles.listText}>{item.line_num} {item.station_nm}</Text>
+                {/*<HighlighText str={items.station_nm} query={query}/>*/}
+            </TouchableOpacity>
+        )
+    }
+
+    componentDidMount() {
         const {query} = this.state;
         const comp = (a, b) => a.trim() === b.trim();
         const stationList = this.findStation(query)
 
+        this.props.navigation.setParams({
+            stationSearchBar: (
+                <View style={{flexDirection:'row', alignItems:"center", width:'100%',height:'100%', paddingHorizontal:16}}>
+                    <TextInput style={styles.autocompleteContainer} onChangeText={text => this.setState({query:text})}  />
+                </View>
+            ),
+            searchButton: (
+                <SvgUri source={require('../../assets/btn/Search.svg')} width="24" height="24" underlayColor="none"/>
+            )
+        })
+    }
+
+
+    render() {
+        const {query} = this.state;
+        const items = this.findStation(query);
         return(
             <View style={{width: '100%', height:'100%', backgroundColor: '#fff'}}>
-                <View style={styles.input_container}>
-                    <Autocomplete autoCapitalize="none" autoCorrect={false}
-                                defaultValue={query} inputContainerStyle={styles.input} 
-                                containerStyle={styles.autocompleteContainer} listContainerStyle={styles.list} 
-                                listStyle={{borderWidth:0}}
-                                placeholder="찾고자하는 역을 검색해주세요" placeholderTextColor="#000"
-                                onChangeText={text => this.setState({query:text})} 
-                                data={stationList.length === 1 && comp(query, stationList[0].station_nm) ? stationList : stationList}
-                                renderItem={({ item, i }) => (
-                                    <TouchableOpacity style={styles.listItem} 
-                                        onPress={()=>this.setState({station: item.station_nm,code:item.fr_code}, this.check)}>
-                                        <Text style={styles.listText}>{item.line_num} {item.station_nm}</Text>
-                                    </TouchableOpacity>
-                                )}
-                                keyExtractor={(item, index) => index.toString()}/>
-                </View>
+                <ScrollView style={{marginTop:16}}>
+                    <View style={styles.list_container} id="rowList">
+                        {this.renderView(items, query)}
+                    </View>    
+                </ScrollView>
+
             </View>
         )
     }
 }
 const styles = StyleSheet.create({
-    input_container: {
+
+    autocompleteContainer: {
+        width:'100%',
+        backgroundColor:'#fafafa',
+        fontSize:14,
+        paddingHorizontal:8,
+        paddingVertical:6
+      },
+    input: {
+        width: '100%',
+        borderWidth:1,   
+        
+    },
+    list_container: {
         justifyContent: 'center',
         width: '100%',
         height: '100%',
-        flexDirection: 'row'
+        flexDirection: 'column',
+        alignItems:'flex-start',
+        marginHorizontal: 64
     },
-    autocompleteContainer: {
-        zIndex:1,
-        borderWidth:0,
-        alignItems:'center',
-        
-      },
-    input: {
-        width: '70%',
-        borderWidth:1,   
-        height: 45,
-        paddingLeft: 20,
-        
-    },
-    list: {
-        width:'100%',
-        marginTop:50,
-        height:'50%',
-        borderWidth:0
-    },
+
     listItem: {
-        borderBottomWidth: 0.5,
-        height: 50,
         justifyContent: 'center',
-        paddingLeft: 20
+        width:'100%',
+        flex:1,
+        paddingVertical:6
     },
     listText: {
-        fontSize: 17,
+        fontSize: 14,
         color: '#828282',
         
     },
+    normal: {color:'#828282'},
+    highlight:{color:'#4666e5'}
 })

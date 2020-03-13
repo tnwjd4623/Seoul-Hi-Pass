@@ -15,7 +15,7 @@ export default class FindPasswordScreen extends Component {
                 <View style={{height: '100%', width:'100%', backgroundColor: '#fff', alignItems:'center', 
                  justifyContent: 'center', flex:1}}>
                     <View style={{paddingHorizontal:40}}>
-                        <DefaultInput text='이메일' placeholder="Seoulpass.com" onChangeText={this._inputEmail} marginRight={62} />     
+                        <DefaultInput text='이메일' placeholder="Seoulpass.com" onChangeText={this._inputEmail} />     
                     </View>
                     
 

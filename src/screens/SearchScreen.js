@@ -4,6 +4,8 @@ import {MaterialIcons} from '@expo/vector-icons'
 import RouteContainer from '../containers/RouteContainer'
 import axios from 'axios'
 
+import SvgUri from 'react-native-svg-uri'
+
 
 const gpsKey = '5743714d496c736a35387a7047544a';
 const pathKey = 'w9Mt460KZMdbmTUHJ4%2BY0R5VXWB0yTXhYNHuYATfJKf1EiQya0aYPHYTO%2FlJwWHOxkiVcx3tauCoajOgEEspuA%3D%3D';
@@ -36,10 +38,57 @@ export default class SearchScreen extends Component {
         const dest_code = this.props.navigation.getParam('dest_code');
         
         this.setState({depart: depart, arrive: arrive, dep_code: dep_code, dest_code: dest_code}, function() {
-            this._getPathInfo()
+            this._getPathInfo();
+            this._setHeader();
+        })
+
+    }
+
+    _setHeader = () => {
+        this.props.navigation.setParams({
+            searchChange: (
+                <TouchableHighlight onPress={this._swap} underlayColor="none">
+                    <SvgUri source={require('../../assets/btn/Change.svg')} 
+                        width= '24' height='24'/>
+                </TouchableHighlight>
+            ),
+            pathSearchBar: (
+                <View style={{flexDirection:'row', alignItems:"center", width:'100%',height:'100%', paddingHorizontal:16}}>
+                    <View style={{flexDirection:'column', alignItems:"flex-start", width:'100%',}}>
+
+                        <TouchableOpacity style={styles.input} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._depart})} underlayColor="none">
+                            <Text style={styles.inputText}>{this.state.depart}</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.input2} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._dest})} underlayColor="none">
+                            <Text style={styles.inputText}>{this.state.arrive}</Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+
+            ),
+            searchRight: (
+                <View>
+                    <TouchableHighlight onPress={this._init} style={{marginBottom:6}} underlayColor="none">
+                        <SvgUri source={require('../../assets/btn/Cancel.svg')} 
+                            width= '24' height='24'/>
+                    </TouchableHighlight>
+                    <TouchableHighlight onPress={this._getPathInfo} style={{marginTop:6}} underlayColor="none">
+                        <SvgUri source={require('../../assets/btn/Search.svg')} 
+                            width= '24' height='24'/>
+                    </TouchableHighlight>
+                    {/*<TouchableHighlight onPress={this._init}>
+                        <MaterialIcons name="close" size={35} color="#5e5e5e"/>
+                    </TouchableHighlight>
+                    <TouchableHighlight onPress={this._getPathInfo}>
+                    <Image resizeMode="contain" source={require('../../assets/Search.png')} 
+                        style={{width: '100%', height:'52%', marginTop: 5}}/>
+                    </TouchableHighlight>*/}
+                </View>
+            )
         })
     }
    
+    //최단 경로 찾기
     //최단 경로 찾기
     _getPathInfo = () => {
         //출발점 좌표 조회
@@ -100,7 +149,8 @@ export default class SearchScreen extends Component {
     }
     render() {
         return(
-            <View style={{paddingTop:StatusBar.currentHeight, width: '100%', height: '100%', backgroundColor: '#fff'}}>
+            <View style={{width: '100%', height: '100%', backgroundColor: '#fff'}}>
+                {/*
                 <View style={styles.search}>
                     <TouchableHighlight style={styles.swap} onPress={this._swap}>
                         <Image resizeMode="contain" source={require('../../assets/Change.png')} 
@@ -128,9 +178,20 @@ export default class SearchScreen extends Component {
                     </View>
                     
                 </View>
+        */}
 
-                <View style={{width: '90%', alignSelf: 'center', height: 30, justifyContent: 'center'}}>
-                    <Text style={{fontSize: 15, color: '#465cdb', fontWeight: 'bold'}}>{this.state.current_time}  출발</Text>
+                <View style={{width: '100%',flexDirection:'row',alignItems:'flex-start', paddingHorizontal:32, paddingVertical:16}}>
+                    <View  style={{flexDirection:'row',alignItems:'flex-start', alignSelf:'center'}}>
+                        <Text style={{fontSize: 12, color: '#465cdb', fontWeight: 'bold'}}>
+                            {this.state.current_time} 
+                        </Text>
+                        <Text style={{fontSize: 12, color:'#00000099', fontWeight: 'bold',}}>  출발
+                        </Text>
+                        <View style={{width:24, height:24}}>
+                            <SvgUri source={require('../../assets/btn/More_down.svg')} width= '24' height='24' fill="#42a"/>
+                        </View>
+                    </View>
+                    
                 </View>
                 {this._renderElement(this.state.path)}
                 
@@ -162,19 +223,21 @@ const styles = StyleSheet.create({
         width:'100%'
     },
     input: {
-        width: '90%',
-        marginLeft: 20,
         height:'45%',
+        width:'100%',
         justifyContent: 'center',
-        borderBottomColor: '#828282',
-        borderBottomWidth:0.5
-
+        borderBottomColor: '#00000099',
+        borderBottomWidth:0.5,
     },
     input2: {
-        width: '90%',
-        marginLeft: 20,
         height:'45%',
-        justifyContent: 'center',       
+        width:'100%',
+        justifyContent: 'center',     
+    },
+    inputText: {
+        fontSize: 14,
+        color:'#00000099',
+        paddingLeft:12
     },
     icon: {
         width: '10%',

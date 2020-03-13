@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 265.2 265.2" enable-background="new 0 0 265.2 265.2" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="265.2" height="265.2"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g opacity="0.1" clip-path="url(#SVGID_2_)">
+		<path fill="#FFFFFF" d="M233.9,199.6c3.2-3.5,4.8-8.3,4.4-13.1l-13.1-155c-0.8-9.7-9.1-17.3-18.8-17.3H58.7
+			c-9.7,0-18,7.6-18.8,17.3l-13.1,155c-0.4,4.8,1.2,9.6,4.4,13.1c3.2,3.5,7.9,5.5,12.7,5.5h28.2L31.7,251h18.7l21.9-24.7h120.8
+			L215,251h18.7l-40.6-45.8h28.1C226,205.1,230.7,203.1,233.9,199.6z M43.1,188.8c-0.2-0.2-0.3-0.5-0.3-1l13.1-155
+			c0.1-1.3,1.5-2.6,2.9-2.6h147.7c1.3,0,2.8,1.3,2.9,2.6l13.1,155c0,0.4-0.1,0.7-0.3,1c-0.2,0.2-0.5,0.3-0.9,0.3H44
+			C43.6,189.1,43.3,189,43.1,188.8z M180.7,212.2H84.7l6.3-7.1h83.5L180.7,212.2z"/>
+		<circle fill="#FFFFFF" cx="86.1" cy="152.5" r="11.3"/>
+		<circle fill="#FFFFFF" cx="179.7" cy="152.5" r="11.3"/>
+		<path fill="#FFFFFF" d="M197.5,64.3C196.9,57.4,191,52,184.1,52h-103c-6.9,0-12.8,5.4-13.4,12.3l-3.8,46c-0.3,3.5,0.9,7,3.3,9.6
+			c2.4,2.6,5.8,4,9.3,4h112.3c3.5,0,6.9-1.5,9.3-4c2.4-2.6,3.6-6.1,3.3-9.6L197.5,64.3z M80.1,108l3.3-40h98.3l3.3,40H80.1z"/>
+	</g>
+</g>
+</svg>

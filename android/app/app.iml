@@ -328,6 +328,7 @@
     <orderEntry type="module" module-name="unimodules-permissions-interface" />
     <orderEntry type="module" module-name="unimodules-sensors-interface" />
     <orderEntry type="module" module-name="unimodules-task-manager-interface" />
+    <orderEntry type="module" module-name="react-native-svg" />
     <orderEntry type="module" module-name="react-native-webview-android-react-native-webview" />
     <orderEntry type="module" module-name="react-native-splash-screen" />
     <orderEntry type="module" module-name="react-native-google-signin" />

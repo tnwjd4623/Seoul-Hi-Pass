@@ -4,6 +4,8 @@ import {AntDesign} from '@expo/vector-icons'
 import SubwayBarImage from '../components/SubwayBarImage'
 import axios from 'axios'
 
+import SvgUri from 'react-native-svg-uri'
+
 
 const pathKey = 'w9Mt460KZMdbmTUHJ4%2BY0R5VXWB0yTXhYNHuYATfJKf1EiQya0aYPHYTO%2FlJwWHOxkiVcx3tauCoajOgEEspuA%3D%3D';
 var parseString = require('react-native-xml2js').parseString;
@@ -123,35 +125,40 @@ export default class RouteContainer extends Component {
                { this.state.render && this.state.item.map((value) => {
                    const startline = value.pathList[0].routeNm+"";
                     return (
-                        <View style={styles.container}>
-                            <View style={{flexDirection: 'row', height: '30%', alignItems: 'center', width:'90%'}}>
-                                <Text style={{fontSize:30, fontWeight:'bold', marginTop: -10}}>{value.time} </Text>
-                                <Text style={{fontWeight:'bold'}}>분</Text>
-                                <Text style={{fontWeight:'bold'}}> | {this._calculateTime(value.time)} 도착</Text>
-                                <TouchableHighlight onPress={()=>this.detail(value, this._calculateTime(value.time) )} style={{position:'absolute', right:0, width: '10%', height:'50%'}}>
-                                    <Image resizeMode="contain" source={require('../../assets/Right_B.png')}
-                                        style={{width: '100%', height:'100%'}}/>
-                                </TouchableHighlight>
-                            </View>
+                        <View style={{width:'100%', paddingHorizontal:16}}>
+                            <View style={styles.container}>
+                                <View style={[styles.container_header,styles.margin_left]}>
+                                    <View style={styles.container_header_text}>
+                                        <Text style={{fontSize:28, fontWeight:'bold'}}>{value.time} </Text>
+                                        <Text style={{fontWeight:'bold'}}>분</Text>
+                                        <Text style={{fontWeight:'bold'}}> | {this._calculateTime(value.time)} 도착</Text>
+                                    </View>
+                                    <TouchableHighlight onPress={()=>this.detail(value, this._calculateTime(value.time) )}>
+                                        <SvgUri source={require('../../assets/btn/Right_B.svg')} width="24" height="24"/>
+                                    </TouchableHighlight>
+
+                                </View>
+
+
                             
-                            <Text style={{width:'90%', height:'15%'}}>
-                            환승 {value.pathList.length}회 | 도보 {value.time - value.subtime} 분 | {this._calculateFee(value.distance)} 원</Text>
-                            <View style={{flexDirection: 'row', alignItems: 'center', width:'90%'}}>
-                                {
-                                                
-                                    value.pathList.map((path) => {
-                                        const width = path.time/value.subtime * 94;
-                                        const line = path.routeNm+"";
-                                        if(width != null) {
-                                            return <SubwayBarImage width={width+'%'} time={path.time} 
-                                            line={line.substring(0,1)} 
-                                            color={this.state.color[path.routeNm]}/>
-                                        }       
-                                })}
-                            </View>
+                                <Text style={[styles.container_detail,styles.margin_left]}>
+                                환승 {value.pathList.length}회 | 도보 {value.time - value.subtime} 분 | {this._calculateFee(value.distance)} 원</Text>
+                                <View style={styles.route_graph}>
+                                    {
+                                                    
+                                        value.pathList.map((path) => {
+                                            const width = path.time/value.subtime * 94;
+                                            const line = path.routeNm+"";
+                                            if(width != null) {
+                                                return <SubwayBarImage width={width+'%'} time={path.time} 
+                                                line={line.substring(0,1)} 
+                                                color={this.state.color[path.routeNm]}/>
+                                            }       
+                                    })}
+                                </View>
                                 
-                                <View style={{width: '90%'}}> 
-                                    <View style={{flexDirection: 'row', width: '100%', marginTop: 5}}>
+                                <View style={[styles.margin_left]}> 
+                                    <View style={{flexDirection: 'row', width: '100%', marginTop: 5, alignItems:'flex-start'}}>
                                         <View style={{borderRadius: 50,
                                                         width: 20,
                                                         height: 20,
@@ -170,6 +177,8 @@ export default class RouteContainer extends Component {
                                     </View>
                                     
                                 </View>
+                            </View>
+
                         </View>
                     )
                              })
@@ -181,7 +190,7 @@ export default class RouteContainer extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        width: '95%',
+        width: '100%',
         alignSelf: 'center',
         height: 180,
         borderBottomWidth: 0,
@@ -196,14 +205,30 @@ const styles = StyleSheet.create({
 
         elevation: 2,
 
-        alignItems: 'center',
+        alignItems: 'flex-start',
         paddingTop: 10,
-        marginVertical: 10
+        marginVertical: 10,
+        paddingHorizontal:16
+    },
+    container_header: {
+        flexDirection: 'row', height: '30%', alignItems: 'center', width:'100%',justifyContent:'space-between'
+    },
+    container_header_text: {
+        flexDirection: 'row', alignItems: 'baseline'
+    },
+    container_detail:{
+        marginBottom:10
+    },
+    route_graph:{
+        flexDirection: 'row', alignItems: 'flex-start',
     },
     circle: {
         borderRadius: 50,
         width: 20,
         height: 20,
         backgroundColor: '#000'
+    },
+    margin_left:{
+        marginLeft:6
     }
 })

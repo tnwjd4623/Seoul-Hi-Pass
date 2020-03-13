@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 353 342" enable-background="new 0 0 353 342" xml:space="preserve">
+<g id="배경">
+</g>
+<g id="이미지">
+</g>
+<g id="폰트">
+	<g>
+		<defs>
+			<rect id="SVGID_81_" x="-1154.5" y="-1468.5" width="635" height="118"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_81_"  overflow="visible"/>
+		</clipPath>
+		<g transform="matrix(1 0 0 1 0 0)" clip-path="url(#SVGID_2_)">
+			
+				<image overflow="visible" width="414" height="896" xlink:href="../골목달인/아이콘_SVG/0305_svg/로그인화면.png"  transform="matrix(4.9227 0 0 4.9227 -1386 -2136)">
+			</image>
+		</g>
+	</g>
+	<g>
+		<image overflow="visible" opacity="0.9" width="239" height="239" xlink:href="CD49B6D7.png"  transform="matrix(1 0 0 1 57 50)">
+		</image>
+		<g>
+			<rect x="75" y="65" fill="#E6E6E6" width="203" height="203"/>
+		</g>
+	</g>
+</g>
+</svg>

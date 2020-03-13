@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
-import {Text, StyleSheet, TouchableOpacity, View, TextInput, Image, AsyncStorage} from 'react-native'
+import {Text, StyleSheet, TouchableOpacity, View, TextInput, Image, AsyncStorage, StatusBar} from 'react-native'
 import axios from 'axios'
 
 import BlueButton from '../components/BlueButton'
 import {DefaultInput} from '../components/InputBoxes'
+
+import SvgUri from 'react-native-svg-uri'
 
 
 const key = 'beacon091211fX2TAJS0VbillUWp1aVx002VggT'
@@ -16,6 +18,9 @@ export default class EmailLoginScreen extends Component {
         }
     }
     login = () => {
+        this.props.navigation.navigate('Home');
+        return;
+
         axios.get('https://beacon.smst.kr/appAPI/v1/loginPhone.php?apiKey='
             +key+'&modeType=loginPhone&email='+this.state.email+'&passwd='+this.state.password)
         .then(response => {
@@ -44,11 +49,12 @@ export default class EmailLoginScreen extends Component {
     }
     render() {
         return(
-            <View style={{backgroundColor: '#4666e5', width: '100%', height: '100%', alignItems: 'center'}}>
+            <View style={{backgroundColor: '#4666e5', width: '100%', height: '100%', alignItems: 'center',paddingTop: StatusBar.currentHeight}}>
 
-                <View style={{height: '40%', width: '80%', marginTop:80}}>
-                    <Image resizeMode="contain" source={require('../../assets/LOGO_main.png')} 
+                <View style={{height: '40%', width: '80%', marginTop:'15%'}}>
+                    <Image  source={require('../../assets/LOGO_main.png')} 
                             style={{width: '100%', height: '90%',marginLeft: '-20%'}}/>
+                    <SvgUri />
                 </View>
 
                 <View style={{width: '100%', 
