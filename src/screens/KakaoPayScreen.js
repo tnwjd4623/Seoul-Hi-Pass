@@ -1,8 +1,6 @@
 import React, {Component} from 'react'
 import {WebView} from 'react-native-webview'
 import {StyleSheet, View, StatusBar, ScrollView, Alert, Linking} from 'react-native'
-import IMP from 'iamport-react-native';
-
 var SendIntentAndroid = require("react-native-send-intent");
 
 export default class KakaoPayScreen extends Component {
