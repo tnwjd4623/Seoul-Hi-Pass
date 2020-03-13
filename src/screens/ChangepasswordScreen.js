@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Text, View, StyleSheet, TextInput, TouchableOpacity, Alert} from 'react-native'
+import {Text, View, StyleSheet, TextInput, TouchableOpacity, Alert, KeyboardAvoidingView, ScrollView} from 'react-native'
 
 
 export default class ChangepasswordScreen extends Component {
@@ -22,6 +22,8 @@ export default class ChangepasswordScreen extends Component {
     }
     render() {
         return(
+            <KeyboardAvoidingView behavior="padding">
+            <ScrollView contentContainerStyle={{width: '100%', height: '100%'}}>
             <View style={{height: '100%', backgroundColor: '#fff', alignItems: 'center', paddingTop: 30}}>
                 
                 <Text style={{width:'80%'}}>임시비밀번호</Text>
@@ -37,6 +39,8 @@ export default class ChangepasswordScreen extends Component {
                     <Text style={{color: '#465cbd', fontSize: 18, fontWeight: 'bold'}}>저장</Text>
                 </TouchableOpacity>
             </View>
+            </ScrollView>
+            </KeyboardAvoidingView>
         )
     }
 }

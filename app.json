@@ -2,16 +2,28 @@
   "expo": {
     "packagerOpts": {
       "config": "metro.config.js",
-      "sourceExts": ["js", "jsx", "ts", "tsx", "svg"]
+      "sourceExts": [
+        "expo.ts",
+        "expo.tsx",
+        "expo.js",
+        "expo.jsx",
+        "ts",
+        "tsx",
+        "js",
+        "jsx",
+        "json",
+        "wasm",
+        "svg"
+      ]
     },
     "name": "Beacon_Application",
     "slug": "Beacon",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "splash": {
+      "image": "./assets/splash.png",
       "resizeMode": "cover",
-      "backgroundColor": "#465cdb",
-      "image": "./assets/splash.png"
+      "backgroundColor": "#465cdb"
     },
     "platforms": [
       "ios",
@@ -21,7 +33,7 @@
  
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/product_logo.png",
     
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -55,6 +67,7 @@
         "xxhdpi": "./assets/splash.png",
         "xxxhdpi": "./assets/splash.png"
       },
+      "icon": "./assets/product_logo.png",
       "package": "kr.babylab.BeaconPayment",
       "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
       "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"

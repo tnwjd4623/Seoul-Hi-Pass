@@ -2,7 +2,13 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:drawable="@color/splashBackground"/>
+    <item android:width="500dp" android:height="180dp" android:top="80dp" android:left="-10dp">
+        <bitmap android:src="@drawable/splash" android:gravity="fill_horizontal|fill_vertical"/>
+    </item>
 
+    <item android:width="380dp" android:height="380dp" android:top="250dp" android:gravity="right" android:right="-80dp">
+        <bitmap android:src="@drawable/subway" android:gravity="fill_horizontal|fill_vertical"/>
+    </item>
     
 
 </layer-list>

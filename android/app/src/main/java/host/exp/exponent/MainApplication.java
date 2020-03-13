@@ -1,9 +1,17 @@
 package host.exp.exponent;
 
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
+import android.util.Base64;
+import android.util.Log;
+
 import com.facebook.react.ReactPackage;
 
 import org.unimodules.core.interfaces.Package;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -13,6 +21,7 @@ import okhttp3.OkHttpClient;
 
 // Needed for `react-native link`
 // import com.facebook.react.ReactApplication;
+import com.facebook.soloader.SoLoader;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.dooboolab.naverlogin.RNNaverLoginPackage;
@@ -31,7 +40,6 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
 
   // Needed for `react-native link`
   public List<ReactPackage> getPackages() {
-
 
     return Arrays.<ReactPackage>asList(
         // Add your own packages here!

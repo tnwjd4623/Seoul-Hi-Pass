@@ -651,9 +651,9 @@ public final class R {
         public static final int notification_template_icon_low_bg = 0x7f0800e1;
         public static final int notification_tile_bg = 0x7f0800e2;
         public static final int notify_panel_notification_icon_bg = 0x7f0800e3;
-        public static final int reactandroid_redbox_top_border_background = 0x7f0800e6;
-        public static final int tooltip_frame_dark = 0x7f0800f6;
-        public static final int tooltip_frame_light = 0x7f0800f7;
+        public static final int reactandroid_redbox_top_border_background = 0x7f0800e7;
+        public static final int tooltip_frame_dark = 0x7f0800f9;
+        public static final int tooltip_frame_light = 0x7f0800fa;
     }
     public static final class id {
         private id() {}
@@ -1859,6 +1859,6 @@ public final class R {
     public static final class xml {
         private xml() {}
 
-        public static final int reactandroid_rn_dev_preferences = 0x7f130003;
+        public static final int reactandroid_rn_dev_preferences = 0x7f130004;
     }
 }

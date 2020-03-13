@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {View, Text, StyleSheet, Image, TouchableOpacity, TouchableHighlight} from 'react-native'
+import {View, Text, StyleSheet, Image, TouchableOpacity, KeyboardAvoidingView, ScrollView} from 'react-native'
 import Autocomplete from 'react-native-autocomplete-input'
 
 
@@ -33,6 +33,8 @@ export default class StationSearchScreen extends Component {
         const stationList = this.findStation(query)
 
         return(
+            <KeyboardAvoidingView behavior="padding">
+            <ScrollView contentContainerStyle={{width: '100%', height: '100%'}}>
             <View style={{width: '100%', height:'100%', backgroundColor: '#fff'}}>
                 <View style={styles.input_container}>
                     <Autocomplete autoCapitalize="none" autoCorrect={false}
@@ -51,6 +53,8 @@ export default class StationSearchScreen extends Component {
                                 keyExtractor={(item, index) => index.toString()}/>
                 </View>
             </View>
+            </ScrollView>
+            </KeyboardAvoidingView>
         )
     }
 }

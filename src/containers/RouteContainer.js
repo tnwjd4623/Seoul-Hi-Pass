@@ -33,7 +33,7 @@ export default class RouteContainer extends Component {
        
     }
     componentWillReceiveProps(newProps) {
-        if(newProps.item != null) {
+        if(newProps.item != this.state.item) {
             
             this.setState({render: false, item: newProps.item}, function() {
                 this._getEachPathInfo()
@@ -60,6 +60,7 @@ export default class RouteContainer extends Component {
                // tmp[j] = {startX: startX, startY: startY, EndX: EndX, EndY: EndY}
                 axios.get('http://ws.bus.go.kr/api/rest/pathinfo/getPathInfoBySubway?serviceKey='+pathKey+'&startX='+startX+'&startY='
                         +startY+'&endX='+EndX+'&endY='+EndY).then(response => {
+                           // console.log(response)
                             let item = []
                             parseString(response.data, function(err, result) {
                                     item = result.ServiceResult.msgBody[0].itemList
@@ -138,7 +139,7 @@ export default class RouteContainer extends Component {
                             환승 {value.pathList.length}회 | 도보 {value.time - value.subtime} 분 | {this._calculateFee(value.distance)} 원</Text>
                             <View style={{flexDirection: 'row', alignItems: 'center', width:'90%'}}>
                                 {
-                                                
+                                               
                                     value.pathList.map((path) => {
                                         const width = path.time/value.subtime * 94;
                                         const line = path.routeNm+"";
@@ -172,7 +173,8 @@ export default class RouteContainer extends Component {
                                 </View>
                         </View>
                     )
-                             })
+                })
+                            
                 }
             </>
         )

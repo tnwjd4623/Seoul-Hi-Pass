@@ -4,6 +4,7 @@ import {StyleSheet, Text, View, StatusBar, Image,
 import {AntDesign} from '@expo/vector-icons'
 import axios from 'axios'
 import Postcode from 'react-native-daum-postcode';
+import BlueButton from '../components/BlueButton'
 
 const key = "beacon091211fX2TAJS0VbillUWp1aVx002VggT"
 
@@ -118,7 +119,7 @@ export default class InfoModifyScreen extends Component {
     }
     render() {
         return(
-            <KeyboardAvoidingView behavior="height">
+            <KeyboardAvoidingView behavior="padding">
             <View style={{paddingTop: StatusBar.currentHeight, height:'100%', backgroundColor: '#fff'}}>
                 <View style={styles.header}>
                     <View style={{width: '90%', height: '100%'}}>
@@ -135,20 +136,20 @@ export default class InfoModifyScreen extends Component {
                 <ScrollView>
                     <View style={styles.login_form}>
                         <View style={styles.input_container}>
-                            <Text style={styles.default_Text}>이메일</Text>
-                            <Text style={styles.default_Text}>{this.state.email}</Text>
+                            <Text style={styles.default_Text}>이메일 {this.state.sns != "local" ? "- "+this.state.sns+"로그인" : ""}</Text>
+                            <Text style={styles.default_Text2}>{this.state.email}</Text>
                         </View>
 
                      { this.state.sns == "local" &&   <View style={styles.input_container}>
                             <Text style={styles.default_Text}>비밀번호 (8자리 이상)</Text>
-                            <TextInput style={styles.input} placeholderTextColor={'#999999'} secureTextEntry={true}
-                            onChangeText={this._inputPW}/>
+                            <TextInput style={styles.input} placeholderTextColor={'#828282'} secureTextEntry={true}
+                            onChangeText={this._inputPW}  />
                         </View>
                     }
 
                     {this.state.sns == "local" && <View style={styles.input_container}>
                             <Text style={styles.default_Text}>비밀번호 확인</Text>
-                            <TextInput style={styles.input} placeholderTextColor={'#999999'} secureTextEntry={true}
+                            <TextInput style={styles.input} placeholderTextColor={'#828282'} secureTextEntry={true}
                             onChangeText={this._inputPW2}/>
                         </View>
                     }
@@ -172,7 +173,7 @@ export default class InfoModifyScreen extends Component {
                               <Text style={{color: '#000', fontWeight: 'bold'}}>주소 검색</Text>
                             </TouchableOpacity>
                         </View>
-                        <TextInput style={styles.input} placeholderTextColor={'#999999'} placeholder="상세주소 입력" 
+                        <TextInput style={styles.input} placeholderTextColor={'#828282'} placeholder="상세주소 입력" 
                         defaultValue={this.state.addr2} onChangeText={this._inputAddr2}/>
                     </View>
                     </View>
@@ -201,7 +202,13 @@ export default class InfoModifyScreen extends Component {
 const styles = StyleSheet.create({
     default_Text: {
         color: '#000',
-        fontSize: 15
+        fontSize: 15,
+        fontWeight: 'bold'
+    },
+    default_Text2: {
+        color: '#828282',
+        fontSize: 15,
+
     },
     header:{
         width: '100%',
@@ -226,20 +233,22 @@ const styles = StyleSheet.create({
         marginLeft: 20
     },
     input : {
-        borderBottomWidth: 1,
-        borderColor : '#828282',
+        borderBottomWidth: 3,
+        borderColor : '#d9d9d9',
         paddingLeft: 10,
-        
+        color: '#828282',
+        marginTop: 10
     },
     input_container: {
         marginBottom: 20,
         marginTop: 10,
     },
     phone_input: {
-        borderBottomWidth: 1,
-        borderColor : '#828282',
+        borderBottomWidth: 3,
+        borderColor : '#d9d9d9',
         paddingLeft: 10,
-        width: '100%'
+        width: '100%',
+        color: '#828282'
     },
     phone_btn: {
         backgroundColor: '#f5f5f5',
@@ -266,8 +275,8 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-start',
         marginBottom: 5,
 
-        borderTopWidth: 45,
-        borderTopColor: '#384ec9',
+        borderTopWidth: 50,
+        borderTopColor: '#3d47ff',
         borderRightWidth: 10,
         borderRightColor: 'transparent',
 

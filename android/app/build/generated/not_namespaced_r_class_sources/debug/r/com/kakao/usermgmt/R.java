@@ -112,9 +112,9 @@ public final class R {
         public static final int notification_template_icon_low_bg = 0x7f0800e1;
         public static final int notification_tile_bg = 0x7f0800e2;
         public static final int notify_panel_notification_icon_bg = 0x7f0800e3;
-        public static final int selector_login_button = 0x7f0800e7;
-        public static final int story = 0x7f0800f0;
-        public static final int talk = 0x7f0800f1;
+        public static final int selector_login_button = 0x7f0800e8;
+        public static final int story = 0x7f0800f2;
+        public static final int talk = 0x7f0800f4;
     }
     public static final class id {
         private id() {}

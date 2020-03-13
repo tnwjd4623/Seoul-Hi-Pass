@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import {Text, View, StyleSheet, TouchableOpacity, TextInput, Image} from 'react-native'
+import {Text, View, StyleSheet, TouchableOpacity, TextInput, Image, KeyboardAvoidingView, ScrollView} from 'react-native'
 import {RadioButton} from 'react-native-paper'
-import {FontAwesome} from '@expo/vector-icons'
 
 export default class PayinfoScreen extends Component {
     constructor(props) {
@@ -26,69 +25,65 @@ export default class PayinfoScreen extends Component {
         const phone = this.state.phone;
         const tmoney = this.state.tmoney;
         return (
+            <KeyboardAvoidingView behavior="padding">
+            <ScrollView contentContainerStyle={{width: '100%', height: '100%'}}>
             <View style={{width: '100%', height: '100%', backgroundColor: '#fff', padding: 20}}>
                 <View style={{flexDirection: 'row', height: 50, alignItems: 'center'}}>
                     <RadioButton color={'#465cdb'}
                         status={credit ? 'checked':'unchecked'} onPress={this._credit}/>
-                    <Text style={{fontWeight:'bold'}}>신용카드</Text>
+                    <Text style={{fontWeight:'bold'}}>카카오 페이</Text>
                 </View>
-                {this.state.credit && 
+
+           {/*     <View style={{flexDirection: 'row', height: 50, alignItems: 'center'}}>
+                    <RadioButton color={'#465cdb'}
+                        status={credit ? 'checked':'unchecked'} onPress={this._credit}/>
+                    <Text style={{fontWeight:'bold'}}>신용카드</Text>
+                    </View>
+                    {this.state.credit && 
                     <View style={styles.creditcard_container}> 
                         <Text style={{fontWeight: 'bold'}}>카드 번호</Text>
                         <View style={{flexDirection: 'row'}}>
-                            <TextInput style={styles.cardnumber_input}/>
-                            <TextInput style={styles.cardnumber_input}/>
-                            <TextInput style={styles.cardnumber_input}/>
-                            <TextInput style={styles.cardnumber_input}/>
-                            <View>
-                                <Image style={{height: 50, width:50}} source={require('../../assets/mastercard.jpeg')}/>
-                                <Image style={{height: 30, width:50}} source={require('../../assets/visa.png')}/>
-                            </View>
+                            <TextInput style={styles.cardnumber_input} keyboardType={'numeric'} maxLength={4} 
+                            onSubmitEditing ={()=>this.secondTextInput.focus()}/>
+
+                            <TextInput style={styles.cardnumber_input} keyboardType={'numeric'} maxLength={4} 
+                            onSubmitEditing ={()=>this.ThirdTextInput.focus()}
+                            ref={(input)=>{this.secondTextInput = input}}/>
+
+                            <TextInput style={styles.cardnumber_input} keyboardType={'numeric'} maxLength={4} 
+                            onSubmitEditing ={()=>this.ForthTextInput.focus()}
+                            ref={(input)=>{this.ThirdTextInput = input}}/>
+
+                            <TextInput style={styles.cardnumber_input} keyboardType={'numeric'} maxLength={4}
+                            onSubmitEditing ={()=>this.FifthTextInput.focus()}
+                            ref={(input)=>{this.ForthTextInput = input}}/>
                         </View>
 
                         <View style={{flexDirection: 'row', marginTop: 10, height: 100, alignItems:'center'}}>
                             <View style={{width: '50%'}}>
                                 <Text style={{fontWeight:'bold'}}>유효 기간</Text>
-                                <TextInput style={styles.short_input} placeholder={"MM / YY"}/>
+                                <TextInput style={styles.short_input} placeholder={"MM / YY"} keyboardType={'numeric'}
+                                maxLength={4}/>
                             </View>
 
                             <View style={{width: '50%'}}>
                                 <Text style={{fontWeight:'bold'}}>CVC</Text>
-                                <TextInput style={styles.short_input} secureTextEntry={true}/>
+                                <TextInput style={styles.short_input} secureTextEntry={true} keyboardType={'numeric'}
+                                maxLength={3}/>
                             </View>
                         </View>
 
                        <View style={{height:100}}>
                            <Text style={{fontWeight:'bold'}}>비밀번호 앞 2자리</Text>
-                           <TextInput style={styles.short_input} secureTextEntry={true}/>
+                           <TextInput style={styles.short_input} secureTextEntry={true} keyboardType={'numeric'}
+                           maxLength={2}/>
                        </View>
 
                     </View>}
-                <View style={{borderBottomWidth: 0.5, borderBottomColor: '#828282', width: '100%'}}/>
-
-                <View style={{flexDirection: 'row', height: 50, alignItems: 'center'}}>
-                    <RadioButton color={'#465cdb'}
-                        status={phone ? 'checked':'unchecked'} onPress={this._phone}/>
-                        <Text style={{fontWeight: 'bold'}}>휴대폰 결제</Text>
-                </View>
-
-                {this.state.phone && 
-                    <View> 
-                        <Text style={{fontWeight:'bold'}}>휴대폰 선택</Text>
-                    </View>}
-
-                
-                <View style={{flexDirection: 'row', height: 50, alignItems: 'center'}}>
-                    <RadioButton color={'#465cdb'}
-                        status={tmoney ? 'checked':'unchecked'} onPress={this._tmoney}/>
-                        <Text style={{fontWeight:'bold'}}>티머니 결제</Text>
-                </View>
-
-                {this.state.tmoney && 
-                    <View> 
-                        <Text style={{fontWeight: 'bold'}}>티머니 선택</Text>
-                    </View>}
+           */}
             </View>
+            </ScrollView>
+            </KeyboardAvoidingView>
         )
       }
     }

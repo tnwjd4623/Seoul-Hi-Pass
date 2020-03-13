@@ -9,7 +9,8 @@ export default class SubwayBarImage extends Component {
             time: this.props.time,
             line: this.props.line,
             width: this.props.width,
-            color: this.props.color
+            color: this.props.color, 
+            margin: 2
         }
     }
     componentWillReceiveProps(newProps) {
@@ -17,6 +18,9 @@ export default class SubwayBarImage extends Component {
             this.setState({time: newProps.time})
         }
         if(newProps.width != null) {
+            const width = newProps.width.substring(0, newProps.width.length-2)
+          //  const min_width = width.substring
+            console.log(width)
             this.setState({width: newProps.width})
         }
     }
@@ -30,13 +34,15 @@ export default class SubwayBarImage extends Component {
                                     borderRadius: 100/2,
                                     backgroundColor: this.props.color,
                                     justifyContent: 'center',
-                                    alignItems: 'center'}}>
+                                    alignItems: 'center',
+                                    }}
+                                    >
                         <Text style={{fontWeight: 'bold', color: '#fff'}}>{this.state.line}</Text>
                     </View>
                     <View style={{width: '100%', height: 20, marginLeft: -4, alignItems: 'center'}}>
                         <Text style={{color: '#fff', width: '100%', textAlign: 'center',
                         borderTopWidth: 20, borderTopColor: this.props.color, 
-                        borderRightWidth: 10, borderRightColor: 'transparent'}}>{this.state.time}분</Text>
+                        borderRightWidth: 10, borderRightColor: 'transparent', paddingRight: 10}}>{this.state.time}분</Text>
                     </View>
                 </View>
             </>

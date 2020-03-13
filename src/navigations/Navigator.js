@@ -111,7 +111,7 @@ const loginStack = createStackNavigator(
                 headerStyle: {
                     elevation: 0,
                     shadowOpacity: 0,
-                    backgroundColor: '#384ec9',
+                    backgroundColor: '#3d47ff',
                     
                 },
                 headerTintColor: '#fff'

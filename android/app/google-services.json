@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "420490957468-5ejhlknldkc05nuk8acj4sdumg7c4nd1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.babylab.BeaconPayment",
+            "certificate_hash": "bcb2ba1db1244eda702892ccd7d635a2760d7717"
+          }
+        },
+        {
           "client_id": "420490957468-017ot7ukmcssj10oqmo9oj5f1j89iijj.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

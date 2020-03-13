@@ -5998,24 +5998,27 @@ public final class R {
     public static final int notify_panel_notification_icon_bg=0x7f0800e3;
     public static final int pin_white=0x7f0800e4;
     public static final int pin_white_fade=0x7f0800e5;
-    public static final int reactandroid_redbox_top_border_background=0x7f0800e6;
-    public static final int selector_login_button=0x7f0800e7;
-    public static final int shell_launch_background_image=0x7f0800e8;
-    public static final int shell_notification_icon=0x7f0800e9;
-    public static final int spinner_background_holo_dark=0x7f0800ea;
-    public static final int spinner_default_holo_dark=0x7f0800eb;
-    public static final int spinner_disabled_holo_dark=0x7f0800ec;
-    public static final int spinner_focused_holo_dark=0x7f0800ed;
-    public static final int spinner_pressed_holo_dark=0x7f0800ee;
-    public static final int splash_background=0x7f0800ef;
-    public static final int story=0x7f0800f0;
-    public static final int talk=0x7f0800f1;
-    public static final int textfield_activated_holo_dark=0x7f0800f2;
-    public static final int textfield_default_holo_dark=0x7f0800f3;
-    public static final int textfield_disabled_focused_holo_dark=0x7f0800f4;
-    public static final int textfield_disabled_holo_dark=0x7f0800f5;
-    public static final int tooltip_frame_dark=0x7f0800f6;
-    public static final int tooltip_frame_light=0x7f0800f7;
+    public static final int product_logo=0x7f0800e6;
+    public static final int reactandroid_redbox_top_border_background=0x7f0800e7;
+    public static final int selector_login_button=0x7f0800e8;
+    public static final int shell_launch_background_image=0x7f0800e9;
+    public static final int shell_notification_icon=0x7f0800ea;
+    public static final int spinner_background_holo_dark=0x7f0800eb;
+    public static final int spinner_default_holo_dark=0x7f0800ec;
+    public static final int spinner_disabled_holo_dark=0x7f0800ed;
+    public static final int spinner_focused_holo_dark=0x7f0800ee;
+    public static final int spinner_pressed_holo_dark=0x7f0800ef;
+    public static final int splash=0x7f0800f0;
+    public static final int splash_background=0x7f0800f1;
+    public static final int story=0x7f0800f2;
+    public static final int subway=0x7f0800f3;
+    public static final int talk=0x7f0800f4;
+    public static final int textfield_activated_holo_dark=0x7f0800f5;
+    public static final int textfield_default_holo_dark=0x7f0800f6;
+    public static final int textfield_disabled_focused_holo_dark=0x7f0800f7;
+    public static final int textfield_disabled_holo_dark=0x7f0800f8;
+    public static final int tooltip_frame_dark=0x7f0800f9;
+    public static final int tooltip_frame_light=0x7f0800fa;
   }
   public static final class id {
     public static final int ALT=0x7f090000;
@@ -22127,7 +22130,8 @@ public final class R {
   public static final class xml {
     public static final int file_provider_paths=0x7f130000;
     public static final int file_system_provider_paths=0x7f130001;
-    public static final int provider_paths=0x7f130002;
-    public static final int reactandroid_rn_dev_preferences=0x7f130003;
+    public static final int network_security_config=0x7f130002;
+    public static final int provider_paths=0x7f130003;
+    public static final int reactandroid_rn_dev_preferences=0x7f130004;
   }
 }

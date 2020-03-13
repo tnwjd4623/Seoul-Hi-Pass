@@ -244,8 +244,8 @@
 120        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 120-->[androidx.core:core:1.1.0] /Users/babylabco/.gradle/caches/transforms-2/files-2.1/864d0fe8891329a9533be4963b75012e/core-1.1.0/AndroidManifest.xml:24:18-86
 121        android:debuggable="true"
-122        android:icon="@mipmap/ic_launcher"
-122-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:51:5-39
+122        android:icon="@drawable/product_logo"
+122-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:51:5-42
 123        android:label="@string/app_name"
 123-->/Users/babylabco/Desktop/Beacon/android/app/src/main/AndroidManifest.xml:52:5-37
 124        android:largeHeap="true"

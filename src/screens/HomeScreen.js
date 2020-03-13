@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import {Text, View, StyleSheet, StatusBar, TouchableHighlight, Image,  Modal, 
-    TouchableOpacity,  SafeAreaView, AsyncStorage, Alert, Button} from 'react-native'
+    TouchableOpacity,  SafeAreaView, AsyncStorage, Alert, Button, BackHandler, ToastAndroid} from 'react-native'
 import CardComponent from '../components/CardComponent';
 import Map from '../components/Map'
 import RNRestart from 'react-native-restart'
 import KakaoLogins from '@react-native-seoul/kakao-login';
 import {NaverLogin} from '@react-native-seoul/naver-login'
 import {GoogleSignin} from '@react-native-community/google-signin';
+import Advertisement from '../components/Advertisement';
 
 
 export default class HomeScreen extends Component {
@@ -20,16 +21,49 @@ export default class HomeScreen extends Component {
             destination: '도착역을 입력해주세요',
             dest_code: '',
 
-            dep_modal: false,
-            dest_modal:false,
             modal: false,
           };
     }
-    _swap = () => {
-        const depart = this.state.depart;
-        const arrive = this.state.arrive;
+    // 이벤트 등록
+componentDidMount() {
+    BackHandler.addEventListener('hardwareBackPress', this.handleBackButton);
+}
 
-        this.setState({depart: arrive, arrive: depart})
+// 이벤트 해제
+componentWillUnmount() {
+    this.exitApp = false;
+    BackHandler.removeEventListener('hardwareBackPress', this.handleBackButton);
+}
+
+// 이벤트 동작
+handleBackButton = () => {
+    // 2000(2초) 안에 back 버튼을 한번 더 클릭 할 경우 앱 종료
+    if (this.exitApp == undefined || !this.exitApp) {
+        ToastAndroid.show('한번 더 누르시면 종료됩니다.', ToastAndroid.SHORT);
+        this.exitApp = true;
+
+        this.timeout = setTimeout(
+            () => {
+                this.exitApp = false;
+            },
+            2000    // 2초
+        );
+    } else {
+        clearTimeout(this.timeout);
+
+        BackHandler.exitApp();  // 앱 종료
+    }
+    return true;
+}
+
+    _swap = () => {
+        const depart = this.state.departure;
+        const arrive = this.state.destination;
+
+        const dep_code = this.state.dep_code;
+        const dest_code = this.state.dest_code;
+
+        this.setState({departure: arrive, destination: depart, dep_code: dest_code, dest_code: dep_code})
     }
     _depart = (data) => {
         this.setState({departure: data.station, dep_code: data.code})
@@ -73,18 +107,26 @@ export default class HomeScreen extends Component {
         }
     }
 
-    _logoutProcess = () => {
+    _logoutProcess = async() => {
         AsyncStorage.getItem("type").then(asyncStorageRes => {
-           if(asyncStorageRes == "kakao")
-                this.kakaoLogout();
-            else if(asyncStorageRes == "naver")
-                this.naverLogout();
-            else if(asyncStorageRes == "google")
-                this.signOut();
+            if(asyncStorageRes == "kakao")
+                 this.kakaoLogout();
+             else if(asyncStorageRes == "naver")
+                 this.naverLogout();
+             else if(asyncStorageRes == "google")
+                 this.signOut();
+         })
 
-            AsyncStorage.clear()
-            RNRestart.Restart();
-        })
+       try {
+           const keys = await AsyncStorage.getAllKeys();
+           await AsyncStorage.multiRemove(keys);
+       }catch (err) {
+           console.error('Error');
+
+       }finally {
+           RNRestart.Restart();
+       }
+       
 
     }
     closeModal = () => {
@@ -98,15 +140,15 @@ export default class HomeScreen extends Component {
         return(
             <View style={{paddingTop: StatusBar.currentHeight, backgroundColor: '#fff', height:'100%'}}>
                 {/*Header*/}
-                <View style={{marginHorizontal:24}}>
+                <View style={{marginHorizontal:10}}>
                     <SafeAreaView style={styles.header}>
                         <View style={{width:'90%'}}>
                             <Image resizeMode="contain" source={require('../../assets/Logo_2.png')}
-                                style={{width: '100%', height: '60%', marginLeft: '-10%'}}/>
+                                style={{width: '100%', height: '70%', marginLeft: '-10%'}}/>
                         </View>
                         <TouchableHighlight style={{width:'20%'}} onPress={()=>this.setState({modal: true})}>
                             <Image resizeMode="contain" 
-                            source={require('../../assets/My_page.png')} style={{width: '100%', height: '60%'}}/>
+                            source={require('../../assets/My_page.png')} style={{width: '100%', height: '70%'}}/>
                         </TouchableHighlight>
                     </SafeAreaView>
 
@@ -138,7 +180,7 @@ export default class HomeScreen extends Component {
                 </View>
 
                 <Map/>
-
+                <Advertisement/>
                 <Modal visible={this.state.modal} animationType="slide" transparent={true} >
                 <View style={styles.modal_container}>
                     <TouchableOpacity style={{height:'60%', width: '100%'}} onPress={this.closeModal}>
@@ -180,7 +222,6 @@ const styles = StyleSheet.create({
         height: 50,
         alignItems: 'center',
         paddingRight: 10,
-        marginBottom:15,
         flexDirection:'row',
         alignItems:'flex-start',
         justifyContent:'space-between'

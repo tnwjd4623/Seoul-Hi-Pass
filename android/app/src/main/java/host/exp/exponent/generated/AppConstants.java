@@ -15,7 +15,7 @@ public class AppConstants {
   public static String INITIAL_URL = "exp://exp.host/@sujng/Beacon";
   public static final String SHELL_APP_SCHEME = "exp66e538e5f59d4952a056728aa7b04be8";
   public static final String RELEASE_CHANNEL = "default";
-  public static boolean SHOW_LOADING_VIEW_IN_SHELL_APP = true;
+  public static boolean SHOW_LOADING_VIEW_IN_SHELL_APP = false;
   public static boolean ARE_REMOTE_UPDATES_ENABLED = true;
   public static final List<Constants.EmbeddedResponse> EMBEDDED_RESPONSES;
   public static boolean FCM_ENABLED = false;

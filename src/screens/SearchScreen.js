@@ -55,13 +55,13 @@ export default class SearchScreen extends Component {
                                     EndX: result.data.SearchLocationOfSTNByFRCodeService.row[0].YPOINT_WGS}, function() {
                                         const startX = this.state.startX; const EndX = this.state.EndX
                                         const startY = this.state.startY; const EndY = this.state.EndY
-
                                         //경로 가져오기
                                         axios.get('http://ws.bus.go.kr/api/rest/pathinfo/getPathInfoBySubway?serviceKey='+pathKey+'&startX='+startX+'&startY='
                                         +startY+'&endX='+EndX+'&endY='+EndY).then(path => {
                                             let item = []
                                             parseString(path.data, function(err, result) {
                                                item = result.ServiceResult.msgBody[0].itemList
+                                            //   console.log(item)
                                             })
                                             
                                             this.setState({path: item})     
@@ -132,7 +132,9 @@ export default class SearchScreen extends Component {
                 <View style={{width: '90%', alignSelf: 'center', height: 30, justifyContent: 'center'}}>
                     <Text style={{fontSize: 15, color: '#465cdb', fontWeight: 'bold'}}>{this.state.current_time}  출발</Text>
                 </View>
-                {this._renderElement(this.state.path)}
+                <ScrollView>
+                <RouteContainer navigation={this.props.navigation} item={this.state.path} />
+            </ScrollView>
                 
                 
             </View>

@@ -1,8 +1,12 @@
 import React,{Component} from 'react'
-import {Text, View, StyleSheet, Button, TouchableOpacity, Image, StatusBar, AsyncStorage} from 'react-native'
+import {Text, View, StyleSheet, Button, TouchableOpacity, Image, StatusBar, AsyncStorage, BackHandler, ToastAndroid} from 'react-native'
 import NaverLoginComponent from '../components/NaverLoginComponent'
 import KakaoLoginComponent from '../components/KakaoLoginComponent'
 import GoogleLoginComponent from '../components/GoogleLoginComponent'
+import BlueButton from '../components/BlueButton'
+
+console.disableYellowBox = true;
+
 
 export default class LoginScreen extends Component {
     constructor(props) {
@@ -17,10 +21,39 @@ export default class LoginScreen extends Component {
                 this.props.navigation.navigate('Home')
             }
         })
+
+        BackHandler.addEventListener('hardwareBackPress', this.handleBackButton);
+
     }
-    
+    // 이벤트 해제
+    componentWillUnmount() {
+        this.exitApp = false;
+        BackHandler.removeEventListener('hardwareBackPress', this.handleBackButton);
+    }
+
+    // 이벤트 동작
+    handleBackButton = () => {
+        // 2000(2초) 안에 back 버튼을 한번 더 클릭 할 경우 앱 종료
+        if (this.exitApp == undefined || !this.exitApp) {
+            ToastAndroid.show('한번 더 누르시면 종료됩니다.', ToastAndroid.SHORT);
+            this.exitApp = true;
+
+            this.timeout = setTimeout(
+                () => {
+                    this.exitApp = false;
+                },
+                2000    // 2초
+            );
+        } else {
+            clearTimeout(this.timeout);
+
+            BackHandler.exitApp();  // 앱 종료
+        }
+        return true;
+    }
     render() {
         return(
+            
             <View style={styles.container}>
                 <View style={{height: '30%', width: '100%',  marginTop:60}}>
                     <Image resizeMode="contain" source={require('../../assets/LOGO.png')} 
@@ -61,13 +94,17 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         alignItems: 'center',
-        backgroundColor:'#384ec9',
+        backgroundColor:'#3d47ff',
         paddingTop: StatusBar.currentHeight
     },
     email_btn: {
         width: '90%',
         alignSelf: 'flex-end',
         marginTop: 10
+    },
+    email_container: {
+        marginTop: 24,
+        width:'100%'
     },
     email_text:{
         color: '#384ec9',
@@ -79,7 +116,7 @@ const styles = StyleSheet.create({
         marginBottom: 5,
 
         borderBottomColor: '#fff',
-        borderBottomWidth:45,
+        borderBottomWidth:50,
         
         borderLeftWidth: 10,
         borderLeftColor: 'transparent',

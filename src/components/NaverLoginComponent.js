@@ -30,6 +30,7 @@ class NaverLoginComponent extends Component{
                 this.getUserProfile();
                 if(err) {
                     reject(err);
+                    this.setState({loading: false})
                     return;
                 }
                 resolve(token);

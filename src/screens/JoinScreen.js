@@ -5,6 +5,7 @@ import axios from 'axios'
 import {WebView} from 'react-native-webview'
 import {AntDesign} from '@expo/vector-icons'
 import Postcode from 'react-native-daum-postcode';
+import Toast from 'react-native-simple-toast'
 
 
 const key = "beacon091211fX2TAJS0VbillUWp1aVx002VggT"
@@ -77,7 +78,6 @@ export default class JoinScreen extends Component{
     }
   
     _join = () => {
-        
         const check = this.state.CheckBox;
 
         const email = this.state.email;
@@ -89,28 +89,41 @@ export default class JoinScreen extends Component{
         const addr = this.state.addr;
         const addr2 = this.state.addr2;
 
+        if(email == "") {
+            Toast.show("이메일은 필수입력사항 입니다.");
+            return;
+        }
+        let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
+        if(reg.test(email) === false) {
+            Toast.show("이메일 형식이 바르지 않습니다.");
+            return ;
+        }
+
+
         if(pw.length < 8) {
-            Alert.alert(
-                "비밀번호는 8자 이상입니다",
-                "",
-                [
-                    {text: '확인'}
-                ],
-                { cancelable: false }
-            );
+            Toast.show("비밀번호는 8자 이상 입니다.");
             return;
         }
         if(pw != pw_check) {
-            Alert.alert(
-                "비밀번호를 확인해주세요",
-                "",
-                [
-                    {text: '확인'}
-                ],
-                { cancelable: false }
-            );
+            Toast.show("비밀번호를 확인해주세요.");
             return;
         }
+        if(name == "") {
+            Toast.show("이름은 필수입력사항 입니다.");
+            return;
+        }
+        if(phone == "") {
+            Toast.show("휴대폰은 필수입력사항 입니다.");
+            return;
+        }
+        if(addr == "") {
+            Toast.show("주소는 필수입력사항 입니다.");
+            return;
+        }
+        
+
+        
+
         if(check['all'] ) {
             if(check['all'] == true) {
                 console.log("Start Join")
@@ -121,14 +134,14 @@ export default class JoinScreen extends Component{
                             this.success();
                         }
                         else {
-                            console.log(response, name);
+                            Toast.show("이미 존재하는 이메일입니다.");
                         }
                     } 
                 )}      
         }
         
         else {
-            console.log("Join Fail")
+            Toast.show("약관 동의가 필요합니다.");
         }
     }
     success = () => {
@@ -161,30 +174,39 @@ export default class JoinScreen extends Component{
                 <View style={styles.login_form}>
                     <View style={styles.input_container}>
                         <Text style={styles.default_Text}>이메일</Text>
-                        <TextInput style={styles.input} placeholderTextColor={'#999999'} onChangeText={this._inputEmail}/>
+                        <TextInput style={styles.input} placeholderTextColor={'#999999'} onChangeText={this._inputEmail}
+                        onSubmitEditing ={()=>this.secondTextInput.focus()} keyboardType={'email-address'} />
                     </View>
 
                     <View style={styles.input_container}>
                         <Text style={styles.default_Text}>비밀번호 (8자리 이상)</Text>
                         <TextInput style={styles.input} placeholderTextColor={'#999999'} secureTextEntry={true}
-                        onChangeText={this._inputPW}/>
+                        onChangeText={this._inputPW}
+                        onSubmitEditing ={()=>this.ThirdTextInput.focus()}
+                        ref={(input)=>{this.secondTextInput = input}}/>
                     </View>
 
                     <View style={styles.input_container}>
                         <Text style={styles.default_Text}>비밀번호 확인</Text>
                         <TextInput style={styles.input} placeholderTextColor={'#999999'} secureTextEntry={true}
-                        onChangeText={this._inputPW2}/>
+                        onChangeText={this._inputPW2}
+                        ref={(input)=>{this.ThirdTextInput = input}}
+                        onSubmitEditing ={()=>this.ForthTextInput.focus()}/>
                     </View>
 
                     <View style={styles.input_container}>
                         <Text style={styles.default_Text}>이름</Text>
                         <TextInput style={styles.input} placeholderTextColor={'#999999'}
-                        onChangeText={this._inputName}/>
+                        onChangeText={this._inputName}
+                        onSubmitEditing ={()=>this.FifthTextInput.focus()}
+                        ref={(input)=>{this.ForthTextInput = input}}/>
                     </View>
 
                     <View style={styles.input_container}>
                         <Text style={styles.default_Text}>전화번호</Text>
-                        <TextInput style={styles.input} placeholderTextColor={'#999999'} onChangeText={this._inputPhone}/>
+                        <TextInput style={styles.input} placeholderTextColor={'#999999'} onChangeText={this._inputPhone}
+                        ref={(input)=>{this.FifthTextInput = input}} maxLength={11} keyboardType={'number-pad'}
+                        />
                     </View>
 
                     <View style={styles.input_container}>
@@ -312,7 +334,7 @@ const styles = StyleSheet.create({
         marginBottom: 5,
 
         borderTopWidth: 45,
-        borderTopColor: '#384ec9',
+        borderTopColor: '#3d47ff',
         borderRightWidth: 10,
         borderRightColor: 'transparent',
 

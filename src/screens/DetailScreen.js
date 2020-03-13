@@ -26,7 +26,9 @@ export default class DetailScreen extends Component {
         this.setState({item: item, time: time})
         console.log(item.pathList)
     }
-    
+    _PayFee = () => {
+        
+    }
     render() {
         return(
             <View style={styles.container}>
@@ -58,8 +60,7 @@ export default class DetailScreen extends Component {
                                     <SubwayHorizonBar color={this.state.color[line]} 
                                     end={index == this.state.item.pathList.length-1 ? true : false} height={100}/>
                                         <View style={styles.station_container}>
-                                            <Text style={styles.title}>{line} {value.fname} 승차</Text>
-                                            <Text style={styles.subtitle}>XX역 방면</Text>                                
+                                            <Text style={styles.title}>{line} {value.fname} 승차</Text>                               
                                             <Text style={styles.text}>{value.railLinkList.length}개 역 이동</Text>
                                             <Text style={styles.title2}>
                                                 {index == this.state.item.pathList.length-1 ? value.tname+' 하차': ""} </Text>

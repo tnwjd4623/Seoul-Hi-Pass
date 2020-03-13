@@ -1,7 +1,8 @@
-import { StyleSheet, Image, TouchableHighlight, AsyncStorage, Modal, View} from 'react-native'
+import { StyleSheet, Image, TouchableHighlight, AsyncStorage, Modal, View, BackHandler} from 'react-native'
 import React, {Component} from 'react'
 import KakaoLogins from '@react-native-seoul/kakao-login';
 import axios from 'axios'
+
 const key = "beacon091211fX2TAJS0VbillUWp1aVx002VggT"
 
 export default class KakaoLoginComponent extends Component {
@@ -15,6 +16,7 @@ export default class KakaoLoginComponent extends Component {
         }
     }
 
+
     kakaoLogin = () => {
         this.setState({loading: true})
         KakaoLogins.login().then(result => {
@@ -22,6 +24,8 @@ export default class KakaoLoginComponent extends Component {
             this.setState({loggedIn:true})
             this.getProfile()
         }).catch(err => {
+            console.log(err)
+            this.setState({loading: false})
             if(err.code === 'E_CANCELLED_OPERATION') {
                 
             }
@@ -29,6 +33,7 @@ export default class KakaoLoginComponent extends Component {
                 
             }
         })
+        this.setState({loggedIn:true})
     }
 
     kakaoLogout = () => {
@@ -53,12 +58,14 @@ export default class KakaoLoginComponent extends Component {
                
                 else {
                     console.log("Login Fail");
+                    this.setState({loading: false})
                 }
 
             })
             
         }).catch(err => {
-        
+            console.log(err)
+            this.setState({loading: false})
         })
         
     }
@@ -75,7 +82,7 @@ export default class KakaoLoginComponent extends Component {
                 <View style={{backgroundColor: 'rgba(0, 0, 0, 0.5)',
                                 width: '100%',
                                 height: '100%'}}/>
-            </Modal>
+        </Modal>
             </>
         )
     }

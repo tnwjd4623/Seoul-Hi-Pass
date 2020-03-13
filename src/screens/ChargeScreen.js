@@ -142,8 +142,8 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-start',
         marginBottom: 5,
 
-        borderTopColor: '#384ec9',
-        borderTopWidth:45,
+        borderTopColor: '#3d47ff',
+        borderTopWidth:50,
         
         borderRightWidth: 10,
         borderRightColor: 'transparent',
