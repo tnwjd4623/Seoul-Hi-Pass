@@ -3,10 +3,11 @@ import {Text, View, StyleSheet, TextInput, TouchableHighlight, StatusBar, Image,
 import {MaterialIcons} from '@expo/vector-icons'
 import RouteContainer from '../containers/RouteContainer'
 import axios from 'axios'
+import Toast from 'react-native-simple-toast'
 
 
 const gpsKey = '5743714d496c736a35387a7047544a';
-const pathKey = 'w9Mt460KZMdbmTUHJ4%2BY0R5VXWB0yTXhYNHuYATfJKf1EiQya0aYPHYTO%2FlJwWHOxkiVcx3tauCoajOgEEspuA%3D%3D';
+const pathKey = 'FI9hHlDS2Gr%2FxSZe6VIbL2h6TOv%2Bom0ye60SNfxCnVlz4SnPEBWzjfoSYTC%2BSBILqOFiWKaIt48dGUX2GKaJtQ%3D%3D';
 var parseString = require('react-native-xml2js').parseString;
 
 export default class SearchScreen extends Component {
@@ -26,7 +27,8 @@ export default class SearchScreen extends Component {
             EndY: '',
 
             path: [],
-            current_time: "오늘 "+new Date().getHours()+":"+new Date().getMinutes()
+            current_time: "오늘 "+new Date().getHours()+":"+new Date().getMinutes(),
+            limit_access: false,
         }
     }
     componentDidMount () {
@@ -61,7 +63,12 @@ export default class SearchScreen extends Component {
                                             let item = []
                                             parseString(path.data, function(err, result) {
                                                item = result.ServiceResult.msgBody[0].itemList
-                                            //   console.log(item)
+                                              
+                                                if(result.ServiceResult.msgBody[0] == "") {
+                                                    Toast.show(result.ServiceResult.msgHeader[0].headerMsg[0]);
+                                                    item = []
+                                                    return;
+                                                }
                                             })
                                             
                                             this.setState({path: item})     

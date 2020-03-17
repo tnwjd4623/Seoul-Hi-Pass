@@ -38,6 +38,7 @@ export default class CardComponent extends Component {
                         console.log("fail")
                     }
         })
+        this.setState({modal: false})
     }
     closeModal = () => {
         this.setState({modal: false})
@@ -128,6 +129,9 @@ export default class CardComponent extends Component {
                         </TouchableOpacity>
                         <TouchableOpacity style={styles.modal_list} onPress={this._charge}>
                             <Text style={{fontWeight: 'bold'}}>충전하기</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.modal_list} onPress={this._refreshBalance}>
+                            <Text style={{fontWeight: 'bold'}}>잔액 새로고침</Text>
                         </TouchableOpacity>
 
                     </View>
