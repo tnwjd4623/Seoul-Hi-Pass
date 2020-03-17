@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {WebView} from 'react-native-webview'
 import {StyleSheet, View, StatusBar, ScrollView, Alert, Linking} from 'react-native'
-var SendIntentAndroid = require("react-native-send-intent");
 
 export default class KakaoPayScreen extends Component {
     constructor(props) {
@@ -16,15 +15,15 @@ export default class KakaoPayScreen extends Component {
         console.log(uri, orderCode)
     
         this.setState({uri: uri}, function() {
-            Linking.openURL(uri)
+           // Linking.openURL(uri)
         })
     }
     callback(response) {
         console.log(response);
     }
-    _KakaoPayRequest(intent) {
+    _KakaoPayRequest(url) {
 
-      SendIntentAndroid.openApp(intent.url)
+      
       return false;
     }
     render() {
@@ -32,7 +31,18 @@ export default class KakaoPayScreen extends Component {
             <>
             <ScrollView contentContainerStyle={{width: '100%', height: '100%'}}>
             <WebView source={{uri: this.state.uri}} style={{width: '100%', height: '100%'}}
-                onMessage={(event) =>console.log(event)}  
+                onMessage={(event) =>console.log(event)}  onShouldStartLoadWithRequest={(event) => {
+                    this._KakaoPayRequest(event.url)
+                }}
+                allowFileAccess={true}
+                domStorageEnabled={true}
+                javaScriptEnabled={true}
+                geolocationEnabled={true}
+                saveFormDataDisabled={true}
+                allowFileAccessFromFileURLS={true}
+                allowUniversalAccessFromFileURLs={true}
+                bounces={false}
+                originWhitelist={["https://*", "http://*", "file://*", "sms://*", "intent://*"]}
                 >
 
             </WebView>

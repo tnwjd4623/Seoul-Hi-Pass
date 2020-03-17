@@ -12,9 +12,10 @@ export default class LoginScreen extends Component {
     constructor(props) {
         super(props)
         this.state={
-            
+            isReady: false,
         }
     }
+
     componentDidMount() {
         AsyncStorage.getItem("id").then(asyncStorageRes => {
             if(asyncStorageRes != null) {
@@ -52,11 +53,12 @@ export default class LoginScreen extends Component {
         return true;
     }
     render() {
+
         return(
             
             <View style={styles.container}>
                 <View style={{height: '30%', width: '100%',  marginTop:60}}>
-                    <Image resizeMode="contain" source={require('../../assets/LOGO.png')} 
+                    <Image resizeMode="contain" source={require('../image/LOGO.png')}
                             style={{width: '100%', height: '100%'}}/>
                 </View>
                    

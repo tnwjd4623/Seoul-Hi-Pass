@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.maps.android:android-maps-utils:0.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2e9bfbd04bcb4e63be071cacfb746690/jetified-android-maps-utils-0.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2e9bfbd04bcb4e63be071cacfb746690/jetified-android-maps-utils-0.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-android-maps-utils-0.5.aar/4f156479e64d7e5fc2c8143634f501e0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-android-maps-utils-0.5.aar/4f156479e64d7e5fc2c8143634f501e0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

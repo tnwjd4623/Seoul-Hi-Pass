@@ -58,6 +58,7 @@ export default class CardComponent extends Component {
         this.props.navigation.navigate('charge',{ goBackData: this._return})
     }
     render() {
+    
         return(
             <>
             <View style={styles.container}>
