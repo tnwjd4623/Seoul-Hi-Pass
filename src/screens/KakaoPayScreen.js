@@ -26,7 +26,7 @@ export default class KakaoPayScreen extends Component {
         console.log(response);
     }
     _KakaoPayRequest(url) {
-       // Toast.show(url)
+     Toast.show(url)
     if(url.startsWith('http://beacon.smst.kr/adminnew/kakaoPay/success.php')) {
         this._success(url);
         return true;

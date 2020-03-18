@@ -145,6 +145,7 @@ handleBackButton = () => {
                         <View style={{width:'90%'}}>
                             <Image resizeMode="contain" source={require('../../assets/Logo_2.png')}
                                 style={{width: '100%', height: '70%', marginLeft: '-10%'}}/>
+                            
                         </View>
                         <TouchableHighlight style={{width:'20%'}} onPress={()=>this.setState({modal: true})}>
                             <Image resizeMode="contain" 
@@ -168,7 +169,6 @@ handleBackButton = () => {
                             <TouchableOpacity style={styles.input2} onPress={()=>this.props.navigation.navigate('StationSearch', { goBackData: this._dest})}>
                                 <Text>{this.state.destination}</Text>
                             </TouchableOpacity>
-
                         </View>
 
                         <TouchableHighlight style={styles.swap} onPress={()=>this.props.navigation.navigate('search', 

@@ -64,11 +64,7 @@ export default class SearchScreen extends Component {
                                             parseString(path.data, function(err, result) {
                                                item = result.ServiceResult.msgBody[0].itemList
                                               
-                                                if(result.ServiceResult.msgBody[0] == "") {
-                                                    Toast.show(result.ServiceResult.msgHeader[0].headerMsg[0]);
-                                                    item = []
-                                                    return;
-                                                }
+                                                console.log(item)
                                             })
                                             
                                             this.setState({path: item})     

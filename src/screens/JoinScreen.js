@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {View, Text, StyleSheet, TextInput, TouchableOpacity, CheckBox, Alert, 
-    ScrollView, Modal, TouchableHighlight, KeyboardAvoidingView} from 'react-native'
+    ScrollView, Modal, TouchableHighlight, KeyboardAvoidingView, Image} from 'react-native'
 import axios from 'axios'
 import {WebView} from 'react-native-webview'
 import {AntDesign} from '@expo/vector-icons'
@@ -50,6 +50,9 @@ export default class JoinScreen extends Component{
         this.setState({CheckBox: check}, function() {
             if(check['first'] == true && check['second'] == true)
                 check['all'] = true;
+            else
+                check['all'] = false;
+            
                 this.setState({CheckBox: check})
         });
         
@@ -166,6 +169,16 @@ export default class JoinScreen extends Component{
     openModal = () => {
         this.setState({modal: true})
     }
+    _agree = (data) => {
+        if(data['first'] == true && data['second'] == true)
+            this.check('all');
+        else if(data['first'] == true && data['second'] == false)
+            this.check('first');
+        else if(data['second'] == true && data['first'] == false)
+            this.check('second');
+        else
+            return;
+    }
     render() {
         return(
             <KeyboardAvoidingView behavior="padding">
@@ -230,20 +243,30 @@ export default class JoinScreen extends Component{
                     </View> 
 
                     <View style={styles.agree_list}>
-                        <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                            <CheckBox  value={this.state.CheckBox['first']} onValueChange={()=>this.check('first')} />
-                            <TouchableOpacity style={{width: '90%'}} onPress={()=>this.props.navigation.navigate('agree')}>
-                                <Text style={{color: '#404040'}}>서울하이패스 이용약관 동의(필수)</Text>
-                            </TouchableOpacity>
-        
+                        <View style={{width: '80%'}}>
+                            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                                <CheckBox  value={this.state.CheckBox['first']} onValueChange={()=>this.check('first')} />
+                                
+                                    <Text style={{color: '#404040'}}>서울하이패스 이용약관 동의(필수)</Text>
+                               
+            
+                            </View>
+                            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                                <CheckBox  value={this.state.CheckBox['second']} onValueChange={()=>this.check('second')} />
+                                
+                                    <Text style={{width: '90%', color: '#404040'}}>개인정보 수집이용 동의(필수)</Text>
+                               
+                            </View>
                         </View>
-                        <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                            <CheckBox  value={this.state.CheckBox['second']} onValueChange={()=>this.check('second')} />
-                            <TouchableOpacity style={{width: '90%'}} onPress={()=>this.props.navigation.navigate('agree')}>
-                                <Text style={{width: '90%', color: '#404040'}}>개인정보 수집이용 동의(필수)</Text>
-                            </TouchableOpacity>
+
+                        <View style={{alignItems: 'center', justifyContent: 'center'}}>
+                            <TouchableHighlight onPress={()=>this.props.navigation.navigate('agree', 
+                                { goBackData: this._agree, checkbox: this.state.CheckBox}) }>
+                            <Image source={require('../../assets/Right.png')} resizeMode="contain" style={{height:30, justifyContent: 'center'
+                            , marginRight: 5}}/>
+                            </TouchableHighlight>
                         </View>
-                        
+
                     </View>
                 </View>
 
@@ -310,11 +333,12 @@ const styles = StyleSheet.create({
         marginTop: 20
     },
     agree_list: {
+        flexDirection: 'row',
         backgroundColor: '#f5f5f5',
         padding: 10,
         borderRadius: 5,
         paddingLeft: 20,
-
+        height: 80,
         marginHorizontal: 20
     },
     join_btn: {

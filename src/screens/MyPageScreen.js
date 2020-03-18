@@ -70,7 +70,7 @@ export default class MyPageScreen extends Component {
     _renderItem = ({item}) => (  
         <View style={styles.list}>
             <View style={{flexDirection:'row', marginTop: 20}}>
-                <Text style={styles.date}>{item.regdate}</Text>
+                <Text style={styles.date}>{item.regdate.replace(" ", "\n")}</Text>
                 <Text style={styles.station}>{item.contents}</Text>
                 <View>
                     <Text style={styles.price}>{item.amount}</Text>
