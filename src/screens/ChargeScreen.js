@@ -69,7 +69,9 @@ export default class ChargeScreen extends Component {
             data: params
         }).then(response => {
             console.log(response);
-            this.props.navigation.navigate('kakaoPay', {uri: response.data.next_redirect_app_url, orderCode: response.data.ordercode})
+            this.props.navigation.navigate('kakaoPay', 
+            {   goBackData: this._return ,
+                uri: response.data.next_redirect_app_url, orderCode: response.data.ordercode})
             
         })
 
@@ -87,8 +89,8 @@ export default class ChargeScreen extends Component {
             }
         })*/
     }
-    _return = () => {
-        this.props.navigation.state.params.goBackData({refresh: true})
+    _return = (data) => {
+        this.props.navigation.state.params.goBackData({refresh: data})
         this.props.navigation.pop()
     }
     render() {

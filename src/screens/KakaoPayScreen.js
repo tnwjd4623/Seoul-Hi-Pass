@@ -26,15 +26,19 @@ export default class KakaoPayScreen extends Component {
         console.log(response);
     }
     _KakaoPayRequest(url) {
-     Toast.show(url)
-    if(url.startsWith('http://beacon.smst.kr/adminnew/kakaoPay/success.php')) {
+    if(url == 'intent://exit') {                //결제 종료 요청
+        this.props.navigation.state.params.goBackData({refresh: true})
+        this.props.navigation.pop();
+        return false;
+    }    
+    if(url.startsWith('http://beacon.smst.kr/adminnew/kakaoPay/success.php')) {         
         this._success(url);
         return true;
     }
     if(url.startsWith('http://') || url.startsWith('https://') || url.startsWith('about:blank')) {
         return true;
     }
-    if(Platform.OS === 'android') {   
+    if(Platform.OS === 'android') {             ///카카오페이 실행 React Native에 안드로이드 인텐트 호출이 없어서 따로 지정 IOS별도 로직 필요
       SendIntentAndroid.openAppWithUri(url).then(isOpened=> {
           if(!isOpened) {
               console.log("fail to open kakao app")
@@ -44,10 +48,17 @@ export default class KakaoPayScreen extends Component {
       });
     }
 
+
+
+    //ios 전용 카카오 페이 필요
+    if(Platform.OS === 'ios') {
+
+    }
+
       return false;
     }
 
-    _success(url) {
+    _success(url) {             //결제 성공 시 화면 전환
         const success_url = url+"&ordercode="+this.state.orderCode;
         this.setState({uri: success_url});
        // Toast.show(success_url)

@@ -37,6 +37,23 @@ export default class SearchScreen extends Component {
         const dep_code = this.props.navigation.getParam('dep_code');
         const dest_code = this.props.navigation.getParam('dest_code');
         
+        let type = '오전';
+        let hour = new Date().getHours();
+        if(hour > 12) {
+            type = '오후';
+            hour -= 12;
+        }
+        let minute = new Date().getMinutes();
+
+        if(hour < 10) {
+            hour = "0"+hour;
+        }
+        if(minute < 10) {
+            minute = "0"+minute;
+        }
+
+        this.setState({current_time: '오늘 '+type+'   '+hour+":"+minute})
+
         this.setState({depart: depart, arrive: arrive, dep_code: dep_code, dest_code: dest_code}, function() {
             this._getPathInfo()
         })
@@ -132,8 +149,14 @@ export default class SearchScreen extends Component {
                     
                 </View>
 
-                <View style={{width: '90%', alignSelf: 'center', height: 30, justifyContent: 'center'}}>
-                    <Text style={{fontSize: 15, color: '#465cdb', fontWeight: 'bold'}}>{this.state.current_time}  출발</Text>
+                <View style={{width: '90%', alignSelf: 'center', height: 40, justifyContent: 'center'}}>
+                    <View style={{flexDirection: 'row',alignItems: 'center'}}>
+                        <Text style={{fontSize: 15, color: '#465cdb', fontWeight: 'bold'}}>{this.state.current_time}</Text>
+                        <Text style={{fontSize: 15, color: '#828282', fontWeight: 'bold'}}>   출발</Text>
+                        <TouchableHighlight>
+                            <Image source={require('../../assets/More_down.png')} resizeMode='contain' style={{height: 30, width: 40}} />
+                        </TouchableHighlight>
+                    </View>
                 </View>
                 <ScrollView>
                 <RouteContainer navigation={this.props.navigation} item={this.state.path} />

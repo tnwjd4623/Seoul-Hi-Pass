@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Mar 18 11:38:54 KST 2020
+#Wed Mar 18 13:50:56 KST 2020
 60.set=NATIVE_RESOURCE
 52.set=NATIVE_RESOURCE
 53.base=/Users/babylabco/Desktop/Beacon/android/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
