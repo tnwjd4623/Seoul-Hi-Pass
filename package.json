@@ -12,7 +12,7 @@
     "@react-native-community/masked-view": "0.1.6",
     "@react-native-seoul/kakao-login": "2.3.0",
     "@react-native-seoul/naver-login": "2.1.0",
-    "axios": "0.19.2",
+    "axios": "0.21.1",
     "expo": "~36.0.0",
     "expokit": "36.0.1",
     "iamport-react-native": "1.4.0",
